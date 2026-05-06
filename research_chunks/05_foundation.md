@@ -864,6 +864,24 @@ Code-status legend:
   code_status: ❌ No Code Found (closed)
   why_it_matters: Frontier closed humanoid VLA from DeepMind — partner for Apptronik Apollo.
 
+- title: MolmoAct 2 — Action Reasoning Models for Real-world Deployment
+  authors: Haoquan Fang; Jiafei Duan; Donovan Clay; Sam Wang; Shuo Liu; Weikai Huang; Xiang Fan; Wei-Chuan Tsai; Shirui Chen; Yi Ru Wang; Shanli Xing; Jaemin Cho; Jae Sung Park; Ainaz Eftekhar; Peter Sushko; Karen Farley; Angad Wadhwa; Cole Harrison; Winson Han; Ying-Chun Lee; Eli VanderBilt; Rose Hendrix; Suveen Ellawela; Lucas Ngoo; Joyce Chai; Zhongzheng Ren; Ali Farhadi; Dieter Fox; Ranjay Krishna
+  year: 2026
+  venue: arXiv 2026.05
+  arxiv_id: 2605.02881
+  paper_url: https://arxiv.org/abs/2605.02881
+  project_url: https://allenai.org/blog/molmoact2
+  code_url: https://github.com/allenai/molmoact2
+  category: Foundation
+  task_tags: [action-reasoning, VLA, MolmoER, OpenFAST, MolmoThink, bimanual, LIBERO, DROID]
+  robot_platform: Franka, SO100/SO101, bimanual YAM
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: 🧩 Partial Code
+  one_line: Open VLA stack with MolmoER backbone, OpenFAST action tokenizer, MolmoThink adaptive-reasoning variant, and 720h bimanual dataset.
+  why_it_matters: AI2/UW fully-open follow-up to MolmoAct competing with Pi-05 and Gemini Robotics ER-1.5; weights and datasets released, training code staged.
+
 ---
 
 ## Quick stats

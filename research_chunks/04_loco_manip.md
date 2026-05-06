@@ -1067,3 +1067,39 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Two-stage curriculum + posture-conditioned RL learning robust real-world humanoid getting-up.
   why_it_matters: Complementary view to HoST; rigorous outdoor + indoor evaluation.
+
+- title: SigLoMa — Learning Open-World Quadrupedal Loco-Manipulation from Ego-Centric Vision
+  authors: Shiyi Chen; Haiyi Liu; Mingye Yang; Jiaqi Zhang; Debing Zhang
+  year: 2026
+  venue: arXiv 2026.05
+  arxiv_id: 2605.03846
+  paper_url: https://arxiv.org/abs/2605.03846
+  project_url: https://11chens.github.io/SigLoMa/
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [quadruped, ego-centric, sigma-points, kalman-filter, active-sampling, open-vocabulary]
+  robot_platform: quadruped
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Sigma-Points geometric representation + ego-centric Kalman filter and active-sampling curriculum for open-world pick-and-place from 5Hz detector.
+  why_it_matters: Tsinghua quadrupedal loco-manipulation that approaches expert teleop performance using only ego-centric vision; methodology likely transfers to humanoid arms.
+
+- title: BifrostUMI — Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation
+  authors: Chenhao Yu; Hongwu Wang; Youhao Hu; Jiachen Zhang; Yuanyuan Li; Shaqi Luo
+  year: 2026
+  venue: arXiv 2026.05
+  arxiv_id: 2605.03452
+  paper_url: https://arxiv.org/abs/2605.03452
+  project_url: ""
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [robot-free-data, VR, keypoint-trajectories, wrist-camera, whole-body-manipulation, retargeting]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Lightweight VR + wrist-camera demo-collection pipeline that predicts future keypoint trajectories and retargets them to humanoid whole-body control.
+  why_it_matters: Pushes humanoid manipulation data scaling beyond teleoperation by using portable VR-only capture; complements UMI / Humanoid Manipulation Interface line.

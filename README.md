@@ -99,7 +99,7 @@ Inspired by [YanjieZe/awesome-humanoid-robot-learning](https://github.com/Yanjie
 
 ---
 
-_Total unique entries: **455**. Verified open-source: **208**._
+_Total unique entries: **458**. Verified open-source: **208**._
 
 ## Human-Object Interaction Motion Generation
 
@@ -1050,7 +1050,12 @@ _113 entries._
 
 ## Whole-Body Control and Loco-Manipulation
 
-_53 entries._
+_55 entries._
+
+- 🌐 🤖 **[SigLoMa — Learning Open-World Quadrupedal Loco-Manipulation from Ego-Centric Vision](https://arxiv.org/abs/2605.03846)** `arXiv 2026.05` `quadruped` `Loco-Manipulation`
+  Shiyi Chen et al..
+  Sigma-Points geometric representation + ego-centric Kalman filter and active-sampling curriculum for open-world pick-and-place from 5Hz detector.
+  Links: [Project](https://11chens.github.io/SigLoMa/) · [Paper](https://arxiv.org/abs/2605.03846)
 
 - 🌐 **[EgoHumanoid - Unlocking In-the-Wild Loco-Manipulation with Robot-Free Egocentric Demonstration](https://arxiv.org/abs/2602.10106)** `arXiv 2026.02` `Loco-Manip`
   In-the-wild loco-manipulation from robot-free egocentric demonstrations.
@@ -1071,6 +1076,11 @@ _53 entries._
 - 🌐 **[ULTRA - Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation](https://arxiv.org/abs/2603.03279)** `arXiv 2026.03` `Loco-Manip`
   Unified multimodal controller for autonomous whole-body loco-manipulation.
   Links: [Project](https://ultra-humanoid.github.io/) · [Paper](https://arxiv.org/abs/2603.03279)
+
+- ❌ 🤖 🧍 **[BifrostUMI — Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation](https://arxiv.org/abs/2605.03452)** `arXiv 2026.05` `humanoid` `Loco-Manipulation`
+  Chenhao Yu et al..
+  Lightweight VR + wrist-camera demo-collection pipeline that predicts future keypoint trajectories and retargets them to humanoid whole-body control.
+  Links: [Paper](https://arxiv.org/abs/2605.03452)
 
 - ⭐ 🤖 🧍 **[ALMI — Adversarial Locomotion and Motion Imitation for Humanoid Policy Learning](https://arxiv.org/abs/2504.14305)** `NeurIPS 2025` `Unitree H1-2` `WBC`
   Hong Zhang, et al..
@@ -1311,11 +1321,13 @@ _53 entries._
 
 | Year | Paper | Robot/Data | Real Robot | Code | Key Idea |
 |---|---|---|---|---|---|
+| 2026 | [SigLoMa — Learning Open-World Quadrupedal Loco-Manipulation ](https://arxiv.org/abs/2605.03846) | quadruped | ✅ | 🌐 Project Page | Sigma-Points geometric representation + ego-centric Kalman filter and active-sam |
 | 2026 | [EgoHumanoid - Unlocking In-the-Wild Loco-Manipulation with R](https://arxiv.org/abs/2602.10106) | — | — | 🌐 Project Page | In-the-wild loco-manipulation from robot-free egocentric demonstrations. |
 | 2026 | [HAIC - Humanoid Agile Object Interaction Control via Dynamic](https://arxiv.org/abs/2602.11758) | — | — | 🌐 Project Page | Agile humanoid object interaction with dynamics-aware world model. |
 | 2026 | [Humanoid Manipulation Interface - Humanoid Whole-Body Manipu](https://arxiv.org/abs/2602.06643) | — | — | 🌐 Project Page | Whole-body humanoid manipulation from robot-free demonstrations. |
 | 2026 | [LATENT - Learning Athletic Humanoid Tennis Skills from Imper](https://zzk273.github.io/LATENT/) | — | — | 🌐 Project Page | Learns humanoid tennis skills from imperfect human motion captures. |
 | 2026 | [ULTRA - Unified Multimodal Control for Autonomous Humanoid W](https://arxiv.org/abs/2603.03279) | — | — | 🌐 Project Page | Unified multimodal controller for autonomous whole-body loco-manipulation. |
+| 2026 | [BifrostUMI — Bridging Robot-Free Demonstrations and Humanoid](https://arxiv.org/abs/2605.03452) | humanoid | ✅ | ❌ No Code | Lightweight VR + wrist-camera demo-collection pipeline that predicts future keyp |
 | 2025 | [ALMI — Adversarial Locomotion and Motion Imitation for Human](https://arxiv.org/abs/2504.14305) | Unitree H1-2 | ✅ | ⭐ Code | Adversarial training between upper and lower body policies plus the ALMI-X langu |
 | 2025 | [AMO — Adaptive Motion Optimization for Hyper-Dexterous Human](https://arxiv.org/abs/2505.03738) | Unitree H1-2 | ✅ | ⭐ Code | Hybrid sim-to-real RL + trajectory optimization for adaptive whole-body humanoid |
 | 2025 | [GR00T N1 — An Open Foundation Model for Generalist Humanoid ](https://arxiv.org/abs/2503.14734) | Fourier GR1, multiple humanoids | ✅ | ⭐ Code | Open VLA foundation model for humanoids trained on egocentric videos + sim/real  |
@@ -1324,12 +1336,10 @@ _53 entries._
 | 2025 | [HoST — Learning Humanoid Standing-up Control across Diverse ](https://arxiv.org/abs/2502.08378) | Unitree G1 | ✅ | ⭐ Code | Multi-critic RL with motion regularization that learns posture-adaptive standing |
 | 2025 | [Human2LocoMan — Learning Versatile Quadrupedal Manipulation ](https://arxiv.org/abs/2506.16475) | LocoMan (Unitree Go1 + arm) | ✅ | ⭐ Code | Cross-embodiment data collection + learning that pretrains on humans before tran |
 | 2025 | [WholeBodyVLA — Towards Unified Latent VLA for Whole-Body Loc](https://arxiv.org/abs/2512.11047) | AgiBot X2 | ✅ | ⭐ Code | Unified latent VLA framework learning loco-manipulation from action-free egocent |
-| 2025 | [PARC — Physics-based Augmentation with RL for Character Cont](https://arxiv.org/abs/2505.04002) | Simulated character / humanoid | — | ⭐ Code | Iterative ML+physics augmentation expanding terrain traversal repertoire of phys |
-| 2025 | [SkillBlender — Towards Versatile Humanoid Whole-Body Loco-Ma](https://arxiv.org/abs/2506.09366) | Unitree H1, G1, Fourier GR1 | — | ⭐ Code | Hierarchical RL pretraining of primitive skills, dynamically blended for diverse |
 
 ## Humanoid Foundation Models and Generalist Policies
 
-_64 entries._
+_65 entries._
 
 - ⭐ 🧱 **[Cosmos Policy — Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2601.16163)** `arXiv (Jan 2026)` `LIBERO, RoboCasa simulators` `Generalist-Policy`
   NVIDIA Research.
@@ -1338,6 +1348,11 @@ _64 entries._
 - ⭐ **[LIFT - Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control](https://arxiv.org/abs/2601.21363)** `arXiv 2026.01` `Foundation`
   Pretraining-then-finetuning for humanoid control.
   Links: [Project](https://lift-humanoid.github.io/) · [Code](https://github.com/bigai-ai/LIFT-humanoid) · [Paper](https://arxiv.org/abs/2601.21363)
+
+- 🧩 🤖 **[MolmoAct 2 — Action Reasoning Models for Real-world Deployment](https://arxiv.org/abs/2605.02881)** `arXiv 2026.05` `Franka, SO100/SO101, bimanual YAM` `Foundation`
+  Haoquan Fang et al..
+  Open VLA stack with MolmoER backbone, OpenFAST action tokenizer, MolmoThink adaptive-reasoning variant, and 720h bimanual dataset.
+  Links: [Project](https://allenai.org/blog/molmoact2) · [Code](https://github.com/allenai/molmoact2) · [Paper](https://arxiv.org/abs/2605.02881)
 
 - ❌ **[Psi0 - An Open Foundation Model Towards Universal Humanoid Loco-Manipulation](https://arxiv.org/abs/2603.12263)** `arXiv 2026.03` `Foundation`
   Open foundation model targeting universal humanoid loco-manipulation.
@@ -1601,6 +1616,7 @@ _64 entries._
 |---|---|---|---|---|---|
 | 2026 | [Cosmos Policy — Fine-Tuning Video Models for Visuomotor Cont](https://arxiv.org/abs/2601.16163) | LIBERO, RoboCasa simulators | — | ⭐ Code |  |
 | 2026 | [LIFT - Towards Bridging the Gap between Large-Scale Pretrain](https://arxiv.org/abs/2601.21363) | — | — | ⭐ Code | Pretraining-then-finetuning for humanoid control. |
+| 2026 | [MolmoAct 2 — Action Reasoning Models for Real-world Deployme](https://arxiv.org/abs/2605.02881) | Franka, SO100/SO101, bimanual YAM | ✅ | 🧩 Partial Code | Open VLA stack with MolmoER backbone, OpenFAST action tokenizer, MolmoThink adap |
 | 2026 | [Psi0 - An Open Foundation Model Towards Universal Humanoid L](https://arxiv.org/abs/2603.12263) | — | — | ❌ No Code | Open foundation model targeting universal humanoid loco-manipulation. |
 | 2025 | [AgiBot World Colosseo + GO-1 — Large-scale Manipulation Plat](https://arxiv.org/abs/2503.06669) | AgiBot mobile humanoid (whole-body, dexterous hands, tactile) | ✅ | ⭐ Code | 1M+ trajectories across 217 tasks in 5 deployment scenarios from 100 real robots |
 | 2025 | [Cosmos World Foundation Model Platform for Physical AI](https://arxiv.org/abs/2501.03575) | Multi-domain physical AI (robots, AVs) | ✅ | ⭐ Code |  |
@@ -1613,7 +1629,6 @@ _64 entries._
 | 2025 | [Humanoid Policy ~ Human Policy (HAT / PH2D)](https://arxiv.org/abs/2503.13441) | Unitree H1 humanoid + dexterous hands; human VR data | ✅ | ⭐ Code | Treats humanoid policy and human policy unified for cross-embodiment. |
 | 2025 | [InternVLA-M1 — A Spatially Guided VLA Framework for Generali](https://arxiv.org/abs/2510.13778) | SimplerEnv, WidowX, LIBERO Franka, real | ✅ | ⭐ Code |  |
 | 2025 | [NORA — A Small Open-Sourced Generalist Vision Language Actio](https://arxiv.org/abs/2504.19854) | WidowX, real-world tasks | ✅ | ⭐ Code |  |
-| 2025 | [OpenVLA-OFT / OFT+ — Fine-Tuning VLAs: Optimizing Speed and ](https://arxiv.org/abs/2502.19645) | ALOHA bimanual, LIBERO sim | ✅ | ⭐ Code |  |
 
 ## Human-to-Humanoid Retargeting
 
