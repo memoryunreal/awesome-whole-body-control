@@ -102,7 +102,7 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 ## Weekly Digest Runs
 
-### 2026-06-12 — 34 new, 0 updated
+### 2026-06-12 — 34 new, 1 updated
 - Window: 2026-05-07 → 2026-06-12.
 - Sources searched: arXiv API listings for cs.RO, cs.CV, cs.LG, cs.GR filtered by submittedDate; project pages from arXiv comments; GitHub repository HEAD/tree checks; targeted web search for missing code links.
 - Query focus: humanoid, whole-body control, loco-manipulation, humanoid-object interaction, motion tracking/imitation, fall recovery, retargeting, teleoperation, egocentric humanoid control, humanoid VLA, WAM, sim-to-real.
@@ -120,7 +120,8 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
   - https://github.com/lzyang2000/HANDOFF
   - https://github.com/junhengl/mpc-rl
   - https://github.com/NVlabs/GRAIL
-- Existing-paper updates: none verified.
+- Existing-paper updates:
+  - RoboNaldo (2606.11092) — arXiv revised from `v1` to `v3` on 2026-06-11; project page still points to a GitHub repo URL that returns `Repository not found`, so code status remains `🌐 Project Page`.
 - Unresolved code-status items:
   - https://wt-umi.github.io/WTUMI/ — project page says code coming soon.
   - https://aislab-sustech.github.io/Stubborn/ — project page says code coming soon.

@@ -55,7 +55,7 @@ Inspired by [YanjieZe/awesome-humanoid-robot-learning](https://github.com/Yanjie
 
 ## Last Week Updates
 
-_Latest digest: **2026-06-12** — **34 new**, **0 updated**._
+_Latest digest: **2026-06-12** — **34 new**, **1 updated**._
 
 ### Added by Section
 
