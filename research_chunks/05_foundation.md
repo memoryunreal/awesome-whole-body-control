@@ -882,6 +882,96 @@ Code-status legend:
   one_line: Open VLA stack with MolmoER backbone, OpenFAST action tokenizer, MolmoThink adaptive-reasoning variant, and 720h bimanual dataset.
   why_it_matters: AI2/UW fully-open follow-up to MolmoAct competing with Pi-05 and Gemini Robotics ER-1.5; weights and datasets released, training code staged.
 
+- title: OMG: Omni-Modal Motion Generation for Generalist Humanoid Control
+  authors: Siqiao Huang; Kun-Ying Lee; Dongming Qiao; Guanqi He; Zhenyu Wang; Yitang Li; Shaoting Zhu; Hang Zhao
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.10340
+  paper_url: https://arxiv.org/abs/2606.10340
+  project_url: https://tsinghua-mars-lab.github.io/OMG/
+  code_url: https://github.com/Tsinghua-MARS-Lab/OMG
+  category: Foundation
+  task_tags: [omni-modal, motion-generation, generalist-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Generalist humanoid control stack that places an omni-modal motion-generation brain above a reactive tracking controller.
+  why_it_matters: Open Tsinghua MARS attempt to unify diverse conditioning modalities for humanoid skills.
+
+- title: MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation
+  authors: Jia Zheng; Teli Ma; Yudong Fan; Zifan Wang; Shuo Yang; Junwei Liang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.09215
+  paper_url: https://arxiv.org/abs/2606.09215
+  project_url: ""
+  code_url: ""
+  category: Foundation
+  task_tags: [world-action-model, real-time, loco-manipulation, humanoid]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Real-time world-action model for humanoid loco-manipulation that avoids slow video-action denoising loops.
+  why_it_matters: Brings WAM-style foundation policies into the whole-body humanoid setting.
+
+- title: Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data
+  authors: Ji Woong Kim; Ke Wang; Zipeng Fu; Sirui Chen; Cong Zhao; Jeff Lai; Chelsea Finn
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.08107
+  paper_url: https://arxiv.org/abs/2606.08107
+  project_url: https://egopipaper.github.io/
+  code_url: ""
+  category: Foundation
+  task_tags: [VLA, ego-centric-data, human-data, dexterous-humanoid]
+  robot_platform: humanoid hands / dexterous embodiments
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Studies pi0.5 fine-tuning across egocentric human data and humanoid embodiments with dexterous five-finger hands.
+  why_it_matters: Tests whether internet-scale egocentric human data can relieve humanoid manipulation data scarcity.
+
+- title: Perceptive Behavior Foundation Model: Adapting Human Motion Priors to Robot-Centric Terrain
+  authors: Zifan Wang; Yizhao Li; Teli Ma; Qiang Zhang; Yudong Fan; Hao Xu; Shuo Yang; Junwei Liang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.08059
+  paper_url: https://arxiv.org/abs/2606.08059
+  project_url: ""
+  code_url: ""
+  category: Foundation
+  task_tags: [behavior-foundation-model, terrain, human-motion-prior, humanoid]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adapts broad human motion priors to robot-centric terrain constraints for reusable perceptive whole-body behavior.
+  why_it_matters: Addresses the mismatch between human motion demonstrations and robot deployment environments.
+
+- title: Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking
+  authors: Zekun Qi; Xuchuan Chen; Dairu Liu; Chenghuai Lin; Yunrui Lian; Sikai Liang; Zhikai Zhang; Yu Guan; Jilong Wang; Wenyao Zhang; Xinqiang Yu; He Wang
+  year: 2026
+  venue: CVPR 2026
+  arxiv_id: 2606.03985
+  paper_url: https://arxiv.org/abs/2606.03985
+  project_url: https://github.com/GalaxyGeneralRobotics/Humanoid-GPT
+  code_url: https://github.com/GalaxyGeneralRobotics/Humanoid-GPT
+  category: Foundation
+  task_tags: [GPT-style-transformer, zero-shot-tracking, billion-frame-corpus, Unitree-G1]
+  robot_platform: Unitree G1 / humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: GPT-style causal Transformer trained on a two-billion-frame retargeted motion corpus for zero-shot whole-body tracking.
+  why_it_matters: A clear scaling-law-style entry in humanoid motion-tracking foundation models.
+
 ---
 
 ## Quick stats

@@ -452,7 +452,7 @@ def csv_escape(v):
     return v if v is not None else ""
 
 with open(ROOT/"papers.csv","w",newline="",encoding="utf-8") as f:
-    w = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
+    w = csv.writer(f, quoting=csv.QUOTE_MINIMAL, lineterminator="\n")
     w.writerow(["title","authors","year","venue","category","tags","paper_url","project_url","code_url","dataset_url","code_status","real_robot","robot_platform","summary"])
     for r in sorted(unique, key=sort_key):
         cat = next((cn for cid,cn in cat_order if cid==r["_cat"]), r["_cat"])
@@ -516,6 +516,15 @@ for cid, cname in cat_order:
 print(f"no_code_or_uncertain.md: {len(nocode)} entries", file=sys.stderr)
 
 # search_log.md
+search_log_path = ROOT / "search_log.md"
+previous_weekly_digest = ""
+if search_log_path.exists():
+    existing_search_log = search_log_path.read_text(encoding="utf-8", errors="ignore")
+    marker = "\n## Weekly Digest Runs"
+    marker_idx = existing_search_log.find(marker)
+    if marker_idx != -1:
+        previous_weekly_digest = existing_search_log[marker_idx + 1:].rstrip()
+
 hist = defaultdict(int)
 for r in unique:
     hist[r["code_status_norm"]] += 1
@@ -605,7 +614,11 @@ lines += ["",
 "3. Review `no_code_or_uncertain.md` and re-check status of pending repos.",
 "",
 ]
-(ROOT/"search_log.md").write_text("\n".join(lines), encoding="utf-8")
+
+if previous_weekly_digest:
+    lines.extend(["", previous_weekly_digest])
+
+search_log_path.write_text("\n".join(lines), encoding="utf-8")
 print(f"search_log.md written", file=sys.stderr)
 
 print(f"\nDONE.\nTotal unique: {len(unique)}\nVerified ⭐: {hist['⭐ Code']}\nProject Page 🌐: {hist['🌐 Project Page']}\nNo Code ❌: {hist['❌ No Code']}", file=sys.stderr)

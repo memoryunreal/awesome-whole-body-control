@@ -1235,6 +1235,222 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Reference implementation of Neural Categorical Priors for character control.
   why_it_matters: Open VQ-latent baseline for skill reuse.
 
+- title: Stubborn: A Streamlined and Unified Reinforcement Learning Framework for Robust Motion Tracking and Fall Recovery for Humanoids
+  authors: Xiao Ren; Yuhui Yang; Zongbiao Weng; Zhijie Liu; He Kong
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.12814
+  paper_url: https://arxiv.org/abs/2606.12814
+  project_url: https://aislab-sustech.github.io/Stubborn/
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [motion-tracking, fall-recovery, asymmetric-actor-critic, humanoid]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Unified RL framework that keeps failed states in training and learns robust motion tracking plus fall recovery in one policy.
+  why_it_matters: Connects tracking and recovery instead of treating falls as terminal failures.
+
+- title: RoboNaldo: Accurate, Stable and Powerful Humanoid Soccer Shooting via Motion-Guided Curriculum Reinforcement Learning
+  authors: Yichao Zhong; Yidan Lu; Yuhang Lu; Tianyang Tang; Haoguang Mai; Yixuan Pan; Tianyu Li; Li Chen; Jingbo Wang; Zhongyu Li; Peng Lu; Hongyang Li
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.11092
+  paper_url: https://arxiv.org/abs/2606.11092
+  project_url: https://opendrivelab.com/RoboNaldo
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [soccer, shooting, curriculum-rl, whole-body, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Three-stage motion-guided curriculum RL for stable, accurate high-impulse humanoid soccer shooting.
+  why_it_matters: Stress-tests whole-body balance and timing under ballistic object interaction.
+
+- title: PTDL: Multi-Terrain Fall Recovery via Phase-Terrain Decoupled Learning
+  authors: Xiaoyu Xu; Zhiming Chen; Yuenan Zhao; Ran Song; Wei Zhang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.08922
+  paper_url: https://arxiv.org/abs/2606.08922
+  project_url: ""
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [fall-recovery, terrain, proprioception, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Phase-terrain decoupled policy recovers from falls on slopes, gravel, and uneven terrain before resuming walking.
+  why_it_matters: Extends getting-up controllers beyond flat-ground quasi-static recovery.
+
+- title: EgoPriMo: Egocentric Motion Generation for Interactive Humanoid Control
+  authors: Haoyang Ge; Peng Ren; Yukun Shi; Cong Huang; Kun Li; Kai Chen
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.08495
+  paper_url: https://arxiv.org/abs/2606.08495
+  project_url: ""
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [egocentric, motion-prior, interactive-control, whole-body]
+  robot_platform: Unitree humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns an egocentric motion prior that maps human-view observations and intent into adaptive whole-body humanoid behaviors.
+  why_it_matters: Bridges motion tracking and VLA-style semantic interfaces for interactive humanoid control.
+
+- title: Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking
+  authors: Alessandro Montenegro; Shihao Li; Puze Liu; Alberto Maria Metelli; Jan Peters
+  year: 2026
+  venue: RSS 2026
+  arxiv_id: 2606.08253
+  paper_url: https://arxiv.org/abs/2606.08253
+  project_url: https://github.com/MontenegroAlessandro/mind-your-steps
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [foothold-tracking, locomotion, navigation, humanoid]
+  robot_platform: Booster T1 / humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learning framework for accurate foothold placement on humanoids, improving safe navigation before manipulation.
+  why_it_matters: Precise stepping is a missing primitive for cluttered loco-manipulation.
+
+- title: Predictive Style Matching: Natural and Robust Humanoid Locomotion
+  authors: Simeon Nedelchev; Ekaterina Chaikovskaia; Egor Davydenko; Eduard Zaliaev; Roman Gorbachev
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.07083
+  paper_url: https://arxiv.org/abs/2606.07083
+  project_url: ""
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [locomotion, style-matching, robustness, humanoid]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Predictive style-matching objective improves natural humanoid gait while preserving disturbance recovery.
+  why_it_matters: Targets the common tradeoff between imitation aesthetics and robust locomotion.
+
+- title: LIMMT: Less is More for Motion Tracking
+  authors: Yu Guan; Zekun Qi; Chenghuai Lin; Xuchuan Chen; Dairu Liu; Wenyao Zhang; Jilong Wang; Xinqiang Yu; He Wang; Li Yi
+  year: 2026
+  venue: ICML 2026
+  arxiv_id: 2606.06953
+  paper_url: https://arxiv.org/abs/2606.06953
+  project_url: https://github.com/GalaxyGeneralRobotics/Humanoid-GPT
+  code_url: https://github.com/GalaxyGeneralRobotics/Humanoid-GPT
+  category: Motion-Imitation
+  task_tags: [data-centric, motion-quality, motion-tracking, humanoid]
+  robot_platform: Unitree G1 / humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Data-centric motion-tracking study showing that carefully filtered high-quality motions can outperform much larger noisy corpora.
+  why_it_matters: Gives a practical recipe for curating tracking datasets before expensive RL training.
+
+- title: LadderMan: Learning Humanoid Perceptive Ladder Climbing
+  authors: Siheng Zhao; Yuanhang Zhang; Ziqi Lu; Pieter Abbeel; Rocky Duan; Koushil Sreenath; Yue Wang; C. Karen Liu; Guanya Shi
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.05873
+  paper_url: https://arxiv.org/abs/2606.05873
+  project_url: https://ladderman-robot.github.io
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [ladder-climbing, perceptive-control, sim-to-real, whole-body]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Two-stage perceptive policy lets humanoids climb diverse ladders and manipulate in constrained vertical terrain.
+  why_it_matters: Expands agile humanoid control from floor locomotion to sparse hand-foot contact structures.
+
+- title: M3imic: Learning a Versatile Whole-Body Controller for Multimodal Motion Mimicking
+  authors: Zuxing Lu; Ziang Zheng; Yao Lyu; Jingyu Liu; Feihong Zhang; Song Lu; Xin Yuan; Changyin Sun; Xingxing Zuo; Shengbo Eben Li
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.04829
+  paper_url: https://arxiv.org/abs/2606.04829
+  project_url: https://github.com/Renforce-Dynamics/MultiModalWBC
+  code_url: https://github.com/Renforce-Dynamics/MultiModalWBC
+  category: Motion-Imitation
+  task_tags: [multimodal-tracking, joint-trajectory, end-effector, whole-body]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Open IsaacLab-based WBC framework unifying joint, root, and end-effector reference modalities for humanoid motion mimicking.
+  why_it_matters: Practical open baseline for downstream locomotion and loco-manipulation controllers.
+
+- title: Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots
+  authors: Tianchen Huang; Mingkuan Zhao; Yang Gao; Feiyang Yuan; Junchi Gu; Xiaohu Zhang; Dongdong Zhao; Shi Yan; Yu Wang; Wei Gao; Shiwu Zhang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.03536
+  paper_url: https://arxiv.org/abs/2606.03536
+  project_url: https://huangtc233.github.io/bionic-style-transfer/
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [style-transfer, diffusion, whole-body, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Physics-aware diffusion transfers exemplar human motion style onto executable humanoid whole-body references.
+  why_it_matters: Adds controllable expressive style to otherwise task-focused WBC pipelines.
+
+- title: MIND: Multi-Scale Intent Diffusion for Text-Driven Physics-Based Humanoid Control
+  authors: Bin Li; Ruichi Zhang; Han Liang; Jingyan Zhang; Juze Zhang; Xin Chen; Jingya Wang
+  year: 2026
+  venue: arXiv 2026.05
+  arxiv_id: 2605.26006
+  paper_url: https://arxiv.org/abs/2605.26006
+  project_url: https://binlee26.github.io/MIND_page/
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [text-driven-control, intent-diffusion, physics-based, humanoid]
+  robot_platform: physics-based humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Multi-scale intent diffusion bridges text semantics and low-level physics-based humanoid control.
+  why_it_matters: Strengthens the text-to-control path without relying on a separate kinematic generator.
+
+- title: SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-based Humanoid Control
+  authors: Jingyan Zhang; Han Liang; Ruichi Zhang; Bin Li; Juze Zhang; Xin Chen; Jingya Wang; Lan Xu; Jingyi Yu
+  year: 2026
+  venue: arXiv 2026.05
+  arxiv_id: 2605.22894
+  paper_url: https://arxiv.org/abs/2605.22894
+  project_url: https://zhanglele12138.github.io/SCRIPT/
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [language-driven-control, diffusion-policy, physics-based, humanoid]
+  robot_platform: physics-based humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Joint action-state-text diffusion transformer for long-horizon language-driven physics-based humanoid control.
+  why_it_matters: A scalable alternative to two-stage text-to-motion plus tracking stacks.
+
 ---
 
 ## Notes on Verification

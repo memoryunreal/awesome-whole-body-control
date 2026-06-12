@@ -946,6 +946,114 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Replaces IK+PD teleop with RL-trained policy mapping VR controller inputs directly to joints; 34% lower tracking error.
   why_it_matters: Suggests learned teleop controllers can outperform classical IK pipelines for VR humanoid teleop.
 
+- title: Proprioceptive-visual correspondence enables self-other distinction in humanoid robots
+  authors: Yurun Chen; Tianyuan Gao; Yizhong Ge; Shikun Ban; Yizhou Wang; Hongkai Xiong; Wenjun Zeng; Wentao Zhu
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.13222
+  paper_url: https://arxiv.org/abs/2606.13222
+  project_url: https://euron-zc.github.io/humanoid-self-model/
+  code_url: ""
+  category: Retargeting
+  task_tags: [self-model, proprioception, vision, motion-retargeting]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns self-other distinction and a predictive 3D body occupancy model from proprioceptive-visual correspondence.
+  why_it_matters: Provides a self-model useful for collision-aware planning and human-to-robot retargeting in shared workspaces.
+
+- title: Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Open-World Contact Localization
+  authors: Yitian Shi; Di Wen; Zhengqi Han; Zicheng Guo; Yu Hu; Edgar Welte; Kunyu Peng; Rainer Stiefelhagen; Rania Rayyes
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.10743
+  paper_url: https://arxiv.org/abs/2606.10743
+  project_url: ""
+  code_url: ""
+  category: Retargeting
+  task_tags: [video-demonstrations, contact-localization, trajectory-transfer, open-world]
+  robot_platform: robot arms / manipulation
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: HOWTransfer converts noisy human videos into contact-aware, taxonomy-informed robot trajectories for unseen objects.
+  why_it_matters: Contact localization is a reusable ingredient for humanoid hand-object retargeting.
+
+- title: X-OP: Cross-Morphology Whole-Body Teleoperation via MPC Retargeting
+  authors: Jen-Wei Wang; Sarthak Kaingade; Andrea Tagliabue; Nicholas Morozovsky
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.07934
+  paper_url: https://arxiv.org/abs/2606.07934
+  project_url: ""
+  code_url: ""
+  category: Teleoperation
+  task_tags: [whole-body-teleoperation, MPC-retargeting, cross-morphology, XR]
+  robot_platform: humanoid / cross-morphology robots
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: MPC-based retargeting enables cross-morphology whole-body teleoperation without robot-specific end-to-end retraining.
+  why_it_matters: Offers a more reusable teleop interface than suit-specific or robot-specific learned policies.
+
+- title: RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning
+  authors: Chaoyi Xu; Yixuan Jiang; Jiahui Huan; Yuhui Fu; Haoyu Zhou; Weitian Yuan; Jiayi Yu; Wanpeng Zhang; Haoqi Yuan; Zongqing Lu
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.06033
+  paper_url: https://arxiv.org/abs/2606.06033
+  project_url: https://research.beingbeyond.com/realdexumi
+  code_url: ""
+  category: Teleoperation
+  task_tags: [wearable-interface, dexterous, UMI, contact-aware]
+  robot_platform: dexterous hands / humanoid-relevant manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Wearable universal manipulation interface preserves fine hand-object interactions while producing deployable dexterous robot data.
+  why_it_matters: Extends UMI-style collection toward dexterous and humanoid hand embodiments.
+
+- title: Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots
+  authors: Tianchen Huang; Feiyang Yuan; Junchi Gu; Shurui Fang; Xiaohu Zhang; Yu Wang; Wei Gao; Shiwu Zhang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.03476
+  paper_url: https://arxiv.org/abs/2606.03476
+  project_url: https://huangtc233.github.io/human2humanoid_website/
+  code_url: ""
+  category: Retargeting
+  task_tags: [cross-morphology, physics-aware, unsupervised, Unitree-G1]
+  robot_platform: Unitree G1 / humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Unsupervised physics-aware retargeting transfers human motions to humanoid behaviors despite topology, proportion, and DoF mismatch.
+  why_it_matters: Targets retargeting artifacts before they poison downstream imitation learning.
+
+- title: ReActor: Reinforcement Learning for Physics-Aware Motion Retargeting
+  authors: David Muller; Agon Serifi; Sammy Christen; Ruben Grandia; Espen Knoop; Moritz Bacher
+  year: 2026
+  venue: SIGGRAPH 2026
+  arxiv_id: 2605.06593
+  paper_url: https://arxiv.org/abs/2605.06593
+  project_url: ""
+  code_url: ""
+  category: Retargeting
+  task_tags: [physics-aware, bilevel-optimization, imitation-learning, retargeting]
+  robot_platform: humanoid / quadruped morphologies
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Bilevel RL retargeting jointly adapts reference motion and trains a policy to produce physically feasible motions across morphologies.
+  why_it_matters: Shows retargeting can be optimized directly for downstream imitation feasibility rather than kinematic similarity alone.
+
 ---
 
 ## Notes

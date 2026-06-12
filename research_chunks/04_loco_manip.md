@@ -1103,3 +1103,202 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Lightweight VR + wrist-camera demo-collection pipeline that predicts future keypoint trajectories and retargets them to humanoid whole-body control.
   why_it_matters: Pushes humanoid manipulation data scaling beyond teleoperation by using portable VR-only capture; complements UMI / Humanoid Manipulation Interface line.
+
+- title: WT-UMI: Tactile-based Whole-Body Manipulation via Force-Supervised Contact-Aware Planning
+  authors: Jaehwi Jang; Zhaoyuan Gu; Alfred Cueva; Zimeng Chai; Junjie Sheng; Thong Nguyen; Himank Galundia; Yifan Wu; Huishu Xue; Isaac Legene; Ojas Mediratta; Davin Doan
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.13232
+  paper_url: https://arxiv.org/abs/2606.13232
+  project_url: https://wt-umi.github.io/WTUMI/
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [tactile, force-supervised, contact-aware, teleoperation, whole-body-manipulation]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Wearable tactile interface and force-conditioned target-pose correction for whole-body manipulation of bulky or shared-load objects.
+  why_it_matters: Makes contact force a first-class signal for humanoid whole-body imitation instead of an implicit side effect.
+
+- title: GenHOI: Contact-Aware Humanoid-Object Interaction by Imitating Generated Videos without Task-Specific Training
+  authors: Zhihai Bi; Qiang Zhang; Guoyang Zhao; Jiahang Cao; Xueyin Luo; Yushan Zhang; Jinglan Xu; Ruoyu Geng; Yulin Li; Andrew F. Luo; Jun Ma
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.12995
+  paper_url: https://arxiv.org/abs/2606.12995
+  project_url: ""
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [humanoid-object-interaction, generated-video, contact-aware, zero-shot]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Zero-shot humanoid-object interaction pipeline that imitates generated task videos and extracts contact events without task-specific training.
+  why_it_matters: Directly connects generative video priors to deployable humanoid HOI.
+
+- title: Critic Architecture Matters: Dual vs. Unified Critics for Humanoid Loco-Manipulation
+  authors: Mehmet Turan Yardımcı
+  year: 2026
+  venue: ICRA 2026 Workshop RL4IL
+  arxiv_id: 2606.11891
+  paper_url: https://arxiv.org/abs/2606.11891
+  project_url: ""
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [dual-critic, reinforcement-learning, reaching, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Controlled IsaacLab study showing dual critics outperform unified critics for humanoid reaching and loco-manipulation curricula.
+  why_it_matters: Small but actionable architecture result for multi-objective humanoid RL.
+
+- title: VAIC: Vision-Guided Humanoid Agile Object Interaction Control via Decoupled Commands
+  authors: Dongting Li; Qianyang Wu; Xingyu Chen; Liang Li; Yuhang Lin; Sikai Wu; Guoyao Zhang; Mingliang Zhou; Diyun Xiang; Qiang Zhang; Renjing Xu; Jianzhu Ma
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.09286
+  paper_url: https://arxiv.org/abs/2606.09286
+  project_url: https://vaic-humanoid.github.io/
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [vision-guided, agile-object-interaction, decoupled-commands, whole-body]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Decoupled command framework for vision-guided agile humanoid object interaction under imperfect observability.
+  why_it_matters: Moves loco-manipulation beyond privileged object state and dense reference trajectories.
+
+- title: OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation
+  authors: Zehao Yu; Jiakun Zheng; Weiji Xie; Jiyuan Shi; Chenyun Zhang; Chenjia Bai; Xuelong Li
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.08548
+  paper_url: https://arxiv.org/abs/2606.08548
+  project_url: https://oasis-humanoid.github.io/
+  code_url: https://github.com/TeleHuman/OASIS
+  category: Loco-Manipulation
+  task_tags: [simulation-data, teleoperation, data-collection, loco-manipulation]
+  robot_platform: Unitree G1 / humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Open simulation-to-real data pipeline for humanoid loco-manipulation with embodiment-aligned demonstrations.
+  why_it_matters: Provides a reproducible route around slow real-world teleop collection.
+
+- title: SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation
+  authors: Songlin Wei; Zhenhao Ni; Jie Liu; Zhenyu Zhao; Junjie Ye; Hongyi Jing; Junkai Xia; Xiawei Liu; Michael Leong; Liang Heng; Di Huang; Yue Wang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.08278
+  paper_url: https://arxiv.org/abs/2606.08278
+  project_url: https://github.com/physical-superintelligence-lab/SIMPLE
+  code_url: https://github.com/physical-superintelligence-lab/SIMPLE
+  category: Loco-Manipulation
+  task_tags: [benchmark, MuJoCo, simulation, humanoid-foundation-models]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Full-stack simulation environment and benchmark for policy learning and evaluation in humanoid loco-manipulation.
+  why_it_matters: Gives the field a reproducible alternative to expensive real-world evaluation.
+
+- title: MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation
+  authors: Ilyass Taouil; Michal Ciebelski; Shafeef Omar; Haizhou Zhao; Angela Dai; Aaron M. Johnson; Majid Khadiv
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.06139
+  paper_url: https://arxiv.org/abs/2606.06139
+  project_url: ""
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [motion-discovery, LLM-search, contact-rich, long-horizon]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: LLM-guided evolutionary search discovers long-horizon contact-rich loco-manipulation motions without teleop or human retargeting.
+  why_it_matters: Explores a third path between demonstration collection and hand-designed rewards.
+
+- title: HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers
+  authors: Lizhi Yang; Junheng Li; Nehar Poddar; Yiling Hou; Gio Huh; Robert Griffin; Georgia Gkioxari; Aaron Ames
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.06493
+  paper_url: https://arxiv.org/abs/2606.06493
+  project_url: https://lzyang2000.github.io/HANDOFF/
+  code_url: https://github.com/lzyang2000/HANDOFF
+  category: Loco-Manipulation
+  task_tags: [task-space-control, distilled-teachers, agentic-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Distills complementary teachers into a task-space whole-body command interface for diverse humanoid loco-manipulation skills.
+  why_it_matters: Offers a compact control interface that planners can actually synthesize.
+
+- title: Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation
+  authors: Junheng Li; Liang Wu; Sergio A. Esteban; Lizhi Yang; Jan Drgona; Aaron D. Ames
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.05687
+  paper_url: https://arxiv.org/abs/2606.05687
+  project_url: https://github.com/junhengl/mpc-rl
+  code_url: https://github.com/junhengl/mpc-rl
+  category: Loco-Manipulation
+  task_tags: [MPC-guided-RL, centroidal-MPC, locomotion, manipulation]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Efficient training-time MPC guidance for humanoid locomotion and manipulation policies.
+  why_it_matters: Makes model-based structure practical inside large-scale RL training loops.
+
+- title: GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors
+  authors: Tianyi Xie; Haotian Zhang; Jinhyung Park; Zi Wang; Bowen Wen; Jiefeng Li; Xueting Li; Qingwei Ben; Haoyang Weng; Yufei Ye; David Minor; Tingwu Wang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.05160
+  paper_url: https://arxiv.org/abs/2606.05160
+  project_url: https://research.nvidia.com/labs/dair/grail/
+  code_url: https://github.com/NVlabs/GRAIL
+  dataset_url: https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Locomanipulation-GRAIL
+  category: Loco-Manipulation
+  task_tags: [data-generation, 3D-assets, video-priors, sim-to-real]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Fully virtual generation pipeline composing 3D assets, simulator scenes, and video priors into robot-compatible loco-manipulation data.
+  why_it_matters: Strong NVIDIA data engine for scaling humanoid manipulation without physical teleop bottlenecks.
+
+- title: SplitAdapter: Load-Aware Humanoid Loco-Manipulation via Factorized Adaptation
+  authors: Jeonguk Kang; Hanbyel Cho; Sanghyun Kang; Donghan Koo
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.03297
+  paper_url: https://arxiv.org/abs/2606.03297
+  project_url: ""
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [load-aware, factorized-adaptation, sim-to-real, object-mass]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Factorizes load variation and dynamics mismatch into separate adapters for robust humanoid pickup and placement.
+  why_it_matters: Attacks a core sim-to-real pain point in payload-changing loco-manipulation.

@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (208 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (217 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (17)
 
@@ -158,12 +158,22 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (48)
+## Whole-Body Motion Tracking and Imitation (50)
 
 - ⭐ 🤖 🧍 **[GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR)** `ICRA 2026` `Unitree H1, H1-2, G1, multi-robot` `WBC-Tracking`
   Yanjie Ze et al..
   Real-time CPU motion retargeting library handling SMPL→multi-humanoid mapping with foot-sliding/penetration fixes.
   Links: [Project](https://github.com/YanjieZe/GMR) · [Code](https://github.com/YanjieZe/GMR) · [Paper](https://github.com/YanjieZe/GMR)
+
+- ⭐ 🤖 🧍 **[LIMMT: Less is More for Motion Tracking](https://arxiv.org/abs/2606.06953)** `ICML 2026` `Unitree G1 / humanoid` `Motion-Imitation`
+  Yu Guan et al..
+  Data-centric motion-tracking study showing that carefully filtered high-quality motions can outperform much larger noisy corpora.
+  Links: [Project](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Paper](https://arxiv.org/abs/2606.06953)
+
+- ⭐ 🤖 🧍 **[M3imic: Learning a Versatile Whole-Body Controller for Multimodal Motion Mimicking](https://arxiv.org/abs/2606.04829)** `arXiv 2026.06` `humanoid` `Motion-Imitation`
+  Zuxing Lu et al..
+  Open IsaacLab-based WBC framework unifying joint, root, and end-effector reference modalities for humanoid motion mimicking.
+  Links: [Project](https://github.com/Renforce-Dynamics/MultiModalWBC) · [Code](https://github.com/Renforce-Dynamics/MultiModalWBC) · [Paper](https://arxiv.org/abs/2606.04829)
 
 - ⭐ 🤖 🧍 **[MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation](https://arxiv.org/abs/2602.08594)** `arXiv 2026.02` `humanoid` `WBC-Tracking`
   BAAI Humanoid Team.
@@ -399,7 +409,32 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://xbpeng.github.io/projects/DeepMimic/index.html) · [Code](https://github.com/xbpeng/DeepMimic) · [Paper](https://arxiv.org/abs/1804.02717)
 
 
-## Whole-Body Control and Loco-Manipulation (24)
+## Whole-Body Control and Loco-Manipulation (29)
+
+- ⭐ 🤖 🧍 **[GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors](https://arxiv.org/abs/2606.05160)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
+  Tianyi Xie et al..
+  Fully virtual generation pipeline composing 3D assets, simulator scenes, and video priors into robot-compatible loco-manipulation data.
+  Links: [Project](https://research.nvidia.com/labs/dair/grail/) · [Code](https://github.com/NVlabs/GRAIL) · [Paper](https://arxiv.org/abs/2606.05160) · [Dataset](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Locomanipulation-GRAIL)
+
+- ⭐ 🤖 🧍 **[HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers](https://arxiv.org/abs/2606.06493)** `arXiv 2026.06` `Unitree G1` `Loco-Manipulation`
+  Lizhi Yang et al..
+  Distills complementary teachers into a task-space whole-body command interface for diverse humanoid loco-manipulation skills.
+  Links: [Project](https://lzyang2000.github.io/HANDOFF/) · [Code](https://github.com/lzyang2000/HANDOFF) · [Paper](https://arxiv.org/abs/2606.06493)
+
+- ⭐ 🤖 🧍 **[OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.08548)** `arXiv 2026.06` `Unitree G1 / humanoid` `Loco-Manipulation`
+  Zehao Yu et al..
+  Open simulation-to-real data pipeline for humanoid loco-manipulation with embodiment-aligned demonstrations.
+  Links: [Project](https://oasis-humanoid.github.io/) · [Code](https://github.com/TeleHuman/OASIS) · [Paper](https://arxiv.org/abs/2606.08548)
+
+- ⭐ 🧍 🧱 **[Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation](https://arxiv.org/abs/2606.05687)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
+  Junheng Li et al..
+  Efficient training-time MPC guidance for humanoid locomotion and manipulation policies.
+  Links: [Project](https://github.com/junhengl/mpc-rl) · [Code](https://github.com/junhengl/mpc-rl) · [Paper](https://arxiv.org/abs/2606.05687)
+
+- ⭐ 🧍 🧱 **[SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation](https://arxiv.org/abs/2606.08278)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
+  Songlin Wei et al..
+  Full-stack simulation environment and benchmark for policy learning and evaluation in humanoid loco-manipulation.
+  Links: [Project](https://github.com/physical-superintelligence-lab/SIMPLE) · [Code](https://github.com/physical-superintelligence-lab/SIMPLE) · [Paper](https://arxiv.org/abs/2606.08278)
 
 - ⭐ 🤖 🧍 **[ALMI — Adversarial Locomotion and Motion Imitation for Humanoid Policy Learning](https://arxiv.org/abs/2504.14305)** `NeurIPS 2025` `Unitree H1-2` `WBC`
   Hong Zhang, et al..
@@ -522,7 +557,17 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://humanoid-bench.github.io/) · [Code](https://github.com/carlosferrazza/humanoid-bench) · [Paper](https://arxiv.org/abs/2403.10506)
 
 
-## Humanoid Foundation Models and Generalist Policies (34)
+## Humanoid Foundation Models and Generalist Policies (36)
+
+- ⭐ 🤖 🧍 **[Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking](https://arxiv.org/abs/2606.03985)** `CVPR 2026` `Unitree G1 / humanoid` `Foundation`
+  Zekun Qi et al..
+  GPT-style causal Transformer trained on a two-billion-frame retargeted motion corpus for zero-shot whole-body tracking.
+  Links: [Project](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Paper](https://arxiv.org/abs/2606.03985)
+
+- ⭐ 🤖 🧍 **[OMG: Omni-Modal Motion Generation for Generalist Humanoid Control](https://arxiv.org/abs/2606.10340)** `arXiv 2026.06` `Unitree G1` `Foundation`
+  Siqiao Huang et al..
+  Generalist humanoid control stack that places an omni-modal motion-generation brain above a reactive tracking controller.
+  Links: [Project](https://tsinghua-mars-lab.github.io/OMG/) · [Code](https://github.com/Tsinghua-MARS-Lab/OMG) · [Paper](https://arxiv.org/abs/2606.10340)
 
 - ⭐ 🧱 **[Cosmos Policy — Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2601.16163)** `arXiv (Jan 2026)` `LIBERO, RoboCasa simulators` `Generalist-Policy`
   NVIDIA Research.
