@@ -314,6 +314,90 @@ def entry_md(r):
         lines.append(f"  Links: {lk}")
     return "\n".join(lines) + "\n"
 
+def norm_phrase(s):
+    s = s.lower()
+    s = re.sub(r'[^a-z0-9]+', ' ', s).strip()
+    return re.sub(r'\s+', ' ', s)
+
+def latest_weekly_digest():
+    path = ROOT / "search_log.md"
+    if not path.exists():
+        return None
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    marker = "## Weekly Digest Runs"
+    idx = text.find(marker)
+    if idx == -1:
+        return None
+    rest = text[idx:]
+    sections = list(re.finditer(r'^###\s+(\d{4}-\d{2}-\d{2})\s+[-—]\s+(\d+)\s+new,\s+(\d+)\s+updated\s*$', rest, flags=re.MULTILINE))
+    if not sections:
+        return None
+    first = sections[0]
+    end = sections[1].start() if len(sections) > 1 else len(rest)
+    body = rest[first.end():end]
+    chunk_entries = []
+    for line in body.splitlines():
+        m = re.match(r'\s*-\s+`([^`]+)`\s+[-—]\s+(\d+)\s+entries:\s+(.+)$', line)
+        if not m:
+            continue
+        entries = []
+        for raw in [x.strip().rstrip(".") for x in m.group(3).split(",") if x.strip()]:
+            id_match = re.search(r'\((\d{4}\.\d{4,6})\)\s*$', raw)
+            name = re.sub(r'\s*\(\d{4}\.\d{4,6}\)\s*$', '', raw).strip()
+            entries.append({
+                "name": name,
+                "arxiv_id": id_match.group(1) if id_match else "",
+                "display": raw,
+            })
+        chunk_entries.append((m.group(1), int(m.group(2)), entries))
+    return {
+        "date": first.group(1),
+        "new": int(first.group(2)),
+        "updated": int(first.group(3)),
+        "chunks": chunk_entries,
+    }
+
+def latest_update_records():
+    digest = latest_weekly_digest()
+    if not digest:
+        return None, []
+    matched = []
+    seen_keys = set()
+    for chunk, _, entries in digest["chunks"]:
+        for entry in entries:
+            name = entry["name"]
+            key = norm_phrase(name)
+            rec = None
+            if entry["arxiv_id"]:
+                rec = next((r for r in unique if r.get("arxiv_id", "") == entry["arxiv_id"]), None)
+            candidates = [r for r in unique if r.get("_source_chunk") == chunk]
+            if not rec:
+                for r in candidates:
+                    if key and key in norm_phrase(r.get("title", "")):
+                        rec = r
+                        break
+            if not rec:
+                for r in candidates:
+                    haystack = norm_phrase(" ".join([
+                        r.get("project_url", ""),
+                        r.get("code_url", ""),
+                        r.get("paper_url", ""),
+                        r.get("one_line", ""),
+                        r.get("why_it_matters", ""),
+                        r.get("task_tags", ""),
+                    ]))
+                    if key and key in haystack:
+                        rec = r
+                        break
+            if not rec:
+                continue
+            rec_key = dedup_key(rec["title"], rec.get("arxiv_id", ""))
+            if rec_key in seen_keys:
+                continue
+            seen_keys.add(rec_key)
+            matched.append(rec)
+    return digest, matched
+
 # Build README
 def build_readme():
     out = []
@@ -328,6 +412,7 @@ def build_readme():
     out.append("## Table of Contents")
     out.append("- [Legend](#legend)")
     out.append("- [Research Landscape Summary](#research-landscape-summary)")
+    out.append("- [Last Week Updates](#last-week-updates)")
     for cid, cname in cat_order:
         anchor = re.sub(r'[^a-z0-9 -]','',cname.lower()).replace(' ','-')
         out.append(f"- [{cname}](#{anchor})")
@@ -363,6 +448,33 @@ def build_readme():
     out.append("- **Safety and recovery.** HoST, Getting-Up, HumanoidRecovery point at fall recovery, but graceful in-task safety guarantees are missing.")
     out.append("- **Object-state observability.** Most loco-manipulation assumes near-perfect object pose; vision-driven WBC (VisualMimic, WholeBodyVLA) is just beginning to close this gap.")
     out.append("")
+
+    digest, updates = latest_update_records()
+    if digest and updates:
+        out.append("## Last Week Updates")
+        out.append("")
+        out.append(f"_Latest digest: **{digest['date']}** — **{digest['new']} new**, **{digest['updated']} updated**._")
+        out.append("")
+        out.append("### Added by Section")
+        out.append("")
+        for chunk, count, entries in digest["chunks"]:
+            label = chunk.replace("research_chunks/", "").replace(".md", "")
+            names = [entry["display"] for entry in entries]
+            out.append(f"- `{label}`: {count} entries — {', '.join(names)}.")
+        out.append("")
+        out.append("### New Entries")
+        out.append("")
+        for cid, cname in cat_order:
+            recs = [r for r in updates if r["_cat"] == cid]
+            if not recs:
+                continue
+            out.append(f"#### {cname}")
+            out.append("")
+            for r in recs:
+                summary = r.get("one_line") or r.get("one_sentence_summary", "")
+                out.append(f"- {emoji_prefix(r)} **{title_link(r)}** — `{venue_str(r)}` — {summary}")
+            out.append("")
+
     # Top picks computed below from real records
     out.append("### Most Implementation-Ready Papers (verified official code)")
     impl_ready = sorted(

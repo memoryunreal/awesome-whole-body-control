@@ -107,10 +107,10 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 - Sources searched: arXiv API listings for cs.RO, cs.CV, cs.LG, cs.GR filtered by submittedDate; project pages from arXiv comments; GitHub repository HEAD/tree checks; targeted web search for missing code links.
 - Query focus: humanoid, whole-body control, loco-manipulation, humanoid-object interaction, motion tracking/imitation, fall recovery, retargeting, teleoperation, egocentric humanoid control, humanoid VLA, WAM, sim-to-real.
 - New entries by source chunk:
-  - `03_wbc_tracking.md` — 12 entries: Stubborn, RoboNaldo, PTDL, EgoPriMo, Mind Your Steps, Predictive Style Matching, LIMMT, LadderMan, M3imic, Bionic Style Transfer, MIND, SCRIPT.
-  - `04_loco_manip.md` — 11 entries: WT-UMI, GenHOI, Critic Architecture Matters, VAIC, OASIS, SIMPLE, MotionDisco, HANDOFF, MPC-RL, GRAIL, SplitAdapter.
-  - `05_foundation.md` — 5 entries: OMG, MotionWAM, Ego-Pi, Perceptive Behavior Foundation Model, Humanoid-GPT.
-  - `06_retarget_teleop.md` — 6 entries: humanoid self-model, HOWTransfer, X-OP, RealDexUMI, Human2Humanoid, ReActor.
+  - `03_wbc_tracking.md` — 12 entries: Stubborn (2606.12814), RoboNaldo (2606.11092), PTDL (2606.08922), EgoPriMo (2606.08495), Mind Your Steps (2606.08253), Predictive Style Matching (2606.07083), LIMMT (2606.06953), LadderMan (2606.05873), M3imic (2606.04829), Bionic Style Transfer (2606.03536), MIND (2605.26006), SCRIPT (2605.22894).
+  - `04_loco_manip.md` — 11 entries: WT-UMI (2606.13232), GenHOI (2606.12995), Critic Architecture Matters (2606.11891), VAIC (2606.09286), OASIS (2606.08548), SIMPLE (2606.08278), MotionDisco (2606.06139), HANDOFF (2606.06493), MPC-RL (2606.05687), GRAIL (2606.05160), SplitAdapter (2606.03297).
+  - `05_foundation.md` — 5 entries: OMG (2606.10340), MotionWAM (2606.09215), Ego-Pi (2606.08107), Perceptive Behavior Foundation Model (2606.08059), Humanoid-GPT (2606.03985).
+  - `06_retarget_teleop.md` — 6 entries: humanoid self-model (2606.13222), HOWTransfer (2606.10743), X-OP (2606.07934), RealDexUMI (2606.06033), Human2Humanoid (2606.03476), ReActor (2605.06593).
 - Verified official code repos:
   - https://github.com/Tsinghua-MARS-Lab/OMG
   - https://github.com/GalaxyGeneralRobotics/Humanoid-GPT
