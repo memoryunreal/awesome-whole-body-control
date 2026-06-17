@@ -1000,6 +1000,24 @@ Time range: 2018-2026 (priority on 2024-2026). ~45 papers covering humanoid WBC,
   one_line: Single-image to physics-grounded video using differentiable MPM + diffusion refinement.
   why_it_matters: Generative physics counterpart to character animation; useful for object/scene priors.
 
+- title: WaveSync: Constrained Wavefront Optimization for Synchronized Co-Speech Gestures in Humanoid Robots
+  authors: Thang Tran Viet; Thanh Nguyen Canh; Gia Huy Uong; Phuc Van Dinh; Tan Viet Tuyen Nguyen; Xiem HoangVan; Nak Young Chong
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.16600
+  paper_url: https://arxiv.org/abs/2606.16600
+  project_url: https://github.com/pairs-lab/WaveSync
+  code_url: https://github.com/pairs-lab/WaveSync
+  category: Physics-Anim
+  task_tags: [humanoid-gestures, co-speech, constrained-optimization, motion-planning]
+  robot_platform: COMAN humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Converts speech emphasis into hardware-safe humanoid gesture trajectories using constrained wavefront optimization and robot models.
+  why_it_matters: Connects expressive character-style gesture generation to feasible humanoid robot motion constraints.
+
 ---
 
 (End of slice. ~46 entries.)

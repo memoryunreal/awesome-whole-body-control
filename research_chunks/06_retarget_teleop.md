@@ -1054,6 +1054,60 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Bilevel RL retargeting jointly adapts reference motion and trains a policy to produce physically feasible motions across morphologies.
   why_it_matters: Shows retargeting can be optimized directly for downstream imitation feasibility rather than kinematic similarity alone.
 
+- title: Universal Manipulation Exoskeleton: Learning Compliant Whole-Body Policies with Real-time Torque Feedback
+  authors: Litian Liang; Jingxi Xu; Xinda Qi; Yujun Cai; Houzhu Ding; Luqi Wang; Zhixin Sun; Jyh-Herng Chow; Ming Yang; Mark Cutkosky
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.14218
+  paper_url: https://arxiv.org/abs/2606.14218
+  project_url: https://ume-exo.github.io/
+  code_url: ""
+  category: Teleoperation
+  task_tags: [exoskeleton, torque-feedback, compliant-policy, whole-body-manipulation]
+  robot_platform: humanoid-relevant mobile manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Portable upper-limb exoskeleton records arm configurations and joint torque feedback for learning contact-compliant whole-body manipulation policies.
+  why_it_matters: Adds force/torque-rich demonstration data to teleop pipelines that usually preserve only motion trajectories.
+
+- title: TopoRetarget: Interaction-Preserving Retargeting for Dexterous Manipulation
+  authors: Jielin Wu; Shenzhe Yao; Guanqi He; Xiaohan Liu; Zhaoqing Zeng; Xiangrui Jiang; Han Yang; Wentao Zhang; Hang Zhao
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.16272
+  paper_url: https://arxiv.org/abs/2606.16272
+  project_url: https://toporetarget2026.github.io/TopoRetarget/
+  code_url: ""
+  category: Retargeting
+  task_tags: [dexterous-retargeting, hand-object-contact, interaction-graph, sim-to-real]
+  robot_platform: dexterous hands / humanoid hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Retargets dexterous manipulation by preserving local hand-object interaction graphs instead of copying hand pose alone.
+  why_it_matters: Reduces contact-mode artifacts that make human hand demonstrations brittle for humanoid or dexterous-hand RL.
+
+- title: EgoInfinity: A Web-Scale 4D Hand-Object Interaction Data Engine for Any-View Robot Retargeting and Video-to-Action Robot Learning
+  authors: Gaotian Wang; Kejia Ren; Andrew Morgan; Yiting Chen; Howard H. Qian; Podshara Chanrungmaneekul; Kaiyu Hang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.17385
+  paper_url: https://arxiv.org/abs/2606.17385
+  project_url: https://huggingface.co/spaces/Rice-RobotPI-Lab/EgoInfinity
+  code_url: ""
+  category: Retargeting
+  task_tags: [hand-object-interaction, video-to-action, retargeting, web-scale-data]
+  robot_platform: robot hands / humanoid-relevant manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Converts arbitrary RGB hand-object videos into 4D interaction data for robot retargeting through reconstruction, refinement, and action extraction.
+  why_it_matters: Targets the data bottleneck between web-scale human manipulation videos and deployable robot or humanoid hand policies.
+
 ---
 
 ## Notes

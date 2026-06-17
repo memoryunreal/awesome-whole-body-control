@@ -1480,6 +1480,42 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Decoupled generative modeling separates body, object, and contact for HOI synthesis.
   why_it_matters: Recent decomposed-design HOI synthesizer with improved generalization.
 
+- title: MOCHI: Motion Enhancement of Collaborative Human-object Interactions
+  authors: Jiye Lee; Yonghun Choi; Jungdam Won
+  year: 2026
+  venue: SIGGRAPH 2026 / ACM TOG
+  arxiv_id: 2606.18243
+  paper_url: https://arxiv.org/abs/2606.18243
+  project_url: https://jiyewise.github.io/projects/MOCHI/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [collaborative-HOI, motion-enhancement, contact, multi-human-object]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Enhances noisy collaborative multi-human object-interaction captures by improving contact alignment, hand articulation, and temporal consistency.
+  why_it_matters: Supplies a clean-up stage for MHOI data that downstream HOI generators and humanoid imitation pipelines need.
+
+- title: DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects
+  authors: Tianshan Zhang; Yijia Duan; Yanjun Li; Zeyu Zhang; Hao Tang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.15133
+  paper_url: https://arxiv.org/abs/2606.15133
+  project_url: https://aigeeksgroup.github.io/DragMesh-2
+  code_url: https://github.com/AIGeeksGroup/DragMesh-2
+  dataset_url: https://huggingface.co/datasets/AIGeeksGroup/DragMesh-2
+  category: HOI-Motion-Gen
+  task_tags: [dexterous-HOI, articulated-objects, physical-plausibility, hand-object-contact]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Generates and trains physically plausible dexterous hand-object interactions with articulated objects using contact-aware simulation assets and RL code.
+  why_it_matters: Extends HOI generation toward articulated-object contact dynamics that humanoid hands must eventually execute.
+
 ---
 
 ## Summary

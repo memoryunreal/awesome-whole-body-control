@@ -1302,3 +1302,21 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Factorizes load variation and dynamics mismatch into separate adapters for robust humanoid pickup and placement.
   why_it_matters: Attacks a core sim-to-real pain point in payload-changing loco-manipulation.
+
+- title: ROVE: Unlocking Human Interventions for Humanoid Manipulation via Reinforcement Learning
+  authors: Wei Xiao; Weiliang Tang; Yuying Ge; Hui Zhou; Yao Mu; Li Zhang; Yixiao Ge
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.17011
+  paper_url: https://arxiv.org/abs/2606.17011
+  project_url: https://xpeng-robotics.github.io/rove
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [humanoid-manipulation, human-interventions, VLA-post-training, RL]
+  robot_platform: XPENG humanoid / dexterous humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses optimistic value estimation to learn from imperfect human interventions and improve real-world humanoid VLA manipulation rollouts.
+  why_it_matters: Shows how to turn messy intervention data into policy improvement instead of blindly behavior-cloning failed corrections.

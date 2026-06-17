@@ -1274,6 +1274,24 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: HOI dataset captured/annotated with explicit physics-aware contact and force labels.
   why_it_matters: New evaluation substrate emphasizing physical correctness in HOI.
 
+- title: HumanoidArena: Benchmarking Egocentric Hierarchical Whole-Body Learning
+  authors: Taowen Wang; Zikang Xie; Bin Yang; Yunheng Wang; Zizhao Yuan; Yuetong Fang; Yixiao Feng; Yichi Wang; Xingyu Chen; Haodong Chen; Qiwei Wu; Weisheng Xu; Lihan Chen; Lusong Li; Zecui Zeng; Renjing Xu
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.17833
+  paper_url: https://arxiv.org/abs/2606.17833
+  project_url: https://humanoidarena.github.io
+  code_url: ""
+  category: Dataset
+  task_tags: [benchmark, egocentric-control, hierarchical-policy, whole-body-learning]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Simulation-first benchmark evaluating whether high-level egocentric policies produce intermediate whole-body actions that trackers can execute.
+  why_it_matters: Separates task reasoning from tracker feasibility, a key failure mode in hierarchical humanoid control stacks.
+
 ---
 
 ## Notes

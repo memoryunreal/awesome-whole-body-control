@@ -972,6 +972,24 @@ Code-status legend:
   one_line: GPT-style causal Transformer trained on a two-billion-frame retargeted motion corpus for zero-shot whole-body tracking.
   why_it_matters: A clear scaling-law-style entry in humanoid motion-tracking foundation models.
 
+- title: MotionVLA: Vision-Language-Action Model for Humanoid Motion
+  authors: Nonghai Zhang; Siyu Zhai; Yanjun Li; Zeyu Zhang; Zhihan Yin; Yandong Guo; Boxin Shi; Hao Tang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.15142
+  paper_url: https://arxiv.org/abs/2606.15142
+  project_url: https://aigeeksgroup.github.io/MotionVLA
+  code_url: https://github.com/AIGeeksGroup/MotionVLA
+  category: Foundation
+  task_tags: [VLA, humanoid-motion, dual-stream-tokenization, text-scene-conditioning]
+  robot_platform: humanoid motion / HumanML3D / MBench
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Adapts VLA-style autoregressive modeling to humanoid motion with separate low-frequency pose and high-frequency velocity streams.
+  why_it_matters: Bridges language-conditioned motion generation and humanoid-control foundation models with a released implementation.
+
 ---
 
 ## Quick stats

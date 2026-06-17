@@ -1,6 +1,6 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (143 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (145 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
 ## Human-Object Interaction Motion Generation (15)
 
@@ -129,7 +129,7 @@ Papers where official code could not be verified (143 entries). Status is one of
   Links: [Paper](https://dl.acm.org/doi/10.1145/3450626.3459830)
 
 
-## Whole-Body Motion Tracking and Imitation (44)
+## Whole-Body Motion Tracking and Imitation (46)
 
 - ⏳ 🤖 🧍 **[Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots](https://arxiv.org/abs/2606.03536)** `arXiv 2026.06` `Unitree G1` `Motion-Imitation`
   Tianchen Huang et al..
@@ -208,6 +208,16 @@ Papers where official code could not be verified (143 entries). Status is one of
 - ❌ **[Now You See That - Learning End-to-End Humanoid Locomotion from Raw Pixels](https://arxiv.org/abs/2602.06382)** `arXiv 2026.02` `Locomotion`
   End-to-end humanoid locomotion from raw pixels.
   Links: [Paper](https://arxiv.org/abs/2602.06382)
+
+- ❌ 🧍 🧱 **[VENOM: Versatile Embodied Network for Omni-bodied Motion Tracking](https://arxiv.org/abs/2606.16696)** `arXiv 2026.06` `multiple simulated humanoids` `Motion-Imitation`
+  Siddharth Padmanabhan et al..
+  Trains a GPT-style full-body motion tracker across multiple humanoid embodiments without splitting upper- and lower-body control.
+  Links: [Paper](https://arxiv.org/abs/2606.16696)
+
+- ❌ 🧍 🧱 **[Whole-Body Impedance Model Predictive Control for Safe Physical Human-Robot Interaction on Floating-Base Platforms](https://arxiv.org/abs/2606.14617)** `arXiv 2026.06` `floating-base humanoid / legged platform` `WBC`
+  Yongyan Cao.
+  Extends impedance MPC to floating-base robots by combining centroidal MPC, priority-driven WBC, and receding-horizon impedance allocation.
+  Links: [Paper](https://arxiv.org/abs/2606.14617)
 
 - ❌ 🤖 🧍 **[Coordinated Humanoid Locomotion with Symmetry Equivariant RL Policy (Symmetry-Aware)](https://arxiv.org/abs/2508.01247)** `arXiv 2025` `Unitree G1` `Locomotion`
   Buqing Nie, Yangqing Fu, Jingtian Ji, Yanjie Ze, Xuxin Cheng, Yue Gao.

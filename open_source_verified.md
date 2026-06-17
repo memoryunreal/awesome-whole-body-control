@@ -1,8 +1,13 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (217 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (220 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
-## Human-Object Interaction Motion Generation (17)
+## Human-Object Interaction Motion Generation (18)
+
+- ⭐ 🧍 🧱 **[DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects](https://arxiv.org/abs/2606.15133)** `arXiv 2026.06` `HOI-Motion-Gen`
+  Tianshan Zhang et al..
+  Generates and trains physically plausible dexterous hand-object interactions with articulated objects using contact-aware simulation assets and RL code.
+  Links: [Project](https://aigeeksgroup.github.io/DragMesh-2) · [Code](https://github.com/AIGeeksGroup/DragMesh-2) · [Paper](https://arxiv.org/abs/2606.15133) · [Dataset](https://huggingface.co/datasets/AIGeeksGroup/DragMesh-2)
 
 - ⭐ **[AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation](https://arxiv.org/abs/2410.07164)** `ICLR 2025` `HOI-Motion-Gen`
   Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu.
@@ -557,7 +562,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://humanoid-bench.github.io/) · [Code](https://github.com/carlosferrazza/humanoid-bench) · [Paper](https://arxiv.org/abs/2403.10506)
 
 
-## Humanoid Foundation Models and Generalist Policies (36)
+## Humanoid Foundation Models and Generalist Policies (37)
 
 - ⭐ 🤖 🧍 **[Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking](https://arxiv.org/abs/2606.03985)** `CVPR 2026` `Unitree G1 / humanoid` `Foundation`
   Zekun Qi et al..
@@ -576,6 +581,11 @@ This is the canonical list of papers with **verified official open-source code**
 - ⭐ **[LIFT - Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control](https://arxiv.org/abs/2601.21363)** `arXiv 2026.01` `Foundation`
   Pretraining-then-finetuning for humanoid control.
   Links: [Project](https://lift-humanoid.github.io/) · [Code](https://github.com/bigai-ai/LIFT-humanoid) · [Paper](https://arxiv.org/abs/2601.21363)
+
+- ⭐ 🧍 🧱 **[MotionVLA: Vision-Language-Action Model for Humanoid Motion](https://arxiv.org/abs/2606.15142)** `arXiv 2026.06` `humanoid motion / HumanML3D / MBench` `Foundation`
+  Nonghai Zhang et al..
+  Adapts VLA-style autoregressive modeling to humanoid motion with separate low-frequency pose and high-frequency velocity streams.
+  Links: [Project](https://aigeeksgroup.github.io/MotionVLA) · [Code](https://github.com/AIGeeksGroup/MotionVLA) · [Paper](https://arxiv.org/abs/2606.15142)
 
 - ⭐ 🤖 🧍 **[AgiBot World Colosseo + GO-1 — Large-scale Manipulation Platform](https://arxiv.org/abs/2503.06669)** `IROS 2025 / IEEE T-RO 2026` `AgiBot mobile humanoid (whole-body, dexterous hands, tactile)` `Foundation / Dataset`
   AgiBot Team / OpenDriveLab.
@@ -1041,7 +1051,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Code](https://github.com/loco-3d/crocoddyl) · [Paper](https://arxiv.org/abs/1909.04947)
 
 
-## Related Character Animation and Physics-Based Motion Generation (8)
+## Related Character Animation and Physics-Based Motion Generation (9)
+
+- ⭐ 🧍 🧱 **[WaveSync: Constrained Wavefront Optimization for Synchronized Co-Speech Gestures in Humanoid Robots](https://arxiv.org/abs/2606.16600)** `arXiv 2026.06` `COMAN humanoid` `Physics-Anim`
+  Thang Tran Viet et al..
+  Converts speech emphasis into hardware-safe humanoid gesture trajectories using constrained wavefront optimization and robot models.
+  Links: [Project](https://github.com/pairs-lab/WaveSync) · [Code](https://github.com/pairs-lab/WaveSync) · [Paper](https://arxiv.org/abs/2606.16600)
 
 - ⭐ 🧍 🧱 **[InterMimic: Towards Universal Whole-Body Control for Physics-Based Human-Object Interactions](https://arxiv.org/abs/2502.20390)** `CVPR 2025 (Highlight)` `sim-only SMPL-X / Unitree G1` `Physics-Anim`
   Sirui Xu, Hung Yu Ling, Yu-Xiong Wang, Liang-Yan Gui.

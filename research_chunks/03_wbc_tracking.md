@@ -1451,6 +1451,60 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Joint action-state-text diffusion transformer for long-horizon language-driven physics-based humanoid control.
   why_it_matters: A scalable alternative to two-stage text-to-motion plus tracking stacks.
 
+- title: ADAPT: Analytical Disturbance-Aware Policy Training for Humanoid Locomotion
+  authors: Bofan Lyu; Jindou Jia; Kuangji Zuo; Yanshuo Lu; Shijia Han; Gen Li; Boyu Ma; Jingliang Li; Geng Li; Jianfei Yang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.16542
+  paper_url: https://arxiv.org/abs/2606.16542
+  project_url: https://blyu413.github.io/adapt-locomotion/
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [humanoid-locomotion, disturbance-observer, Unitree-G1, robustness]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Adds an analytical whole-body disturbance observer to humanoid locomotion policies so policies can respond to external pushes and asymmetric payloads.
+  why_it_matters: Directly targets robustness under upper-body contacts without treating all disturbances as generic domain randomization.
+
+- title: VENOM: Versatile Embodied Network for Omni-bodied Motion Tracking
+  authors: Siddharth Padmanabhan; Kazuki Miyazawa; Takato Horii
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.16696
+  paper_url: https://arxiv.org/abs/2606.16696
+  project_url: ""
+  code_url: ""
+  category: Motion-Imitation
+  task_tags: [cross-embodiment, GPT-motion-tracker, multi-humanoid, full-body]
+  robot_platform: multiple simulated humanoids
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains a GPT-style full-body motion tracker across multiple humanoid embodiments without splitting upper- and lower-body control.
+  why_it_matters: Tests whether foundation-model style supervised tracking can replace per-embodiment RL experts for motion imitation.
+
+- title: Whole-Body Impedance Model Predictive Control for Safe Physical Human-Robot Interaction on Floating-Base Platforms
+  authors: Yongyan Cao
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.14617
+  paper_url: https://arxiv.org/abs/2606.14617
+  project_url: ""
+  code_url: ""
+  category: WBC
+  task_tags: [impedance-MPC, pHRI, floating-base, null-space-control]
+  robot_platform: floating-base humanoid / legged platform
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Extends impedance MPC to floating-base robots by combining centroidal MPC, priority-driven WBC, and receding-horizon impedance allocation.
+  why_it_matters: Gives a model-based reference for safe human contact while preserving balance and locomotion authority.
+
 ---
 
 ## Notes on Verification
