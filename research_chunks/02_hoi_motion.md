@@ -1080,7 +1080,7 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   uses_real_robot: false
   uses_humanoid: false
   uses_simulation: false
-  code_status: ⏳ Code Coming Soon
+  code_status: 🌐 Project Page
   one_line: Web-video pipeline producing 73.8K HOI sequences; LLM agent enables zero-shot animation.
   why_it_matters: Largest in-the-wild HOI motion dataset extracted from internet videos.
 
@@ -1515,6 +1515,42 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   code_status: ⭐ Code
   one_line: Generates and trains physically plausible dexterous hand-object interactions with articulated objects using contact-aware simulation assets and RL code.
   why_it_matters: Extends HOI generation toward articulated-object contact dynamics that humanoid hands must eventually execute.
+
+- title: IMAGIN-4D: Image-Guided Controllable Interaction Generation
+  authors: Sai Kumar Dwivedi; Federica Bogo; Bugra Tekin; Chenhongyi Yang; Nadine Bertsch; Tomas Hodan; Michael J. Black; Dimitrios Tzionas
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.23675
+  paper_url: https://arxiv.org/abs/2606.23675
+  project_url: https://imagin4d.github.io
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [image-conditioned-HOI, diffusion, contact, controllable-generation]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ⏳ Code Coming Soon
+  one_line: Diffusion-based HOI generator uses a reference image to specify body pose, object pose, contacts, and spatial layout for a target interaction frame.
+  why_it_matters: Adds visual snapshot control to text/object/waypoint-conditioned HOI synthesis, tightening contact and layout specification for downstream imitation data.
+
+- title: Policy-as-Data: Learning Generalizable HOI Diffusion Models from Simulated Physics
+  authors: Shujia Li; Jianshu Hu; Haiyu Zhang; Yunpeng Jiang; Haoyuan Jin; Xinyuan Chen; Yaohui Wang; Yutong Ban
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.22806
+  paper_url: https://arxiv.org/abs/2606.22806
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [physics-simulation, diffusion, retargeting, long-horizon-HOI]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses task policies trained in physics simulation as a scalable data source for training generalizable HOI diffusion models.
+  why_it_matters: Directly attacks the mocap scarcity bottleneck for physically plausible long-horizon HOI generation.
 
 ---
 

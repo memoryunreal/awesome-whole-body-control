@@ -1018,6 +1018,42 @@ Time range: 2018-2026 (priority on 2024-2026). ~45 papers covering humanoid WBC,
   one_line: Converts speech emphasis into hardware-safe humanoid gesture trajectories using constrained wavefront optimization and robot models.
   why_it_matters: Connects expressive character-style gesture generation to feasible humanoid robot motion constraints.
 
+- title: BFMTrack: Latent Sequence Optimization for Physics-Based Motion Tracking with Behavioral Foundation Models
+  authors: Thomas Rupf; Agon Serifi; David Muller; Sammy Christen; Ruben Grandia; Espen Knoop; Moritz Bacher
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.25056
+  paper_url: https://arxiv.org/abs/2606.25056
+  project_url: ""
+  code_url: ""
+  category: Physics-Anim
+  task_tags: [behavioral-foundation-model, latent-optimization, motion-tracking, real-humanoid]
+  robot_platform: humanoid / physics character
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Optimizes temporally correlated latent sequences so behavioral foundation models can track dense or sparse motion sequences and deploy on a real humanoid.
+  why_it_matters: Extends goal-reaching BFMs toward time-varying tracking objectives without hand-engineered tracking rewards.
+
+- title: In-Context Model Predictive Generation: Open-Vocabulary Motion Synthesis from Language Models to Physics
+  authors: Xiaomeng Fu; Junfan Lin; Yang Liu; Yaowei Wang; Guanbin Li; Liang Lin; Ziliang Chen
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.26981
+  paper_url: https://arxiv.org/abs/2606.26981
+  project_url: ""
+  code_url: ""
+  category: Physics-Anim
+  task_tags: [language-to-motion, model-predictive-generation, physics-feedback, open-vocabulary]
+  robot_platform: simulated humanoid / physics character
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses an LLM planner and model-predictive physical feedback loop to generate open-vocabulary human motion that balances semantic fidelity and physical realism.
+  why_it_matters: A physics-aware text-to-motion path that can supply more executable references for humanoid imitation pipelines than unconstrained kinematic generators.
+
 ---
 
 (End of slice. ~46 entries.)

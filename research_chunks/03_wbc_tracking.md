@@ -1505,6 +1505,98 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Extends impedance MPC to floating-base robots by combining centroidal MPC, priority-driven WBC, and receding-horizon impedance allocation.
   why_it_matters: Gives a model-based reference for safe human contact while preserving balance and locomotion authority.
 
+- title: TEXEDO: Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation
+  authors: Jianuo Cao; Yuxin Chen; Yuzhen Song; Masayoshi Tomizuka; Chenran Li; Thomas Tian
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.22998
+  paper_url: https://arxiv.org/abs/2606.22998
+  project_url: https://jianuocao.github.io/TEXEDO/
+  code_url: https://github.com/JianuoCao/TEXEDO
+  dataset_url: https://huggingface.co/datasets/JianuoCao/TEXEDO
+  category: Motion-Imitation
+  task_tags: [text-conditioned-motion, controller-aware, test-time-scaling, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Samples language-conditioned humanoid motions and selects candidates with a controller-feasibility verifier plus semantic alignment scoring.
+  why_it_matters: Makes text-to-motion generation aware of what a real whole-body tracking controller can execute instead of optimizing only semantic plausibility.
+
+- title: LP-NavOA: Integrated Local Navigation and Obstacle Avoidance for Humanoid Robots under Limited Perception
+  authors: Yukun Luo; Jianjun Ma; Yuyao Min; Jinzhe Li; Kaihong Huang; Peng Li
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.23249
+  paper_url: https://arxiv.org/abs/2606.23249
+  project_url: ""
+  code_url: ""
+  category: WBC
+  task_tags: [humanoid-navigation, obstacle-avoidance, limited-perception, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Distills a recurrent local planner on top of a raycast-conditioned humanoid locomotion policy for obstacle avoidance under short-range sensing.
+  why_it_matters: Keeps the whole-body policy intact while adding local navigation behavior, a practical composition pattern for perception-limited humanoids.
+
+- title: RGB: RL Guided Whole-Body MPPI for Humanoid Control
+  authors: Yunsoo Seo; Sol Choi; Euncheol Im; Myo Taeg Lim; Yisoo Lee
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.25123
+  paper_url: https://arxiv.org/abs/2606.25123
+  project_url: ""
+  code_url: ""
+  category: WBC
+  task_tags: [MPPI, RL-prior, whole-body-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses a pretrained RL policy as a dynamically feasible sampling prior for high-rate MPPI whole-body control on a 29-DoF G1 model.
+  why_it_matters: Offers a way to add modular feedback objectives to learned humanoid controllers without retraining the base policy.
+
+- title: Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots
+  authors: Yumeng Liu; Dongqi Wang; Jiyu Yu; Yijun Fan; Rong Xiong; Yue Wang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.25706
+  paper_url: https://arxiv.org/abs/2606.25706
+  project_url: ""
+  code_url: ""
+  category: WBC
+  task_tags: [upper-body-tracking, task-space-control, asynchronous-planning, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Tracks sparse low-rate upper-body task-space references with cached future trajectories, MPC-completed guidance, and self-guided post-training.
+  why_it_matters: Directly addresses the planner/controller rate mismatch that appears when high-level humanoid planners emit sparse end-effector references.
+
+- title: PressMimic: Pressure-Guided Motion Capture and Control for Humanoid Robot Imitation
+  authors: Yi Lu; Shenghao Ren; Tianyu Xiong; Zhaoxiang Li; Jiaqi Li; He Zhang; Tao Yu; Qiu Shen
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.26741
+  paper_url: https://arxiv.org/abs/2606.26741
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Motion-Imitation
+  task_tags: [pressure-sensing, contact-grounding, motion-capture, humanoid-imitation]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses pressure as a shared physical-grounding signal for RGB-pressure human motion capture and pressure-supervised humanoid imitation policies.
+  why_it_matters: Brings contact/support observability into the perception-to-control pipeline, reducing foot sliding and unstable imitation artifacts.
+
 ---
 
 ## Notes on Verification

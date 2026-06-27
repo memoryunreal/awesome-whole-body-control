@@ -990,6 +990,25 @@ Code-status legend:
   one_line: Adapts VLA-style autoregressive modeling to humanoid motion with separate low-frequency pose and high-frequency velocity streams.
   why_it_matters: Bridges language-conditioned motion generation and humanoid-control foundation models with a released implementation.
 
+- title: WOLF-VLA: Whole-Body Humanoid Optimal Locomotion Framework for Vision-Language-Action Learning
+  authors: Melya Boukheddimi; Omar Adjali; Daniel Sontag; Frank Kirchner
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.25591
+  paper_url: https://arxiv.org/abs/2606.25591
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [VLA, optimal-control, humanoid-locomotion, language-conditioned-control]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Builds a VLA training framework from whole-body optimal-control trajectories, egocentric observations, and language instructions for humanoid locomotion tasks.
+  why_it_matters: Pushes VLA-style policies into dynamically consistent, contact-rich humanoid locomotion rather than tabletop manipulation only.
+
 ---
 
 ## Quick stats

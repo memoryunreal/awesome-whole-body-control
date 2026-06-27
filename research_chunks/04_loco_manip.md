@@ -1320,3 +1320,114 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Uses optimistic value estimation to learn from imperfect human interventions and improve real-world humanoid VLA manipulation rollouts.
   why_it_matters: Shows how to turn messy intervention data into policy improvement instead of blindly behavior-cloning failed corrections.
+
+- title: OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation
+  authors: Yingdong Hu; Haodong Zhu; Boyuan Zheng; Yihang Hu; Tong Zhang; Zunhao Chen; Junming Zhao; Ruiqian Nai; Yang Gao
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.22174
+  paper_url: https://arxiv.org/abs/2606.22174
+  project_url: https://openhlm-project.github.io/
+  code_url: ""
+  dataset_url: https://huggingface.co/datasets/OpenHLM/OpenHLM-data
+  category: Loco-Manipulation
+  task_tags: [whole-body-VLA, teleoperation, co-training, humanoid-manipulation]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 📦 Dataset
+  one_line: Empirical recipe for mapping language and pixels directly to the full humanoid action space through whole-body teleop, VLA design, and heterogeneous co-training.
+  why_it_matters: Gives a concrete ablation roadmap for whole-body-native humanoid VLAs; dataset and checkpoints are public, while the project code link remained a placeholder.
+
+- title: CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation
+  authors: Sikai Li; Shuning Li; Zhenyu Wei; Yunchao Yao; Chenran Li; Mingyu Ding
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.23680
+  paper_url: https://arxiv.org/abs/2606.23680
+  project_url: https://skevinci.github.io/coordex/
+  code_url: https://github.com/Skevinci/CoorDex
+  category: Loco-Manipulation
+  task_tags: [dexterous-humanoid, latent-priors, residual-control, Unitree-G1, WUJI-hand]
+  robot_platform: Unitree G1 + WUJI hand
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Coordinates body and dexterous-hand latent priors with residual RL so a G1 can manipulate objects continuously while walking.
+  why_it_matters: Moves loco-manipulation beyond stop-and-go, low-DoF gripper behaviors toward high-DoF hand-object control during locomotion.
+
+- title: OmniContact: Chaining Meta-Skills via Contact Flow for Generalizable Humanoid Loco-Manipulation
+  authors: Runyi Yu; Xiaoyi Lin; Ji Ma; Yinhuai Wang; Koukou Luo; Jiahao Ji; Huayi Wang; Wenjia Wang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.26201
+  paper_url: https://arxiv.org/abs/2606.26201
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [contact-flow, meta-skills, skill-chaining, recovery, HOI-corpus]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Represents long-horizon humanoid loco-manipulation with contact-flow trajectories that a low-level tracker and high-level generator can chain.
+  why_it_matters: Makes contact sequence composition explicit, improving long-horizon skill chaining and recovery over opaque skill embeddings.
+
+- title: TaskNPoint: How to Teach Your Humanoid to Hit a Backhand in Minutes
+  authors: Blake Werner; Ilona Demler; Pietro Perona; Aaron D. Ames
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.26215
+  paper_url: https://arxiv.org/abs/2606.26215
+  project_url: ""
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [dynamic-skills, sparse-demonstrations, sports-skills, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Teaches dynamic humanoid object-interaction skills from a coach-specified interaction window and a small set of demonstrations.
+  why_it_matters: Shows fast training of contact-timed skills such as tennis hits, soccer kicks, and box pick-place without per-task reward tuning.
+
+- title: Humanoid-DART: Humanoid Loco-Manipulation using Diffusion-guided Augmentation through Relabeling and Tracking
+  authors: Pranav Debbad; Kanish Thiagarajan; Victor Dhedin; Shafeef Omar; Majid Khadiv
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.26855
+  paper_url: https://arxiv.org/abs/2606.26855
+  project_url: ""
+  code_url: ""
+  category: Loco-Manipulation
+  task_tags: [diffusion-augmentation, relabeling, trajectory-tracking, sparse-demonstrations]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Bootstraps humanoid loco-manipulation from sparse demos by expanding goal-conditioned trajectories with diffusion generation and RL tracking.
+  why_it_matters: Reduces repeated human intervention in demo-heavy humanoid manipulation pipelines by using self-supervised trajectory augmentation.
+
+- title: A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots
+  authors: Duncan William Calvert
+  year: 2026
+  venue: PhD dissertation / arXiv 2026.06
+  arxiv_id: 2606.26425
+  paper_url: https://arxiv.org/abs/2606.26425
+  project_url: https://www.youtube.com/playlist?list=PLJK5CTyotYqsfgfnXb-09YNFeBose6uEY
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [runtime-authoring, affordance-templates, behavior-trees, whole-body-control]
+  robot_platform: Atlas, Valkyrie, Nadia, Unitree H1-2, Alex
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Runtime-editable humanoid behavior system combining affordance templates, behavior-tree-inspired logic, perception scenes, and layered whole-body action primitives.
+  why_it_matters: Documents a deployed multi-platform loco-manipulation stack where operators can author, repair, and combine real humanoid behaviors in minutes or hours.

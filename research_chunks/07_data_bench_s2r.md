@@ -1292,6 +1292,25 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Simulation-first benchmark evaluating whether high-level egocentric policies produce intermediate whole-body actions that trackers can execute.
   why_it_matters: Separates task reasoning from tracker feasibility, a key failure mode in hierarchical humanoid control stacks.
 
+- title: Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI
+  authors: Xianda Guo; Bohao Zhang; Chenwei Huang; Shiyuan Chen; Ruilin Wang; Yiqun Duan; Cong Yang; Qin Zou; Wei Sui
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.22971
+  paper_url: https://arxiv.org/abs/2606.22971
+  project_url: https://d-robotics-ai-lab.github.io/humanoid-omniocc
+  code_url: ""
+  dataset_url: ""
+  category: Dataset
+  task_tags: [occupancy-prediction, stereo, humanoid-perception, Real2Sim2Real]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Full-view panoramic stereo occupancy dataset and model for humanoid perception, built around real sensor specs, simulated annotation, and real-world evaluation.
+  why_it_matters: Gives humanoid navigation/manipulation stacks a perception dataset shaped around body-mounted stereo coverage rather than autonomous-driving assumptions.
+
 ---
 
 ## Notes

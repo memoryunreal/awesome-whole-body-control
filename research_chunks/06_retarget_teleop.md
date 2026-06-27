@@ -1077,6 +1077,7 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   year: 2026
   venue: arXiv 2026.06
   arxiv_id: 2606.16272
+  arxiv_version: v2 (updated 2026-06-22)
   paper_url: https://arxiv.org/abs/2606.16272
   project_url: https://toporetarget2026.github.io/TopoRetarget/
   code_url: ""
@@ -1107,6 +1108,60 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   code_status: 🌐 Project Page
   one_line: Converts arbitrary RGB hand-object videos into 4D interaction data for robot retargeting through reconstruction, refinement, and action extraction.
   why_it_matters: Targets the data bottleneck between web-scale human manipulation videos and deployable robot or humanoid hand policies.
+
+- title: Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data
+  authors: Yangtao Chen; Zixuan Chen; Peiyang Wang; Yong-Lu Li; Jing Huo; Jieqi Shi; Yang Gao
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.22136
+  paper_url: https://arxiv.org/abs/2606.22136
+  project_url: https://chenyt31.github.io/wh0.github.io/
+  code_url: https://github.com/chenyt31/Wh0
+  category: Retargeting
+  task_tags: [egocentric-HOI, world-model-data, hand-reconstruction, video-to-action]
+  robot_platform: dexterous hands / humanoid-relevant manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Uses generative video world models to synthesize egocentric human-object manipulation videos and converts them into robot-trainable supervision.
+  why_it_matters: Supplies an open data-generation and alignment pipeline for scaling dexterous video-to-action learning beyond scarce teleoperation data.
+
+- title: DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy
+  authors: Haichao Liu; Yuyao Jiang; Hyunsun Park; Yuanjiang Xue; Ziwei Wang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.23431
+  paper_url: https://arxiv.org/abs/2606.23431
+  project_url: ""
+  code_url: ""
+  category: Teleoperation
+  task_tags: [bimanual-dexterous, tactile-adaptation, force-aware, shared-autonomy]
+  robot_platform: bimanual dexterous hands / humanoid-relevant manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adds tactile-driven force-compliant optimization on top of bimanual teleoperation to close embodiment gaps in contact-rich manipulation.
+  why_it_matters: Makes dexterous teleop data more executable under force/contact constraints, which is critical for humanoid hand manipulation.
+
+- title: HumanoidUMI: Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation
+  authors: Hongwu Wang; Chenhao Yu; Youhao Hu; Jiachen Zhang; Yuanyuan Li; Shaqi Luo
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.27239
+  paper_url: https://arxiv.org/abs/2606.27239
+  project_url: ""
+  code_url: ""
+  category: Teleoperation
+  task_tags: [robot-free-demonstrations, UMI, VR, whole-body-retargeting]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Collects robot-free VR/UMI-style demonstrations and retargets sparse human keypoints into humanoid whole-body references for skill learning.
+  why_it_matters: Reduces dependence on expensive humanoid teleoperation while preserving coordinated perception, locomotion, and manipulation data.
 
 ---
 

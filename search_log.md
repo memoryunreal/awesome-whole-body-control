@@ -5,40 +5,40 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 84 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 83 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 73 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 57 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 61 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 88 | Datasets, benchmarks, sim-to-real, contact metrics |
-| `08_loco_anim.md` | 56 | Locomotion + physics-based character animation |
+| `02_hoi_motion.md` | 86 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 88 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 79 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 58 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 64 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 89 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `08_loco_anim.md` | 58 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 504**
+**Total unique papers after deduplication: 524**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 45
+- Human-Object Interaction Motion Generation: 47
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 128
-- Whole-Body Control and Loco-Manipulation: 67
-- Humanoid Foundation Models and Generalist Policies: 71
-- Human-to-Humanoid Retargeting: 13
-- Teleoperation and Demonstration Collection: 33
-- Datasets and Benchmarks: 62
+- Whole-Body Motion Tracking and Imitation: 133
+- Whole-Body Control and Loco-Manipulation: 73
+- Humanoid Foundation Models and Generalist Policies: 72
+- Human-to-Humanoid Retargeting: 14
+- Teleoperation and Demonstration Collection: 35
+- Datasets and Benchmarks: 63
 - Evaluation Metrics and Contact Modeling: 10
 - Sim-to-Real and Deployment Systems: 24
-- Related Character Animation and Physics-Based Motion Generation: 25
+- Related Character Animation and Physics-Based Motion Generation: 27
 
 ## Code-Status Histogram
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 220 |
-| ❌ No Code | 139 |
-| 🌐 Project Page | 118 |
-| 📦 Dataset | 13 |
+| ⭐ Code | 223 |
+| ❌ No Code | 152 |
+| 🌐 Project Page | 120 |
+| 📦 Dataset | 14 |
 | 🧩 Partial Code | 7 |
-| ⏳ Code Coming Soon | 6 |
+| ⏳ Code Coming Soon | 7 |
 | 🔁 Unofficial Code | 1 |
 
 ## Search Queries Used (representative)
@@ -101,6 +101,46 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-06-27 — 20 new, 1 updated
+- Window: 2026-06-20 → 2026-06-27.
+- Sources searched: arXiv API listings for cs.RO, cs.CV, cs.LG, cs.GR filtered by submittedDate; arXiv abstract pages for external project links; project pages; GitHub repository search; GitHub `git/trees/HEAD` checks for implementation files; Hugging Face dataset/model landing pages linked from project pages.
+- Query focus: humanoid whole-body control, humanoid loco-manipulation, controller-aware humanoid motion generation, humanoid VLA locomotion, HOI generation, dexterous hand-object retargeting, robot-free humanoid demonstration collection, humanoid perception datasets, physics-based motion tracking.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 2 entries: IMAGIN-4D (2606.23675), Policy-as-Data (2606.22806).
+  - `03_wbc_tracking.md` — 5 entries: TEXEDO (2606.22998), LP-NavOA (2606.23249), RGB (2606.25123), Asynchronous Upper-body Tracking (2606.25706), PressMimic (2606.26741).
+  - `04_loco_manip.md` — 6 entries: OpenHLM (2606.22174), CoorDex (2606.23680), OmniContact (2606.26201), TaskNPoint (2606.26215), A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots (2606.26425), Humanoid-DART (2606.26855).
+  - `05_foundation.md` — 1 entry: WOLF-VLA (2606.25591).
+  - `06_retarget_teleop.md` — 3 entries: Wh0 (2606.22136), DexTeleop-0 (2606.23431), HumanoidUMI (2606.27239).
+  - `07_data_bench_s2r.md` — 1 entry: Humanoid-OmniOcc (2606.22971).
+  - `08_loco_anim.md` — 2 entries: BFMTrack (2606.25056), ICMPG (2606.26981).
+- Verified official code repos:
+  - https://github.com/JianuoCao/TEXEDO
+  - https://github.com/Skevinci/CoorDex
+  - https://github.com/chenyt31/Wh0
+- Existing-paper updates:
+  - TopoRetarget (2606.16272) — arXiv revised to `v2` on 2026-06-22; project page still surfaced only the paper/project assets, so code status remains `🌐 Project Page`.
+- Unresolved code-status items:
+  - https://imagin4d.github.io — project page says code/models will be released, but no repository was available at inspection time.
+  - https://openhlm-project.github.io/ — dataset and checkpoint links are live, but the Code button was still a placeholder (`#`) and GitHub search did not surface a method repo.
+  - https://d-robotics-ai-lab.github.io/humanoid-omniocc — project page says code/data coming soon.
+  - https://toporetarget2026.github.io/TopoRetarget/ — still project-page only after the v2 arXiv revision.
+  - https://arxiv.org/abs/2606.22806 — no project or code repository found for Policy-as-Data.
+  - https://arxiv.org/abs/2606.23249 — no project or code repository found for LP-NavOA.
+  - https://arxiv.org/abs/2606.25123 — no project or code repository found for RGB.
+  - https://arxiv.org/abs/2606.25706 — no project or code repository found for asynchronous upper-body tracking.
+  - https://arxiv.org/abs/2606.26741 — no project or code repository found for PressMimic.
+  - https://arxiv.org/abs/2606.26201 — no project, dataset, or code repository found for OmniContact.
+  - https://arxiv.org/abs/2606.26215 — no project or code repository found for TaskNPoint.
+  - https://arxiv.org/abs/2606.26425 — dissertation links a video playlist, but no code repository was found.
+  - https://arxiv.org/abs/2606.26855 — no project or code repository found for Humanoid-DART.
+  - https://arxiv.org/abs/2606.25591 — WOLF-VLA promises open dataset/model/benchmark release, but no project or repository was found.
+  - https://arxiv.org/abs/2606.23431 — no project or code repository found for DexTeleop-0.
+  - https://arxiv.org/abs/2606.27239 — no project or code repository found for HumanoidUMI.
+  - https://arxiv.org/abs/2606.25056 — no project or code repository found for BFMTrack.
+  - https://arxiv.org/abs/2606.26981 — no project or code repository found for ICMPG.
+- Inspected but excluded: Scalable Behavior Cloning / ABC (2606.27375, broad manipulation stack without humanoid WBC/HOI focus), VibeAct (2606.27344, dexterous tactile manipulation but not humanoid or HOI generation), FT-WBC (2606.24466, legged manipulator fault tolerance rather than humanoid WBC), HoloAgent-0 (2606.23565, broad agent framework with only loose humanoid-control coupling), LIBERO-Safety (2606.23686, broad VLA safety benchmark), LaST-HD (2606.23685, generic hand-to-robot reasoning outside humanoid/HOI generation scope), AutoDex (2606.23689, dexterous grasp data collection), APR Pianist (2606.23848, dexterous piano-playing hand control), Social Structure HHI (2606.24255, human-human interaction rather than human-object/humanoid control), MANGO (2606.24815, VLA testing/oracle generation), DynaMOMA (2606.25295, mobile manipulation without humanoid focus), Supervise What Survives (2606.24448, broad VLA adaptation from generated robot videos), ABC/WatchAct/SSI-Policy/Play2Perfect and other generic manipulation, medical, remote-sensing, traffic, and world-model papers matched only by generic terms.
+- Notion escalations: not run in this manual repo-only update.
 
 ### 2026-06-18 — 12 new, 0 updated
 - Window: 2026-06-11 → 2026-06-18.
