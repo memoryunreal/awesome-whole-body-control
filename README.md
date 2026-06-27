@@ -62,7 +62,9 @@ _Latest digest: **2026-06-27** — **20 new**, **1 updated**._
 - `02_hoi_motion`: 2 entries — IMAGIN-4D (2606.23675), Policy-as-Data (2606.22806).
 - `03_wbc_tracking`: 5 entries — TEXEDO (2606.22998), LP-NavOA (2606.23249), RGB (2606.25123), Asynchronous Upper-body Tracking (2606.25706), PressMimic (2606.26741).
 - `04_loco_manip`: 6 entries — OpenHLM (2606.22174), CoorDex (2606.23680), OmniContact (2606.26201), TaskNPoint (2606.26215), A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots (2606.26425), Humanoid-DART (2606.26855).
+- `05_foundation`: 1 entry — WOLF-VLA (2606.25591).
 - `06_retarget_teleop`: 3 entries — Wh0 (2606.22136), DexTeleop-0 (2606.23431), HumanoidUMI (2606.27239).
+- `07_data_bench_s2r`: 1 entry — Humanoid-OmniOcc (2606.22971).
 - `08_loco_anim`: 2 entries — BFMTrack (2606.25056), ICMPG (2606.26981).
 
 ### New Entries
@@ -89,6 +91,10 @@ _Latest digest: **2026-06-27** — **20 new**, **1 updated**._
 - 🌐 🤖 🧍 **[A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots](https://arxiv.org/abs/2606.26425)** — `PhD dissertation / arXiv 2026.06` — Runtime-editable humanoid behavior system combining affordance templates, behavior-tree-inspired logic, perception scenes, and layered whole-body action primitives.
 - ❌ 🧍 🧱 **[Humanoid-DART: Humanoid Loco-Manipulation using Diffusion-guided Augmentation through Relabeling and Tracking](https://arxiv.org/abs/2606.26855)** — `arXiv 2026.06` — Bootstraps humanoid loco-manipulation from sparse demos by expanding goal-conditioned trajectories with diffusion generation and RL tracking.
 
+#### Humanoid Foundation Models and Generalist Policies
+
+- ❌ 🧍 🧱 **[WOLF-VLA: Whole-Body Humanoid Optimal Locomotion Framework for Vision-Language-Action Learning](https://arxiv.org/abs/2606.25591)** — `arXiv 2026.06` — Builds a VLA training framework from whole-body optimal-control trajectories, egocentric observations, and language instructions for humanoid locomotion tasks.
+
 #### Human-to-Humanoid Retargeting
 
 - ⭐ 🤖 🧍 **[Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data](https://arxiv.org/abs/2606.22136)** — `arXiv 2026.06` — Uses generative video world models to synthesize egocentric human-object manipulation videos and converts them into robot-trainable supervision.
@@ -97,6 +103,10 @@ _Latest digest: **2026-06-27** — **20 new**, **1 updated**._
 
 - ❌ 🤖 🧍 **[DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy](https://arxiv.org/abs/2606.23431)** — `arXiv 2026.06` — Adds tactile-driven force-compliant optimization on top of bimanual teleoperation to close embodiment gaps in contact-rich manipulation.
 - ❌ 🤖 🧍 **[HumanoidUMI: Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation](https://arxiv.org/abs/2606.27239)** — `arXiv 2026.06` — Collects robot-free VR/UMI-style demonstrations and retargets sparse human keypoints into humanoid whole-body references for skill learning.
+
+#### Datasets and Benchmarks
+
+- ⏳ 🤖 🧍 **[Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI](https://arxiv.org/abs/2606.22971)** — `arXiv 2026.06` — Full-view panoramic stereo occupancy dataset and model for humanoid perception, built around real sensor specs, simulated annotation, and real-world evaluation.
 
 #### Related Character Animation and Physics-Based Motion Generation
 

@@ -337,18 +337,30 @@ def latest_weekly_digest():
     body = rest[first.end():end]
     chunk_entries = []
     for line in body.splitlines():
-        m = re.match(r'\s*-\s+`([^`]+)`\s+[-—]\s+(\d+)\s+entries:\s+(.+)$', line)
+        m = re.match(r'\s*-\s+`([^`]+)`\s+[-—]\s+(\d+)\s+entr(?:y|ies):\s+(.+)$', line)
         if not m:
             continue
         entries = []
-        for raw in [x.strip().rstrip(".") for x in m.group(3).split(",") if x.strip()]:
-            id_match = re.search(r'\((\d{4}\.\d{4,6})\)\s*$', raw)
-            name = re.sub(r'\s*\(\d{4}\.\d{4,6}\)\s*$', '', raw).strip()
-            entries.append({
-                "name": name,
-                "arxiv_id": id_match.group(1) if id_match else "",
-                "display": raw,
-            })
+        entries_text = m.group(3).strip().rstrip(".")
+        id_entries = list(re.finditer(r'\s*(.+?)\s*\((\d{4}\.\d{4,6})\)(?:,\s*|$)', entries_text))
+        if id_entries:
+            for entry_match in id_entries:
+                name = entry_match.group(1).strip()
+                arxiv_id = entry_match.group(2)
+                entries.append({
+                    "name": name,
+                    "arxiv_id": arxiv_id,
+                    "display": f"{name} ({arxiv_id})",
+                })
+        else:
+            for raw in [x.strip().rstrip(".") for x in entries_text.split(",") if x.strip()]:
+                id_match = re.search(r'\((\d{4}\.\d{4,6})\)\s*$', raw)
+                name = re.sub(r'\s*\(\d{4}\.\d{4,6}\)\s*$', '', raw).strip()
+                entries.append({
+                    "name": name,
+                    "arxiv_id": id_match.group(1) if id_match else "",
+                    "display": raw,
+                })
         chunk_entries.append((m.group(1), int(m.group(2)), entries))
     return {
         "date": first.group(1),
@@ -460,7 +472,8 @@ def build_readme():
         for chunk, count, entries in digest["chunks"]:
             label = chunk.replace("research_chunks/", "").replace(".md", "")
             names = [entry["display"] for entry in entries]
-            out.append(f"- `{label}`: {count} entries — {', '.join(names)}.")
+            entry_label = "entry" if count == 1 else "entries"
+            out.append(f"- `{label}`: {count} {entry_label} — {', '.join(names)}.")
         out.append("")
         out.append("### New Entries")
         out.append("")
