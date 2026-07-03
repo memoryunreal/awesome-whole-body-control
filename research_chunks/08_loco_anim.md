@@ -1054,6 +1054,44 @@ Time range: 2018-2026 (priority on 2024-2026). ~45 papers covering humanoid WBC,
   one_line: Uses an LLM planner and model-predictive physical feedback loop to generate open-vocabulary human motion that balances semantic fidelity and physical realism.
   why_it_matters: A physics-aware text-to-motion path that can supply more executable references for humanoid imitation pipelines than unconstrained kinematic generators.
 
+- title: GPC: Large-Scale Generative Pretraining for Transferable Motor Control
+  authors: Yi Shi; Yifeng Jiang; Chen Tessler; Xue Bin Peng
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.29148
+  paper_url: https://arxiv.org/abs/2606.29148
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Physics-Anim
+  task_tags: [generative-controller, tokenized-motor-control, physics-based-animation, motion-prior]
+  robot_platform: physics character / humanoid-like controller
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns a tokenized motor-control vocabulary and autoregressive generative controller for reusable physics-based character control across motion clips and downstream tasks.
+  why_it_matters: Extends motion-token pretraining into low-level physically simulated control, making it relevant to humanoid motion-prior scaling.
+
+- title: ComplexMimic: Human-Scene Interaction Imitation in Complex 3D Environments
+  authors: Lu Pan; Hongwei Zhao
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.02034
+  paper_url: https://arxiv.org/abs/2607.02034
+  project_url: https://github.com/LuPan23/ComplexMimic
+  code_url: ""
+  dataset_url: ""
+  category: Physics-Anim
+  task_tags: [human-scene-interaction, physics-based-imitation, motion-tracking, complex-scenes]
+  robot_platform: simulated humanoid / physics character
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses dual imitation and interaction experts plus difficulty-aware distillation to imitate human-scene interactions in complex 3D environments.
+  why_it_matters: Adds scene-contact-aware imitation machinery for generating more physically plausible humanoid or character motion in cluttered environments.
+
 ---
 
 (End of slice. ~46 entries.)

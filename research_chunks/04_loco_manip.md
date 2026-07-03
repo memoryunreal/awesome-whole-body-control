@@ -1431,3 +1431,41 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Runtime-editable humanoid behavior system combining affordance templates, behavior-tree-inspired logic, perception scenes, and layered whole-body action primitives.
   why_it_matters: Documents a deployed multi-platform loco-manipulation stack where operators can author, repair, and combine real humanoid behaviors in minutes or hours.
+
+- title: Human2Any: Human-to-Robot Transfer via Constraint-Aware Compositional Planning
+  authors: Shuo Cheng; Chuye Zhang; Alfred Cueva; Caelan Garrett; Ajay Mandlekar; Danfei Xu
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.28813
+  paper_url: https://arxiv.org/abs/2606.28813
+  project_url: https://human2any.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [human-video-transfer, object-centric-interactions, planning, RBY-1]
+  robot_platform: Franka / RBY-1 humanoid mobile robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Learns object-centric interaction priors from human videos and composes them with robot-side feasibility reasoning for Franka and RBY-1 humanoid mobile manipulation.
+  why_it_matters: Connects human video supervision to robot-feasible object interaction without target-task teleoperation data.
+
+- title: VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes
+  authors: Yen-Jen Wang; Jiaman Li; Sirui Chen; Takara E. Truong; Pei Xu; Pieter Abbeel; Rocky Duan; Koushil Sreenath; Angjoo Kanazawa; Carmelo Sferrazza; Guanya Shi; Karen Liu
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.30645
+  paper_url: https://arxiv.org/abs/2606.30645
+  project_url: https://vision-language-kinematics.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [vision-language-kinematics, synthetic-data, egocentric-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Generates vision-language-kinematics supervision in reconstructed indoor scenes and trains a G1 policy to predict whole-body trajectories from egocentric observations.
+  why_it_matters: Supplies a scalable synthetic-data route for perception-based humanoid loco-manipulation with real G1 validation.

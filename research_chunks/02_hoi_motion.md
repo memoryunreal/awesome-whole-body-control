@@ -1552,6 +1552,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Uses task policies trained in physics simulation as a scalable data source for training generalizable HOI diffusion models.
   why_it_matters: Directly attacks the mocap scarcity bottleneck for physically plausible long-horizon HOI generation.
 
+- title: JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation
+  authors: Mingyeong Song; Jungbin Cho; Jisoo Kim; Ananya Bal; Kartik Sharma; Youngjae Yu; Laszlo A. Jeni; Junhyug Noh
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.01768
+  paper_url: https://arxiv.org/abs/2607.01768
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [hand-object-interaction, contact-maps, diffusion, text-to-HOI]
+  robot_platform: dexterous hand-object interaction
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Single-stage text-driven diffusion model jointly generates hand-object motion and temporally evolving contact maps to reduce penetration and floating.
+  why_it_matters: Improves physical contact consistency in generated HOI clips, a key prerequisite for turning hand-object motion into robot-executable references.
+
 ---
 
 ## Summary

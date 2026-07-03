@@ -1311,6 +1311,63 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Full-view panoramic stereo occupancy dataset and model for humanoid perception, built around real sensor specs, simulated annotation, and real-world evaluation.
   why_it_matters: Gives humanoid navigation/manipulation stacks a perception dataset shaped around body-mounted stereo coverage rather than autonomous-driving assumptions.
 
+- title: Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory
+  authors: Yuhan Wu; Zhao Jin; Tao Li; Yuheng Zhang; Zhichao Wang; Shuo Wang; Jun Jiang; Xiaobo Li; Yanyong Zhang; Jian Tang; Zhengping Che; Yan Xia
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.31037
+  paper_url: https://arxiv.org/abs/2606.31037
+  project_url: https://labimus.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Dataset
+  task_tags: [benchmark, humanoid-dexterous-manipulation, chemistry-lab, precision-evaluation]
+  robot_platform: humanoid dexterous hands
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Reconstructs organic-chemistry workstations and defines precision-critical humanoid manipulation tasks with instrument readouts and quantitative tolerances.
+  why_it_matters: Benchmarks whether humanoid manipulation succeeds at scientific-process validity, not just coarse task completion.
+
+- title: RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation
+  authors: Xinyi Wang; Donghan Li; Zi'Ang Chen; Chong Yu; Chen Xin; Peng Ye; Yingkai Sun; Tao Chen
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.31836
+  paper_url: https://arxiv.org/abs/2606.31836
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Dataset
+  task_tags: [visual-tactile-action-data, humanoid-manipulation, Unitree-G1, dexterous-hands]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ⏳ Code Coming Soon
+  one_line: Collects 6k Unitree G1 dexterous-manipulation trajectories across 19 tasks with multi-view RGB-D, tactile feedback, and semantic annotations.
+  why_it_matters: Adds tactile and synchronized multi-camera supervision to humanoid hand manipulation datasets, but the dataset was only announced as forthcoming.
+
+- title: Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning
+  authors: Satoshi Yamamori; Koji Ishihara; Kentaro Minamikawa; Kiyoharu Ohomori; Taiyo Yazaki; Norikazu Sugimoto; Jun Morimoto
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.02205
+  paper_url: https://arxiv.org/abs/2607.02205
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Sim2Real
+  task_tags: [actuator-modeling, sim-to-real, zero-shot-transfer, humanoid-walking]
+  robot_platform: single-joint servo / 7-DoF arm / wheeled-legged robot / humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Shapes real actuator closed-loop dynamics to match idealized simulation reference dynamics, enabling zero-shot policies across arms, wheeled-legged robots, and humanoid walking.
+  why_it_matters: Offers a hardware-interface alternative to learned actuator models or heavier simulator randomization for humanoid sim-to-real deployment.
+
 ---
 
 ## Notes

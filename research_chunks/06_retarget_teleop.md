@@ -1163,6 +1163,25 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Collects robot-free VR/UMI-style demonstrations and retargets sparse human keypoints into humanoid whole-body references for skill learning.
   why_it_matters: Reduces dependence on expensive humanoid teleoperation while preserving coordinated perception, locomotion, and manipulation data.
 
+- title: HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum
+  authors: Chenxin Liu; Qingzhou Lu; Guangxiao Yang; Xuanyang Shi; Chenghan Yang; Yanjiang Guo; Jianyu Chen
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.02332
+  paper_url: https://arxiv.org/abs/2607.02332
+  project_url: https://heft.axell.top/
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [heavy-payload, VR-teleoperation, motion-tracking, full-size-humanoid]
+  robot_platform: L7 full-size humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses privileged motion guidance and a windowed payload curriculum so a full-size humanoid can track VR references while carrying up to 24 kg.
+  why_it_matters: Pushes humanoid teleoperation toward real payload manipulation, where mass and balance margins dominate controller robustness.
+
 ---
 
 ## Notes

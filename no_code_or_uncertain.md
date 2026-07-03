@@ -1,8 +1,8 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (159 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (166 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
-## Human-Object Interaction Motion Generation (16)
+## Human-Object Interaction Motion Generation (17)
 
 - ⏳ **[IMAGIN-4D: Image-Guided Controllable Interaction Generation](https://arxiv.org/abs/2606.23675)** `arXiv 2026.06` `HOI-Motion-Gen`
   Sai Kumar Dwivedi et al..
@@ -17,6 +17,11 @@ Papers where official code could not be verified (159 entries). Status is one of
 - ❌ **[InterPrior - Scaling Generative Control for Physics-Based Human-Object Interactions](https://arxiv.org/abs/2602.06035)** `arXiv 2026.02` `HOI`
   Scaling generative control for physics-based HOI.
   Links: [Paper](https://arxiv.org/abs/2602.06035)
+
+- ❌ **[JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation](https://arxiv.org/abs/2607.01768)** `arXiv 2026.07` `dexterous hand-object interaction` `HOI-Motion-Gen`
+  Mingyeong Song et al..
+  Single-stage text-driven diffusion model jointly generates hand-object motion and temporally evolving contact maps to reduce penetration and floating.
+  Links: [Paper](https://arxiv.org/abs/2607.01768)
 
 - ❌ 🧱 **[Policy-as-Data: Learning Generalizable HOI Diffusion Models from Simulated Physics](https://arxiv.org/abs/2606.22806)** `arXiv 2026.06` `HOI-Motion-Gen`
   Shujia Li et al..
@@ -134,12 +139,17 @@ Papers where official code could not be verified (159 entries). Status is one of
   Links: [Paper](https://dl.acm.org/doi/10.1145/3450626.3459830)
 
 
-## Whole-Body Motion Tracking and Imitation (50)
+## Whole-Body Motion Tracking and Imitation (52)
 
 - ⏳ 🤖 🧍 **[Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots](https://arxiv.org/abs/2606.03536)** `arXiv 2026.06` `Unitree G1` `Motion-Imitation`
   Tianchen Huang et al..
   Physics-aware diffusion transfers exemplar human motion style onto executable humanoid whole-body references.
   Links: [Project](https://huangtc233.github.io/bionic-style-transfer/) · [Paper](https://arxiv.org/abs/2606.03536)
+
+- ⏳ 🤖 🧍 **[ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control](https://arxiv.org/abs/2606.30362)** `arXiv 2026.06` `Unitree G1` `WBC`
+  Xiao Chen et al..
+  Combines a humanoid behavior foundation model with asynchronous closed-loop replanning so text-conditioned motions can react to tracking errors and moving targets.
+  Links: [Project](https://xiao-chen.tech/reactivebfm/) · [Paper](https://arxiv.org/abs/2606.30362)
 
 - ⏳ 🤖 🧍 **[Stubborn: A Streamlined and Unified Reinforcement Learning Framework for Robust Motion Tracking and Fall Recovery for Humanoids](https://arxiv.org/abs/2606.12814)** `arXiv 2026.06` `humanoid` `Motion-Imitation`
   Xiao Ren et al..
@@ -210,6 +220,11 @@ Papers where official code could not be verified (159 entries). Status is one of
   arXiv 2026.01.
   Dynamics-conditioned command aggregation + fall-recovery curriculum tracking even at 1500% noise; breakdance-class motions.
   Links: [Project](https://arxiv.org/abs/2601.23080) · [Paper](https://arxiv.org/abs/2601.23080)
+
+- ❌ 🧍 🧱 **[AnyBody: Free-Form Whole-Body Humanoid Control from Arbitrary Keypoint Guidance](https://arxiv.org/abs/2606.29209)** `arXiv 2026.06` `humanoid` `WBC`
+  Shuning Li et al..
+  Trains a single latent whole-body controller that can follow arbitrary subsets of body keypoints for tracking, teleoperation, locomotion, and reaching.
+  Links: [Paper](https://arxiv.org/abs/2606.29209)
 
 - ❌ **[Heracles - Bridging Precise Tracking and Generative Synthesis for General Humanoid Control](https://arxiv.org/abs/2603.27756)** `arXiv 2026.03` `WBC-Tracking`
   Combines precise motion tracking with generative motion synthesis for general humanoid whole-body control.
@@ -370,7 +385,12 @@ Papers where official code could not be verified (159 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2011.01387)
 
 
-## Whole-Body Control and Loco-Manipulation (15)
+## Whole-Body Control and Loco-Manipulation (16)
+
+- ⏳ 🤖 🧍 **[VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes](https://arxiv.org/abs/2606.30645)** `arXiv 2026.06` `Unitree G1` `Loco-Manipulation`
+  Yen-Jen Wang et al..
+  Generates vision-language-kinematics supervision in reconstructed indoor scenes and trains a G1 policy to predict whole-body trajectories from egocentric observations.
+  Links: [Project](https://vision-language-kinematics.github.io/) · [Paper](https://arxiv.org/abs/2606.30645)
 
 - ⏳ 🤖 🧍 **[WT-UMI: Tactile-based Whole-Body Manipulation via Force-Supervised Contact-Aware Planning](https://arxiv.org/abs/2606.13232)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
   Jaehwi Jang et al..
@@ -589,12 +609,17 @@ Papers where official code could not be verified (159 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2409.04639v1)
 
 
-## Datasets and Benchmarks (8)
+## Datasets and Benchmarks (9)
 
 - ⏳ 🤖 🧍 **[Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI](https://arxiv.org/abs/2606.22971)** `arXiv 2026.06` `humanoid` `Dataset`
   Xianda Guo et al..
   Full-view panoramic stereo occupancy dataset and model for humanoid perception, built around real sensor specs, simulated annotation, and real-world evaluation.
   Links: [Project](https://d-robotics-ai-lab.github.io/humanoid-omniocc) · [Paper](https://arxiv.org/abs/2606.22971)
+
+- ⏳ 🤖 🧍 **[RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation](https://arxiv.org/abs/2606.31836)** `arXiv 2026.06` `Unitree G1` `Dataset`
+  Xinyi Wang et al..
+  Collects 6k Unitree G1 dexterous-manipulation trajectories across 19 tasks with multi-view RGB-D, tactile feedback, and semantic annotations.
+  Links: [Paper](https://arxiv.org/abs/2606.31836)
 
 - ❌ **[EmbodMocap - In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents](https://arxiv.org/abs/2602.23205)** `arXiv 2026.02` `Dataset`
   In-the-wild 4D human-scene reconstruction for embodied agents.
@@ -653,7 +678,12 @@ Papers where official code could not be verified (159 entries). Status is one of
   Links: [Paper](https://ipman.is.tue.mpg.de/)
 
 
-## Sim-to-Real and Deployment Systems (17)
+## Sim-to-Real and Deployment Systems (18)
+
+- ❌ 🤖 🧍 **[Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning](https://arxiv.org/abs/2607.02205)** `arXiv 2026.07` `single-joint servo / 7-DoF arm / wheeled-legged robot / humanoid` `Sim2Real`
+  Satoshi Yamamori et al..
+  Shapes real actuator closed-loop dynamics to match idealized simulation reference dynamics, enabling zero-shot policies across arms, wheeled-legged robots, and humanoid walking.
+  Links: [Paper](https://arxiv.org/abs/2607.02205)
 
 - ❌ 🤖 🧍 **[Hiking in the Wild - Scalable Perceptive Parkour for Humanoids](https://arxiv.org/abs/2601.07718)** `arXiv preprint` `Sim2Real`
   Hiking Authors.
@@ -732,12 +762,17 @@ Papers where official code could not be verified (159 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/1901.08652)
 
 
-## Related Character Animation and Physics-Based Motion Generation (8)
+## Related Character Animation and Physics-Based Motion Generation (9)
 
 - ❌ 🤖 🧍 **[BFMTrack: Latent Sequence Optimization for Physics-Based Motion Tracking with Behavioral Foundation Models](https://arxiv.org/abs/2606.25056)** `arXiv 2026.06` `humanoid / physics character` `Physics-Anim`
   Thomas Rupf et al..
   Optimizes temporally correlated latent sequences so behavioral foundation models can track dense or sparse motion sequences and deploy on a real humanoid.
   Links: [Paper](https://arxiv.org/abs/2606.25056)
+
+- ❌ 🧍 🧱 **[GPC: Large-Scale Generative Pretraining for Transferable Motor Control](https://arxiv.org/abs/2606.29148)** `arXiv 2026.06` `physics character / humanoid-like controller` `Physics-Anim`
+  Yi Shi et al..
+  Learns a tokenized motor-control vocabulary and autoregressive generative controller for reusable physics-based character control across motion clips and downstream tasks.
+  Links: [Paper](https://arxiv.org/abs/2606.29148)
 
 - ❌ 🧍 🧱 **[In-Context Model Predictive Generation: Open-Vocabulary Motion Synthesis from Language Models to Physics](https://arxiv.org/abs/2606.26981)** `arXiv 2026.06` `simulated humanoid / physics character` `Physics-Anim`
   Xiaomeng Fu et al..

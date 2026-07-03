@@ -5,40 +5,40 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 86 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 88 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 79 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 58 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 64 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 89 | Datasets, benchmarks, sim-to-real, contact metrics |
-| `08_loco_anim.md` | 58 | Locomotion + physics-based character animation |
+| `02_hoi_motion.md` | 87 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 92 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 81 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 59 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 65 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 92 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 524**
+**Total unique papers after deduplication: 538**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 47
+- Human-Object Interaction Motion Generation: 48
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 133
-- Whole-Body Control and Loco-Manipulation: 73
-- Humanoid Foundation Models and Generalist Policies: 72
+- Whole-Body Motion Tracking and Imitation: 137
+- Whole-Body Control and Loco-Manipulation: 75
+- Humanoid Foundation Models and Generalist Policies: 73
 - Human-to-Humanoid Retargeting: 14
-- Teleoperation and Demonstration Collection: 35
-- Datasets and Benchmarks: 63
+- Teleoperation and Demonstration Collection: 36
+- Datasets and Benchmarks: 65
 - Evaluation Metrics and Contact Modeling: 10
-- Sim-to-Real and Deployment Systems: 24
-- Related Character Animation and Physics-Based Motion Generation: 27
+- Sim-to-Real and Deployment Systems: 25
+- Related Character Animation and Physics-Based Motion Generation: 29
 
 ## Code-Status Histogram
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 223 |
-| ❌ No Code | 152 |
-| 🌐 Project Page | 120 |
+| ⭐ Code | 224 |
+| ❌ No Code | 156 |
+| 🌐 Project Page | 126 |
 | 📦 Dataset | 14 |
+| ⏳ Code Coming Soon | 10 |
 | 🧩 Partial Code | 7 |
-| ⏳ Code Coming Soon | 7 |
 | 🔁 Unofficial Code | 1 |
 
 ## Search Queries Used (representative)
@@ -101,6 +101,38 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-07-03 — 14 new, 0 updated
+- Window: 2026-06-27 → 2026-07-03.
+- Sources searched: arXiv API listings for cs.RO, cs.CV, cs.LG, cs.GR filtered by submittedDate; arXiv API listings filtered by lastUpdatedDate for existing-paper revisions; arXiv abstract metadata and comments; project pages; GitHub repository search; GitHub `ls-remote` and GitHub tree checks for implementation files.
+- Query focus: humanoid whole-body control, free-form keypoint tracking, reactive humanoid BFMs, humanoid loco-manipulation, human-video transfer, humanoid VLA data conversion, whole-body retargeting, heavy-payload teleoperation, humanoid dexterous datasets, sim-to-real actuator interfaces, HOI contact generation, and physics-based character imitation.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: JointHOI (2607.01768).
+  - `03_wbc_tracking.md` — 4 entries: AnyBody (2606.29209), ReactiveBFM (2606.30362), FastDSAC (2606.31691), Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot (2606.31807).
+  - `04_loco_manip.md` — 2 entries: Human2Any (2606.28813), VLK (2606.30645).
+  - `05_foundation.md` — 1 entry: Human-as-Humanoid (2606.32009).
+  - `06_retarget_teleop.md` — 1 entry: HEFT (2607.02332).
+  - `07_data_bench_s2r.md` — 3 entries: Labimus (2606.31037), RoboTacDex (2606.31836), Actuator Reality Shaping (2607.02205).
+  - `08_loco_anim.md` — 2 entries: GPC (2606.29148), ComplexMimic (2607.02034).
+- Verified official code repos:
+  - https://github.com/luge66/FastDSAC
+- Existing-paper updates: none verified. A lastUpdatedDate pass over existing arXiv IDs in cs.RO/cs.CV/cs.LG/cs.GR found no previously tracked paper with a new revision in the 2026-06-27 → 2026-07-03 window.
+- Unresolved code-status items:
+  - https://xiao-chen.tech/reactivebfm/ — project page links https://github.com/zjwzcx/ReactiveBFM, but the repository only contained a README/TODO at inspection time, so status is `⏳ Code Coming Soon`.
+  - https://vision-language-kinematics.github.io/ — project page says code coming soon; only the website repository was visible.
+  - https://zgc-embodyai.github.io/Human-as-Humanoid — linked GitHub repository contains website/media assets only, so status remains `🌐 Project Page`.
+  - https://github.com/LuPan23/ComplexMimic — repository reachable, but only README/LICENSE were present at inspection time, so status remains `🌐 Project Page`.
+  - https://human2any.github.io/ — project page still contains placeholder GitHub/dataset URLs.
+  - https://heft.axell.top/ — project page found, but no code repository surfaced.
+  - https://labimus.github.io/ — project page found, but no dataset/code release link surfaced.
+  - https://arxiv.org/abs/2606.29209 — no project or code repository found for AnyBody.
+  - https://arxiv.org/abs/2606.31807 — result video found, but no code repository found for the inline-skating humanoid controller.
+  - https://arxiv.org/abs/2606.31836 — paper says the RoboTacDex dataset will be open-sourced soon, but no dataset URL was available.
+  - https://arxiv.org/abs/2607.01768 — no project or code repository found for JointHOI.
+  - https://arxiv.org/abs/2606.29148 — no project or code repository found for GPC.
+  - https://arxiv.org/abs/2607.02205 — no project or code repository found for Actuator Reality Shaping.
+- Inspected but excluded: CoGS (2606.28820, human-object scene reconstruction rather than HOI generation/control), WARP (2606.29940, whole-body mobile-manipulation retargeting but not humanoid), X-Morph (2606.30290, cross-morphology transfer primarily to non-humanoid legged robots), KYON (2606.30243, quadruped/wheel-legged platform rather than humanoid), ViDiHand (2606.30308, hand-motion reconstruction code promised but no robot-action or HOI-generation target), EPIC-Contact (2606.30598, hand-object pose estimation/perception), From Grasps to Dexterity (2606.30749, dexterous tool-use pretraining but not humanoid/HOI generation), VT-WAM (2607.02503), H-Tac (2607.01067), UniTacVLA (2606.31723), TAP-VLA (2606.29089), FurnitureVLA (2607.01212), and other broad tactile/VLA/mobile-manipulation/navigation/aerial/medical/remote-sensing/world-model papers matched only by generic manipulation or embodied-AI terms.
+- Notion escalations: not run in this manual repo-only update.
 
 ### 2026-06-27 — 20 new, 1 updated
 - Window: 2026-06-20 → 2026-06-27.

@@ -1597,6 +1597,82 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Uses pressure as a shared physical-grounding signal for RGB-pressure human motion capture and pressure-supervised humanoid imitation policies.
   why_it_matters: Brings contact/support observability into the perception-to-control pipeline, reducing foot sliding and unstable imitation artifacts.
 
+- title: AnyBody: Free-Form Whole-Body Humanoid Control from Arbitrary Keypoint Guidance
+  authors: Shuning Li; Sikai Li; Jiachen Li; Mingyu Ding
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.29209
+  paper_url: https://arxiv.org/abs/2606.29209
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [free-form-control, keypoint-guidance, motion-tracking, latent-motor-prior]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains a single latent whole-body controller that can follow arbitrary subsets of body keypoints for tracking, teleoperation, locomotion, and reaching.
+  why_it_matters: Reduces dependence on full-body retargeted references by making sparse keypoint control a native humanoid tracking interface.
+
+- title: ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control
+  authors: Xiao Chen; Weishuai Zeng; Xiaojie Niu; Zirui Wang; Jianan Li; Huayi Wang; Furui Xu; Jiahe Chen; Weixiang Zhong; Lihe Ding; Kailin Li; Jiangmiao Pang; Tai Wang; Tianfan Xue; Jingbo Wang
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.30362
+  paper_url: https://arxiv.org/abs/2606.30362
+  project_url: https://xiao-chen.tech/reactivebfm/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [behavior-foundation-model, closed-loop-planning, whole-body-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Combines a humanoid behavior foundation model with asynchronous closed-loop replanning so text-conditioned motions can react to tracking errors and moving targets.
+  why_it_matters: Moves BFM-style humanoid motion generation from open-loop playback toward real-time reactive whole-body control on G1.
+
+- title: FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion
+  authors: Guanchen Lu; Yajuan Dun; Yi Zhou; Letian Tao; Jingliang Duan; Jie Li; Guofa Li
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.31691
+  paper_url: https://arxiv.org/abs/2606.31691
+  project_url: https://github.com/luge66/FastDSAC
+  code_url: https://github.com/luge66/FastDSAC
+  dataset_url: ""
+  category: WBC
+  task_tags: [off-policy-RL, humanoid-locomotion, MuJoCo-Playground, HumanoidBench]
+  robot_platform: MuJoCo Playground / HumanoidBench
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Distributional actor-critic variant constrains exploratory actions to preserve policy plasticity under high-throughput humanoid locomotion training.
+  why_it_matters: Provides a released fast-RL baseline for scalable humanoid locomotion experiments and benchmark comparisons.
+
+- title: Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot
+  authors: Ethan Marot; Thomas Bi; Clemens Schwarke; Victor Klemm; Marco Hutter; Raffaello D'Andrea
+  year: 2026
+  venue: IROS 2026 / arXiv 2026.06
+  arxiv_id: 2606.31807
+  paper_url: https://arxiv.org/abs/2606.31807
+  project_url: https://www.youtube.com/watch?v=-_APcOS7uFo
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [humanoid-locomotion, skating, zero-shot-sim2real, Booster-T1]
+  robot_platform: Booster T1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains RL policies that transfer zero-shot to a Booster T1 humanoid wearing passive inline skates, producing edge-driven propulsion and perturbation recovery.
+  why_it_matters: Expands humanoid locomotion control beyond walking into underactuated high-speed contact modes with real hardware validation.
+
 ---
 
 ## Notes on Verification

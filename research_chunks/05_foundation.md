@@ -1009,6 +1009,25 @@ Code-status legend:
   one_line: Builds a VLA training framework from whole-body optimal-control trajectories, egocentric observations, and language instructions for humanoid locomotion tasks.
   why_it_matters: Pushes VLA-style policies into dynamically consistent, contact-rich humanoid locomotion rather than tabletop manipulation only.
 
+- title: Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments
+  authors: Xiaopeng Lin; Ruoqi Yang; Shijie Lian; Zhaolong Shen; Bin Yu; Changti Wu; Haibao Liu; Yuxiang Zhang; Hong Li; Qiyuan Su; Haochen Liu; Xuguo He; Yukun Shi; Cong Huang; Zhirui Zhang; Bojun Cheng; Kai Chen
+  year: 2026
+  venue: arXiv 2026.06
+  arxiv_id: 2606.32009
+  paper_url: https://arxiv.org/abs/2606.32009
+  project_url: https://zgc-embodyai.github.io/Human-as-Humanoid
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [humanoid-VLA, ego-exo-video, human-to-humanoid, PrimeU]
+  robot_platform: PrimeU 60-DoF upper-body humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Converts synchronized ego-exo human videos into controller-aligned humanoid action chunks for VLA post-training on a human-aligned 60-DoF upper-body robot.
+  why_it_matters: Gives humanoid VLAs a path to scale from human video demonstrations instead of relying only on expensive target-robot teleoperation.
+
 ---
 
 ## Quick stats
