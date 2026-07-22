@@ -1,8 +1,13 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (166 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (172 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
-## Human-Object Interaction Motion Generation (17)
+## Human-Object Interaction Motion Generation (18)
+
+- ⏳ **[HarmoHOI: Harmonizing Appearance and 3D Motion for Multi-view Hand-Object Interaction Synthesis](https://arxiv.org/abs/2607.17097)** `arXiv 2026.07` `hand-object interaction synthesis` `HOI-Motion-Gen`
+  Lingwei Dang et al..
+  Joint diffusion framework synthesizes synchronized multi-view HOI videos together with globally aligned 3D point tracks.
+  Links: [Project](https://droliven.github.io/HarmoHOI_project/) · [Paper](https://arxiv.org/abs/2607.17097)
 
 - ⏳ **[IMAGIN-4D: Image-Guided Controllable Interaction Generation](https://arxiv.org/abs/2606.23675)** `arXiv 2026.06` `HOI-Motion-Gen`
   Sai Kumar Dwivedi et al..
@@ -139,7 +144,7 @@ Papers where official code could not be verified (166 entries). Status is one of
   Links: [Paper](https://dl.acm.org/doi/10.1145/3450626.3459830)
 
 
-## Whole-Body Motion Tracking and Imitation (52)
+## Whole-Body Motion Tracking and Imitation (53)
 
 - ⏳ 🤖 🧍 **[Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots](https://arxiv.org/abs/2606.03536)** `arXiv 2026.06` `Unitree G1` `Motion-Imitation`
   Tianchen Huang et al..
@@ -243,6 +248,11 @@ Papers where official code could not be verified (166 entries). Status is one of
   Yi Lu et al..
   Uses pressure as a shared physical-grounding signal for RGB-pressure human motion capture and pressure-supervised humanoid imitation policies.
   Links: [Paper](https://arxiv.org/abs/2606.26741)
+
+- ❌ 🧍 🧱 **[RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC](https://arxiv.org/abs/2607.15701)** `arXiv 2026.07` `humanoid` `WBC`
+  Ruochen Hou et al..
+  Hierarchical planner uses RL to adapt visibility-graph geometry while a constrained MPC tracks collision-free humanoid navigation trajectories.
+  Links: [Paper](https://arxiv.org/abs/2607.15701)
 
 - ❌ 🧍 🧱 **[RGB: RL Guided Whole-Body MPPI for Humanoid Control](https://arxiv.org/abs/2606.25123)** `arXiv 2026.06` `Unitree G1` `WBC`
   Yunsoo Seo et al..
@@ -466,7 +476,12 @@ Papers where official code could not be verified (166 entries). Status is one of
   Links: [Project](https://arxiv.org/abs/2412.00396) · [Code](❌) · [Paper](https://arxiv.org/abs/2412.00396)
 
 
-## Humanoid Foundation Models and Generalist Policies (15)
+## Humanoid Foundation Models and Generalist Policies (17)
+
+- ❌ 🤖 🧍 **[Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation](https://arxiv.org/abs/2607.18016)** `arXiv 2026.07` `Unitree G1 / Being-0-aligned humanoid` `Foundation`
+  Peng Ren et al..
+  POT-VLA maintains role-indexed 3D object records that both condition whole-body action generation and verify geometric task predicates during execution.
+  Links: [Paper](https://arxiv.org/abs/2607.18016)
 
 - ❌ 🤖 🧍 **[MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.09215)** `arXiv 2026.06` `Unitree G1` `Foundation`
   Jia Zheng et al..
@@ -477,6 +492,11 @@ Papers where official code could not be verified (166 entries). Status is one of
   Zifan Wang et al..
   Adapts broad human motion priors to robot-centric terrain constraints for reusable perceptive whole-body behavior.
   Links: [Paper](https://arxiv.org/abs/2606.08059)
+
+- ❌ 🤖 🧍 **[Scaling Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2607.15163)** `arXiv 2026.07` `humanoid` `Foundation`
+  Weishuai Zeng et al..
+  Studies the scaling recipe for humanoid BFMs by coordinating global-frame motion tracking, reference diversity, rollout volume, and a Humanoid Transformer architecture.
+  Links: [Paper](https://arxiv.org/abs/2607.15163)
 
 - ❌ **[Psi0 - An Open Foundation Model Towards Universal Humanoid Loco-Manipulation](https://arxiv.org/abs/2603.12263)** `arXiv 2026.03` `Foundation`
   Open foundation model targeting universal humanoid loco-manipulation.
@@ -532,12 +552,17 @@ Papers where official code could not be verified (166 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2410.03311)
 
 
-## Human-to-Humanoid Retargeting (6)
+## Human-to-Humanoid Retargeting (7)
 
 - ⏳ 🤖 🧍 **[Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots](https://arxiv.org/abs/2606.03476)** `arXiv 2026.06` `Unitree G1 / humanoid` `Retargeting`
   Tianchen Huang et al..
   Unsupervised physics-aware retargeting transfers human motions to humanoid behaviors despite topology, proportion, and DoF mismatch.
   Links: [Project](https://huangtc233.github.io/human2humanoid_website/) · [Paper](https://arxiv.org/abs/2606.03476)
+
+- ❌ 🤖 🧍 **[From Sign Language Generation to Humanoid Execution: Vision-Language Guided Retargeting with Collision Mitigation](https://arxiv.org/abs/2607.17769)** `arXiv 2026.07` `humanoid robot` `Retargeting`
+  Nabeela Khan et al..
+  Converts generated sign-language body motions into humanoid joint execution through SMPL-X collision mitigation and VLM-guided retargeting corrections.
+  Links: [Paper](https://arxiv.org/abs/2607.17769)
 
 - ❌ 🤖 **[Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Open-World Contact Localization](https://arxiv.org/abs/2606.10743)** `arXiv 2026.06` `robot arms / manipulation` `Retargeting`
   Yitian Shi et al..
@@ -609,7 +634,12 @@ Papers where official code could not be verified (166 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2409.04639v1)
 
 
-## Datasets and Benchmarks (9)
+## Datasets and Benchmarks (10)
+
+- ⏳ 🤖 🧍 **[EgoHTR: Egocentric 4D Demonstrations of Human Terrain Traversal](https://arxiv.org/abs/2607.13472)** `arXiv 2026.07` `Unitree G1` `Dataset`
+  Alex Brandes et al..
+  Captures 55 scene-aligned egocentric human-terrain sequences and uses them to train perceptive locomotion policies deployed on a Unitree G1.
+  Links: [Project](https://egohtr.github.io) · [Paper](https://arxiv.org/abs/2607.13472)
 
 - ⏳ 🤖 🧍 **[Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI](https://arxiv.org/abs/2606.22971)** `arXiv 2026.06` `humanoid` `Dataset`
   Xianda Guo et al..

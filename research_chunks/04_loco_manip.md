@@ -1469,3 +1469,41 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ⏳ Code Coming Soon
   one_line: Generates vision-language-kinematics supervision in reconstructed indoor scenes and trains a G1 policy to predict whole-body trajectories from egocentric observations.
   why_it_matters: Supplies a scalable synthetic-data route for perception-based humanoid loco-manipulation with real G1 validation.
+
+- title: Handroid: Bridging Dexterous Hand and Humanoid
+  authors: Ruogu Li; Chenyang Ma; Sikai Li; Zhenyu Wei; Yunchao Yao; Haochen Shi; C. Karen Liu; Shuran Song; Mingyu Ding
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.16187
+  paper_url: https://arxiv.org/abs/2607.16187
+  project_url: https://handroid.org/
+  code_url: ""
+  dataset_url: CAD/BOM links on project page
+  category: Loco-Manipulation
+  task_tags: [dexterous-hand, reconfigurable-humanoid, teleoperation, locomotion]
+  robot_platform: Handroid desktop humanoid / dexterous hand
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Reconfigurable 27-DoF desktop robot switches between anthropomorphic hand and humanoid embodiments for manipulation, locomotion, and motion authoring.
+  why_it_matters: Offers a compact hardware bridge between dexterous-hand manipulation research and whole-body humanoid loco-manipulation experiments.
+
+- title: FARO: Feasibility-Aware Robot Motion Optimization
+  authors: Michal Ciebielski; Shafeef Omar; Aaron Johnson; Majid Khadiv
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.18362
+  paper_url: https://arxiv.org/abs/2607.18362
+  project_url: https://github.com/Atarilab/faro.io
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [feasibility-checking, contact-planning, LLM-planning, RL-tracking]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Nested kinodynamic optimizer checks candidate contact sequences, guides LLM-sampled contact plans, and generates humanoid loco-manipulation trajectories trackable by RL controllers.
+  why_it_matters: Targets the planning bottleneck for novel humanoid contact-rich behaviors before committing to expensive low-level policy execution.

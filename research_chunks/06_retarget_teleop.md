@@ -1182,6 +1182,25 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Uses privileged motion guidance and a windowed payload curriculum so a full-size humanoid can track VR references while carrying up to 24 kg.
   why_it_matters: Pushes humanoid teleoperation toward real payload manipulation, where mass and balance margins dominate controller robustness.
 
+- title: From Sign Language Generation to Humanoid Execution: Vision-Language Guided Retargeting with Collision Mitigation
+  authors: Nabeela Khan; Bowen Wu; Runwu Shi; Benjamin Yen; Takeshi Ashizawa; Carlos Toshinori Ishi; Takashi Minato; Kazuhiro Nakadai
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.17769
+  paper_url: https://arxiv.org/abs/2607.17769
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [sign-language, SMPL-X, collision-mitigation, VLM-retargeting]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Converts generated sign-language body motions into humanoid joint execution through SMPL-X collision mitigation and VLM-guided retargeting corrections.
+  why_it_matters: Highlights self-collision and embodiment-specific correction as practical blockers when generated full-body human motions are executed on humanoids.
+
 ---
 
 ## Notes

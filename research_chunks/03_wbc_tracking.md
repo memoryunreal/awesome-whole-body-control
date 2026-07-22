@@ -1673,6 +1673,44 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Trains RL policies that transfer zero-shot to a Booster T1 humanoid wearing passive inline skates, producing edge-driven propulsion and perturbation recovery.
   why_it_matters: Expands humanoid locomotion control beyond walking into underactuated high-speed contact modes with real hardware validation.
 
+- title: Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control
+  authors: J. M. A. Marcelo; M. Brienza; E. Bugli; L. Comito; D. Nardi; D. D. Bloisi; V. Suriani
+  year: 2026
+  venue: RoboCup Symposium 2026 / arXiv 2026.07
+  arxiv_id: 2607.14182
+  paper_url: https://arxiv.org/abs/2607.14182
+  project_url: https://lab-rococo-sapienza.github.io/semantic-WBC/
+  code_url: https://github.com/Lab-RoCoCo-Sapienza/semantic-WBC
+  dataset_url: ""
+  category: WBC
+  task_tags: [semantic-audio, skill-selection, whole-body-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Routes live music and speech through semantic audio branches that select and schedule imitation-learned whole-body skills on a G1.
+  why_it_matters: Connects perception-grounded command interpretation to deployed humanoid whole-body policies rather than relying on fixed scripted triggers.
+
+- title: RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC
+  authors: Ruochen Hou; Shiqi Wang; Beom Jun Kim; Hanzhang Fang; Mehak Singal; Dennis W. Hong
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.15701
+  paper_url: https://arxiv.org/abs/2607.15701
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [humanoid-navigation, RL-MPC, visibility-graph, collision-avoidance]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Hierarchical planner uses RL to adapt visibility-graph geometry while a constrained MPC tracks collision-free humanoid navigation trajectories.
+  why_it_matters: Keeps interpretable long-horizon planning and hard safety constraints while compensating for humanoid tracking delays, noise, and overshoot.
+
 ---
 
 ## Notes on Verification

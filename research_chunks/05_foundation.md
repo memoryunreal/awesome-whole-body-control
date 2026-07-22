@@ -1028,6 +1028,44 @@ Code-status legend:
   one_line: Converts synchronized ego-exo human videos into controller-aligned humanoid action chunks for VLA post-training on a human-aligned 60-DoF upper-body robot.
   why_it_matters: Gives humanoid VLAs a path to scale from human video demonstrations instead of relying only on expensive target-robot teleoperation.
 
+- title: Scaling Behavior Foundation Model for Humanoid Robots
+  authors: Weishuai Zeng; Kangning Yin; Xiaojie Niu; Shunlin Lu; Weixiang Zhong; Jiahe Chen; Feiyu Jia; Xiao Chen; Zirui Wang; Furui Xu; Ming Zhou; Kailin Li; Weinan Zhang; He Wang; Li Yi; Dahua Lin; Jiangmiao Pang; Jingbo Wang
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.15163
+  paper_url: https://arxiv.org/abs/2607.15163
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [behavior-foundation-model, humanoid-transformer, motion-tracking, scaling]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Studies the scaling recipe for humanoid BFMs by coordinating global-frame motion tracking, reference diversity, rollout volume, and a Humanoid Transformer architecture.
+  why_it_matters: Gives a structured scaling analysis for general-purpose humanoid control rather than treating data size, architecture, and learning paradigm independently.
+
+- title: Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation
+  authors: Peng Ren; Haoyang Ge; Jiang Zhao; Cong Huang; Yukun Shi; Pei Chi; Kai Chen
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.18016
+  paper_url: https://arxiv.org/abs/2607.18016
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [humanoid-VLA, persistent-object-tokens, closed-loop-execution, Unitree-G1]
+  robot_platform: Unitree G1 / Being-0-aligned humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: POT-VLA maintains role-indexed 3D object records that both condition whole-body action generation and verify geometric task predicates during execution.
+  why_it_matters: Makes object state persistent across occlusion, contact, and recovery, closing a key loop for long-horizon humanoid VLA loco-manipulation.
+
 ---
 
 ## Quick stats

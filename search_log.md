@@ -5,26 +5,26 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 87 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 92 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 81 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 59 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 65 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 92 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `02_hoi_motion.md` | 88 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 94 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 83 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 61 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 66 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 93 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 538**
+**Total unique papers after deduplication: 547**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 48
+- Human-Object Interaction Motion Generation: 49
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 137
-- Whole-Body Control and Loco-Manipulation: 75
-- Humanoid Foundation Models and Generalist Policies: 73
-- Human-to-Humanoid Retargeting: 14
+- Whole-Body Motion Tracking and Imitation: 139
+- Whole-Body Control and Loco-Manipulation: 77
+- Humanoid Foundation Models and Generalist Policies: 75
+- Human-to-Humanoid Retargeting: 15
 - Teleoperation and Demonstration Collection: 36
-- Datasets and Benchmarks: 65
+- Datasets and Benchmarks: 66
 - Evaluation Metrics and Contact Modeling: 10
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 224 |
-| ❌ No Code | 156 |
-| 🌐 Project Page | 126 |
+| ⭐ Code | 225 |
+| ❌ No Code | 160 |
+| 🌐 Project Page | 128 |
 | 📦 Dataset | 14 |
-| ⏳ Code Coming Soon | 10 |
+| ⏳ Code Coming Soon | 12 |
 | 🧩 Partial Code | 7 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,32 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-07-22 — 9 new, 0 updated
+- Window: 2026-07-15 → 2026-07-22.
+- Sources searched: arXiv API listings for cs.RO, cs.CV, cs.LG, and cs.GR filtered by submittedDate; arXiv API lastUpdatedDate pass for existing-paper revisions; arXiv abstract/HTML pages; project pages; GitHub search results; GitHub `ls-remote` and GitHub contents checks for implementation files.
+- Query focus: humanoid whole-body control, humanoid behavior foundation models, humanoid VLA loco-manipulation, humanoid navigation with MPC/RL, humanoid teleoperation/retargeting, reconfigurable dexterous humanoid hardware, terrain-traversal datasets, and multi-view HOI synthesis.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: HarmoHOI (2607.17097).
+  - `03_wbc_tracking.md` — 2 entries: Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control (2607.14182), RAVEN (2607.15701).
+  - `04_loco_manip.md` — 2 entries: Handroid (2607.16187), FARO (2607.18362).
+  - `05_foundation.md` — 2 entries: Scaling Behavior Foundation Model for Humanoid Robots (2607.15163), Closing the Loop in Humanoid VLA (2607.18016).
+  - `06_retarget_teleop.md` — 1 entry: From Sign Language Generation to Humanoid Execution (2607.17769).
+  - `07_data_bench_s2r.md` — 1 entry: EgoHTR (2607.13472).
+- Verified official code repos:
+  - https://github.com/Lab-RoCoCo-Sapienza/semantic-WBC
+- Existing-paper updates: none verified. A lastUpdatedDate pass over existing arXiv IDs in cs.RO/cs.CV/cs.LG/cs.GR found no previously tracked paper with a new revision in the 2026-07-15 → 2026-07-22 window.
+- Unresolved code-status items:
+  - https://egohtr.github.io — project page has placeholder Dataset and Code buttons marked coming soon, so EgoHTR is `⏳ Code Coming Soon`.
+  - https://droliven.github.io/HarmoHOI_project/ — project page links https://github.com/Droliven/HarmoHOI_project, but that repository is website-only and says models/dataset are coming soon.
+  - https://handroid.org/ — project page exposes CAD/BOM links, but no method code repository was reachable.
+  - https://github.com/Atarilab/faro.io — reachable official FARO webpage repository, not a method implementation.
+  - https://arxiv.org/abs/2607.15163 — no project page or code repository found for Scaling Behavior Foundation Model.
+  - https://arxiv.org/abs/2607.18016 — no project page or code repository found for POT-VLA / Closing the Loop in Humanoid VLA.
+  - https://arxiv.org/abs/2607.15701 — no project page or code repository found for RAVEN.
+  - https://arxiv.org/abs/2607.17769 — no project page or code repository found for the sign-language-to-humanoid retargeting system.
+- Inspected but excluded: Let the Body Follow (2607.16095, whole-body teleoperation on a TIAGo mobile manipulator rather than humanoid WBC), Human4K (2607.13646, whole-body human reconstruction dataset without robot-control or HOI-generation focus), EgoExoMoCap (2607.15868, general HMD mocap rather than humanoid retarget/control), Reverse to Advance (2607.13455, generic teleoperation-cost reduction for manipulation), Open-AoE (2607.14183, broad egocentric manipulation dataset/toolchain without humanoid specificity), AHEAD (2607.15172, generic hand-driven teleoperation), MIDAS Hand (2607.14487), VTAP Gripper (2607.15448), Optimization of sim-to-real transfer in NICO (2607.18210, semi-humanoid tabletop grasping calibration rather than whole-body control), Imitation of Arm Gestures by NICO (2607.18197), Motion Primitive Discovery in a Humanoid Robot (2607.18737, phase recognition/HRI rather than control), Agentic Real2Sim (2607.19190, broad real2sim world modeling), World Translation (2607.18154, broad sim-to-real dynamics transfer), Safe Execution of RL Policies via Acc-CBF-QP (2607.14488, general safety filter), Human-object Centric Video Personalization (2607.18217, video personalization), HOI detection / activity-recognition papers such as 2607.13881 and 2607.14350, broad VLA manipulation/driving/UAV papers, and medical/remote-sensing/foundation-model papers matched only by generic keywords.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-07-03 — 14 new, 0 updated
 - Window: 2026-06-27 → 2026-07-03.

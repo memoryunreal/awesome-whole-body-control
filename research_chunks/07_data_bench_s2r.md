@@ -1368,6 +1368,25 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Shapes real actuator closed-loop dynamics to match idealized simulation reference dynamics, enabling zero-shot policies across arms, wheeled-legged robots, and humanoid walking.
   why_it_matters: Offers a hardware-interface alternative to learned actuator models or heavier simulator randomization for humanoid sim-to-real deployment.
 
+- title: EgoHTR: Egocentric 4D Demonstrations of Human Terrain Traversal
+  authors: Alex Brandes; Haig Conti Georges Sajelian; Manthan Patel; Dominik Hollidt; Chenhao Li; Matthias Heyrman; Oliver Hausdoerfer; Manuel Kaufmann; Xi Wang; Jonas Frey; Angela P. Schoellig; Christian Holz; Marc Pollefeys; Marco Hutter
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.13472
+  paper_url: https://arxiv.org/abs/2607.13472
+  project_url: https://egohtr.github.io
+  code_url: ""
+  dataset_url: ""
+  category: Dataset
+  task_tags: [egocentric-4D, terrain-traversal, humanoid-locomotion, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Captures 55 scene-aligned egocentric human-terrain sequences and uses them to train perceptive locomotion policies deployed on a Unitree G1.
+  why_it_matters: Supplies terrain-grounded human motion and scene data for learning context-aware humanoid locomotion in rough environments.
+
 ---
 
 ## Notes

@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (224 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (225 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (18)
 
@@ -163,7 +163,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (52)
+## Whole-Body Motion Tracking and Imitation (53)
 
 - ⭐ 🤖 🧍 **[GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR)** `ICRA 2026` `Unitree H1, H1-2, G1, multi-robot` `WBC-Tracking`
   Yanjie Ze et al..
@@ -184,6 +184,11 @@ This is the canonical list of papers with **verified official open-source code**
   BAAI Humanoid Team.
   Trains a generalist tracker then rapidly adapts to specific teleop interfaces via additive residuals.
   Links: [Project](https://github.com/BAAI-Humanoid/MOSAIC) · [Code](https://github.com/BAAI-Humanoid/MOSAIC) · [Paper](https://arxiv.org/abs/2602.08594)
+
+- ⭐ 🤖 🧍 **[Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control](https://arxiv.org/abs/2607.14182)** `RoboCup Symposium 2026 / arXiv 2026.07` `Unitree G1` `WBC`
+  J. M. A. Marcelo et al..
+  Routes live music and speech through semantic audio branches that select and schedule imitation-learned whole-body skills on a G1.
+  Links: [Project](https://lab-rococo-sapienza.github.io/semantic-WBC/) · [Code](https://github.com/Lab-RoCoCo-Sapienza/semantic-WBC) · [Paper](https://arxiv.org/abs/2607.14182)
 
 - ⭐ 🤖 🧍 **[TEXEDO: Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation](https://arxiv.org/abs/2606.22998)** `arXiv 2026.06` `Unitree G1` `Motion-Imitation`
   Jianuo Cao et al..

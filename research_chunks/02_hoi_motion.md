@@ -1571,6 +1571,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Single-stage text-driven diffusion model jointly generates hand-object motion and temporally evolving contact maps to reduce penetration and floating.
   why_it_matters: Improves physical contact consistency in generated HOI clips, a key prerequisite for turning hand-object motion into robot-executable references.
 
+- title: HarmoHOI: Harmonizing Appearance and 3D Motion for Multi-view Hand-Object Interaction Synthesis
+  authors: Lingwei Dang; Juntong Li; Zonghan Li; Hongwen Zhang; Liang An; Wei Min; Yebin Liu; Qingyao Wu
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.17097
+  paper_url: https://arxiv.org/abs/2607.17097
+  project_url: https://droliven.github.io/HarmoHOI_project/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [hand-object-interaction, multi-view-video, 3D-point-tracks, diffusion]
+  robot_platform: hand-object interaction synthesis
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ⏳ Code Coming Soon
+  one_line: Joint diffusion framework synthesizes synchronized multi-view HOI videos together with globally aligned 3D point tracks.
+  why_it_matters: Adds explicit multi-view geometric motion consistency to HOI generation, reducing hallucinated contact and floating artifacts that limit robot-useful video priors.
+
 ---
 
 ## Summary
