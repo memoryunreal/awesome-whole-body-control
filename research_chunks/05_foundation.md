@@ -1066,6 +1066,44 @@ Code-status legend:
   one_line: POT-VLA maintains role-indexed 3D object records that both condition whole-body action generation and verify geometric task predicates during execution.
   why_it_matters: Makes object state persistent across occlusion, contact, and recovery, closing a key loop for long-horizon humanoid VLA loco-manipulation.
 
+- title: RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model
+  authors: Kehan Li; Bohan Hou; Minghao Zhu; Tianyi Zhang; Zesen Cheng; Zhikai Wang; Sicong Leng; Xin Li; Xiao Lin; Biying Yao; Minghua Zeng; Jiangpin Liu; Ronghao Dang; Jiayan Guo; Siteng Huang; Haoyu Zhao; Heng Ping; Yaxi Zhao; Kexiang Wang; Tong Lu; Shengke Xue; Jiahao Tang; Yulei Wang; Zejing Wang; Jianwei Gao; Shijian Lu; Chengju Liu; Jianfei Yang; Mingxiu Chen; Deli Zhao
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.17977
+  paper_url: https://arxiv.org/abs/2607.17977
+  project_url: https://alibaba-damo-academy.github.io/RynnBrain/
+  code_url: https://github.com/alibaba-damo-academy/RynnBrain
+  dataset_url: https://huggingface.co/collections/Alibaba-DAMO-Academy/rynnbrain-11
+  category: Foundation
+  task_tags: [embodied-foundation-model, humanoid-VLA, multi-embodiment, contact-point-prediction, Unitree-G1]
+  robot_platform: Unitree G1 / Astribot-S1 / Tianji-Wuji
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🧩 Partial Code
+  one_line: Releases RynnBrain 1.1 embodied foundation models and cookbooks, including a RynnBrain-VLA evaluated on G1 and other embodiments.
+  why_it_matters: Adds a released model family and official tooling to the humanoid VLA stack, with explicit contact and 3D grounding outputs for robot manipulation.
+
+- title: Closing the Lab-to-Store Gap: A Data-Efficient Post-Training and Experience-Driven Learning VLA Framework for Retail Humanoids
+  authors: Roger Sala Siso; Tiago Silverio; Jakob Sand; Tran Nguyen Le
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.20345
+  paper_url: https://arxiv.org/abs/2607.20345
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [humanoid-VLA, post-training, retail-robotics, experience-driven-learning, GR00T]
+  robot_platform: Unitree G1-Edu / GR00T N1.6
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: DEED post-trains a GR00T-based humanoid VLA for supermarket chip restocking with data curation, control-frequency alignment, visual highlighting, and experience-driven refinement.
+  why_it_matters: Documents the systems work needed to move humanoid VLAs from lab demos to store-floor deployment with limited data and compute.
+
 ---
 
 ## Quick stats

@@ -6,24 +6,24 @@
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
 | `02_hoi_motion.md` | 88 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 94 | Whole-body motion tracking and imitation |
+| `03_wbc_tracking.md` | 96 | Whole-body motion tracking and imitation |
 | `04_loco_manip.md` | 83 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 61 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 66 | Human-to-humanoid retargeting + teleop |
+| `05_foundation.md` | 63 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 67 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 93 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 547**
+**Total unique papers after deduplication: 552**
 
 ## Per-Category Counts
 
 - Human-Object Interaction Motion Generation: 49
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 139
+- Whole-Body Motion Tracking and Imitation: 141
 - Whole-Body Control and Loco-Manipulation: 77
-- Humanoid Foundation Models and Generalist Policies: 75
+- Humanoid Foundation Models and Generalist Policies: 77
 - Human-to-Humanoid Retargeting: 15
-- Teleoperation and Demonstration Collection: 36
+- Teleoperation and Demonstration Collection: 37
 - Datasets and Benchmarks: 66
 - Evaluation Metrics and Contact Modeling: 10
 - Sim-to-Real and Deployment Systems: 25
@@ -33,12 +33,12 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 225 |
-| ❌ No Code | 160 |
-| 🌐 Project Page | 128 |
+| ⭐ Code | 226 |
+| ❌ No Code | 162 |
+| 🌐 Project Page | 129 |
 | 📦 Dataset | 14 |
 | ⏳ Code Coming Soon | 12 |
-| 🧩 Partial Code | 7 |
+| 🧩 Partial Code | 8 |
 | 🔁 Unofficial Code | 1 |
 
 ## Search Queries Used (representative)
@@ -101,6 +101,27 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-07-24 — 5 new, 0 updated
+- Window: 2026-07-17 → 2026-07-24.
+- Sources searched: arXiv API listings for cs.RO, cs.CV, cs.LG, and cs.GR filtered by submittedDate; arXiv API lastUpdatedDate pass over known chunk arXiv IDs; arXiv abstract/HTML pages; project pages; GitHub search results; GitHub `ls-remote`; GitHub tree/content checks for implementation files.
+- Query focus: humanoid whole-body control, general motion tracking, humanoid VLA post-training, retail humanoid deployment, miniature humanoid tele-loco-manipulation, embodied foundation models, recovery from human demonstrations, biped navigation, bimanual object interaction, and HOI generation.
+- New entries by source chunk:
+  - `03_wbc_tracking.md` — 2 entries: What Matters in Humanoid General Motion Tracking? (2607.19903), Extreme-RGMT (2607.20110).
+  - `05_foundation.md` — 2 entries: RynnBrain 1.1 (2607.17977), Closing the Lab-to-Store Gap (2607.20345).
+  - `06_retarget_teleop.md` — 1 entry: Towards Miniature Humanoid Tele-Loco-Manipulation (2607.20399).
+- Verified official code repos:
+  - https://github.com/hucebot/yahmp
+  - https://github.com/alibaba-damo-academy/RynnBrain
+  - https://github.com/alibaba-damo-academy/RynnScale
+- Existing-paper updates: none verified. A lastUpdatedDate pass over existing arXiv IDs in cs.RO/cs.CV/cs.LG/cs.GR found only v1 records already added in the 2026-07-22 run, with no new revisions or code-status changes.
+- Unresolved code-status items:
+  - https://zeonsunlightyu.github.io/Extreme-RGMT.github.io/ — project page is reachable, but the surfaced GitHub repository is website/media only.
+  - https://arxiv.org/abs/2607.20345 — no project page or code repository found for DEED / Closing the Lab-to-Store Gap.
+  - https://arxiv.org/abs/2607.20399 — no project page or code repository found for the miniature humanoid tele-loco-manipulation stack.
+  - https://github.com/EgoRecovery/EgoRecovery — linked from the arXiv HTML for EgoRecovery, but returned 404 during inspection.
+- Inspected but excluded: EgoRecovery (2607.19745, recovery from egocentric human demonstrations but no humanoid or whole-body-control specificity found, and linked repo returned 404), ZONDA (2607.21025, biped object navigation but not humanoid WBC/loco-manipulation), URF (2607.20912, generic contact-aware manipulation), BiCompoDiff (2607.21341, bimanual manipulation without humanoid/HOI-motion-generation focus), AXIS (2607.21588, broad manipulation data engine), Emergent Compositional Skills in MoE VLAs (2607.20771, generic VLA), StreamHOI (2607.20174, HOI video generation rather than 3D motion/control), Agentic Real2Sim (2607.19190, broad real2sim world modeling), Koopman DCM (2607.18760, biped balancing primitive rather than whole-body humanoid list fit), NICO sim-to-real and gesture-imitation papers (2607.18210, 2607.18197), Motion Primitive Discovery in NICO (2607.18737), and broad navigation, manipulation, driving, UAV, medical, remote-sensing, and foundation-model papers matched only by generic keywords.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-07-22 — 9 new, 0 updated
 - Window: 2026-07-15 → 2026-07-22.

@@ -1,6 +1,6 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (172 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (174 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
 ## Human-Object Interaction Motion Generation (18)
 
@@ -476,7 +476,12 @@ Papers where official code could not be verified (172 entries). Status is one of
   Links: [Project](https://arxiv.org/abs/2412.00396) · [Code](❌) · [Paper](https://arxiv.org/abs/2412.00396)
 
 
-## Humanoid Foundation Models and Generalist Policies (17)
+## Humanoid Foundation Models and Generalist Policies (18)
+
+- ❌ 🤖 🧍 **[Closing the Lab-to-Store Gap: A Data-Efficient Post-Training and Experience-Driven Learning VLA Framework for Retail Humanoids](https://arxiv.org/abs/2607.20345)** `arXiv 2026.07` `Unitree G1-Edu / GR00T N1.6` `Foundation`
+  Roger Sala Siso et al..
+  DEED post-trains a GR00T-based humanoid VLA for supermarket chip restocking with data curation, control-frequency alignment, visual highlighting, and experience-driven refinement.
+  Links: [Paper](https://arxiv.org/abs/2607.20345)
 
 - ❌ 🤖 🧍 **[Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation](https://arxiv.org/abs/2607.18016)** `arXiv 2026.07` `Unitree G1 / Being-0-aligned humanoid` `Foundation`
   Peng Ren et al..
@@ -588,7 +593,7 @@ Papers where official code could not be verified (172 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2510.04353)
 
 
-## Teleoperation and Demonstration Collection (9)
+## Teleoperation and Demonstration Collection (10)
 
 - ❌ 🤖 🧍 **[DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy](https://arxiv.org/abs/2606.23431)** `arXiv 2026.06` `bimanual dexterous hands / humanoid-relevant manipulation` `Teleoperation`
   Haichao Liu et al..
@@ -599,6 +604,11 @@ Papers where official code could not be verified (172 entries). Status is one of
   Hongwu Wang et al..
   Collects robot-free VR/UMI-style demonstrations and retargets sparse human keypoints into humanoid whole-body references for skill learning.
   Links: [Paper](https://arxiv.org/abs/2606.27239)
+
+- ❌ 🤖 🧍 **[Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning](https://arxiv.org/abs/2607.20399)** `Humanoids 2025 / arXiv 2026.07` `ROBOTIS OP3` `Teleoperation`
+  Nicolas Kosanovic et al..
+  Builds a VR upper-body teleoperation and RL lower-body balance stack for miniature humanoid tele-loco-manipulation on ROBOTIS OP3.
+  Links: [Paper](https://arxiv.org/abs/2607.20399)
 
 - ❌ 🤖 🧍 **[X-OP: Cross-Morphology Whole-Body Teleoperation via MPC Retargeting](https://arxiv.org/abs/2606.07934)** `arXiv 2026.06` `humanoid / cross-morphology robots` `Teleoperation`
   Jen-Wei Wang et al..

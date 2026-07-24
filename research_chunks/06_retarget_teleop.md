@@ -1201,6 +1201,25 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Converts generated sign-language body motions into humanoid joint execution through SMPL-X collision mitigation and VLM-guided retargeting corrections.
   why_it_matters: Highlights self-collision and embodiment-specific correction as practical blockers when generated full-body human motions are executed on humanoids.
 
+- title: Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning
+  authors: Nicolas Kosanovic; Jordan Dowdy; Jean Chagas Vaz
+  year: 2026
+  venue: Humanoids 2025 / arXiv 2026.07
+  arxiv_id: 2607.20399
+  paper_url: https://arxiv.org/abs/2607.20399
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [VR-teleoperation, tele-loco-manipulation, reinforcement-learning, miniature-humanoid]
+  robot_platform: ROBOTIS OP3
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Builds a VR upper-body teleoperation and RL lower-body balance stack for miniature humanoid tele-loco-manipulation on ROBOTIS OP3.
+  why_it_matters: Makes the full-size humanoid tele-loco-manipulation recipe accessible on lower-cost research hardware.
+
 ---
 
 ## Notes

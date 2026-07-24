@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (225 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (226 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (18)
 
@@ -163,7 +163,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (53)
+## Whole-Body Motion Tracking and Imitation (54)
 
 - ⭐ 🤖 🧍 **[GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR)** `ICRA 2026` `Unitree H1, H1-2, G1, multi-robot` `WBC-Tracking`
   Yanjie Ze et al..
@@ -194,6 +194,11 @@ This is the canonical list of papers with **verified official open-source code**
   Jianuo Cao et al..
   Samples language-conditioned humanoid motions and selects candidates with a controller-feasibility verifier plus semantic alignment scoring.
   Links: [Project](https://jianuocao.github.io/TEXEDO/) · [Code](https://github.com/JianuoCao/TEXEDO) · [Paper](https://arxiv.org/abs/2606.22998) · [Dataset](https://huggingface.co/datasets/JianuoCao/TEXEDO)
+
+- ⭐ 🤖 🧍 **[What Matters in Humanoid General Motion Tracking? An Empirical Study](https://arxiv.org/abs/2607.19903)** `arXiv 2026.07` `Unitree G1` `WBC`
+  Fabio Amadio et al..
+  Empirical study of humanoid general motion tracking design choices, released with the YAHMP training, evaluation, and deployment framework for G1.
+  Links: [Project](https://github.com/hucebot/yahmp) · [Code](https://github.com/hucebot/yahmp) · [Paper](https://arxiv.org/abs/2607.19903)
 
 - ⭐ 🤖 🧍 **[WholebodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control](https://github.com/OpenDriveLab/WholebodyVLA)** `ICLR 2026` `humanoid` `WBC-Tracking`
   OpenDriveLab.

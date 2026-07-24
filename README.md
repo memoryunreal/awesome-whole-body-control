@@ -55,45 +55,29 @@ Inspired by [YanjieZe/awesome-humanoid-robot-learning](https://github.com/Yanjie
 
 ## Last Week Updates
 
-_Latest digest: **2026-07-22** — **9 new**, **0 updated**._
+_Latest digest: **2026-07-24** — **5 new**, **0 updated**._
 
 ### Added by Section
 
-- `02_hoi_motion`: 1 entry — HarmoHOI (2607.17097).
-- `03_wbc_tracking`: 2 entries — Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control (2607.14182), RAVEN (2607.15701).
-- `04_loco_manip`: 2 entries — Handroid (2607.16187), FARO (2607.18362).
-- `05_foundation`: 2 entries — Scaling Behavior Foundation Model for Humanoid Robots (2607.15163), Closing the Loop in Humanoid VLA (2607.18016).
-- `06_retarget_teleop`: 1 entry — From Sign Language Generation to Humanoid Execution (2607.17769).
-- `07_data_bench_s2r`: 1 entry — EgoHTR (2607.13472).
+- `03_wbc_tracking`: 2 entries — What Matters in Humanoid General Motion Tracking? (2607.19903), Extreme-RGMT (2607.20110).
+- `05_foundation`: 2 entries — RynnBrain 1.1 (2607.17977), Closing the Lab-to-Store Gap (2607.20345).
+- `06_retarget_teleop`: 1 entry — Towards Miniature Humanoid Tele-Loco-Manipulation (2607.20399).
 
 ### New Entries
 
-#### Human-Object Interaction Motion Generation
-
-- ⏳ **[HarmoHOI: Harmonizing Appearance and 3D Motion for Multi-view Hand-Object Interaction Synthesis](https://arxiv.org/abs/2607.17097)** — `arXiv 2026.07` — Joint diffusion framework synthesizes synchronized multi-view HOI videos together with globally aligned 3D point tracks.
-
 #### Whole-Body Motion Tracking and Imitation
 
-- ⭐ 🤖 🧍 **[Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control](https://arxiv.org/abs/2607.14182)** — `RoboCup Symposium 2026 / arXiv 2026.07` — Routes live music and speech through semantic audio branches that select and schedule imitation-learned whole-body skills on a G1.
-- ❌ 🧍 🧱 **[RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC](https://arxiv.org/abs/2607.15701)** — `arXiv 2026.07` — Hierarchical planner uses RL to adapt visibility-graph geometry while a constrained MPC tracks collision-free humanoid navigation trajectories.
-
-#### Whole-Body Control and Loco-Manipulation
-
-- 🌐 🤖 🧍 **[Handroid: Bridging Dexterous Hand and Humanoid](https://arxiv.org/abs/2607.16187)** — `arXiv 2026.07` — Reconfigurable 27-DoF desktop robot switches between anthropomorphic hand and humanoid embodiments for manipulation, locomotion, and motion authoring.
-- 🌐 🤖 🧍 **[FARO: Feasibility-Aware Robot Motion Optimization](https://arxiv.org/abs/2607.18362)** — `arXiv 2026.07` — Nested kinodynamic optimizer checks candidate contact sequences, guides LLM-sampled contact plans, and generates humanoid loco-manipulation trajectories trackable by RL controllers.
+- ⭐ 🤖 🧍 **[What Matters in Humanoid General Motion Tracking? An Empirical Study](https://arxiv.org/abs/2607.19903)** — `arXiv 2026.07` — Empirical study of humanoid general motion tracking design choices, released with the YAHMP training, evaluation, and deployment framework for G1.
+- 🌐 🤖 🧍 **[Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control](https://arxiv.org/abs/2607.20110)** — `arXiv 2026.07` — Continual-learning framework adds difficult highly dynamic motions to a generalist humanoid tracker without sacrificing mastered everyday skills.
 
 #### Humanoid Foundation Models and Generalist Policies
 
-- ❌ 🤖 🧍 **[Scaling Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2607.15163)** — `arXiv 2026.07` — Studies the scaling recipe for humanoid BFMs by coordinating global-frame motion tracking, reference diversity, rollout volume, and a Humanoid Transformer architecture.
-- ❌ 🤖 🧍 **[Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation](https://arxiv.org/abs/2607.18016)** — `arXiv 2026.07` — POT-VLA maintains role-indexed 3D object records that both condition whole-body action generation and verify geometric task predicates during execution.
+- 🧩 🤖 🧍 **[RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model](https://arxiv.org/abs/2607.17977)** — `arXiv 2026.07` — Releases RynnBrain 1.1 embodied foundation models and cookbooks, including a RynnBrain-VLA evaluated on G1 and other embodiments.
+- ❌ 🤖 🧍 **[Closing the Lab-to-Store Gap: A Data-Efficient Post-Training and Experience-Driven Learning VLA Framework for Retail Humanoids](https://arxiv.org/abs/2607.20345)** — `arXiv 2026.07` — DEED post-trains a GR00T-based humanoid VLA for supermarket chip restocking with data curation, control-frequency alignment, visual highlighting, and experience-driven refinement.
 
-#### Human-to-Humanoid Retargeting
+#### Teleoperation and Demonstration Collection
 
-- ❌ 🤖 🧍 **[From Sign Language Generation to Humanoid Execution: Vision-Language Guided Retargeting with Collision Mitigation](https://arxiv.org/abs/2607.17769)** — `arXiv 2026.07` — Converts generated sign-language body motions into humanoid joint execution through SMPL-X collision mitigation and VLM-guided retargeting corrections.
-
-#### Datasets and Benchmarks
-
-- ⏳ 🤖 🧍 **[EgoHTR: Egocentric 4D Demonstrations of Human Terrain Traversal](https://arxiv.org/abs/2607.13472)** — `arXiv 2026.07` — Captures 55 scene-aligned egocentric human-terrain sequences and uses them to train perceptive locomotion policies deployed on a Unitree G1.
+- ❌ 🤖 🧍 **[Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning](https://arxiv.org/abs/2607.20399)** — `Humanoids 2025 / arXiv 2026.07` — Builds a VR upper-body teleoperation and RL lower-body balance stack for miniature humanoid tele-loco-manipulation on ROBOTIS OP3.
 
 ### Most Implementation-Ready Papers (verified official code)
 - ⭐ **[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.23680)** — `arXiv 2026.06` — Coordinates body and dexterous-hand latent priors with residual RL so a G1 can manipulate objects continuously while walking.
@@ -109,8 +93,8 @@ _Latest digest: **2026-07-22** — **9 new**, **0 updated**._
 - ⭐ **[Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control](https://arxiv.org/abs/2607.14182)** — `RoboCup Symposium 2026 / arXiv 2026.07` — Routes live music and speech through semantic audio branches that select and schedule imitation-learned whole-body skills on a G1.
 - ⭐ **[TEXEDO: Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation](https://arxiv.org/abs/2606.22998)** — `arXiv 2026.06` — Samples language-conditioned humanoid motions and selects candidates with a controller-feasibility verifier plus semantic alignment scoring.
 - ⭐ **[Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data](https://arxiv.org/abs/2606.22136)** — `arXiv 2026.06` — Uses generative video world models to synthesize egocentric human-object manipulation videos and converts them into robot-trainable supervision.
+- ⭐ **[What Matters in Humanoid General Motion Tracking? An Empirical Study](https://arxiv.org/abs/2607.19903)** — `arXiv 2026.07` — Empirical study of humanoid general motion tracking design choices, released with the YAHMP training, evaluation, and deployment framework for G1.
 - ⭐ **[WholebodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control](https://github.com/OpenDriveLab/WholebodyVLA)** — `ICLR 2026` — Unified latent VLA architecture for whole-body humanoid loco-manipulation with tracking primitives.
-- ⭐ **[Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation](https://arxiv.org/abs/2606.05687)** — `arXiv 2026.06` — Efficient training-time MPC guidance for humanoid locomotion and manipulation policies.
 
 ### Most Relevant for HOI Motion Generation
 - ⭐ 🧍 🧱 **[DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects](https://arxiv.org/abs/2606.15133)** — `arXiv 2026.06` — Generates and trains physically plausible dexterous hand-object interactions with articulated objects using contact-aware simulation assets and RL code.
@@ -137,12 +121,12 @@ _Latest digest: **2026-07-22** — **9 new**, **0 updated**._
 - ⭐ 🤖 🧍 **[OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.08548)** — `arXiv 2026.06` — Open simulation-to-real data pipeline for humanoid loco-manipulation with embodiment-aligned demonstrations.
 - ⭐ 🤖 🧍 **[Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control](https://arxiv.org/abs/2607.14182)** — `RoboCup Symposium 2026 / arXiv 2026.07` — Routes live music and speech through semantic audio branches that select and schedule imitation-learned whole-body skills on a G1.
 - ⭐ 🤖 🧍 **[TEXEDO: Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation](https://arxiv.org/abs/2606.22998)** — `arXiv 2026.06` — Samples language-conditioned humanoid motions and selects candidates with a controller-feasibility verifier plus semantic alignment scoring.
+- ⭐ 🤖 🧍 **[What Matters in Humanoid General Motion Tracking? An Empirical Study](https://arxiv.org/abs/2607.19903)** — `arXiv 2026.07` — Empirical study of humanoid general motion tracking design choices, released with the YAHMP training, evaluation, and deployment framework for G1.
 - ⭐ 🤖 🧍 **[WholebodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control](https://github.com/OpenDriveLab/WholebodyVLA)** — `ICLR 2026` — Unified latent VLA architecture for whole-body humanoid loco-manipulation with tracking primitives.
-- ⭐ 🧍 🧱 **[Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation](https://arxiv.org/abs/2606.05687)** — `arXiv 2026.06` — Efficient training-time MPC guidance for humanoid locomotion and manipulation policies.
 
 ---
 
-_Total unique entries: **547**. Verified open-source: **225**._
+_Total unique entries: **552**. Verified open-source: **226**._
 
 ## Human-Object Interaction Motion Generation
 
@@ -564,7 +548,7 @@ _26 entries._
 
 ## Whole-Body Motion Tracking and Imitation
 
-_139 entries._
+_141 entries._
 
 - ⭐ 🤖 🧍 **[GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR)** `ICRA 2026` `Unitree H1, H1-2, G1, multi-robot` `WBC-Tracking`
   Yanjie Ze et al..
@@ -596,6 +580,11 @@ _139 entries._
   Samples language-conditioned humanoid motions and selects candidates with a controller-feasibility verifier plus semantic alignment scoring.
   Links: [Project](https://jianuocao.github.io/TEXEDO/) · [Code](https://github.com/JianuoCao/TEXEDO) · [Paper](https://arxiv.org/abs/2606.22998) · [Dataset](https://huggingface.co/datasets/JianuoCao/TEXEDO)
 
+- ⭐ 🤖 🧍 **[What Matters in Humanoid General Motion Tracking? An Empirical Study](https://arxiv.org/abs/2607.19903)** `arXiv 2026.07` `Unitree G1` `WBC`
+  Fabio Amadio et al..
+  Empirical study of humanoid general motion tracking design choices, released with the YAHMP training, evaluation, and deployment framework for G1.
+  Links: [Project](https://github.com/hucebot/yahmp) · [Code](https://github.com/hucebot/yahmp) · [Paper](https://arxiv.org/abs/2607.19903)
+
 - ⭐ 🤖 🧍 **[WholebodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control](https://github.com/OpenDriveLab/WholebodyVLA)** `ICLR 2026` `humanoid` `WBC-Tracking`
   OpenDriveLab.
   Unified latent VLA architecture for whole-body humanoid loco-manipulation with tracking primitives.
@@ -614,6 +603,11 @@ _139 entries._
   Bofan Lyu et al..
   Adds an analytical whole-body disturbance observer to humanoid locomotion policies so policies can respond to external pushes and asymmetric payloads.
   Links: [Project](https://blyu413.github.io/adapt-locomotion/) · [Paper](https://arxiv.org/abs/2606.16542)
+
+- 🌐 🤖 🧍 **[Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control](https://arxiv.org/abs/2607.20110)** `arXiv 2026.07` `Unitree G1` `WBC`
+  Yubiao Ma et al..
+  Continual-learning framework adds difficult highly dynamic motions to a generalist humanoid tracker without sacrificing mastered everyday skills.
+  Links: [Project](https://zeonsunlightyu.github.io/Extreme-RGMT.github.io/) · [Paper](https://arxiv.org/abs/2607.20110)
 
 - 🌐 🤖 🧍 **[LadderMan: Learning Humanoid Perceptive Ladder Climbing](https://arxiv.org/abs/2606.05873)** `arXiv 2026.06` `humanoid` `Motion-Imitation`
   Siheng Zhao et al..
@@ -1241,15 +1235,15 @@ _139 entries._
 | 2026 | [MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid ](https://arxiv.org/abs/2602.08594) | humanoid | ✅ | ⭐ Code | Trains a generalist tracker then rapidly adapts to specific teleop interfaces vi |
 | 2026 | [Semantic Audio-driven Understanding for Dynamic Humanoid Who](https://arxiv.org/abs/2607.14182) | Unitree G1 | ✅ | ⭐ Code | Routes live music and speech through semantic audio branches that select and sch |
 | 2026 | [TEXEDO: Test Time Scaling for Controller-aware Language-cond](https://arxiv.org/abs/2606.22998) | Unitree G1 | ✅ | ⭐ Code | Samples language-conditioned humanoid motions and selects candidates with a cont |
+| 2026 | [What Matters in Humanoid General Motion Tracking? An Empiric](https://arxiv.org/abs/2607.19903) | Unitree G1 | ✅ | ⭐ Code | Empirical study of humanoid general motion tracking design choices, released wit |
 | 2026 | [WholebodyVLA: Towards Unified Latent VLA for Whole-body Loco](https://github.com/OpenDriveLab/WholebodyVLA) | humanoid | ✅ | ⭐ Code | Unified latent VLA architecture for whole-body humanoid loco-manipulation with t |
 | 2026 | [ECO - Energy-Constrained Optimization with Reinforcement Lea](https://arxiv.org/abs/2602.06445) | — | — | ⭐ Code | Energy-constrained RL for humanoid walking. |
 | 2026 | [FastDSAC: Enhancing Policy Plasticity via Constrained Explor](https://arxiv.org/abs/2606.31691) | MuJoCo Playground / HumanoidBench | — | ⭐ Code | Distributional actor-critic variant constrains exploratory actions to preserve p |
 | 2026 | [ADAPT: Analytical Disturbance-Aware Policy Training for Huma](https://arxiv.org/abs/2606.16542) | Unitree G1 | ✅ | 🌐 Project Page | Adds an analytical whole-body disturbance observer to humanoid locomotion polici |
+| 2026 | [Extreme-RGMT: Continual Learning of Highly Dynamic Skills fo](https://arxiv.org/abs/2607.20110) | Unitree G1 | ✅ | 🌐 Project Page | Continual-learning framework adds difficult highly dynamic motions to a generali |
 | 2026 | [LadderMan: Learning Humanoid Perceptive Ladder Climbing](https://arxiv.org/abs/2606.05873) | humanoid | ✅ | 🌐 Project Page | Two-stage perceptive policy lets humanoids climb diverse ladders and manipulate  |
 | 2026 | [Mind Your Steps: A General Learning Framework for Accurate H](https://arxiv.org/abs/2606.08253) | Booster T1 / humanoid | ✅ | 🌐 Project Page | Learning framework for accurate foothold placement on humanoids, improving safe  |
 | 2026 | [Reinforcement Learning-Based Control for an Inline Skating H](https://arxiv.org/abs/2606.31807) | Booster T1 | ✅ | 🌐 Project Page | Trains RL policies that transfer zero-shot to a Booster T1 humanoid wearing pass |
-| 2026 | [RoboNaldo: Accurate, Stable and Powerful Humanoid Soccer Sho](https://arxiv.org/abs/2606.11092) | Unitree G1 | ✅ | 🌐 Project Page | Three-stage motion-guided curriculum RL for stable, accurate high-impulse humano |
-| 2026 | [APEX - Learning Adaptive High-Platform Traversal for Humanoi](https://arxiv.org/abs/2602.11143) | — | — | 🌐 Project Page | Adaptive high-platform traversal for humanoids. |
 
 ## Whole-Body Control and Loco-Manipulation
 
@@ -1652,7 +1646,7 @@ _77 entries._
 
 ## Humanoid Foundation Models and Generalist Policies
 
-_75 entries._
+_77 entries._
 
 - ⭐ 🤖 🧍 **[Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking](https://arxiv.org/abs/2606.03985)** `CVPR 2026` `Unitree G1 / humanoid` `Foundation`
   Zekun Qi et al..
@@ -1682,6 +1676,11 @@ _75 entries._
   Open VLA stack with MolmoER backbone, OpenFAST action tokenizer, MolmoThink adaptive-reasoning variant, and 720h bimanual dataset.
   Links: [Project](https://allenai.org/blog/molmoact2) · [Code](https://github.com/allenai/molmoact2) · [Paper](https://arxiv.org/abs/2605.02881)
 
+- 🧩 🤖 🧍 **[RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model](https://arxiv.org/abs/2607.17977)** `arXiv 2026.07` `Unitree G1 / Astribot-S1 / Tianji-Wuji` `Foundation`
+  Kehan Li et al..
+  Releases RynnBrain 1.1 embodied foundation models and cookbooks, including a RynnBrain-VLA evaluated on G1 and other embodiments.
+  Links: [Project](https://alibaba-damo-academy.github.io/RynnBrain/) · [Code](https://github.com/alibaba-damo-academy/RynnBrain) · [Paper](https://arxiv.org/abs/2607.17977) · [Dataset](https://huggingface.co/collections/Alibaba-DAMO-Academy/rynnbrain-11)
+
 - 🌐 🤖 🧍 **[Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data](https://arxiv.org/abs/2606.08107)** `arXiv 2026.06` `humanoid hands / dexterous embodiments` `Foundation`
   Ji Woong Kim et al..
   Studies pi0.5 fine-tuning across egocentric human data and humanoid embodiments with dexterous five-finger hands.
@@ -1691,6 +1690,11 @@ _75 entries._
   Xiaopeng Lin et al..
   Converts synchronized ego-exo human videos into controller-aligned humanoid action chunks for VLA post-training on a human-aligned 60-DoF upper-body robot.
   Links: [Project](https://zgc-embodyai.github.io/Human-as-Humanoid) · [Paper](https://arxiv.org/abs/2606.32009)
+
+- ❌ 🤖 🧍 **[Closing the Lab-to-Store Gap: A Data-Efficient Post-Training and Experience-Driven Learning VLA Framework for Retail Humanoids](https://arxiv.org/abs/2607.20345)** `arXiv 2026.07` `Unitree G1-Edu / GR00T N1.6` `Foundation`
+  Roger Sala Siso et al..
+  DEED post-trains a GR00T-based humanoid VLA for supermarket chip restocking with data curation, control-frequency alignment, visual highlighting, and experience-driven refinement.
+  Links: [Paper](https://arxiv.org/abs/2607.20345)
 
 - ❌ 🤖 🧍 **[Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation](https://arxiv.org/abs/2607.18016)** `arXiv 2026.07` `Unitree G1 / Being-0-aligned humanoid` `Foundation`
   Peng Ren et al..
@@ -1983,15 +1987,15 @@ _75 entries._
 | 2026 | [LIFT - Towards Bridging the Gap between Large-Scale Pretrain](https://arxiv.org/abs/2601.21363) | — | — | ⭐ Code | Pretraining-then-finetuning for humanoid control. |
 | 2026 | [MotionVLA: Vision-Language-Action Model for Humanoid Motion](https://arxiv.org/abs/2606.15142) | humanoid motion / HumanML3D / MBench | — | ⭐ Code | Adapts VLA-style autoregressive modeling to humanoid motion with separate low-fr |
 | 2026 | [MolmoAct 2 — Action Reasoning Models for Real-world Deployme](https://arxiv.org/abs/2605.02881) | Franka, SO100/SO101, bimanual YAM | ✅ | 🧩 Partial Code | Open VLA stack with MolmoER backbone, OpenFAST action tokenizer, MolmoThink adap |
+| 2026 | [RynnBrain 1.1: Towards More Capable and Generalizable Embodi](https://arxiv.org/abs/2607.17977) | Unitree G1 / Astribot-S1 / Tianji-Wuji | ✅ | 🧩 Partial Code | Releases RynnBrain 1.1 embodied foundation models and cookbooks, including a Ryn |
 | 2026 | [Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data](https://arxiv.org/abs/2606.08107) | humanoid hands / dexterous embodiments | ✅ | 🌐 Project Page | Studies pi0.5 fine-tuning across egocentric human data and humanoid embodiments  |
 | 2026 | [Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from](https://arxiv.org/abs/2606.32009) | PrimeU 60-DoF upper-body humanoid | ✅ | 🌐 Project Page | Converts synchronized ego-exo human videos into controller-aligned humanoid acti |
+| 2026 | [Closing the Lab-to-Store Gap: A Data-Efficient Post-Training](https://arxiv.org/abs/2607.20345) | Unitree G1-Edu / GR00T N1.6 | ✅ | ❌ No Code | DEED post-trains a GR00T-based humanoid VLA for supermarket chip restocking with |
 | 2026 | [Closing the Loop in Humanoid VLA: Persistent 3D Object Token](https://arxiv.org/abs/2607.18016) | Unitree G1 / Being-0-aligned humanoid | ✅ | ❌ No Code | POT-VLA maintains role-indexed 3D object records that both condition whole-body  |
 | 2026 | [MotionWAM: Towards Foundation World Action Models for Real-T](https://arxiv.org/abs/2606.09215) | Unitree G1 | ✅ | ❌ No Code | Real-time world-action model for humanoid loco-manipulation that avoids slow vid |
 | 2026 | [Perceptive Behavior Foundation Model: Adapting Human Motion ](https://arxiv.org/abs/2606.08059) | humanoid | ✅ | ❌ No Code | Adapts broad human motion priors to robot-centric terrain constraints for reusab |
 | 2026 | [Scaling Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2607.15163) | humanoid | ✅ | ❌ No Code | Studies the scaling recipe for humanoid BFMs by coordinating global-frame motion |
 | 2026 | [Psi0 - An Open Foundation Model Towards Universal Humanoid L](https://arxiv.org/abs/2603.12263) | — | — | ❌ No Code | Open foundation model targeting universal humanoid loco-manipulation. |
-| 2026 | [WOLF-VLA: Whole-Body Humanoid Optimal Locomotion Framework f](https://arxiv.org/abs/2606.25591) | humanoid | — | ❌ No Code | Builds a VLA training framework from whole-body optimal-control trajectories, eg |
-| 2025 | [AgiBot World Colosseo + GO-1 — Large-scale Manipulation Plat](https://arxiv.org/abs/2503.06669) | AgiBot mobile humanoid (whole-body, dexterous hands, tactile) | ✅ | ⭐ Code | 1M+ trajectories across 217 tasks in 5 deployment scenarios from 100 real robots |
 
 ## Human-to-Humanoid Retargeting
 
@@ -2093,7 +2097,7 @@ _15 entries._
 
 ## Teleoperation and Demonstration Collection
 
-_36 entries._
+_37 entries._
 
 - 🌐 🤖 🧍 **[HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum](https://arxiv.org/abs/2607.02332)** `arXiv 2026.07` `L7 full-size humanoid` `Teleoperation`
   Chenxin Liu et al..
@@ -2119,6 +2123,11 @@ _36 entries._
   Hongwu Wang et al..
   Collects robot-free VR/UMI-style demonstrations and retargets sparse human keypoints into humanoid whole-body references for skill learning.
   Links: [Paper](https://arxiv.org/abs/2606.27239)
+
+- ❌ 🤖 🧍 **[Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning](https://arxiv.org/abs/2607.20399)** `Humanoids 2025 / arXiv 2026.07` `ROBOTIS OP3` `Teleoperation`
+  Nicolas Kosanovic et al..
+  Builds a VR upper-body teleoperation and RL lower-body balance stack for miniature humanoid tele-loco-manipulation on ROBOTIS OP3.
+  Links: [Paper](https://arxiv.org/abs/2607.20399)
 
 - ❌ 🤖 🧍 **[X-OP: Cross-Morphology Whole-Body Teleoperation via MPC Retargeting](https://arxiv.org/abs/2606.07934)** `arXiv 2026.06` `humanoid / cross-morphology robots` `Teleoperation`
   Jen-Wei Wang et al..
@@ -2279,6 +2288,7 @@ _36 entries._
 | 2026 | [Universal Manipulation Exoskeleton: Learning Compliant Whole](https://arxiv.org/abs/2606.14218) | humanoid-relevant mobile manipulation | ✅ | 🌐 Project Page | Portable upper-limb exoskeleton records arm configurations and joint torque feed |
 | 2026 | [DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation wi](https://arxiv.org/abs/2606.23431) | bimanual dexterous hands / humanoid-relevant manipulation | ✅ | ❌ No Code | Adds tactile-driven force-compliant optimization on top of bimanual teleoperatio |
 | 2026 | [HumanoidUMI: Bridging Robot-Free Demonstrations and Humanoid](https://arxiv.org/abs/2606.27239) | humanoid | ✅ | ❌ No Code | Collects robot-free VR/UMI-style demonstrations and retargets sparse human keypo |
+| 2026 | [Towards Miniature Humanoid Tele-Loco-Manipulation Using Virt](https://arxiv.org/abs/2607.20399) | ROBOTIS OP3 | ✅ | ❌ No Code | Builds a VR upper-body teleoperation and RL lower-body balance stack for miniatu |
 | 2026 | [X-OP: Cross-Morphology Whole-Body Teleoperation via MPC Reta](https://arxiv.org/abs/2606.07934) | humanoid / cross-morphology robots | ✅ | ❌ No Code | MPC-based retargeting enables cross-morphology whole-body teleoperation without  |
 | 2026 | [CLOT - Closed-Loop Global Motion Tracking for Whole-Body Hum](https://arxiv.org/abs/2602.15060) | — | — | ❌ No Code | Closed-loop global motion tracking for whole-body teleoperation. |
 | 2025 | [ACE-F: A Cross Embodiment Foldable System with Force Feedbac](https://arxiv.org/abs/2511.20887) | multiple | ✅ | ⭐ Code | Foldable cross-embodiment exoskeleton adds force feedback to ACE-style teleop fo |
@@ -2288,7 +2298,6 @@ _36 entries._
 | 2025 | [DexUMI: Using Human Hand as the Universal Manipulation Inter](https://arxiv.org/abs/2505.21864) | 2 dexterous hands | ✅ | ⭐ Code | Wearable hand exoskeleton + visual in-painting that lets human hand directly ser |
 | 2025 | [H-RDT: Human Manipulation Enhanced Bimanual Robotic Manipula](https://arxiv.org/abs/2507.23523) | bimanual / humanoid | ✅ | ⭐ Code | 2B diffusion transformer pretrained on 338K EgoDex human trajectories then fine- |
 | 2025 | [CHILD: Controller for Humanoid Imitation and Live Demonstrat](https://arxiv.org/abs/2508.00162) | humanoid | ✅ | 🌐 Project Page | Compact baby-carrier-form teleop rig giving operator joint-level control of all  |
-| 2025 | [SPARK - A Toolbox for Safe Humanoid Autonomy and Teleoperati](https://arxiv.org/abs/2502.03132) | — | — | 🌐 Project Page | Safety toolbox for humanoid autonomy and teleoperation. |
 
 ## Datasets and Benchmarks
 

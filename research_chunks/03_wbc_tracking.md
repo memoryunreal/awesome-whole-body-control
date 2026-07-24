@@ -1711,6 +1711,44 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Hierarchical planner uses RL to adapt visibility-graph geometry while a constrained MPC tracks collision-free humanoid navigation trajectories.
   why_it_matters: Keeps interpretable long-horizon planning and hard safety constraints while compensating for humanoid tracking delays, noise, and overshoot.
 
+- title: What Matters in Humanoid General Motion Tracking? An Empirical Study
+  authors: Fabio Amadio; Enrico Mingo Hoffman
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.19903
+  paper_url: https://arxiv.org/abs/2607.19903
+  project_url: https://github.com/hucebot/yahmp
+  code_url: https://github.com/hucebot/yahmp
+  dataset_url: ""
+  category: WBC
+  task_tags: [general-motion-tracking, empirical-study, ablations, Unitree-G1, YAHMP]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Empirical study of humanoid general motion tracking design choices, released with the YAHMP training, evaluation, and deployment framework for G1.
+  why_it_matters: Turns practical motion-tracking choices into reproducible ablations and provides a fresh open-source G1 baseline.
+
+- title: Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control
+  authors: Yubiao Ma; Han Yu; Kai Guo; Changtai Lv; Zhengquan Mao; Boyang Xing; Xuemei Ren; Dongdong Zheng
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.20110
+  paper_url: https://arxiv.org/abs/2607.20110
+  project_url: https://zeonsunlightyu.github.io/Extreme-RGMT.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [general-motion-tracking, continual-learning, dynamic-skills, inertial-teleoperation, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Continual-learning framework adds difficult highly dynamic motions to a generalist humanoid tracker without sacrificing mastered everyday skills.
+  why_it_matters: Directly targets the generalist-versus-specialist tradeoff that limits deployable humanoid whole-body tracking under extreme motions.
+
 ---
 
 ## Notes on Verification
