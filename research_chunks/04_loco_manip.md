@@ -1507,3 +1507,60 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Nested kinodynamic optimizer checks candidate contact sequences, guides LLM-sampled contact plans, and generates humanoid loco-manipulation trajectories trackable by RL controllers.
   why_it_matters: Targets the planning bottleneck for novel humanoid contact-rich behaviors before committing to expensive low-level policy execution.
+
+- title: PRISM: Polynomial Representations for Interaction-Structured Motor Control
+  authors: Seung Hyun Lee; Stella X. Yu
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.23473
+  paper_url: https://arxiv.org/abs/2607.23473
+  project_url: https://lsh3163.github.io/prism/
+  code_url: https://github.com/lsh3163/prism
+  dataset_url: ""
+  category: WBC
+  task_tags: [policy-architecture, polynomial-features, humanoid-locomotion, contact-rich-manipulation]
+  robot_platform: Humanoid-Gym / contact-rich manipulation benchmarks
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Adds compact factorized polynomial interaction features to MLP and diffusion-policy backbones for humanoid locomotion and contact-rich manipulation.
+  why_it_matters: Shows that explicitly modeling products among proprioceptive variables can improve motor-control policies beyond simply scaling MLP capacity.
+
+- title: P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning
+  authors: Liyun Yan; Jianming Ma; Yang Zhang; Shengcheng Fu; Zhanxiang Cao; Keqi Zhu; Yizhi Chen; Yue Gao
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.25541
+  paper_url: https://arxiv.org/abs/2607.25541
+  project_url: https://github.com/ylyem9x/P3_Open
+  code_url: https://github.com/ylyem9x/P3_Open
+  dataset_url: ""
+  category: WBC
+  task_tags: [VAE-policy, PPO, humanoid-parkour, Unitree-G1]
+  robot_platform: Unitree G1 / humanoid parkour tasks
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Propagates latent uncertainty through PPO-style policy optimization to stabilize VAE-based humanoid locomotion and parkour learning.
+  why_it_matters: Provides an open G1 locomotion stack for studying stochastic-latent policy training without the bias of single-sample VAE approximations.
+
+- title: PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball
+  authors: Lizhi Yang; Junheng Li; Aaron D. Ames
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.28623
+  paper_url: https://arxiv.org/abs/2607.28623
+  project_url: https://lzyang2000.github.io/perceptive_cbf_rl/
+  code_url: https://github.com/lzyang2000/perceptive_cbf_rl
+  dataset_url: ""
+  category: WBC
+  task_tags: [CBF-RL, whole-body-safety, perception-aware-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Couples control-barrier-function RL with onboard masked-depth perception so a G1 can dodge balls while maintaining whole-body link clearance.
+  why_it_matters: Makes safety constraints deployment-aware by training against what the head-mounted perception stack can actually observe at runtime.

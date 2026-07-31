@@ -6,25 +6,25 @@
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
 | `02_hoi_motion.md` | 88 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 96 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 83 | Whole-body control and loco-manipulation |
+| `03_wbc_tracking.md` | 97 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 86 | Whole-body control and loco-manipulation |
 | `05_foundation.md` | 63 | Humanoid foundation models and generalist VLAs |
 | `06_retarget_teleop.md` | 67 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 93 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `07_data_bench_s2r.md` | 94 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 552**
+**Total unique papers after deduplication: 557**
 
 ## Per-Category Counts
 
 - Human-Object Interaction Motion Generation: 49
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 141
-- Whole-Body Control and Loco-Manipulation: 77
+- Whole-Body Motion Tracking and Imitation: 142
+- Whole-Body Control and Loco-Manipulation: 80
 - Humanoid Foundation Models and Generalist Policies: 77
 - Human-to-Humanoid Retargeting: 15
 - Teleoperation and Demonstration Collection: 37
-- Datasets and Benchmarks: 66
+- Datasets and Benchmarks: 67
 - Evaluation Metrics and Contact Modeling: 10
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 226 |
+| ⭐ Code | 229 |
 | ❌ No Code | 162 |
 | 🌐 Project Page | 129 |
-| 📦 Dataset | 14 |
-| ⏳ Code Coming Soon | 12 |
+| 📦 Dataset | 15 |
+| ⏳ Code Coming Soon | 13 |
 | 🧩 Partial Code | 8 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,29 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-07-31 — 5 new, 0 updated
+- Window: 2026-07-24 → 2026-07-31.
+- Sources searched: arXiv API listings for cs.RO, cs.CV, cs.LG, and cs.GR filtered by submittedDate; arXiv API lastUpdatedDate pass over known chunk arXiv IDs; arXiv abstract/HTML pages; project pages; Hugging Face dataset page; GitHub search results; GitHub `ls-remote`; GitHub tree/content checks for implementation files.
+- Query focus: humanoid whole-body control, motion-imitation priors, humanoid parkour/locomotion policy learning, safety-aware CBF-RL, humanoid loco-manipulation, human-object/human-scene interaction datasets, teleoperation, retargeting, and VLA papers with explicit humanoid or HOI relevance.
+- New entries by source chunk:
+  - `03_wbc_tracking.md` — 1 entry: Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation (2607.24083).
+  - `04_loco_manip.md` — 3 entries: PRISM (2607.23473), P3 (2607.25541), PAC-MAN (2607.28623).
+  - `07_data_bench_s2r.md` — 1 entry: ACE-Data-0 (2607.28625).
+- Verified official code repos:
+  - https://github.com/lsh3163/prism
+  - https://github.com/ylyem9x/P3_Open
+  - https://github.com/lzyang2000/perceptive_cbf_rl
+- Verified dataset/project releases:
+  - https://hucebot.github.io/hmp-project/ — project page reachable and explicitly marks code coming soon.
+  - https://ace-data-engine.github.io/ACE-Data-0/
+  - https://huggingface.co/datasets/ACERobotics/ACE-Data-0
+- Existing-paper updates: none verified. A lastUpdatedDate pass over existing arXiv IDs in cs.RO/cs.CV/cs.LG/cs.GR found no previously tracked paper with a new revision in the 2026-07-24 → 2026-07-31 window.
+- Unresolved code-status items:
+  - https://hucebot.github.io/hmp-project/ — official project page says code will be released soon; no method repository surfaced.
+  - https://ace-data-engine.github.io/ACE-Data-0/ — dataset/project release verified, but no separate method code repository was found or expected from the page.
+- Inspected but excluded: AgentHOI (2607.22241, HOI video generation with code but not 3D HOI motion/control, matching prior StreamHOI exclusion policy), Real-Time Human-Centric World Modeling for Upper-Body Human-Object Interaction (2607.23517, upper-body video/world generation rather than 3D motion/control and no code/project release), Hand-Object Interaction in the Age of Large Foundation Models (2607.28394, survey), Speech2Grasp (2607.26567, speech-conditioned grasp detection for humanoid HRI rather than WBC/HOI generation), Design and Human Evaluation of Tactile Withdrawal Reflexes (2607.22249, robot-arm reflex study rather than humanoid whole-body control), Pose-Aware Modeling for Tactile Gloves (2607.22964, sensor modeling), HiFi-UMI (2607.25895, generic robot-free manipulation data), DexDirect (2607.27784, dexterous demo collection without humanoid whole-body focus), Transformer Transformer (2607.25798, broad robot co-design), SymmGrid (2607.26985, generic manipulation on-robot learning), When Does Legacy Data Start to Help? (2607.25593, cross-configuration wheeled-humanoid data reuse but no whole-body-control or HOI focus), and broad VLA/manipulation, navigation, HRI, computer-vision, medical, geospatial, and foundation-model papers matched only by generic keywords.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-07-24 — 5 new, 0 updated
 - Window: 2026-07-17 → 2026-07-24.

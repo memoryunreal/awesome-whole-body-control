@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (226 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (229 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (18)
 
@@ -434,7 +434,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://xbpeng.github.io/projects/DeepMimic/index.html) · [Code](https://github.com/xbpeng/DeepMimic) · [Paper](https://arxiv.org/abs/1804.02717)
 
 
-## Whole-Body Control and Loco-Manipulation (30)
+## Whole-Body Control and Loco-Manipulation (33)
 
 - ⭐ 🤖 🧍 **[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.23680)** `arXiv 2026.06` `Unitree G1 + WUJI hand` `Loco-Manipulation`
   Sikai Li et al..
@@ -456,10 +456,25 @@ This is the canonical list of papers with **verified official open-source code**
   Open simulation-to-real data pipeline for humanoid loco-manipulation with embodiment-aligned demonstrations.
   Links: [Project](https://oasis-humanoid.github.io/) · [Code](https://github.com/TeleHuman/OASIS) · [Paper](https://arxiv.org/abs/2606.08548)
 
+- ⭐ 🤖 🧍 **[PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball](https://arxiv.org/abs/2607.28623)** `arXiv 2026.07` `Unitree G1` `WBC`
+  Lizhi Yang et al..
+  Couples control-barrier-function RL with onboard masked-depth perception so a G1 can dodge balls while maintaining whole-body link clearance.
+  Links: [Project](https://lzyang2000.github.io/perceptive_cbf_rl/) · [Code](https://github.com/lzyang2000/perceptive_cbf_rl) · [Paper](https://arxiv.org/abs/2607.28623)
+
 - ⭐ 🧍 🧱 **[Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation](https://arxiv.org/abs/2606.05687)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
   Junheng Li et al..
   Efficient training-time MPC guidance for humanoid locomotion and manipulation policies.
   Links: [Project](https://github.com/junhengl/mpc-rl) · [Code](https://github.com/junhengl/mpc-rl) · [Paper](https://arxiv.org/abs/2606.05687)
+
+- ⭐ 🧍 🧱 **[P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning](https://arxiv.org/abs/2607.25541)** `arXiv 2026.07` `Unitree G1 / humanoid parkour tasks` `WBC`
+  Liyun Yan et al..
+  Propagates latent uncertainty through PPO-style policy optimization to stabilize VAE-based humanoid locomotion and parkour learning.
+  Links: [Project](https://github.com/ylyem9x/P3_Open) · [Code](https://github.com/ylyem9x/P3_Open) · [Paper](https://arxiv.org/abs/2607.25541)
+
+- ⭐ 🧍 🧱 **[PRISM: Polynomial Representations for Interaction-Structured Motor Control](https://arxiv.org/abs/2607.23473)** `arXiv 2026.07` `Humanoid-Gym / contact-rich manipulation benchmarks` `WBC`
+  Seung Hyun Lee et al..
+  Adds compact factorized polynomial interaction features to MLP and diffusion-policy backbones for humanoid locomotion and contact-rich manipulation.
+  Links: [Project](https://lsh3163.github.io/prism/) · [Code](https://github.com/lsh3163/prism) · [Paper](https://arxiv.org/abs/2607.23473)
 
 - ⭐ 🧍 🧱 **[SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation](https://arxiv.org/abs/2606.08278)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
   Songlin Wei et al..

@@ -1387,6 +1387,25 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Captures 55 scene-aligned egocentric human-terrain sequences and uses them to train perceptive locomotion policies deployed on a Unitree G1.
   why_it_matters: Supplies terrain-grounded human motion and scene data for learning context-aware humanoid locomotion in rough environments.
 
+- title: ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine
+  authors: Yukang Cao; Haozhe Xie; Beichen Wen; Runmao Yao; Yinghao Liu; Yue Huang; Zhichao Liao; Yunxiang Wang; Haiheng Liu; Xingshun Tian; Dawei Su; Long Zhuo; Dacheng Tao; Xiaogang Wang; Liang Pan; Ziwei Liu
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.28625
+  paper_url: https://arxiv.org/abs/2607.28625
+  project_url: https://ace-data-engine.github.io/ACE-Data-0/
+  code_url: ""
+  dataset_url: https://huggingface.co/datasets/ACERobotics/ACE-Data-0
+  category: Dataset
+  task_tags: [ambient-capture, human-object-interaction, human-scene-interaction, full-body-motion, tactile]
+  robot_platform: N/A (human demonstrations for embodied AI)
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 📦 Dataset
+  one_line: Releases a synchronized home-capture dataset with egocentric and exocentric video, full-body and hand motion, object trajectories, audio, and tactile signals.
+  why_it_matters: Gives HOI, HSI, imitation-learning, world-model, and VLA work a long-horizon dataset with aligned kinematic, perceptual, object-state, and contact supervision.
+
 ---
 
 ## Notes

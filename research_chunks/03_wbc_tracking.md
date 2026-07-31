@@ -1749,6 +1749,25 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Continual-learning framework adds difficult highly dynamic motions to a generalist humanoid tracker without sacrificing mastered everyday skills.
   why_it_matters: Directly targets the generalist-versus-specialist tradeoff that limits deployable humanoid whole-body tracking under extreme motions.
 
+- title: Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation
+  authors: Valerio Belli; Valerio Modugno; Enrico Mingo Hoffman; Fabio Amadio
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.24083
+  paper_url: https://arxiv.org/abs/2607.24083
+  project_url: https://hucebot.github.io/hmp-project/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [hybrid-motion-prior, motion-imitation, RVQ-codebook, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Distills a retargeted motion-imitation expert into a frozen residual-vector-quantized hybrid motion prior reused by downstream locomotion policies.
+  why_it_matters: Turns motion tracking from a reference-following controller into a reusable action interface for velocity tracking, point-goal navigation, and fall-recovery policies on G1.
+
 ---
 
 ## Notes on Verification
