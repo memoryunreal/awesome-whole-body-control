@@ -1220,6 +1220,63 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Builds a VR upper-body teleoperation and RL lower-body balance stack for miniature humanoid tele-loco-manipulation on ROBOTIS OP3.
   why_it_matters: Makes the full-size humanoid tele-loco-manipulation recipe accessible on lower-cost research hardware.
 
+- title: Event-Based Upper-Body Humanoid Teleoperation Under Challenging Illumination
+  authors: Haoyu Fu; Zhou Ge; Chengze Li; Chenzhao Sun; Ze Cui; Wenjing Zhou; Xulei Qin
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.29227
+  paper_url: https://arxiv.org/abs/2607.29227
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [event-camera, upper-body-teleoperation, TWIST-retargeting, low-light, humanoid]
+  robot_platform: Booster T1 / 18-DoF humanoid upper body
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Uses event-camera perception with inertial fusion and causal TWIST retargeting for low-latency upper-body humanoid teleoperation under difficult lighting.
+  why_it_matters: Expands humanoid teleoperation sensing beyond RGB cameras, targeting the lighting and motion-blur failures that limit live whole-body data collection.
+
+- title: Teleopit: A Full-Embodiment Humanoid Teleoperation System
+  authors: Bingqian Wu; Zicheng Xu; Xianghui Fan; Dayu Li; Xiangru Huang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.01834
+  paper_url: https://arxiv.org/abs/2608.01834
+  project_url: https://botrunner64.github.io/teleopit-page
+  code_url: https://github.com/BotRunner64/Teleopit
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [full-embodiment-teleoperation, dexterous-hand-retargeting, active-vision, GR00T, ACT]
+  robot_platform: Unitree G1 / configurable dexterous hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Maps VR body, hand, and head signals into humanoid body motion, dexterous hands, and active vision, then trains ACT and GR00T policies from collected demos.
+  why_it_matters: Provides a verified open full-stack teleoperation release spanning whole-body control, hand retargeting, active vision, and imitation-learning integration.
+
+- title: Shooting for Contact: Contact-Implicit Multiple Shooting for Dynamic Motion Retargeting
+  authors: Sergio A. Esteban; Jason H. K. Siu; Derrick Mach; Junheng Li; Vince Kurtz; Joel W. Burdick; Aaron D. Ames
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.03116
+  paper_url: https://arxiv.org/abs/2608.03116
+  project_url: https://shooting-for-contact.github.io/
+  code_url: https://github.com/sesteban951/shooting-for-contact
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [contact-implicit-retargeting, multiple-shooting, differentiable-simulation, Unitree-G1]
+  robot_platform: Unitree G1 / Go2 / legged systems
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Uses contact-implicit direct simulation multiple shooting to convert kinematic references into dynamically feasible trajectories for RL tracking and G1 sim-to-real transfer.
+  why_it_matters: Directly targets the contact, impact, actuation, and self-collision errors that make kinematic retargeting brittle for contact-rich humanoid behaviors.
+
 ---
 
 ## Notes

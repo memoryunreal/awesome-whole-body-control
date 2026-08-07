@@ -1590,6 +1590,44 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Joint diffusion framework synthesizes synchronized multi-view HOI videos together with globally aligned 3D point tracks.
   why_it_matters: Adds explicit multi-view geometric motion consistency to HOI generation, reducing hallucinated contact and floating artifacts that limit robot-useful video priors.
 
+- title: PhotoHOI: Synthesizing 3D Hand-Object Interactions from a Single RGB Photograph
+  authors: Zhenhao Zhang; Jiajun Zhang; Wei Min; Yebin Liu
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.01905
+  paper_url: https://arxiv.org/abs/2608.01905
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [photo-conditioned-HOI, open-vocabulary, contact-priors, hand-object-motion]
+  robot_platform: hand-object interaction synthesis
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Synthesizes 3D hand-object interaction sequences from one RGB photograph and an open-vocabulary instruction by planning object motion and contact-conditioned hand motion.
+  why_it_matters: Moves HOI generation toward natural image inputs where object geometry, support relations, and task targets must be inferred rather than pre-specified.
+
+- title: Surface Keypoint Representation for Multi-Object and Articulated Human-Object Interaction Generation
+  authors: Xiaogang Peng; Zeyu Han; Zichong Meng; Yiming Xie; Jihua Zhu; Gang Hua; Huaizu Jiang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.03158
+  paper_url: https://arxiv.org/abs/2608.03158
+  project_url: https://neu-vi.github.io/SK-HOI/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [surface-keypoints, multi-object-HOI, articulated-objects, contact-distance-field]
+  robot_platform: human-object interaction synthesis
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Represents object motion with surface keypoint trajectories and generates whole-body HOI for multi-object and articulated-object settings through contact-field guidance.
+  why_it_matters: Extends HOI synthesis beyond single rigid objects, which is closer to household interaction tasks involving drawers, appliances, furniture, and multiple movable items.
+
 ---
 
 ## Summary

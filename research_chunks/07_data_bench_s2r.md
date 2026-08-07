@@ -1406,6 +1406,25 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Releases a synchronized home-capture dataset with egocentric and exocentric video, full-body and hand motion, object trajectories, audio, and tactile signals.
   why_it_matters: Gives HOI, HSI, imitation-learning, world-model, and VLA work a long-horizon dataset with aligned kinematic, perceptual, object-state, and contact supervision.
 
+- title: HOPE: Hand-Object Pressure Estimation from Monocular Videos
+  authors: Subin Jeon; Byungjun Kim; Hanbyul Joo
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.06192
+  paper_url: https://arxiv.org/abs/2608.06192
+  project_url: https://subin6.github.io/page-hope
+  code_url: ""
+  dataset_url: ""
+  category: Contact Metrics
+  task_tags: [hand-object-pressure, monocular-video, contact-estimation, tactile-supervision]
+  robot_platform: hand-object interaction data
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Predicts temporally evolving hand-mesh pressure and contact from monocular hand-object videos by aligning tactile-glove, planar-sensor, and contact-distance supervision.
+  why_it_matters: Adds richer contact supervision than binary touch labels, which can improve HOI quality checks and downstream dexterous manipulation priors.
+
 ---
 
 ## Notes

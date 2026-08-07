@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (229 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (232 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (18)
 
@@ -163,7 +163,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (54)
+## Whole-Body Motion Tracking and Imitation (55)
 
 - ⭐ 🤖 🧍 **[GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR)** `ICRA 2026` `Unitree H1, H1-2, G1, multi-robot` `WBC-Tracking`
   Yanjie Ze et al..
@@ -174,6 +174,11 @@ This is the canonical list of papers with **verified official open-source code**
   Yu Guan et al..
   Data-centric motion-tracking study showing that carefully filtered high-quality motions can outperform much larger noisy corpora.
   Links: [Project](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Paper](https://arxiv.org/abs/2606.06953)
+
+- ⭐ 🤖 🧍 **[LooperMuscle: Fast and Stable Learning of Humanoid Whole-Body Tracking via Structured Mixture-of-Experts](https://arxiv.org/abs/2608.00820)** `arXiv 2026.08` `Holosoma runtime / humanoid` `WBC`
+  Boyi Liu et al..
+  Uses a structured mixture-of-experts actor, expert-aware distributional critic, and contribution-routed replay to close the FastSAC-versus-PPO tracking-quality gap.
+  Links: [Project](https://loopermuscle.github.io/) · [Code](https://github.com/LooperMuscle/Code) · [Paper](https://arxiv.org/abs/2608.00820)
 
 - ⭐ 🤖 🧍 **[M3imic: Learning a Versatile Whole-Body Controller for Multimodal Motion Mimicking](https://arxiv.org/abs/2606.04829)** `arXiv 2026.06` `humanoid` `Motion-Imitation`
   Zuxing Lu et al..
@@ -761,7 +766,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://motion-gpt.github.io/) · [Code](https://github.com/OpenMotionLab/MotionGPT) · [Paper](https://arxiv.org/abs/2306.14795)
 
 
-## Human-to-Humanoid Retargeting (4)
+## Human-to-Humanoid Retargeting (5)
+
+- ⭐ 🤖 🧍 **[Shooting for Contact: Contact-Implicit Multiple Shooting for Dynamic Motion Retargeting](https://arxiv.org/abs/2608.03116)** `arXiv 2026.08` `Unitree G1 / Go2 / legged systems` `Retargeting`
+  Sergio A. Esteban et al..
+  Uses contact-implicit direct simulation multiple shooting to convert kinematic references into dynamically feasible trajectories for RL tracking and G1 sim-to-real transfer.
+  Links: [Project](https://shooting-for-contact.github.io/) · [Code](https://github.com/sesteban951/shooting-for-contact) · [Paper](https://arxiv.org/abs/2608.03116)
 
 - ⭐ 🤖 🧍 **[Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data](https://arxiv.org/abs/2606.22136)** `arXiv 2026.06` `dexterous hands / humanoid-relevant manipulation` `Retargeting`
   Yangtao Chen et al..
@@ -784,7 +794,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://kevinzakka.github.io/mink/) · [Code](https://github.com/kevinzakka/mink) · [Paper](https://kevinzakka.github.io/mink/)
 
 
-## Teleoperation and Demonstration Collection (21)
+## Teleoperation and Demonstration Collection (22)
+
+- ⭐ 🤖 🧍 **[Teleopit: A Full-Embodiment Humanoid Teleoperation System](https://arxiv.org/abs/2608.01834)** `arXiv 2026.08` `Unitree G1 / configurable dexterous hands` `Teleoperation`
+  Bingqian Wu et al..
+  Maps VR body, hand, and head signals into humanoid body motion, dexterous hands, and active vision, then trains ACT and GR00T policies from collected demos.
+  Links: [Project](https://botrunner64.github.io/teleopit-page) · [Code](https://github.com/BotRunner64/Teleopit) · [Paper](https://arxiv.org/abs/2608.01834)
 
 - ⭐ 🤖 **[ACE-F: A Cross Embodiment Foldable System with Force Feedback for Dexterous Teleoperation](https://arxiv.org/abs/2511.20887)** `arXiv preprint` `multiple` `Teleoperation`
   et al..

@@ -1104,6 +1104,25 @@ Code-status legend:
   one_line: DEED post-trains a GR00T-based humanoid VLA for supermarket chip restocking with data curation, control-frequency alignment, visual highlighting, and experience-driven refinement.
   why_it_matters: Documents the systems work needed to move humanoid VLAs from lab demos to store-floor deployment with limited data and compute.
 
+- title: CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning
+  authors: Yuxin Chen; Hari Srikanth; Nathan Jew; Menglin Wu; Pengcheng Wang; Junli Ren; Masayoshi Tomizuka; Peng Xu; Jinyu Xie; Thomas Tian
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.29172
+  paper_url: https://arxiv.org/abs/2607.29172
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [humanoid-specialization, Gemini-Robotics, closed-loop-finetuning, managed-SFT]
+  robot_platform: humanoid manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Studies closed-loop adaptation of a managed closed-weight robot foundation model for contact-rich humanoid manipulation without access to model weights or gradients.
+  why_it_matters: Clarifies what can and cannot be improved when humanoid teams depend on proprietary VLA fine-tuning APIs rather than open policy internals.
+
 ---
 
 ## Quick stats

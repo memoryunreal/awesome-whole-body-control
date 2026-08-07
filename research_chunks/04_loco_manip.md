@@ -1564,3 +1564,98 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ⭐ Code
   one_line: Couples control-barrier-function RL with onboard masked-depth perception so a G1 can dodge balls while maintaining whole-body link clearance.
   why_it_matters: Makes safety constraints deployment-aware by training against what the head-mounted perception stack can actually observe at runtime.
+
+- title: $omega$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation
+  authors: Zhe Li; Zhenzhe Zhang; Yangyang Wei; Wenjie Zhang; Xichen Yuan; Peiyuan Zhi; Gen Li; Xinying Guo; Fengjie Gao; Jianfei Yang; Shanghang Zhang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.06375
+  paper_url: https://arxiv.org/abs/2608.06375
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [world-action-model, concurrent-loco-manipulation, whole-body-action-latents, humanoid-household]
+  robot_platform: household humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Predicts controller-compatible whole-body action latents from language, vision, and proprioception for concurrent real-world humanoid household loco-manipulation.
+  why_it_matters: Pushes world-action modeling past arm-centric policies toward manipulate-while-moving humanoid behaviors and introduces a 40+ hour household humanoid dataset.
+
+- title: Developing Combined Manipulation and Locomotion Skills with Interaction Representation and Skill Composition
+  authors: Fanxing Meng; Jing Xiao
+  year: 2026
+  venue: Humanoids 2026 submission / arXiv 2026.08
+  arxiv_id: 2608.00208
+  paper_url: https://arxiv.org/abs/2608.00208
+  project_url: https://youtu.be/x-7x89fSJWY
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [skill-composition, grasping, standing-up, walking, humanoid]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns whole-body reaching and grasping, then composes it with standing-up and walking policies through hand-object interaction scores.
+  why_it_matters: Studies how separately learned humanoid manipulation and locomotion skills can be composed into longer grasp-stand-walk behaviors.
+
+- title: Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation
+  authors: Hongming Chen; Zhuoran Li; Hongxi Wang; Jiangpeng Hu; Ziliang Li; Peize Liu; QingRui Zhao; Xuhao Liu; Liang Pan; Ximin Lyu; Yuntao Ma; Tingxiang Fan
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.02653
+  paper_url: https://arxiv.org/abs/2608.02653
+  project_url: https://light-loco-parkour.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [perceptive-locomotion, parkour, multi-skill-distillation, depth, whole-body]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Distills terrain-conditioned whole-body traversal skills into a single depth-conditioned humanoid locomotion policy for walking, balancing, climbing, stepping down, and vaulting.
+  why_it_matters: Moves perceptive humanoid locomotion from lower-body obstacle response toward autonomous whole-body use of arms, torso, and knees on real hardware.
+
+- title: RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation
+  authors: Shuliang He; Shuai Wang; Bo Yue; Junchi Teng; Changyu Wang; Guiliang Liu
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.03387
+  paper_url: https://arxiv.org/abs/2608.03387
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [generated-egocentric-video, skill-distillation, whole-body-manipulation, humanoid-retargeting]
+  robot_platform: high-DoF humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Converts generated human manipulation videos into object-grounded keyframes, retargets them to humanoids, and refines execution through VLM-guided closed-loop correction.
+  why_it_matters: Shows a path from generative video priors to executable humanoid whole-body manipulation without collecting target-task teleoperation demonstrations.
+
+- title: Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control
+  authors: Hyunjong Song; William Z. Peng; Joo H. Kim
+  year: 2026
+  venue: arXiv 2026.07
+  arxiv_id: 2607.29625
+  paper_url: https://arxiv.org/abs/2607.29625
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [object-mass, balance-stability, lifting-control, whole-body-dynamics]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Analyzes how object mass changes humanoid balance boundaries and uses those dynamics to design lifting and momentum-regulation controllers.
+  why_it_matters: Gives a model-based account of the stability tradeoffs that appear when humanoids lift and carry objects during loco-manipulation.

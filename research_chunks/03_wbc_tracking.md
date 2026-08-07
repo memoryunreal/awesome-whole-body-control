@@ -1768,6 +1768,120 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Distills a retargeted motion-imitation expert into a frozen residual-vector-quantized hybrid motion prior reused by downstream locomotion policies.
   why_it_matters: Turns motion tracking from a reference-following controller into a reusable action interface for velocity tracking, point-goal navigation, and fall-recovery policies on G1.
 
+- title: LooperMuscle: Fast and Stable Learning of Humanoid Whole-Body Tracking via Structured Mixture-of-Experts
+  authors: Boyi Liu; Qijin Li; Tianqi Yu; Qinrui Yan; Xingxing Zuo
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.00820
+  paper_url: https://arxiv.org/abs/2608.00820
+  project_url: https://loopermuscle.github.io/
+  code_url: https://github.com/LooperMuscle/Code
+  dataset_url: ""
+  category: WBC
+  task_tags: [whole-body-tracking, mixture-of-experts, FastSAC, sim2real]
+  robot_platform: Holosoma runtime / humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Uses a structured mixture-of-experts actor, expert-aware distributional critic, and contribution-routed replay to close the FastSAC-versus-PPO tracking-quality gap.
+  why_it_matters: Provides a verified open implementation for faster humanoid whole-body tracking iteration while preserving practical sim-to-real deployment paths.
+
+- title: First Deployable Dynamic-CoM: A Unified Policy and Method-Agnostic Benchmark for Humanoid Single-Leg Balance
+  authors: Yikai Zhou; Xingyun Wang; Jieming Cui; Bozhou Chen; Yikai Fan; Yixin Zhu; Wenxin Li
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.00500
+  paper_url: https://arxiv.org/abs/2608.00500
+  project_url: ""
+  code_url: ""
+  dataset_url: https://huggingface.co/datasets/zhouyikai/FDDC-single-leg-balance
+  category: WBC
+  task_tags: [single-leg-balance, dynamic-CoM, FastSAC, Unitree-G1, benchmark]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 📦 Dataset
+  one_line: Introduces a deployable support-relative dynamic-CoM observation and benchmark for clean single-leg humanoid balance on real Unitree G1 hardware.
+  why_it_matters: Turns a basic but brittle balance capability into a reproducible stress test for general humanoid controllers rather than another task-specific demo.
+
+- title: GenTrack: Physical Alignment for Robot-Native Motion Generation and Zero-Shot Humanoid Tracking
+  authors: Zeyu Ling; Xinyao Yu; Renye Yan; Jikang Cheng; Zhanke Wang; Qing Shuai; Changqing Zou
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.01410
+  paper_url: https://arxiv.org/abs/2608.01410
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [motion-generation, zero-shot-tracking, execution-grounded-alignment, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Alternates text-to-motion generator alignment with tracker training so generated references become more robot-executable for zero-shot humanoid tracking.
+  why_it_matters: Addresses the gap between semantically plausible human motions and robot-native references that a humanoid tracker can execute without new data collection.
+
+- title: StableMimic: Smooth Human-Like Recovery for Humanoid Motion Tracking
+  authors: Weihao Wu; Ming Huang; Ruofei Liu; Jinglei Nie; Shuxiang Guo; Chunying Li
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.02385
+  paper_url: https://arxiv.org/abs/2608.02385
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [fall-recovery, motion-tracking, mixture-of-experts, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Blends tracking and recovery experts with a proprioceptive gate so a humanoid can recover from low-height fall states and resume reference tracking.
+  why_it_matters: Makes recovery part of the deployed tracker rather than a separate reference retrieval or emergency policy switch.
+
+- title: Learning Context-Aware Motion Priors for Humanoid Control
+  authors: Yunyang Mo; Yi Gu; Yangchen Zhou; Hanyang Cao; Renjing Xu
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.03234
+  paper_url: https://arxiv.org/abs/2608.03234
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [motion-priors, context-conditioning, AMP, score-matching, humanoid-control]
+  robot_platform: humanoid control benchmarks
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Learns context-motion compatibility from high-advantage rollouts and reweights motion-prior supervision for the current humanoid control task.
+  why_it_matters: Reduces the risk that broad motion priors guide policy learning toward irrelevant reference motions when task context changes.
+
+- title: PFM-HR: Pose Flow Matching for Humanoid Robots
+  authors: Yukang Gao; Yi Gu; Yangchen Zhou; Xingyu Chen; Zhaorui Wang; Fanghai Zhang; Hanyang Cao; Zhengyang Shen; Ji Ma; Runhan Zhang; Lei Han; Renjing Xu
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.03227
+  paper_url: https://arxiv.org/abs/2608.03227
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [pose-flow-matching, motion-prior, unordered-pose-data, humanoid-tracking]
+  robot_platform: humanoid tracking benchmarks
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains a reusable flow-matching pose prior from unordered pose data and uses a Pose Geometry Score to reward structured pose transitions during tracking.
+  why_it_matters: Offers a motion-prior route that does not require ordered clips, potentially broadening reusable supervision for dynamic humanoid tracking.
+
 ---
 
 ## Notes on Verification

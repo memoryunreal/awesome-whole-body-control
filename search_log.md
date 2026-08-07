@@ -5,27 +5,27 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 88 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 97 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 86 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 63 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 67 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 94 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `02_hoi_motion.md` | 90 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 103 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 91 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 64 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 70 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 95 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 557**
+**Total unique papers after deduplication: 575**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 49
+- Human-Object Interaction Motion Generation: 51
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 142
-- Whole-Body Control and Loco-Manipulation: 80
-- Humanoid Foundation Models and Generalist Policies: 77
-- Human-to-Humanoid Retargeting: 15
-- Teleoperation and Demonstration Collection: 37
+- Whole-Body Motion Tracking and Imitation: 148
+- Whole-Body Control and Loco-Manipulation: 85
+- Humanoid Foundation Models and Generalist Policies: 78
+- Human-to-Humanoid Retargeting: 16
+- Teleoperation and Demonstration Collection: 39
 - Datasets and Benchmarks: 67
-- Evaluation Metrics and Contact Modeling: 10
+- Evaluation Metrics and Contact Modeling: 11
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
 
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 229 |
-| ❌ No Code | 162 |
-| 🌐 Project Page | 129 |
-| 📦 Dataset | 15 |
-| ⏳ Code Coming Soon | 13 |
+| ⭐ Code | 232 |
+| ❌ No Code | 171 |
+| 🌐 Project Page | 133 |
+| 📦 Dataset | 16 |
+| ⏳ Code Coming Soon | 14 |
 | 🧩 Partial Code | 8 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,39 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-08-07 — 18 new, 0 updated
+- Window: 2026-07-31 → 2026-08-07.
+- Sources searched: arXiv `pastweek` / `recent` listings for cs.RO, cs.CV, cs.LG, and cs.GR; arXiv abstract pages and experimental HTML pages; project pages; Hugging Face dataset page; GitHub search results; GitHub `ls-remote`; GitHub API tree/content checks for implementation files. The arXiv API submittedDate/lastUpdatedDate endpoint timed out repeatedly in this environment, so the week sweep used the arXiv category listing pages plus abstract submission/revision metadata.
+- Query focus: humanoid whole-body tracking, recovery and balance, humanoid loco-manipulation, world-action/VLA systems with explicit humanoid deployment, human-to-humanoid retargeting, full-body teleoperation, HOI motion generation, articulated/multi-object HOI, and hand-object contact/pressure estimation.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 2 entries: PhotoHOI (2608.01905), Surface Keypoint Representation for Multi-Object and Articulated Human-Object Interaction Generation (2608.03158).
+  - `03_wbc_tracking.md` — 6 entries: LooperMuscle (2608.00820), First Deployable Dynamic-CoM (2608.00500), GenTrack (2608.01410), StableMimic (2608.02385), Learning Context-Aware Motion Priors for Humanoid Control (2608.03234), PFM-HR (2608.03227).
+  - `04_loco_manip.md` — 5 entries: $omega$-0 (2608.06375), Developing Combined Manipulation and Locomotion Skills with Interaction Representation and Skill Composition (2608.00208), Light-Loco-Parkour (2608.02653), RoboReact (2608.03387), Balancing of Humanoid with Object Mass (2607.29625).
+  - `05_foundation.md` — 1 entry: CLIFT (2607.29172).
+  - `06_retarget_teleop.md` — 3 entries: Event-Based Upper-Body Humanoid Teleoperation Under Challenging Illumination (2607.29227), Teleopit (2608.01834), Shooting for Contact (2608.03116).
+  - `07_data_bench_s2r.md` — 1 entry: HOPE (2608.06192).
+- Verified official code repos:
+  - https://github.com/LooperMuscle/Code
+  - https://github.com/BotRunner64/Teleopit
+  - https://github.com/sesteban951/shooting-for-contact
+- Verified dataset/project releases:
+  - https://huggingface.co/datasets/zhouyikai/FDDC-single-leg-balance
+  - https://light-loco-parkour.github.io/
+  - https://loopermuscle.github.io/
+  - https://botrunner64.github.io/teleopit-page
+  - https://shooting-for-contact.github.io/
+  - https://neu-vi.github.io/SK-HOI/ and https://www.ericpeng.site/project_websites/SK-HOI
+  - https://subin6.github.io/page-hope
+- Existing-paper updates: none verified. The arXiv API lastUpdatedDate pass was attempted but unavailable due repeated timeouts; abstract/HTML checks and project/code checks did not surface verified updates to already tracked papers.
+- Unresolved code-status items:
+  - https://light-loco-parkour.github.io/ — project page reachable, but no code repository was exposed.
+  - https://neu-vi.github.io/SK-HOI/ — project page reachable via iframe, but the Code button is a placeholder.
+  - https://subin6.github.io/page-hope — project page reachable, but no code repository was found from the page.
+  - https://loopermuscle.github.io/ — project page still contains template placeholders, but the linked https://github.com/LooperMuscle/Code repository is reachable and contains implementation files; tracked as verified code with that caveat.
+  - https://arxiv.org/abs/2608.06375, https://arxiv.org/abs/2608.01410, https://arxiv.org/abs/2608.02385, https://arxiv.org/abs/2608.03227, https://arxiv.org/abs/2608.03387, https://arxiv.org/abs/2607.29172, https://arxiv.org/abs/2607.29227, and https://arxiv.org/abs/2607.29625 — no official code/project repository surfaced during inspection.
+- Inspected but excluded: Learning Panorama-Aware VLA for Mobile Manipulation with Whole-Body Teleoperation (2608.02257, wheeled bimanual mobile manipulator rather than humanoid WBC), MDIR (2607.29271, Franka impedance retargeting without humanoid whole-body specificity), RF-HOI (2608.00289, HOI recognition from RF signals rather than HOI motion generation/control), SiMDex (2608.04196, cross-embodiment dexterous VLA data mining but no explicit humanoid whole-body control and Code button disabled), Ego2Robot (2608.02580, generic robot-arm data synthesis across morphologies without humanoid whole-body focus and Code button placeholder), PanoVLA/BridgeVLA++/Mind-VLA/In-Context VLA and other broad VLA/WAM papers matched only by generic manipulation language, KILVO (2608.05647, humanoid odometry rather than control), whole-body tactile skin (2608.02080, humanoid hardware sensor rather than motion/control/list focus), construction task execution (2608.01600, narrow application paper without code/project release), and broad navigation, driving, medical, geospatial, software, underwater, exoskeleton, HRI, detection, and foundation-model papers matched only by generic keywords.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-07-31 — 5 new, 0 updated
 - Window: 2026-07-24 → 2026-07-31.
