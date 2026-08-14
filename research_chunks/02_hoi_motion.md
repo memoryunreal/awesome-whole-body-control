@@ -1628,6 +1628,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Represents object motion with surface keypoint trajectories and generates whole-body HOI for multi-object and articulated-object settings through contact-field guidance.
   why_it_matters: Extends HOI synthesis beyond single rigid objects, which is closer to household interaction tasks involving drawers, appliances, furniture, and multiple movable items.
 
+- title: MAD-HOI: Masked Autoregressive Diffusion for Generating Articulated Hand Object Interactions from Text
+  authors: Ananya Bal; Kartik Sharma; Ethan Lai; Samyak Tiwari; Liza Dahiya; Chaitanya Chawla; Laszlo A. Jeni
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.10162
+  paper_url: https://arxiv.org/abs/2608.10162
+  project_url: https://ananyabal.github.io/MAD-HOI_supplementary_3D_visualizations/visualize_hoi_motions.html
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [text-to-HOI, masked-autoregression, flow-matching, articulated-objects, contact]
+  robot_platform: hand-object interaction synthesis
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Uses masked autoregression with a continuous diffusion/flow head to generate, complete, infill, and terminate articulated hand-object interaction sequences from text.
+  why_it_matters: Adds variable-length and compositional control to text-driven HOI generation without quantizing away contact-sensitive motion details.
+
 ---
 
 ## Summary

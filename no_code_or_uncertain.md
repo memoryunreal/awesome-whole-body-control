@@ -1,6 +1,6 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (185 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (190 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -425,7 +425,7 @@ Papers where official code could not be verified (185 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2011.01387)
 
 
-## Whole-Body Control and Loco-Manipulation (19)
+## Whole-Body Control and Loco-Manipulation (20)
 
 - ⏳ 🤖 🧍 **[VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes](https://arxiv.org/abs/2606.30645)** `arXiv 2026.06` `Unitree G1` `Loco-Manipulation`
   Yen-Jen Wang et al..
@@ -486,6 +486,11 @@ Papers where official code could not be verified (185 entries). Status is one of
   Pranav Debbad et al..
   Bootstraps humanoid loco-manipulation from sparse demos by expanding goal-conditioned trajectories with diffusion generation and RL tracking.
   Links: [Paper](https://arxiv.org/abs/2606.26855)
+
+- ❌ 🧍 🧱 **[LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation](https://arxiv.org/abs/2608.07746)** `arXiv 2026.08` `simulated humanoid` `Loco-Manipulation`
+  Cheng Guo et al..
+  Plans over reusable whole-body skill latents with a learned macro-dynamics world model for long-horizon humanoid object rearrangement.
+  Links: [Paper](https://arxiv.org/abs/2608.07746)
 
 - ❌ 🧍 🧱 **[OmniContact: Chaining Meta-Skills via Contact Flow for Generalizable Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.26201)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
   Runyi Yu et al..
@@ -607,7 +612,12 @@ Papers where official code could not be verified (185 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2410.03311)
 
 
-## Human-to-Humanoid Retargeting (7)
+## Human-to-Humanoid Retargeting (8)
+
+- ⏳ 🤖 🧍 **[C2Dex: Contact-Consistent Reconstruction and Retargeting for Dexterous Manipulation from Monocular Video](https://arxiv.org/abs/2608.07045)** `arXiv 2026.08` `Inspire dexterous hand / humanoid-relevant dexterous hands` `Retargeting`
+  Jie Ren et al..
+  Reconstructs contact-consistent human hand-object trajectories from monocular video and retargets stable object-side contacts to dexterous robot hands.
+  Links: [Project](https://k-jie.github.io/C2Dex/) · [Code](https://github.com/K-Jie/C2Dex_code) · [Paper](https://arxiv.org/abs/2608.07045)
 
 - ⏳ 🤖 🧍 **[Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots](https://arxiv.org/abs/2606.03476)** `arXiv 2026.06` `Unitree G1 / humanoid` `Retargeting`
   Tianchen Huang et al..
@@ -699,7 +709,7 @@ Papers where official code could not be verified (185 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2409.04639v1)
 
 
-## Datasets and Benchmarks (10)
+## Datasets and Benchmarks (11)
 
 - ⏳ 🤖 🧍 **[EgoHTR: Egocentric 4D Demonstrations of Human Terrain Traversal](https://arxiv.org/abs/2607.13472)** `arXiv 2026.07` `Unitree G1` `Dataset`
   Alex Brandes et al..
@@ -715,6 +725,11 @@ Papers where official code could not be verified (185 entries). Status is one of
   Xinyi Wang et al..
   Collects 6k Unitree G1 dexterous-manipulation trajectories across 19 tasks with multi-view RGB-D, tactile feedback, and semantic annotations.
   Links: [Paper](https://arxiv.org/abs/2606.31836)
+
+- ⏳ 🧍 🧱 **[HumanoidVLN: A Physics-Grounded Simulator and Benchmark for Vision-Language Navigation Across Diverse Humanoid Embodiments](https://arxiv.org/abs/2608.12860)** `arXiv 2026.08` `Unitree G1 / Unitree H1 / custom humanoids` `Dataset`
+  Quan-Dung Pham et al..
+  Builds a physics-grounded VLN benchmark across multiple humanoid embodiments with locomotion-induced egocentric observations and hierarchical control.
+  Links: [Project](https://humanoid-vln.github.io/) · [Paper](https://arxiv.org/abs/2608.12860)
 
 - ❌ **[EmbodMocap - In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents](https://arxiv.org/abs/2602.23205)** `arXiv 2026.02` `Dataset`
   In-the-wild 4D human-scene reconstruction for embodied agents.
@@ -745,7 +760,17 @@ Papers where official code could not be verified (185 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2510.26236)
 
 
-## Evaluation Metrics and Contact Modeling (5)
+## Evaluation Metrics and Contact Modeling (7)
+
+- ❌ 🧱 **[EgoPHI: Estimating Contact and Force from Egocentric Vision](https://arxiv.org/abs/2608.13014)** `ECCV 2026 / arXiv 2026.08` `hand-object interaction data` `Contact Metrics`
+  Andela Ilic et al..
+  Estimates dense hand/object contact maps and 3D force distributions from egocentric RGB plus object geometry, with simulated and physical-object evaluation.
+  Links: [Paper](https://arxiv.org/abs/2608.13014)
+
+- ❌ 🧍 🧱 **[Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence](https://arxiv.org/abs/2608.11769)** `arXiv 2026.08` `humanoid dual-arm manipulation` `Evaluation-Metric`
+  Chaeyeon Jung et al..
+  Diagnoses pose-conditioned hand-selection bias in humanoid VLA manipulation policies and measures it with HandPriorScore-style robustness tests.
+  Links: [Paper](https://arxiv.org/abs/2608.11769)
 
 - ❌ **[Hand-Object Contact Detection using Grasp Quality Metrics](https://arxiv.org/abs/2501.06987)** `arXiv preprint` `Evaluation-Metric`
   Anonymous (arXiv preprint).

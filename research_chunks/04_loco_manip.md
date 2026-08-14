@@ -1659,3 +1659,60 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Analyzes how object mass changes humanoid balance boundaries and uses those dynamics to design lifting and momentum-regulation controllers.
   why_it_matters: Gives a model-based account of the stability tradeoffs that appear when humanoids lift and carry objects during loco-manipulation.
+
+- title: LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation
+  authors: Cheng Guo; Mingzhe Ni; Angelo Cangelosi; Arash Ajoudani
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.07746
+  paper_url: https://arxiv.org/abs/2608.07746
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [latent-skills, model-based-RL, imagined-rollouts, long-horizon-loco-manipulation]
+  robot_platform: simulated humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Plans over reusable whole-body skill latents with a learned macro-dynamics world model for long-horizon humanoid object rearrangement.
+  why_it_matters: Replaces scripted skill sequencing with model-based high-level control over reusable humanoid loco-manipulation primitives.
+
+- title: Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References
+  authors: Carlos Gonzalez; Luis Sentis
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.10220
+  paper_url: https://arxiv.org/abs/2608.10220
+  project_url: https://carlosiglezb.github.io/confined-space-wbp-humanoid/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [whole-body-planning, confined-spaces, self-collision-avoidance, residual-RL, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Generates collision-aware whole-body plans for G1 confined-space traversal and uses those plans as references for residual-RL execution.
+  why_it_matters: Targets full-body feasibility in narrow spaces where humanoids need coordinated foot, hand, torso, and self-collision reasoning.
+
+- title: Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL
+  authors: Martin Schuck; Maks Sorokin; Simone Manni; Duy Ta; Angela P. Schoellig; Marco Hutter; Simon Le Cleac'H; Jan Brüdigam
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.12063
+  paper_url: https://arxiv.org/abs/2608.12063
+  project_url: https://pages.rai-inst.com/smpc2rl/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [SMPC-demonstrations, offline-to-online-RL, sparse-rewards, sim2real, Unitree-G1]
+  robot_platform: Unitree G1 / arm-equipped Spot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses sample-based MPC demonstrations to bootstrap sparse-reward offline-to-online RL for loco-manipulation skills deployed on Spot and G1.
+  why_it_matters: Reduces dense reward engineering for real humanoid loco-manipulation by turning tunable optimal-control rollouts into exploration data.

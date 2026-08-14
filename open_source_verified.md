@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (232 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (233 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (18)
 
@@ -1085,7 +1085,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://amass.is.tue.mpg.de/) · [Code](https://github.com/nghorbani/amass) · [Paper](https://arxiv.org/abs/1904.03278) · [Dataset](https://amass.is.tue.mpg.de/)
 
 
-## Evaluation Metrics and Contact Modeling (3)
+## Evaluation Metrics and Contact Modeling (4)
+
+- ⭐ 🧍 🧱 **[HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark](https://arxiv.org/abs/2608.13555)** `ECCV 2026 / arXiv 2026.08` `Unitree G1 / humanoid trackers` `Evaluation-Metric`
+  Dairu Liu et al..
+  Releases a humanoid tracking benchmark and HumanScore preference metric that better expose contact, support, and stability artifacts than kinematic errors alone.
+  Links: [Project](https://dairuliu.github.io/humantracker) · [Code](https://github.com/GalaxyGeneralRobotics/HumanTracker) · [Paper](https://arxiv.org/abs/2608.13555)
 
 - ⭐ **[ContactGen - Generative Contact Modeling for Grasp Generation](https://arxiv.org/abs/2310.03740)** `ICCV 2023` `Contact-Model`
   Shaowei Liu, Yang Zhou, Jimei Yang, Saurabh Gupta, Shenlong Wang.

@@ -5,27 +5,27 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 90 | HOI motion generation + object-aware human motion synthesis |
+| `02_hoi_motion.md` | 91 | HOI motion generation + object-aware human motion synthesis |
 | `03_wbc_tracking.md` | 103 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 91 | Whole-body control and loco-manipulation |
+| `04_loco_manip.md` | 94 | Whole-body control and loco-manipulation |
 | `05_foundation.md` | 64 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 70 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 95 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `06_retarget_teleop.md` | 71 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 99 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 575**
+**Total unique papers after deduplication: 584**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 51
+- Human-Object Interaction Motion Generation: 52
 - Object-Aware Human Motion Synthesis: 26
 - Whole-Body Motion Tracking and Imitation: 148
-- Whole-Body Control and Loco-Manipulation: 85
+- Whole-Body Control and Loco-Manipulation: 88
 - Humanoid Foundation Models and Generalist Policies: 78
-- Human-to-Humanoid Retargeting: 16
+- Human-to-Humanoid Retargeting: 17
 - Teleoperation and Demonstration Collection: 39
-- Datasets and Benchmarks: 67
-- Evaluation Metrics and Contact Modeling: 11
+- Datasets and Benchmarks: 68
+- Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
 
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 232 |
-| ❌ No Code | 171 |
-| 🌐 Project Page | 133 |
+| ⭐ Code | 233 |
+| ❌ No Code | 174 |
+| 🌐 Project Page | 136 |
 | 📦 Dataset | 16 |
-| ⏳ Code Coming Soon | 14 |
+| ⏳ Code Coming Soon | 16 |
 | 🧩 Partial Code | 8 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,35 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-08-14 — 9 new, 0 updated
+- Window: 2026-08-07 → 2026-08-14.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate and lastUpdatedDate sweeps over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv abstract and experimental HTML pages; exact-title web search; project pages; GitHub repository pages; GitHub API tree checks for implementation files.
+- Query focus: HOI generation, hand-object contact/force estimation, human-video-to-robot retargeting, humanoid whole-body planning/control, humanoid loco-manipulation, humanoid VLA manipulation evaluation, and humanoid tracking/navigation benchmarks.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: MAD-HOI (2608.10162).
+  - `04_loco_manip.md` — 3 entries: LUCID (2608.07746), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References (2608.10220), Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL (2608.12063).
+  - `06_retarget_teleop.md` — 1 entry: C2Dex (2608.07045).
+  - `07_data_bench_s2r.md` — 4 entries: HumanTracker (2608.13555), Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation (2608.11769), HumanoidVLN (2608.12860), EgoPHI (2608.13014).
+- Verified official code repos:
+  - https://github.com/GalaxyGeneralRobotics/HumanTracker
+- Verified project / demo pages:
+  - https://k-jie.github.io/C2Dex/
+  - https://ananyabal.github.io/MAD-HOI_supplementary_3D_visualizations/visualize_hoi_motions.html
+  - https://carlosiglezb.github.io/confined-space-wbp-humanoid/
+  - https://pages.rai-inst.com/smpc2rl/
+  - https://humanoid-vln.github.io/
+  - https://dairuliu.github.io/humantracker
+- Existing-paper updates: none verified. The lastUpdatedDate pass over tracked arXiv IDs in cs.RO/cs.CV/cs.LG/cs.GR found no existing paper revised in the 2026-08-07 → 2026-08-14 window.
+- Unresolved code-status items:
+  - https://github.com/K-Jie/C2Dex_code — official C2Dex repository is reachable, but currently contains README/assets only and TODOs for releasing reconstruction and retargeting code.
+  - https://carlosiglezb.github.io/confined-space-wbp-humanoid/ — project page reachable, but paper/code/data buttons remain marked soon or coming soon.
+  - https://pages.rai-inst.com/smpc2rl/ — project page reachable, but no paper-specific code repository was exposed.
+  - https://humanoid-vln.github.io/ — project page reachable, but code and dataset are marked soon.
+  - https://siplab.org/projects/EgoPHI and https://github.com/eth-siplab/EgoPHI — links surfaced from arXiv HTML, but both returned 404 during inspection.
+  - https://arxiv.org/abs/2608.07746, https://arxiv.org/abs/2608.10162, and https://arxiv.org/abs/2608.11769 — no official implementation repository surfaced during inspection.
+- Inspected but excluded: NestDex (2608.13362, dexterous manipulation teleoperation without humanoid whole-body or HOI-generation specificity), HandEdit (2608.12122, image-editing benchmark for robot-hand appearance rather than motion/control), Haptic Robot Finger for Guqin Instrument Playing (2608.07002, hardware/tactile finger validation rather than WBC or HOI generation), Real-World Cooperative Bimanual Dexterous Grasp of Large Objects (2608.10383, dual-arm grasping without humanoid or whole-body scope), JEPA-WAM/GWM-VLA/SLIM/WA-SpecDec and similar broad VLA or world-model papers matched only by generic manipulation language, surgical VLA/manipulation papers, human-to-robot handover video generation, broad mobile manipulation, navigation, aerial, underwater, driving, medical, geospatial, software, security, and graphics papers matched only by generic action/contact/motion terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-08-07 — 18 new, 0 updated
 - Window: 2026-07-31 → 2026-08-07.

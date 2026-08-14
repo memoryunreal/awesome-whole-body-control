@@ -1425,6 +1425,82 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Predicts temporally evolving hand-mesh pressure and contact from monocular hand-object videos by aligning tactile-glove, planar-sensor, and contact-distance supervision.
   why_it_matters: Adds richer contact supervision than binary touch labels, which can improve HOI quality checks and downstream dexterous manipulation priors.
 
+- title: HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark
+  authors: Dairu Liu; Zekun Qi; Jiayu Zeng; Ruixi Yu; Yu Guan; Yintianrun Zhang; Xuchuan Chen; Sikai Liang; Zekai Li; Chenghuai Lin; Xinqiang Yu; Wenyao Zhang; He Wang; Li Yi
+  year: 2026
+  venue: ECCV 2026 / arXiv 2026.08
+  arxiv_id: 2608.13555
+  paper_url: https://arxiv.org/abs/2608.13555
+  project_url: https://dairuliu.github.io/humantracker
+  code_url: https://github.com/GalaxyGeneralRobotics/HumanTracker
+  dataset_url: ""
+  category: Evaluation-Metric
+  task_tags: [humanoid-motion-tracking, benchmark, preference-aligned-metric, contact-stability]
+  robot_platform: Unitree G1 / humanoid trackers
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Releases a humanoid tracking benchmark and HumanScore preference metric that better expose contact, support, and stability artifacts than kinematic errors alone.
+  why_it_matters: Gives tracker papers a human-aligned evaluation target for contact-rich long-horizon motions instead of relying only on per-frame pose deviations.
+
+- title: Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence
+  authors: Chaeyeon Jung; Juyoun Park
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.11769
+  paper_url: https://arxiv.org/abs/2608.11769
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Evaluation-Metric
+  task_tags: [humanoid-dual-arm, VLA-evaluation, initial-pose-robustness, hand-priors]
+  robot_platform: humanoid dual-arm manipulation
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Diagnoses pose-conditioned hand-selection bias in humanoid VLA manipulation policies and measures it with HandPriorScore-style robustness tests.
+  why_it_matters: Makes initial arm configuration a measurable failure mode for humanoid dual-arm policies rather than a hidden aggregate-success artifact.
+
+- title: HumanoidVLN: A Physics-Grounded Simulator and Benchmark for Vision-Language Navigation Across Diverse Humanoid Embodiments
+  authors: Quan-Dung Pham; Anh Dao; The-Anh Nguyen; Minh Nguyen-Dinh; Phuong Nam Dang; Tri Pham; Hung Tran; Bach Dao; Tuyen P. Le; Truong Nguyen; Quan Nguyen
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.12860
+  paper_url: https://arxiv.org/abs/2608.12860
+  project_url: https://humanoid-vln.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Dataset
+  task_tags: [vision-language-navigation, humanoid-benchmark, Isaac-Sim, cross-embodiment, locomotion]
+  robot_platform: Unitree G1 / Unitree H1 / custom humanoids
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Builds a physics-grounded VLN benchmark across multiple humanoid embodiments with locomotion-induced egocentric observations and hierarchical control.
+  why_it_matters: Keeps humanoid navigation evaluation tied to bipedal dynamics, morphology, and gait camera motion rather than teleporting wheeled-agent assumptions.
+
+- title: EgoPHI: Estimating Contact and Force from Egocentric Vision
+  authors: Andela Ilic; Rachel Schuchert; Yijing Jiang; Christian Holz
+  year: 2026
+  venue: ECCV 2026 / arXiv 2026.08
+  arxiv_id: 2608.13014
+  paper_url: https://arxiv.org/abs/2608.13014
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Contact Metrics
+  task_tags: [egocentric-vision, hand-object-contact, force-estimation, articulated-objects, sim2real]
+  robot_platform: hand-object interaction data
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Estimates dense hand/object contact maps and 3D force distributions from egocentric RGB plus object geometry, with simulated and physical-object evaluation.
+  why_it_matters: Extends HOI quality signals from contact localization toward force-aware supervision that can improve physically grounded dexterous manipulation priors.
+
 ---
 
 ## Notes

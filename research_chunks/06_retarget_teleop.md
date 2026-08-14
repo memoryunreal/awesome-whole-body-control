@@ -1277,6 +1277,25 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Uses contact-implicit direct simulation multiple shooting to convert kinematic references into dynamically feasible trajectories for RL tracking and G1 sim-to-real transfer.
   why_it_matters: Directly targets the contact, impact, actuation, and self-collision errors that make kinematic retargeting brittle for contact-rich humanoid behaviors.
 
+- title: C2Dex: Contact-Consistent Reconstruction and Retargeting for Dexterous Manipulation from Monocular Video
+  authors: Jie Ren; Zhehao Jiang; Yinhong Yang; Haorui Jia; Han Jiang; Ben Li; Yao Yao; Cheng Lin; Qiu Shen; Zhenshan Bing; Xiao-Xiao Long; Xun Cao
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.07045
+  paper_url: https://arxiv.org/abs/2608.07045
+  project_url: https://k-jie.github.io/C2Dex/
+  code_url: https://github.com/K-Jie/C2Dex_code
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [monocular-video, HOI-reconstruction, contact-preserving-retargeting, dexterous-manipulation]
+  robot_platform: Inspire dexterous hand / humanoid-relevant dexterous hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Reconstructs contact-consistent human hand-object trajectories from monocular video and retargets stable object-side contacts to dexterous robot hands.
+  why_it_matters: Converts noisy web-scale human HOI videos into more physically plausible robot-executable dexterous references while preserving local contact geometry.
+
 ---
 
 ## Notes
