@@ -1647,6 +1647,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Uses masked autoregression with a continuous diffusion/flow head to generate, complete, infill, and terminate articulated hand-object interaction sequences from text.
   why_it_matters: Adds variable-length and compositional control to text-driven HOI generation without quantizing away contact-sensitive motion details.
 
+- title: HOIMask: Towards Generative Masked Modeling for Human Object Interaction Generation
+  authors: Yihong Ji; Jinsong Zhang; He Hu; Hongbo Xu
+  year: 2026
+  venue: ECCV 2026 / arXiv 2026.08
+  arxiv_id: 2608.15141
+  paper_url: https://arxiv.org/abs/2608.15141
+  project_url: https://jyhflash.github.io/HOIMask/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [masked-modeling, discrete-HOI-tokens, contact-guidance, text-conditioned, transformer]
+  robot_platform: human-object interaction synthesis
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Replaces iterative diffusion with discrete masked modeling over contact-aware human and object token maps for text-driven HOI motion generation.
+  why_it_matters: Adds a non-diffusion baseline for contact-sensitive HOI synthesis, with project media available but the code link still a placeholder.
+
 ---
 
 ## Summary

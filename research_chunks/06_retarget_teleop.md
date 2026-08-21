@@ -1296,6 +1296,44 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Reconstructs contact-consistent human hand-object trajectories from monocular video and retargets stable object-side contacts to dexterous robot hands.
   why_it_matters: Converts noisy web-scale human HOI videos into more physically plausible robot-executable dexterous references while preserving local contact geometry.
 
+- title: ReForce: Learning Force-aware Retargeting for Dexterous Manipulation
+  authors: Yuhang Wu; Lingqi Zeng; Changwei Jing; Jianglong Ye; Xiaolong Wang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.15560
+  paper_url: https://arxiv.org/abs/2608.15560
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [force-aware-retargeting, dexterous-manipulation, teleoperation, contact-rich, human-demonstrations]
+  robot_platform: multi-finger dexterous hands / humanoid-relevant manipulation
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Predicts force-tracking residuals on top of kinematic retargeting so human demonstrations transfer with stronger multi-finger contact engagement.
+  why_it_matters: Addresses a major failure mode of dexterous hand retargeting for humanoid manipulation: matching pose without reproducing contact force.
+
+- title: RoboEdit: Turning Human Manipulation Videos into Scalable Robot Experience
+  authors: Yaowei Guo; Zeng Tao; Yuxin Jiang; Yunuo Chen; Zhiyang Dou; Yuxiang Ma; Yin Yang; Demetri Terzopoulos; Ying Jiang; Chenfanfu Jiang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.18948
+  paper_url: https://arxiv.org/abs/2608.18948
+  project_url: ""
+  code_url: ""
+  dataset_url: RoboEdit-14M announced in paper
+  category: Retargeting
+  task_tags: [human-video-to-robot, HOI-reconstruction, cross-embodiment-retargeting, robot-experience-data, 3D-hand-states]
+  robot_platform: seven robot embodiments / dexterous manipulation
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Edits human manipulation videos into robot-consistent videos with aligned 3D hand states and cross-embodiment retargeted supervision.
+  why_it_matters: Expands the human-video-to-robot data path used by dexterous and humanoid manipulation systems, though no release URL was verified yet.
+
 ---
 
 ## Notes

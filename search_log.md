@@ -5,26 +5,26 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 91 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 103 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 94 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 64 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 71 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 99 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `02_hoi_motion.md` | 92 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 108 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 96 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 66 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 73 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 100 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 584**
+**Total unique papers after deduplication: 597**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 52
+- Human-Object Interaction Motion Generation: 53
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 148
-- Whole-Body Control and Loco-Manipulation: 88
-- Humanoid Foundation Models and Generalist Policies: 78
-- Human-to-Humanoid Retargeting: 17
+- Whole-Body Motion Tracking and Imitation: 153
+- Whole-Body Control and Loco-Manipulation: 90
+- Humanoid Foundation Models and Generalist Policies: 80
+- Human-to-Humanoid Retargeting: 19
 - Teleoperation and Demonstration Collection: 39
-- Datasets and Benchmarks: 68
+- Datasets and Benchmarks: 69
 - Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 233 |
-| ❌ No Code | 174 |
-| 🌐 Project Page | 136 |
-| 📦 Dataset | 16 |
-| ⏳ Code Coming Soon | 16 |
+| ⭐ Code | 235 |
+| ❌ No Code | 179 |
+| 🌐 Project Page | 139 |
+| ⏳ Code Coming Soon | 18 |
+| 📦 Dataset | 17 |
 | 🧩 Partial Code | 8 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,40 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-08-21 — 13 new, 0 updated
+- Window: 2026-08-14 → 2026-08-21.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate and lastUpdatedDate sweeps over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv abstract and HTML pages; project pages; Hugging Face dataset page; GitHub API repo/tree checks; targeted exact-title web search for missing code/project links.
+- Query focus: HOI generation, human/video-to-robot retargeting, humanoid whole-body tracking and locomotion, humanoid loco-manipulation, humanoid VLA adaptation, tactile/force/contact-aware control, humanoid datasets, and sim-to-real deployment.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: HOIMask (2608.15141).
+  - `03_wbc_tracking.md` — 5 entries: Tac4Loco (2608.15766), RoboStriker (2608.16195), Throwing a Tight Spiral American Football by a Humanoid Robot (2608.16642), GigaBrain-WBC-0.5 (2608.18234), Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking (2608.20087).
+  - `04_loco_manip.md` — 2 entries: FetchMan (2608.17027), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control (2608.19443).
+  - `05_foundation.md` — 2 entries: HAF (2608.16837), EATR-Stereo (2608.17453).
+  - `06_retarget_teleop.md` — 2 entries: ReForce (2608.15560), RoboEdit (2608.18948).
+  - `07_data_bench_s2r.md` — 1 entry: HiPHI (2608.16222).
+- Verified official code repos / dataset tooling:
+  - https://github.com/noitom-robotics/hiphi
+  - https://github.com/noitom-robotics/AdaPT
+  - https://github.com/yinkangning0124/RoboStriker-Preview
+- Verified project / dataset pages:
+  - https://jyhflash.github.io/HOIMask/
+  - https://huggingface.co/datasets/noitomrobotics/HiPHI
+  - https://orayyan.com/fetchman
+  - https://shepherd1226.github.io/gigabrain-wbc-0.5/
+  - https://humanoidtennis.github.io/AdaPT/
+  - https://grange007.github.io/HAF/
+- Existing-paper updates: none verified. The lastUpdatedDate pass over tracked arXiv IDs in cs.RO/cs.CV/cs.LG/cs.GR found no existing paper revised in the 2026-08-14 → 2026-08-21 window, and targeted unresolved-code rechecks did not expose new implementation releases.
+- Unresolved code-status items:
+  - https://jyhflash.github.io/HOIMask/ — project page reachable, but arXiv/code links are still template placeholders.
+  - https://github.com/omarrayyann/fetchman — linked from the FetchMan project page but returned 404 during inspection.
+  - https://shepherd1226.github.io/gigabrain-wbc-0.5/ — project page marks code coming soon.
+  - https://grange007.github.io/HAF/ — project page reachable, but no method code repository was exposed.
+  - https://arxiv.org/abs/2608.15766 — Tac4Loco says code/configs will be released, but no URL surfaced.
+  - https://arxiv.org/abs/2608.17453, https://arxiv.org/abs/2608.16642, https://arxiv.org/abs/2608.19443, https://arxiv.org/abs/2608.15560, and https://arxiv.org/abs/2608.18948 — no official implementation repository surfaced during inspection.
+- Rechecked prior unresolved items with no status change: https://github.com/K-Jie/C2Dex_code remains README/assets-only; https://siplab.org/projects/EgoPHI and https://github.com/eth-siplab/EgoPHI still returned 404; HumanoidVLN, Light-Loco-Parkour, confined-space WBP, and SMPC-to-RL pages did not expose paper-specific implementation code.
+- Inspected but excluded: HODAgent (2608.17584, arXiv v2 withdrawal/internal-review notice), OpenBelief-Nav (2608.13923, G1 navigation/object-memory paper but weak WBC/loco-manipulation specificity), Robust Brachiation on a Life-Sized Dual-Arm Robot (2608.17320, arm-based locomotion on a dual-arm platform rather than humanoid WBC), Video2DoorTraversal (2608.20251, wheel-legged mobile manipulator), DECOWAM (2608.20114, legged mobile manipulation without humanoid specificity), SCAPE (2608.19425, generic sim-augmented policy evaluation for driving/quadrupeds), AdvDex (2608.14028), SPD (2608.15917), ViHaTeleop (2608.16572), ADEPT (2608.19182), broad dexterous manipulation/teleop papers without humanoid whole-body or HOI-generation specificity, Inter-X++ (2608.20312, human-human interaction), G3Ego (2608.20157, egocentric action understanding), THRIVE (2608.14462, rehabilitation/social robot platform), and broad navigation, appliance manipulation, surgical, UAV, medical, geospatial, software, security, and generic VLA papers matched only by generic action/contact/motion terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-08-14 — 9 new, 0 updated
 - Window: 2026-08-07 → 2026-08-14.

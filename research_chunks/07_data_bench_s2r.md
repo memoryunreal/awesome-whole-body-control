@@ -1501,6 +1501,25 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Estimates dense hand/object contact maps and 3D force distributions from egocentric RGB plus object geometry, with simulated and physical-object evaluation.
   why_it_matters: Extends HOI quality signals from contact localization toward force-aware supervision that can improve physically grounded dexterous manipulation priors.
 
+- title: HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object-Interaction
+  authors: Jiahao Ji; Ji Ma; Runhan Zhang; Runyi Yu; Wenjia Wang; Weiheng Chi; Qianqian Peng; Weichao Yan; Yongfei Gu; Ye Tian; Ting Wu; Longwei Li; Chun Yuan; Ruoli Dai; Lei Han
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.16222
+  paper_url: https://arxiv.org/abs/2608.16222
+  project_url: https://github.com/noitom-robotics/hiphi
+  code_url: https://github.com/noitom-robotics/hiphi
+  dataset_url: https://huggingface.co/datasets/noitomrobotics/HiPHI
+  category: Dataset
+  task_tags: [large-scale-mocap, object-interaction, humanoid-policy-learning, benchmark, Unitree-G1]
+  robot_platform: human motion data / Unitree G1 policy evaluation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 📦 Dataset
+  one_line: Releases a 600-hour-scale high-precision whole-body human motion and object-interaction benchmark with motion diversity and grounding metrics.
+  why_it_matters: Provides high-fidelity object-interaction motion coverage for humanoid policy learning and motion-prior evaluation, with an official dataset and tooling release.
+
 ---
 
 ## Notes

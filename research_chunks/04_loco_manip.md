@@ -1716,3 +1716,41 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Uses sample-based MPC demonstrations to bootstrap sparse-reward offline-to-online RL for loco-manipulation skills deployed on Spot and G1.
   why_it_matters: Reduces dense reward engineering for real humanoid loco-manipulation by turning tunable optimal-control rollouts into exploration data.
+
+- title: FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences
+  authors: Omar Rayyan; Zhi Li; Max Argus; Yuxin Jiang; Chang Yu; Chenfanfu Jiang; Yuchen Cui
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.17027
+  paper_url: https://arxiv.org/abs/2608.17027
+  project_url: https://orayyan.com/fetchman
+  code_url: ""
+  dataset_url: FetchMan-Bench announced on project page
+  category: Loco-Manipulation
+  task_tags: [visual-loco-manipulation, simulated-experience, Flow-GRPO, sim2real, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains visual humanoid reach-and-pick policies from 150k simulated scenes and sparse-reward RL refinement, then deploys zero-shot on a real G1.
+  why_it_matters: Directly tests whether large-scale simulated experiences can replace expensive humanoid loco-manipulation demonstrations for visual policies.
+
+- title: Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control
+  authors: Chaoyi Pan; Zeji Yi; John Zhang; Zachary Manchester; Guannan Qu; Guanya Shi
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.19443
+  paper_url: https://arxiv.org/abs/2608.19443
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [sampling-based-MPC, feedback-policy, contact-rich-control, humanoid-loco-manipulation, dexterous-manipulation]
+  robot_platform: humanoid locomotion and manipulation tasks
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Improves sampling-based MPC by sampling around optimized feedback policies, with validation on contact-rich humanoid loco-manipulation and dexterous tasks.
+  why_it_matters: Gives high-dimensional humanoid MPC a more sample-efficient proposal mechanism for unstable contact-rich skills where open-loop shooting struggles.

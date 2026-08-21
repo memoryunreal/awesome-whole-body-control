@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (233 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (235 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (18)
 
@@ -163,7 +163,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (55)
+## Whole-Body Motion Tracking and Imitation (57)
 
 - ⭐ 🤖 🧍 **[GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR)** `ICRA 2026` `Unitree H1, H1-2, G1, multi-robot` `WBC-Tracking`
   Yanjie Ze et al..
@@ -190,6 +190,11 @@ This is the canonical list of papers with **verified official open-source code**
   Trains a generalist tracker then rapidly adapts to specific teleop interfaces via additive residuals.
   Links: [Project](https://github.com/BAAI-Humanoid/MOSAIC) · [Code](https://github.com/BAAI-Humanoid/MOSAIC) · [Paper](https://arxiv.org/abs/2602.08594)
 
+- ⭐ 🤖 🧍 **[RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing](https://arxiv.org/abs/2608.16195)** `arXiv 2026.08` `humanoid robots / Unitree G1` `WBC`
+  Kangning Yin et al..
+  Constrains two-player self-play for humanoid boxing to a learned motion-latent manifold so strategic exploration stays dynamically feasible.
+  Links: [Code](https://github.com/yinkangning0124/RoboStriker-Preview) · [Paper](https://arxiv.org/abs/2608.16195)
+
 - ⭐ 🤖 🧍 **[Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control](https://arxiv.org/abs/2607.14182)** `RoboCup Symposium 2026 / arXiv 2026.07` `Unitree G1` `WBC`
   J. M. A. Marcelo et al..
   Routes live music and speech through semantic audio branches that select and schedule imitation-learned whole-body skills on a G1.
@@ -199,6 +204,11 @@ This is the canonical list of papers with **verified official open-source code**
   Jianuo Cao et al..
   Samples language-conditioned humanoid motions and selects candidates with a controller-feasibility verifier plus semantic alignment scoring.
   Links: [Project](https://jianuocao.github.io/TEXEDO/) · [Code](https://github.com/JianuoCao/TEXEDO) · [Paper](https://arxiv.org/abs/2606.22998) · [Dataset](https://huggingface.co/datasets/JianuoCao/TEXEDO)
+
+- ⭐ 🤖 🧍 **[Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking](https://arxiv.org/abs/2608.20087)** `arXiv 2026.08` `Unitree G1 / Dobot Atom` `WBC`
+  Tao Huang et al..
+  AdaPT learns tennis serving and rally styles from broadcast video, then adapts planner speed and tracker robustness for real humanoid execution.
+  Links: [Project](https://humanoidtennis.github.io/AdaPT/) · [Code](https://github.com/noitom-robotics/AdaPT) · [Paper](https://arxiv.org/abs/2608.20087) · [Dataset](Project page dataset gallery)
 
 - ⭐ 🤖 🧍 **[What Matters in Humanoid General Motion Tracking? An Empirical Study](https://arxiv.org/abs/2607.19903)** `arXiv 2026.07` `Unitree G1` `WBC`
   Fabio Amadio et al..

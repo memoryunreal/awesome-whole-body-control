@@ -1123,6 +1123,44 @@ Code-status legend:
   one_line: Studies closed-loop adaptation of a managed closed-weight robot foundation model for contact-rich humanoid manipulation without access to model weights or gradients.
   why_it_matters: Clarifies what can and cannot be improved when humanoid teams depend on proprietary VLA fine-tuning APIs rather than open policy internals.
 
+- title: HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL
+  authors: Langzhe Gu; Chengkai Hou; Meng Li; Xinhua Wang; Jiaming Liu; Xinyuan Lv; Bowei Zhang; Shuanghao Bai; Guangrun Li; Jingyang He; Gaole Dai; Ziluo Ding; Zhiyuan Xu; Kuan Cheng; Jian Tang; Zhengping Che; Shanghang Zhang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.16837
+  paper_url: https://arxiv.org/abs/2608.16837
+  project_url: https://grange007.github.io/HAF/
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [humanoid-VLA, hierarchical-action-flow, spectral-latent-RL, whole-body-loco-manipulation]
+  robot_platform: real-world humanoid loco-manipulation tasks
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Wraps a frozen flow-matching VLA with staged whole-body action generation and compact latent RL steering for humanoid loco-manipulation.
+  why_it_matters: Shows a path to adapt generalist VLA backbones to high-dimensional humanoid control without directly fine-tuning the full model online.
+
+- title: EATR-Stereo: Embodiment-Aware Token Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control
+  authors: Songwei Wu; Rui Zhao; Fan Yang; Zhongqiang Nie; Zhiduo Jiang; Wandong Sun; Yuwei Li; Jian Hu; Yang Liu; Hong Liu
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.17453
+  paper_url: https://arxiv.org/abs/2608.17453
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [humanoid-VLA, stereo-vision, token-routing, proprioception-conditioned, long-horizon-control]
+  robot_platform: 33-DoF physical humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Routes auxiliary stereo-view tokens into a frozen VLA according to primary-view alignment and body-segment proprioception for humanoid manipulation.
+  why_it_matters: Targets a practical humanoid VLA bottleneck: exploiting head-mounted stereo without breaking the pretrained primary-view vision-language pathway.
+
 ---
 
 ## Quick stats

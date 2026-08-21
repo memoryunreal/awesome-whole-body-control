@@ -1882,6 +1882,101 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Trains a reusable flow-matching pose prior from unordered pose data and uses a Pose Geometry Score to reward structured pose transitions during tracking.
   why_it_matters: Offers a motion-prior route that does not require ordered clips, potentially broadening reusable supervision for dynamic humanoid tracking.
 
+- title: Tac4Loco: Learning Spatiotemporal Plantar Pressure Representations for Humanoid Locomotion
+  authors: Ziyun Liu; Sikai Guo; Zheng Li; Jiahang Cao; Haichao Liu; Pei Qu; Yinghong Zhang; Jinni Zhou; Jun Ma
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.15766
+  paper_url: https://arxiv.org/abs/2608.15766
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [plantar-pressure, tactile-feedback, humanoid-locomotion, sim2real, terrain-adaptation]
+  robot_platform: humanoid / Unitree G1-class platforms
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Uses topology-preserving plantar-pressure features as direct post-contact feedback for humanoid locomotion over uncertain support.
+  why_it_matters: Makes foot-ground contact sensing part of the policy observation rather than an indirect proprioceptive inference, improving uneven-terrain tracking and support adaptation.
+
+- title: RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing
+  authors: Kangning Yin; Kaige Liu; Zhe Cao; Wentao Dong; Weishuai Zeng; Tianyi Zhang; Qiang Zhang; Jingbo Wang; Jiangmiao Pang; Yang Li; Ming Zhou; Weinan Zhang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.16195
+  paper_url: https://arxiv.org/abs/2608.16195
+  project_url: ""
+  code_url: https://github.com/yinkangning0124/RoboStriker-Preview
+  dataset_url: ""
+  category: WBC
+  task_tags: [humanoid-boxing, latent-action-space, multi-agent-RL, motion-tracking, Unitree-G1]
+  robot_platform: humanoid robots / Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Constrains two-player self-play for humanoid boxing to a learned motion-latent manifold so strategic exploration stays dynamically feasible.
+  why_it_matters: Extends motion-tracking priors into contact-rich adversarial whole-body behavior and ships an official preview implementation with training and replay code.
+
+- title: Throwing a Tight Spiral American Football by a Humanoid Robot
+  authors: Zaid Mahboob; Bowen Weng
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.16642
+  paper_url: https://arxiv.org/abs/2608.16642
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [whole-body-throwing, trajectory-optimization, model-predictive-control, dexterous-release, Unitree-G1]
+  robot_platform: Unitree G1 + Dex3-1 gripper
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Coordinates lower-body stabilization, upper-body throw tracking, and MPC follow-through to produce spin-stabilized football throws on a G1.
+  why_it_matters: Shows whole-body humanoid control handling a fast transient hand-object release where contact timing and angular momentum matter.
+
+- title: GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction
+  authors: Ziyang Cheng; Tianshu Tang; Jinxin Lan; Xinze Chen; Yuhan Gong; Zhichao Liu; Changzhong Wu; Yahao Mao; Zongyan Deng; Mingxuan Ma; Huasen Xi; Yilong Liu; Yutong Wu; Xiaofeng Wang; Yang Wang; Yun Ye; Guan Huang; Xiaojie Jin; Zheng Zhu; Jiwen Lu
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.18234
+  paper_url: https://arxiv.org/abs/2608.18234
+  project_url: https://shepherd1226.github.io/gigabrain-wbc-0.5/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [behavior-world-model, terrain-interaction, motion-tracking, fall-recovery, Unitree-G1]
+  robot_platform: Unitree G1 / Maker L01
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Trains a causal behavior world model that predicts actions, proprioceptive futures, and feasible latent behavior commands for environment-aware WBC.
+  why_it_matters: Moves humanoid trackers beyond flat-ground command following by modeling terrain/contact affordances and retracting implausible commands online.
+
+- title: Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking
+  authors: Tao Huang; Ruofei Liu; Xuchen Tang; Xinyin Zhang; Junli Ren; Huayi Wang; Feiyu Jia; Yukai Qi; Kangning Yin; Weishuai Zeng; Lipeng Chen; Xi Li; Ting Wu; Kailin Li; Ruoli Dai; Jingbo Wang; Lei Han; Jiangmiao Pang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.20087
+  paper_url: https://arxiv.org/abs/2608.20087
+  project_url: https://humanoidtennis.github.io/AdaPT/
+  code_url: https://github.com/noitom-robotics/AdaPT
+  dataset_url: Project page dataset gallery
+  category: WBC
+  task_tags: [humanoid-tennis, adaptive-motion-planning, motion-tracking, sim2real, Unitree-G1]
+  robot_platform: Unitree G1 / Dobot Atom
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: AdaPT learns tennis serving and rally styles from broadcast video, then adapts planner speed and tracker robustness for real humanoid execution.
+  why_it_matters: Demonstrates sport-scale humanoid WBC where style, perception noise, real-time tracking, and sim-to-real degradation interact.
+
 ---
 
 ## Notes on Verification
