@@ -1,6 +1,6 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (197 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (200 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -440,7 +440,7 @@ Papers where official code could not be verified (197 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2011.01387)
 
 
-## Whole-Body Control and Loco-Manipulation (21)
+## Whole-Body Control and Loco-Manipulation (22)
 
 - ⏳ 🤖 🧍 **[VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes](https://arxiv.org/abs/2606.30645)** `arXiv 2026.06` `Unitree G1` `Loco-Manipulation`
   Yen-Jen Wang et al..
@@ -451,6 +451,11 @@ Papers where official code could not be verified (197 entries). Status is one of
   Jaehwi Jang et al..
   Wearable tactile interface and force-conditioned target-pose correction for whole-body manipulation of bulky or shared-load objects.
   Links: [Project](https://wt-umi.github.io/WTUMI/) · [Paper](https://arxiv.org/abs/2606.13232)
+
+- ⏳ 🧍 🧱 **[DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model](https://arxiv.org/abs/2608.22278)** `IROS 2026 / arXiv 2026.08` `humanoid / Unitree G1-style benchmarks` `Loco-Manipulation`
+  Jie Yin et al..
+  Distills privileged teachers into vision-based humanoid loco-manipulation controllers using predictive world-model latents and performance-conditioned guidance.
+  Links: [Project](https://dreammimic.github.io/) · [Code](https://github.com/DreamMimic/DreamMimic) · [Paper](https://arxiv.org/abs/2608.22278)
 
 - ❌ 🤖 🧍 **[$omega$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation](https://arxiv.org/abs/2608.06375)** `arXiv 2026.08` `household humanoid` `Loco-Manipulation`
   Zhe Li et al..
@@ -546,7 +551,12 @@ Papers where official code could not be verified (197 entries). Status is one of
   Links: [Project](https://arxiv.org/abs/2412.00396) · [Code](❌) · [Paper](https://arxiv.org/abs/2412.00396)
 
 
-## Humanoid Foundation Models and Generalist Policies (20)
+## Humanoid Foundation Models and Generalist Policies (22)
+
+- ⏳ 🤖 🧍 **[One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation](https://arxiv.org/abs/2608.26058)** `arXiv 2026.08` `humanoids / robot arms / human hands` `Foundation`
+  Xiaomi Embodied Intelligence Team et al..
+  Pretrains a single VLA policy over camera-observable anchor motions, then translates shared action geometry into embodiment-specific controls.
+  Links: [Project](https://public-bots.github.io/UCAG-P) · [Code](https://github.com/Public-BOTs/UCAG-P) · [Paper](https://arxiv.org/abs/2608.26058)
 
 - ❌ 🤖 🧍 **[CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning](https://arxiv.org/abs/2607.29172)** `arXiv 2026.07` `humanoid manipulation` `Foundation`
   Yuxin Chen et al..
@@ -582,6 +592,11 @@ Papers where official code could not be verified (197 entries). Status is one of
   Weishuai Zeng et al..
   Studies the scaling recipe for humanoid BFMs by coordinating global-frame motion tracking, reference diversity, rollout volume, and a Humanoid Transformer architecture.
   Links: [Paper](https://arxiv.org/abs/2607.15163)
+
+- ❌ 🤖 🧍 **[V-Link: Recovering Lost Visual Representations in Action DiT for Vision-Language-Action Models](https://arxiv.org/abs/2608.25308)** `arXiv 2026.08` `AGIBOT A3 Ultra / humanoid manipulation tasks` `Foundation`
+  Yehao Lu et al..
+  Injects spatial and semantic visual query features back into an Action DiT so VLA action heads retain 3D geometry and semantic grounding.
+  Links: [Paper](https://arxiv.org/abs/2608.25308)
 
 - ❌ **[Psi0 - An Open Foundation Model Towards Universal Humanoid Loco-Manipulation](https://arxiv.org/abs/2603.12263)** `arXiv 2026.03` `Foundation`
   Open foundation model targeting universal humanoid loco-manipulation.

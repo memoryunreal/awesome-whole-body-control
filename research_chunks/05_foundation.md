@@ -1161,10 +1161,48 @@ Code-status legend:
   one_line: Routes auxiliary stereo-view tokens into a frozen VLA according to primary-view alignment and body-segment proprioception for humanoid manipulation.
   why_it_matters: Targets a practical humanoid VLA bottleneck: exploiting head-mounted stereo without breaking the pretrained primary-view vision-language pathway.
 
+- title: One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation
+  authors: Xiaomi Embodied Intelligence Team; University of Macau; Shaoqing Xu; Fang Li; Guozhi Zhan; Zhixiang Duan; Yuhan Wang; Yuechen Luo; Shengyin Jiang; Hanbing Li; Zhiying Du; Longlong Wang; Longmei Jiang; Weixiang Liang; Ying Gong; Yong Pan; Ziping Zhao; Zhiyuan Chen; Yangwei You; Kun Ma; Qinyuan Liu; Hangjun Ye; Zhi-xin Yang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.26058
+  paper_url: https://arxiv.org/abs/2608.26058
+  project_url: https://public-bots.github.io/UCAG-P
+  code_url: https://github.com/Public-BOTs/UCAG-P
+  dataset_url: ""
+  category: Foundation
+  task_tags: [heterogeneous-embodiments, camera-centric-actions, VLA, humanoid-manipulation, human-demonstrations]
+  robot_platform: humanoids / robot arms / human hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Pretrains a single VLA policy over camera-observable anchor motions, then translates shared action geometry into embodiment-specific controls.
+  why_it_matters: Offers a cross-embodiment action representation that explicitly includes humanoid manipulation alongside robot arms and human demonstrations, but the repo currently contains project media only.
+
+- title: V-Link: Recovering Lost Visual Representations in Action DiT for Vision-Language-Action Models
+  authors: Yehao Lu; Jiarui Yang; Yuning Su; Yufeng Xie; Yu Zhong; Yazhou Zhang; Haiyu Lan; Kaixiang Lu; Peiwen Lin; Chuang Wang; Zequn Qin; Enyu Li; Xi Li
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.25308
+  paper_url: https://arxiv.org/abs/2608.25308
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [VLA, action-DiT, visual-representation-recovery, GR00T-N1.6, humanoid-manipulation]
+  robot_platform: AGIBOT A3 Ultra / humanoid manipulation tasks
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Injects spatial and semantic visual query features back into an Action DiT so VLA action heads retain 3D geometry and semantic grounding.
+  why_it_matters: Reports large gains on real humanoid manipulation tasks using a GR00T-family base, making the VL-to-action information bottleneck directly relevant to humanoid VLA adaptation.
+
 ---
 
 ## Quick stats
-- 41 papers covered (target was 25–40).
-- 28 papers with ⭐ full code; 5 partial; 4 project-page only; 4 closed.
+- 43 papers covered.
+- 28 papers with ⭐ full code; 5 partial; 4 project-page only; 1 coming-soon; 5 closed.
 - Years: 2022 (1), 2023 (4), 2024 (10), 2025 (24), 2026 (2 — Cosmos Policy, ICLR/AAAI 2026 entries).
 - Humanoid-specific (whole-body / bimanual): GR00T, Helix, AgiBot World+GO-1, WholeBodyVLA, Humanoid-VLA, LeVERB, EgoVLA, Humanoid Policy~Human Policy, NaVILA, Gemini Robotics, ALOHA Unleashed, ACT, RDT-1B, DexVLA, DexGraspVLA, MoManipVLA, OFT+, MotionGPT(-2), 1X World Model, GR-3.

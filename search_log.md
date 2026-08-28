@@ -5,23 +5,23 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 92 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 108 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 96 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 66 | Humanoid foundation models and generalist VLAs |
+| `02_hoi_motion.md` | 93 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 112 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 99 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 68 | Humanoid foundation models and generalist VLAs |
 | `06_retarget_teleop.md` | 73 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 100 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 597**
+**Total unique papers after deduplication: 607**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 53
+- Human-Object Interaction Motion Generation: 54
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 153
-- Whole-Body Control and Loco-Manipulation: 90
-- Humanoid Foundation Models and Generalist Policies: 80
+- Whole-Body Motion Tracking and Imitation: 157
+- Whole-Body Control and Loco-Manipulation: 93
+- Humanoid Foundation Models and Generalist Policies: 82
 - Human-to-Humanoid Retargeting: 19
 - Teleoperation and Demonstration Collection: 39
 - Datasets and Benchmarks: 69
@@ -33,12 +33,12 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 235 |
-| ❌ No Code | 179 |
-| 🌐 Project Page | 139 |
-| ⏳ Code Coming Soon | 18 |
+| ⭐ Code | 238 |
+| ❌ No Code | 180 |
+| 🌐 Project Page | 141 |
+| ⏳ Code Coming Soon | 20 |
 | 📦 Dataset | 17 |
-| 🧩 Partial Code | 8 |
+| 🧩 Partial Code | 10 |
 | 🔁 Unofficial Code | 1 |
 
 ## Search Queries Used (representative)
@@ -101,6 +101,39 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-08-28 — 10 new, 0 updated
+- Window: 2026-08-21 → 2026-08-28.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate and lastUpdatedDate sweeps over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv abstract and HTML pages; project pages; GitHub repository pages; GitHub API repo/tree checks for implementation files; targeted exact-title page checks for project/code links.
+- Counts: 1,545 unique arXiv records fetched across the four categories and both submitted/updated passes; 10 in-scope new papers added; 0 existing-paper revisions or code-status upgrades verified.
+- Query focus: HOI motion generation/forecasting, humanoid whole-body tracking and locomotion, recovery primitives, humanoid loco-manipulation, compliance for teleoperation, modular humanoid autonomy, and humanoid-relevant VLA adaptation.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: EMPIRE (2608.22449).
+  - `03_wbc_tracking.md` — 4 entries: SOLO (2608.26583), Closing the Loop on the Poppy Humanoid (2608.26505), Demonstration-Guided Humanoid Stand-Up on an Emulated Deformable Surface (2608.20852), Natural Sit-to-Stand Motion Synthesis For Humanoids via Guided Assistance Curricula and Staged Rewards (2608.20823).
+  - `04_loco_manip.md` — 3 entries: LAC (2608.25405), DreamMimic (2608.22278), GOLEM (2608.21550).
+  - `05_foundation.md` — 2 entries: One Policy, Many Embodiments (2608.26058), V-Link (2608.25308).
+- Verified official full-code repos:
+  - https://github.com/wangwen-banban/EMPIRE
+  - https://github.com/garrettkatz/poppy-muffin
+  - https://github.com/lac-humanoid/lac-code
+- Verified official partial / evaluation-package repos:
+  - https://github.com/andireposit/Stand-Up-Motion-on-Compliant-Surface-for-Humanoid
+  - https://github.com/meetpal644/Sit-to-Stand-Motion-Synthesis-For-Humanoids
+- Verified project pages:
+  - https://sunpihai-up.github.io/solo/
+  - https://public-bots.github.io/UCAG-P
+  - https://dreammimic.github.io/
+  - https://golem-humanoid.github.io
+- Existing-paper updates: none verified. The lastUpdatedDate pass over tracked arXiv IDs in cs.RO/cs.CV/cs.LG/cs.GR found no previously tracked paper with a new revision in the 2026-08-21 → 2026-08-28 window, and targeted unresolved-code rechecks did not expose verified implementation releases.
+- Unresolved code-status items:
+  - https://sunpihai-up.github.io/solo/ — project page reachable, but no official implementation repository exposed.
+  - https://github.com/Public-BOTs/UCAG-P — official repo reachable, but README marks training/inference/evaluation code as release soon and currently contains project/media assets.
+  - https://arxiv.org/abs/2608.25308 — V-Link has no project page or official implementation repository surfaced.
+  - https://github.com/DreamMimic/DreamMimic — official repo reachable, but README says code is coming soon and contains no implementation files.
+  - https://golem-humanoid.github.io and https://github.com/golem-humanoid/golem-humanoid.github.io — project page and site repository reachable, but no paper-specific method code surfaced.
+- Rechecked prior unresolved items with no status change: HOIMask project still exposes placeholder/template links; FetchMan linked GitHub repo still unavailable; GigaBrain-WBC-0.5 still marks code coming soon; HAF page exposes no method code; Tac4Loco and EATR-Stereo still had no official implementation repository surfaced.
+- Inspected but excluded: Reconstructing Humans and Objects in Interaction using Large Reconstruction Models / MILO (2608.27407, static 3D HOI reconstruction rather than HOI motion generation/control), CLAP (2608.27406, generic cross-embodiment video world model without humanoid WBC or HOI-motion specificity), Tensegrity Continuum Robots Enable Task-Adaptive Morphologies for Cooperative Behaviors (2608.27221, modular continuum robot collectives rather than humanoids), EgoNav (2608.25642, indoor navigation on a humanoid but weak WBC/loco-manipulation specificity), Design of a Biomimetic Joint-Covering Skin (2608.23304, humanoid hardware/proprioception study rather than motion/control), DeMoDiff (2608.23279, generic human motion generation without HOI or robot-control grounding), Physical Agentic AI (2608.22657, multi-robot orchestration with only weak humanoid-control specificity), Identity-Aware Human-Object Interaction Motion Captioning (2608.20690, HOI captioning rather than generation/control), ForeTime-VLA (2608.20735, conveyor-belt manipulation without humanoid scope), and broad navigation, manipulation, medical whole-body imaging, graphics, security, driving, UAV, software, and generic VLA/foundation papers matched only by generic action/contact/motion terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-08-21 — 13 new, 0 updated
 - Window: 2026-08-14 → 2026-08-21.

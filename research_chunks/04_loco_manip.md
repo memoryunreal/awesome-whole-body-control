@@ -1754,3 +1754,60 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Improves sampling-based MPC by sampling around optimized feedback policies, with validation on contact-rich humanoid loco-manipulation and dexterous tasks.
   why_it_matters: Gives high-dimensional humanoid MPC a more sample-efficient proposal mechanism for unstable contact-rich skills where open-loop shooting struggles.
+
+- title: LAC: Linear and Angular Compliance for Humanoid Whole-body Control
+  authors: Yang Liu; Zhongkai Gu; Wei Zhu; Mitsuhiro Hayashibe
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.25405
+  paper_url: https://arxiv.org/abs/2608.25405
+  project_url: https://lac-humanoid.github.io/
+  code_url: https://github.com/lac-humanoid/lac-code
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [whole-body-compliance, wrench-response, teleoperation, loco-manipulation, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Trains a single policy to realize commanded linear and angular compliance for upper-body wrenches while preserving whole-body humanoid stability.
+  why_it_matters: Gives teleoperated loco-manipulation an explicit whole-body compliance interface instead of treating external force as a disturbance to reject.
+
+- title: DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model
+  authors: Jie Yin; Xingyu Lai
+  year: 2026
+  venue: IROS 2026 / arXiv 2026.08
+  arxiv_id: 2608.22278
+  paper_url: https://arxiv.org/abs/2608.22278
+  project_url: https://dreammimic.github.io/
+  code_url: https://github.com/DreamMimic/DreamMimic
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [visuomotor-control, world-model-distillation, contact-rich-loco-manipulation, performance-conditioned-guidance]
+  robot_platform: humanoid / Unitree G1-style benchmarks
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Distills privileged teachers into vision-based humanoid loco-manipulation controllers using predictive world-model latents and performance-conditioned guidance.
+  why_it_matters: Keeps contact, object state, and reward prediction inside the visual policy representation, reducing long-horizon drift in partially observed loco-manipulation.
+
+- title: GOLEM: Modular Humanoid Autonomy Towards Electric Vehicle Battery Disassembly
+  authors: Max Conway; William Xie; Allen Devaraj; Yutong Zhang; Niraj Pudasaini; Mateo Feit; Adam Abid; Zachary Allen; Chen Liu; Xuan Tan; Jensen Lavering; Jason Chen; Lyle Antieau; Anthony Von Pischke; Alessandro Roncone; Zachary Sunberg; Nikolaus Correll
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.21550
+  paper_url: https://arxiv.org/abs/2608.21550
+  project_url: https://golem-humanoid.github.io
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [modular-autonomy, battery-disassembly, ROS2, digital-twin, Unitree-H1-2]
+  robot_platform: Unitree H1-2
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Organizes navigation, manipulation, standing control, digital twins, and spatial memory as interchangeable modules for humanoid EV battery disassembly.
+  why_it_matters: Provides a concrete industrial loco-manipulation workflow where whole-body stability, navigation error, and free-standing manipulation degrade together.

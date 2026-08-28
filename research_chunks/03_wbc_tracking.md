@@ -1977,11 +1977,87 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: AdaPT learns tennis serving and rally styles from broadcast video, then adapts planner speed and tracker robustness for real humanoid execution.
   why_it_matters: Demonstrates sport-scale humanoid WBC where style, perception noise, real-time tracking, and sim-to-real degradation interact.
 
+- title: SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion
+  authors: Pihai Sun; Gang Han; Jingkai Sun; Jiahao Ma; Zeran Su; Zelin Tao; Peiran Liu; Shuai Shi; Wei Cui; Zifan Wang; Jialin Yu; Wen Zhao; Kangning Yin; Jiaxu Wang; Jiahang Cao; Lingfeng Zhang; Hao Cheng; Jian Tang; Yijie Guo; Qiang Zhang
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.26583
+  paper_url: https://arxiv.org/abs/2608.26583
+  project_url: https://sunpihai-up.github.io/solo/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-locomotion, long-horizon-traversal, depth-proprioception, terrain-reconstruction, sim2real]
+  robot_platform: humanoid with chest-mounted depth camera
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Combines query-based terrain reconstruction with trajectory-aware distillation so a depth-conditioned humanoid locomotion policy remains stable over long outdoor traversals.
+  why_it_matters: Targets accumulated perception-control drift, a practical failure mode for deploying perceptive humanoid locomotion beyond short obstacle-course demos.
+
+- title: Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions
+  authors: Xulin Chen; Borui He; Ruipeng Liu; Naveed Tahir; Zhenyu Gan; Garrett E. Katz
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.26505
+  paper_url: https://arxiv.org/abs/2608.26505
+  project_url: https://github.com/garrettkatz/poppy-muffin
+  code_url: https://github.com/garrettkatz/poppy-muffin
+  dataset_url: ""
+  category: WBC
+  task_tags: [bipedal-locomotion, LQR, learned-cost-functions, trajectory-tracking, Poppy-humanoid]
+  robot_platform: Poppy Humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Learns an LQR cost function from open-loop Poppy walking data to close the control loop and improve reliable unassisted bipedal locomotion.
+  why_it_matters: Adds a low-cost humanoid control baseline where classical trajectory tracking and learned costs are evaluated on accessible open hardware.
+
+- title: Demonstration-Guided Humanoid Stand-Up on an Emulated Deformable Surface
+  authors: Aniruddh Kushwah; Vyankatesh Ashtekar; Ashish Dutta
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.20852
+  paper_url: https://arxiv.org/abs/2608.20852
+  project_url: https://github.com/andireposit/Stand-Up-Motion-on-Compliant-Surface-for-Humanoid
+  code_url: https://github.com/andireposit/Stand-Up-Motion-on-Compliant-Surface-for-Humanoid
+  dataset_url: ""
+  category: WBC
+  task_tags: [stand-up, recovery, reference-guided-RL, compliant-terrain, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🧩 Partial Code
+  one_line: Adapts a reference-guided PPO stand-up policy from hard ground to emulated compliant terrain using MuJoCo soft-contact parameters.
+  why_it_matters: Covers contact-intensive recovery under delayed support forces, a failure mode that flat rigid-ground humanoid trackers often ignore.
+
+- title: Natural Sit-to-Stand Motion Synthesis For Humanoids via Guided Assistance Curricula and Staged Rewards
+  authors: Meet Pal Singh; Vyankatesh Ashtekar; Ashish Dutta
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.20823
+  paper_url: https://arxiv.org/abs/2608.20823
+  project_url: https://github.com/meetpal644/Sit-to-Stand-Motion-Synthesis-For-Humanoids
+  code_url: https://github.com/meetpal644/Sit-to-Stand-Motion-Synthesis-For-Humanoids
+  dataset_url: ""
+  category: WBC
+  task_tags: [sit-to-stand, reference-free-RL, assistance-curriculum, staged-rewards, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🧩 Partial Code
+  one_line: Synthesizes smooth Unitree G1 sit-to-stand motions from scratch using a decaying assistance curriculum, IK pose sampling, and staged balance rewards.
+  why_it_matters: Adds a reference-free recovery primitive for seated-to-standing transitions, with an evaluation package and pretrained policies but no released training environment.
+
 ---
 
 ## Notes on Verification
 
 GitHub repos verified to exist (HTTP 200) at time of writing:
-ASAP, human2humanoid (H2O+OmniH2O), PHC, PULSE, ProtoMotions, TWIST, GMR, PBHC (KungfuBot), metamotivo (FB-CPR/Meta Motivo), MoCapAct, DeepMimic, MimicKit, TWIST2, GMT, gentle-humanoid, expressive-humanoid (ExBody), NVlabs/HOVER, NVlabs/CALM, NVlabs/GR00T-WholeBodyControl (SONIC), wyhuai/SkillMimic, wyhuai/SkillMimic-V2, ZhengyiLuo/UHC, Tencent-RoboticsX/NCP, heyuanYao-PKU/MoConVQ, MarkFzp/humanplus, BeingBeyond/Jaeger, LeCAR-Lab/BFM-Zero, LeCAR-Lab/FALCON, Evm7/I-CTRL, GalaxyGeneralRobotics/OpenTrack (Any2Track), HybridRobotics/whole_body_tracking (BeyondMimic), yinkangning0124/Humanoid-UniTracker, BAAI-Humanoid/MOSAIC, LeCAR-Lab/HumanoidVerse, visualmimic/VisualMimic, OpenDriveLab/WholebodyVLA, zixuan417/humanoid-general-motion-tracking (GMT).
+ASAP, human2humanoid (H2O+OmniH2O), PHC, PULSE, ProtoMotions, TWIST, GMR, PBHC (KungfuBot), metamotivo (FB-CPR/Meta Motivo), MoCapAct, DeepMimic, MimicKit, TWIST2, GMT, gentle-humanoid, expressive-humanoid (ExBody), NVlabs/HOVER, NVlabs/CALM, NVlabs/GR00T-WholeBodyControl (SONIC), wyhuai/SkillMimic, wyhuai/SkillMimic-V2, ZhengyiLuo/UHC, Tencent-RoboticsX/NCP, heyuanYao-PKU/MoConVQ, MarkFzp/humanplus, BeingBeyond/Jaeger, LeCAR-Lab/BFM-Zero, LeCAR-Lab/FALCON, Evm7/I-CTRL, GalaxyGeneralRobotics/OpenTrack (Any2Track), HybridRobotics/whole_body_tracking (BeyondMimic), yinkangning0124/Humanoid-UniTracker, BAAI-Humanoid/MOSAIC, LeCAR-Lab/HumanoidVerse, visualmimic/VisualMimic, OpenDriveLab/WholebodyVLA, zixuan417/humanoid-general-motion-tracking (GMT), garrettkatz/poppy-muffin, andireposit/Stand-Up-Motion-on-Compliant-Surface-for-Humanoid, meetpal644/Sit-to-Stand-Motion-Synthesis-For-Humanoids.
 
 ExBody2, ResMimic, OmniRetarget, HugWBC, MaskedMimic (NVIDIA), and several 2026 arXiv papers (CLOT, MOSAIC, Robust-Generalized-Tracking, Iterative-Closed-Loop, Perceptive-Parkour, Deep-Parkour, PhysiFlow) currently have project pages or paper-only releases. MaskedMimic's official code now ships inside NVlabs/ProtoMotions.

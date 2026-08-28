@@ -1,13 +1,18 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (235 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (238 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
-## Human-Object Interaction Motion Generation (18)
+## Human-Object Interaction Motion Generation (19)
 
 - ⭐ 🧍 🧱 **[DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects](https://arxiv.org/abs/2606.15133)** `arXiv 2026.06` `HOI-Motion-Gen`
   Tianshan Zhang et al..
   Generates and trains physically plausible dexterous hand-object interactions with articulated objects using contact-aware simulation assets and RL code.
   Links: [Project](https://aigeeksgroup.github.io/DragMesh-2) · [Code](https://github.com/AIGeeksGroup/DragMesh-2) · [Paper](https://arxiv.org/abs/2606.15133) · [Dataset](https://huggingface.co/datasets/AIGeeksGroup/DragMesh-2)
+
+- ⭐ **[EMPIRE: Explicit Manipulation Planning as a Learnable Intermediate Representation for Egocentric Hand-Motion Forecasting](https://arxiv.org/abs/2608.22449)** `arXiv 2026.08` `hand-object interaction forecasting` `HOI-Motion-Gen`
+  Wen Wang et al..
+  Uses explicit per-hand manipulation plans as a frozen intermediate representation before synthesizing future bimanual hand motions from egocentric observations.
+  Links: [Project](https://github.com/wangwen-banban/EMPIRE) · [Code](https://github.com/wangwen-banban/EMPIRE) · [Paper](https://arxiv.org/abs/2608.22449)
 
 - ⭐ **[AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation](https://arxiv.org/abs/2410.07164)** `ICLR 2025` `HOI-Motion-Gen`
   Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu.
@@ -163,7 +168,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (57)
+## Whole-Body Motion Tracking and Imitation (58)
+
+- ⭐ 🤖 🧍 **[Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions](https://arxiv.org/abs/2608.26505)** `arXiv 2026.08` `Poppy Humanoid` `WBC`
+  Xulin Chen et al..
+  Learns an LQR cost function from open-loop Poppy walking data to close the control loop and improve reliable unassisted bipedal locomotion.
+  Links: [Project](https://github.com/garrettkatz/poppy-muffin) · [Code](https://github.com/garrettkatz/poppy-muffin) · [Paper](https://arxiv.org/abs/2608.26505)
 
 - ⭐ 🤖 🧍 **[GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR)** `ICRA 2026` `Unitree H1, H1-2, G1, multi-robot` `WBC-Tracking`
   Yanjie Ze et al..
@@ -449,7 +459,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://xbpeng.github.io/projects/DeepMimic/index.html) · [Code](https://github.com/xbpeng/DeepMimic) · [Paper](https://arxiv.org/abs/1804.02717)
 
 
-## Whole-Body Control and Loco-Manipulation (33)
+## Whole-Body Control and Loco-Manipulation (34)
 
 - ⭐ 🤖 🧍 **[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.23680)** `arXiv 2026.06` `Unitree G1 + WUJI hand` `Loco-Manipulation`
   Sikai Li et al..
@@ -465,6 +475,11 @@ This is the canonical list of papers with **verified official open-source code**
   Lizhi Yang et al..
   Distills complementary teachers into a task-space whole-body command interface for diverse humanoid loco-manipulation skills.
   Links: [Project](https://lzyang2000.github.io/HANDOFF/) · [Code](https://github.com/lzyang2000/HANDOFF) · [Paper](https://arxiv.org/abs/2606.06493)
+
+- ⭐ 🤖 🧍 **[LAC: Linear and Angular Compliance for Humanoid Whole-body Control](https://arxiv.org/abs/2608.25405)** `arXiv 2026.08` `Unitree G1` `Loco-Manipulation`
+  Yang Liu et al..
+  Trains a single policy to realize commanded linear and angular compliance for upper-body wrenches while preserving whole-body humanoid stability.
+  Links: [Project](https://lac-humanoid.github.io/) · [Code](https://github.com/lac-humanoid/lac-code) · [Paper](https://arxiv.org/abs/2608.25405)
 
 - ⭐ 🤖 🧍 **[OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.08548)** `arXiv 2026.06` `Unitree G1 / humanoid` `Loco-Manipulation`
   Zehao Yu et al..

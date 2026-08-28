@@ -1666,10 +1666,29 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Replaces iterative diffusion with discrete masked modeling over contact-aware human and object token maps for text-driven HOI motion generation.
   why_it_matters: Adds a non-diffusion baseline for contact-sensitive HOI synthesis, with project media available but the code link still a placeholder.
 
+- title: EMPIRE: Explicit Manipulation Planning as a Learnable Intermediate Representation for Egocentric Hand-Motion Forecasting
+  authors: Wen Wang; Ruibing Hou; Hong Chang; Shiguang Shan; Xilin Chen
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.22449
+  paper_url: https://arxiv.org/abs/2608.22449
+  project_url: https://github.com/wangwen-banban/EMPIRE
+  code_url: https://github.com/wangwen-banban/EMPIRE
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [egocentric-HOI, hand-motion-forecasting, manipulation-planning, bimanual-hands, flow-matching]
+  robot_platform: hand-object interaction forecasting
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ⭐ Code
+  one_line: Uses explicit per-hand manipulation plans as a frozen intermediate representation before synthesizing future bimanual hand motions from egocentric observations.
+  why_it_matters: Separates high-level hand-object interaction intent from low-level motion generation, giving HOI forecasting a more inspectable bridge toward robot-useful manipulation priors.
+
 ---
 
 ## Summary
 
-Total papers: 60. Verified (⭐ Code) repos: ~36. Project pages with no released code (🌐): ~10. Dataset-only releases (📦): 2. Coming soon (⏳): 1. No code found (❌): ~11.
+Total papers: 61. Verified (⭐ Code) repos: ~37. Project pages with no released code (🌐): ~10. Dataset-only releases (📦): 2. Coming soon (⏳): 1. No code found (❌): ~11.
 
 The list spans foundational datasets (GRAB 2020, BEHAVE 2022, HumanML3D 2022, HUMANISE 2022, OakInk2 2024, ParaHome 2024, HIMO 2024, HOI-M3 2024, CORE4D 2024, ARCTIC 2023, HOI4D 2022, HUMOTO 2025, FORCE 2025), seminal motion synthesis methods (SAMP 2021, ManipNet 2021, COUCH 2022, GOAL 2022, SAGA 2022, IMoS 2023, OMOMO 2023, InterDiff 2023, GRIP 2024), and the modern wave of HOI diffusion / zero-shot generators (HOI-Diff, CHOIS, CG-HOI, NIFTY, AffordMotion, HOIAnimator, Text2HOI, DiffH2O, InterDreamer, AvatarGO, SyncDiff, ChainHOI, ROG, ARDHOI, LatentHOI, DiffGrasp, HOI-PAGE, InteractAnything, AnchorHOI, HOIDiNi, OnlineHOI, SceneMI, TeSMo, DreamHOI, HOI-HLI). Physics-based / humanoid lines (PhysHOI, UniHSI, TokenHSI, MoConVQ, PhysHSI, HumanPlus, HumanX, DeVI) connect HOI motion priors to humanoid robot control. Roughly 60% of papers are 2024-2026, with strong representation at CVPR/ECCV/ICCV/NeurIPS/SIGGRAPH and top arXiv preprints. Code verification was done via GitHub URL lookups; uncertain entries downgraded to project-page or no-code-found.
