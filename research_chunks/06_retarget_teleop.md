@@ -1334,6 +1334,25 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Edits human manipulation videos into robot-consistent videos with aligned 3D hand states and cross-embodiment retargeted supervision.
   why_it_matters: Expands the human-video-to-robot data path used by dexterous and humanoid manipulation systems, though no release URL was verified yet.
 
+- title: Unified Motion Retargeting for Humanoids with Learned Point Cloud Correspondence
+  authors: Hanyang Cao; Yuetong Fang; Taesoo Kwon; Runyi Yu; Ji Ma; Jing Tan; Yangchen Zhou; Baoze Du; Yi Gu; Yukang Gao; Ruoli Dai; Lei Han; Renjing Xu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.02134
+  paper_url: https://arxiv.org/abs/2609.02134
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [motion-retargeting, point-cloud-correspondence, dense-matching, multi-humanoid, human-motion-data]
+  robot_platform: multiple humanoids / SONIC-style trackers
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns dense human-to-humanoid point-cloud correspondences so retargeting no longer depends on manually designed sparse keypoint or body-part mappings.
+  why_it_matters: Makes retargeting more scalable across motion sources, morphologies, and interaction-rich poses where sparse semantic anchors lose detail.
+
 ---
 
 ## Notes

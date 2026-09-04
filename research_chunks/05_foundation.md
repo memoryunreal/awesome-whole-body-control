@@ -1199,6 +1199,25 @@ Code-status legend:
   one_line: Injects spatial and semantic visual query features back into an Action DiT so VLA action heads retain 3D geometry and semantic grounding.
   why_it_matters: Reports large gains on real humanoid manipulation tasks using a GR00T-family base, making the VL-to-action information bottleneck directly relevant to humanoid VLA adaptation.
 
+- title: AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization
+  authors: Cheng Chen; Jerry Bai; Jiacheng Wei; Boyu Chen; Xiaoji Zheng; Fan Wu; Minghao Yang; Tianrun Chen; Ruibo Li; Xiaoyu Yue; Xiaoyang Guo; Yixiao Ge; Guosheng Lin; Fayao Liu
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.29242
+  paper_url: https://arxiv.org/abs/2608.29242
+  project_url: https://xpeng-robotics.github.io/anyworld/
+  code_url: https://github.com/xpeng-robotics/AnyWorld
+  dataset_url: ""
+  category: Foundation
+  task_tags: [egocentric-world-models, cross-embodiment, human-video-to-robot, robot-native-rollouts, humanoid-manipulation]
+  robot_platform: RoboCasa GR1 / IRON humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Factorizes egocentric interaction data into action, camera, and embodiment controls to generate robot-native video-action rollouts and improve real IRON humanoid manipulation.
+  why_it_matters: Provides a verified open world-model pipeline for recomposing unpaired human interaction videos into humanoid-relevant manipulation experience.
+
 ---
 
 ## Quick stats

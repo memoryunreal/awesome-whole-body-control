@@ -1414,23 +1414,23 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   why_it_matters: Reduces repeated human intervention in demo-heavy humanoid manipulation pipelines by using self-supervised trajectory augmentation.
 
 - title: A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots
-  authors: Duncan William Calvert
+  authors: Duncan Calvert; Luigi Penco; Dexton Anderson; Tomasz Bialek; Arghya Chatterjee; Beomyeong Park; Robert Griffin
   year: 2026
-  venue: PhD dissertation / arXiv 2026.06
-  arxiv_id: 2606.26425
-  paper_url: https://arxiv.org/abs/2606.26425
+  venue: arXiv 2026.09 / PhD dissertation lineage
+  arxiv_id: 2609.01518
+  paper_url: https://arxiv.org/abs/2609.01518
   project_url: https://www.youtube.com/playlist?list=PLJK5CTyotYqsfgfnXb-09YNFeBose6uEY
-  code_url: ""
+  code_url: https://github.com/ihmcrobotics
   dataset_url: ""
   category: Loco-Manipulation
-  task_tags: [runtime-authoring, affordance-templates, behavior-trees, whole-body-control]
+  task_tags: [behavior-authoring, affordance-templates, runtime-editing, whole-body-controller, Unitree-H1-2]
   robot_platform: Atlas, Valkyrie, Nadia, Unitree H1-2, Alex
   uses_real_robot: true
   uses_humanoid: true
   uses_simulation: true
   code_status: 🌐 Project Page
-  one_line: Runtime-editable humanoid behavior system combining affordance templates, behavior-tree-inspired logic, perception scenes, and layered whole-body action primitives.
-  why_it_matters: Documents a deployed multi-platform loco-manipulation stack where operators can author, repair, and combine real humanoid behaviors in minutes or hours.
+  one_line: Combines object-centric affordance templates, behavior trees, runtime-editable perception, and WBC primitives into a robot-local system for fast humanoid task authoring.
+  why_it_matters: Documents a deployed multi-platform loco-manipulation stack where operators can author, repair, and combine real humanoid behaviors in minutes or hours; the newer arXiv record links IHMC's broad GitHub organization, but no paper-specific repo was verified.
 
 - title: Human2Any: Human-to-Robot Transfer via Constraint-Aware Compositional Planning
   authors: Shuo Cheng; Chuye Zhang; Alfred Cueva; Caelan Garrett; Ajay Mandlekar; Danfei Xu
@@ -1724,7 +1724,7 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   arxiv_id: 2608.17027
   paper_url: https://arxiv.org/abs/2608.17027
   project_url: https://orayyan.com/fetchman
-  code_url: ""
+  code_url: https://github.com/omarrayyann/fetchman
   dataset_url: FetchMan-Bench announced on project page
   category: Loco-Manipulation
   task_tags: [visual-loco-manipulation, simulated-experience, Flow-GRPO, sim2real, Unitree-G1]
@@ -1732,9 +1732,9 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   uses_real_robot: true
   uses_humanoid: true
   uses_simulation: true
-  code_status: 🌐 Project Page
+  code_status: ⏳ Code Coming Soon
   one_line: Trains visual humanoid reach-and-pick policies from 150k simulated scenes and sparse-reward RL refinement, then deploys zero-shot on a real G1.
-  why_it_matters: Directly tests whether large-scale simulated experiences can replace expensive humanoid loco-manipulation demonstrations for visual policies.
+  why_it_matters: Directly tests whether large-scale simulated experiences can replace expensive humanoid loco-manipulation demonstrations for visual policies; the official GitHub repo now resolves but is still README-only.
 
 - title: Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control
   authors: Chaoyi Pan; Zeji Yi; John Zhang; Zachary Manchester; Guannan Qu; Guanya Shi
@@ -1811,3 +1811,41 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Organizes navigation, manipulation, standing control, digital twins, and spatial memory as interchangeable modules for humanoid EV battery disassembly.
   why_it_matters: Provides a concrete industrial loco-manipulation workflow where whole-body stability, navigation error, and free-standing manipulation degrade together.
+
+- title: Blind Dexterity: Whole-Body Humanoid Manipulation via Pure Proprioception
+  authors: Aditya Bhatt; Oleg Kaidanov; Puze Liu; Jan Peters
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.29487
+  paper_url: https://arxiv.org/abs/2608.29487
+  project_url: https://rclab.kookmin.ac.kr/project1/humanoid-robot-rok-3
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [proprioceptive-manipulation, whole-body-tactile, contact-rich-skills, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains G1 whole-body manipulation policies that infer object state from proprioceptive contact histories alone across walking, ball trapping, suitcase lifting, and skateboard mounting.
+  why_it_matters: Reframes joint encoders as a whole-body tactile signal for blind contact-rich humanoid manipulation when vision and force sensors are absent.
+
+- title: Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters
+  authors: Kango Yanagida; Kazuki Miyazawa; Takato Horii
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.28090
+  paper_url: https://arxiv.org/abs/2608.28090
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [seated-locomotion, passive-chair, contact-rich-locomotion, caster-dynamics, Unitree-G1]
+  robot_platform: Unitree G1 / passive mobile chair
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns proprioceptive omnidirectional seated locomotion by modeling unfixed pelvis-seat contact and intermittent foot-floor propulsion of a humanoid-chair system.
+  why_it_matters: Opens a seated loco-manipulation regime where the humanoid must coordinate chair support, caster dynamics, and foot contact instead of standing balance alone.

@@ -6,23 +6,23 @@
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
 | `02_hoi_motion.md` | 93 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 112 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 99 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 68 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 73 | Human-to-humanoid retargeting + teleop |
+| `03_wbc_tracking.md` | 118 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 101 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 69 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 74 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 100 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 607**
+**Total unique papers after deduplication: 617**
 
 ## Per-Category Counts
 
 - Human-Object Interaction Motion Generation: 54
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 157
-- Whole-Body Control and Loco-Manipulation: 93
-- Humanoid Foundation Models and Generalist Policies: 82
-- Human-to-Humanoid Retargeting: 19
+- Whole-Body Motion Tracking and Imitation: 163
+- Whole-Body Control and Loco-Manipulation: 95
+- Humanoid Foundation Models and Generalist Policies: 83
+- Human-to-Humanoid Retargeting: 20
 - Teleoperation and Demonstration Collection: 39
 - Datasets and Benchmarks: 69
 - Evaluation Metrics and Contact Modeling: 14
@@ -33,10 +33,10 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 238 |
-| ❌ No Code | 180 |
-| 🌐 Project Page | 141 |
-| ⏳ Code Coming Soon | 20 |
+| ⭐ Code | 239 |
+| ❌ No Code | 184 |
+| 🌐 Project Page | 144 |
+| ⏳ Code Coming Soon | 22 |
 | 📦 Dataset | 17 |
 | 🧩 Partial Code | 10 |
 | 🔁 Unofficial Code | 1 |
@@ -101,6 +101,43 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-09-04 — 10 new, 2 updated
+- Window: 2026-08-28 → 2026-09-04.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate and lastUpdatedDate sweeps over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv abstract and HTML pages; project pages; GitHub repository pages; GitHub API repo/tree checks; arXiv source-package checks for candidate ancillary code; targeted exact-title page and GitHub searches for project/code links.
+- Counts: 1,759 unique arXiv records fetched across the four categories and both submitted/updated passes; 10 in-scope new papers added; 2 existing-paper records updated after deduplication and code-status rechecks.
+- Query focus: humanoid whole-body tracking and safety, perceptive locomotion over sparse terrain, humanoid loco-manipulation behavior systems, proprioceptive whole-body manipulation, humanoid retargeting, text-conditioned humanoid control, humanoid morphology-control co-design, and humanoid-relevant egocentric world models.
+- New entries by source chunk:
+  - `03_wbc_tracking.md` — 6 entries: BRIDGE (2609.03497), World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain (2609.02542), Humanoid Safe Stop (2609.02358), ADAPT: Agile Diffusion Action Priors (2609.00677), Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids (2608.29769), PAMoR (2608.28213).
+  - `04_loco_manip.md` — 2 entries: Blind Dexterity (2608.29487), Stay Seated (2608.28090).
+  - `05_foundation.md` — 1 entry: AnyWorld (2608.29242).
+  - `06_retarget_teleop.md` — 1 entry: Unified Motion Retargeting for Humanoids (2609.02134).
+- Verified official full-code repos:
+  - https://github.com/xpeng-robotics/AnyWorld
+- Verified project pages:
+  - https://sites.google.com/view/bridgerobot
+  - https://junfeng-long.github.io/safestop/
+  - https://wuyan01.github.io/ADAPT-project/
+  - https://nemantor.github.io/sparse-3d-traversal-website/
+  - https://rclab.kookmin.ac.kr/project1/humanoid-robot-rok-3
+  - https://xpeng-robotics.github.io/anyworld/
+- Existing-paper updates:
+  - FetchMan (2608.17027) now has a resolving official GitHub URL at https://github.com/omarrayyann/fetchman, but the repository tree contains only README.md and still says code will be added; the entry was updated from project-page-only to code-coming-soon with the unresolved code URL.
+  - A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots was already tracked from the 2606.26425 dissertation-lineage record; the duplicate 2609.01518 candidate was folded into the existing record with updated authors, arXiv URL, and IHMC organization-level code link.
+- Unresolved code-status items:
+  - https://sites.google.com/view/bridgerobot — project page and materials reachable, but the exposed GitHub link resolves to an unrelated legacy account and no paper-specific implementation repo was verified.
+  - https://arxiv.org/abs/2609.02542 — WM-LOCO has no project page or official implementation repository surfaced.
+  - https://junfeng-long.github.io/safestop/ — project page reachable, but no implementation repository exposed.
+  - https://arxiv.org/abs/2609.02134 — UMR has no project page or official implementation repository surfaced; arXiv source contains paper files only.
+  - https://github.com/ihmcrobotics — official broad GitHub organization linked for the humanoid behavior system, but no paper-specific implementation repo was surfaced.
+  - https://wuyan01.github.io/ADAPT-project/ — project page marks Code Coming Soon.
+  - https://nemantor.github.io/sparse-3d-traversal-website/ — project page reachable; arXiv source contains paper/media files only and no method code was verified.
+  - https://rclab.kookmin.ac.kr/project1/humanoid-robot-rok-3 — project page/videos reachable, but no paper-specific implementation repository exposed.
+  - https://arxiv.org/abs/2608.28213 and https://arxiv.org/abs/2608.28090 — no project page or implementation repository surfaced.
+  - https://github.com/omarrayyann/fetchman — now reachable but README-only and still not an implementation release.
+- Rechecked prior unresolved items with no verified code-status upgrade: SOLO page still has no official implementation repo; UCAG-P repo remains project/media assets; DreamMimic repo remains README/license only; GOLEM site repo remains project-site assets only; HOIMask project still exposes template placeholder links; GigaBrain-WBC-0.5 page still exposes no code link; HAF page still exposes no method code; C2Dex repo remains README/assets only.
+- Inspected but excluded: FWBC-VLA (2609.03889, whole-body loco-manipulation but on wheeled-legged robots rather than humanoids), GraspHOI (2608.28386, static single-image HOI reconstruction rather than HOI motion generation/control), Contact-Guided Exploration for Non-Prehensile Locomanipulation (2608.28140, quadrupedal mobile manipulator validation without humanoid whole-body scope), Contact-Constrained Lower-Limb Joint-Offset Calibration (2609.02306, calibration rather than motion/control method), FOCUS (2609.02222, humanoid odometry rather than WBC/loco-manipulation), humanoid ankle actuator hardware (2608.30832), humanoid HRI engagement dataset (2609.03255), RESELF egocentric scene/self reconstruction (2609.01276), AnyWorld-adjacent generic world-action/VLA papers without explicit humanoid WBC/HOI-control grounding, DemoMimic (2609.01938, dexterous hand manipulation without humanoid whole-body scope), ZETA (2609.02546, tabletop VLA transfer), AdaRoboVLG (2609.04096, grasp synthesis without humanoid whole-body scope), Aero Hand Open (2608.28578, hand hardware/simulator), and broad medical, driving, UAV, soft-robot, industrial-grasping, navigation, graphics, software, and foundation-model papers matched only by generic action/contact/motion terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-08-28 — 10 new, 0 updated
 - Window: 2026-08-21 → 2026-08-28.

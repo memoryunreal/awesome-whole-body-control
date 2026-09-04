@@ -2053,6 +2053,120 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Synthesizes smooth Unitree G1 sit-to-stand motions from scratch using a decaying assistance curriculum, IK pose sampling, and staged balance rewards.
   why_it_matters: Adds a reference-free recovery primitive for seated-to-standing transitions, with an evaluation package and pretrained policies but no released training environment.
 
+- title: BRIDGE: An Open-Source Humanoid Platform via Morphology-Control Co-Design for Physical AI
+  authors: Jianren Wang; Letian Qian; Zikai Wang; Weiwei Wu; Junjie Zong; Abhinav Gupta; Deepak Pathak
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.03497
+  paper_url: https://arxiv.org/abs/2609.03497
+  project_url: https://sites.google.com/view/bridgerobot
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [morphology-control-codesign, open-humanoid, motion-retargeting, dynamic-tracking, physical-AI]
+  robot_platform: Bridge 88cm humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Co-designs a small open humanoid morphology against retargeting fidelity and dynamic tracking metrics, then demonstrates locomotion, balance, and dynamic maneuvers on the Bridge platform.
+  why_it_matters: Connects humanoid hardware design directly to downstream whole-body-control performance instead of treating morphology and controller training as separate choices.
+
+- title: World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain
+  authors: Yuxi Liu; Lijun Han; Ziming Wang; Ao Zhang; Cong Yang; Wei Sui
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.02542
+  paper_url: https://arxiv.org/abs/2609.02542
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [visual-locomotion, world-model, foothold-constrained-terrain, sparse-terrain, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains a recurrent world model with a PPO depth-conditioned locomotion policy so a G1 can anticipate gaps, stepping stones, and narrow stairs from onboard perception.
+  why_it_matters: Targets sparse-foothold failures where short-horizon terrain perception is not enough for safe humanoid foot placement.
+
+- title: Humanoid Safe Stop via Learned Stoppability Value
+  authors: Junfeng Long; Pieter Abbeel; Koushil Sreenath; Roberto Horowitz; Guanya Shi; C. Karen Liu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.02358
+  paper_url: https://arxiv.org/abs/2609.02358
+  project_url: https://junfeng-long.github.io/safestop/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [safe-stop, reach-avoid, stoppability-value, fall-recovery, humanoid-safety]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns complementary stop-probability and reach-avoidance value estimators that decide whether an emergency stop is recoverable or should hand off to a fallback.
+  why_it_matters: Adds an explicit safety layer for whole-body controllers that may enter states where a fixed emergency stop would cause a fall.
+
+- title: ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control
+  authors: Yan Wu; Chenhao Li; Kaifeng Zhao; Gen Li; Marco Hutter; Siyu Tang
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.00677
+  paper_url: https://arxiv.org/abs/2609.00677
+  project_url: https://wuyan01.github.io/ADAPT-project/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [text-conditioned-control, diffusion-action-prior, residual-RL, online-prompt-switching, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Uses a text-conditioned diffusion action prior plus lightweight residual RL to execute robust 50 Hz humanoid whole-body skills under online prompt switching.
+  why_it_matters: Moves language-conditioned humanoid motion from offline kinematic generation toward closed-loop action execution with balance and transition robustness.
+
+- title: Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids
+  authors: Efe Ongan; Chong Zhang; Boyang Sun; Andrei Cramariuc; Cesar Cadena; Marco Hutter
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.29769
+  paper_url: https://arxiv.org/abs/2608.29769
+  project_url: https://nemantor.github.io/sparse-3d-traversal-website/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-traversal, sparse-3D-structures, lidar-policy, brachiation, humanoid]
+  robot_platform: humanoid with passive hook end-effectors
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains a lidar-conditioned policy through a phase-scheduled teacher-student pipeline for jump-up, brachiation, and jump-down traversal of sparse overhead structures.
+  why_it_matters: Extends perceptive humanoid locomotion beyond foot-ground contacts into agile whole-body interaction with thin 3D structures.
+
+- title: PAMoR: Parameterized Affective Motion Generation in Real Time for Humanoid Robots
+  authors: Yan Pan; Lingfan Bao; Tianhu Peng; Chengxu Zhou
+  year: 2026
+  venue: arXiv 2026.08
+  arxiv_id: 2608.28213
+  paper_url: https://arxiv.org/abs/2608.28213
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [affective-motion, valence-arousal, diffusion-priors, real-time-generation, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Composes action and affect priors in a shared latent space to generate editable valence-arousal-conditioned whole-body G1 motions in real time.
+  why_it_matters: Treats expressive style as a physically measured robot-control parameter rather than a post-hoc animation label.
+
 ---
 
 ## Notes on Verification

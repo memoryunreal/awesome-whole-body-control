@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (238 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (239 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -632,7 +632,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://humanoid-bench.github.io/) · [Code](https://github.com/carlosferrazza/humanoid-bench) · [Paper](https://arxiv.org/abs/2403.10506)
 
 
-## Humanoid Foundation Models and Generalist Policies (37)
+## Humanoid Foundation Models and Generalist Policies (38)
+
+- ⭐ 🤖 🧍 **[AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization](https://arxiv.org/abs/2608.29242)** `arXiv 2026.08` `RoboCasa GR1 / IRON humanoid robot` `Foundation`
+  Cheng Chen et al..
+  Factorizes egocentric interaction data into action, camera, and embodiment controls to generate robot-native video-action rollouts and improve real IRON humanoid manipulation.
+  Links: [Project](https://xpeng-robotics.github.io/anyworld/) · [Code](https://github.com/xpeng-robotics/AnyWorld) · [Paper](https://arxiv.org/abs/2608.29242)
 
 - ⭐ 🤖 🧍 **[Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking](https://arxiv.org/abs/2606.03985)** `CVPR 2026` `Unitree G1 / humanoid` `Foundation`
   Zekun Qi et al..
