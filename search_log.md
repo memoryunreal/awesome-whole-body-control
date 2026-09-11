@@ -5,25 +5,25 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 93 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 118 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 101 | Whole-body control and loco-manipulation |
+| `02_hoi_motion.md` | 94 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 125 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 104 | Whole-body control and loco-manipulation |
 | `05_foundation.md` | 69 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 74 | Human-to-humanoid retargeting + teleop |
+| `06_retarget_teleop.md` | 76 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 100 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 617**
+**Total unique papers after deduplication: 630**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 54
+- Human-Object Interaction Motion Generation: 55
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 163
-- Whole-Body Control and Loco-Manipulation: 95
+- Whole-Body Motion Tracking and Imitation: 170
+- Whole-Body Control and Loco-Manipulation: 98
 - Humanoid Foundation Models and Generalist Policies: 83
-- Human-to-Humanoid Retargeting: 20
-- Teleoperation and Demonstration Collection: 39
+- Human-to-Humanoid Retargeting: 21
+- Teleoperation and Demonstration Collection: 40
 - Datasets and Benchmarks: 69
 - Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
@@ -34,9 +34,9 @@
 | Status | Count |
 |---|---|
 | ⭐ Code | 239 |
-| ❌ No Code | 184 |
-| 🌐 Project Page | 144 |
-| ⏳ Code Coming Soon | 22 |
+| ❌ No Code | 188 |
+| 🌐 Project Page | 148 |
+| ⏳ Code Coming Soon | 27 |
 | 📦 Dataset | 17 |
 | 🧩 Partial Code | 10 |
 | 🔁 Unofficial Code | 1 |
@@ -101,6 +101,43 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-09-11 — 13 new, 4 updated
+- Window: 2026-09-04 → 2026-09-11.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate and lastUpdatedDate sweeps over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv abstract and HTML pages; project pages; GitHub API repository/content checks; targeted exact-title and project/code searches for surfaced candidates.
+- Counts: 1,552 unique arXiv records fetched in the submittedDate pass across the four categories; 574 tracked arXiv IDs checked for lastUpdatedDate changes; 13 in-scope new papers added; 4 existing records updated for arXiv revision or official project metadata changes.
+- Query focus: perceptive humanoid motion tracking, terrain-adaptive locomotion, humanoid brachiation, whole-body VLA navigation, global-local loco-manipulation tracking, humanoid soccer, physics-based humanoid interaction priors, humanoid teleoperation, wheeled-humanoid retargeting, and contact-guided HOI retargeting.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: ReCHOIR (2609.10982).
+  - `03_wbc_tracking.md` — 7 entries: CAP (2609.11553), SwingBot (2609.10283), Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain (2609.10286), ViBe (2609.09918), TANGO (2609.09158), PGMT (2609.08511), RoboDreamer (2609.07096).
+  - `04_loco_manip.md` — 3 entries: GLoRI (2609.05994), SkillX (2609.06718), Unifying Physics-Based Humanoid Interaction with a Context-Conditioned Interaction Prior (2609.06591).
+  - `06_retarget_teleop.md` — 2 entries: Morphology-Aware Human Motion Retargeting for Wheeled-Humanoid Loco-Manipulation (2609.11357), SPOT (2609.07933).
+- Verified official full-code repos:
+  - None this week. No new repository inspected contained a verified implementation release beyond README/assets/project media.
+- Verified project pages:
+  - https://luyili.github.io/pgmt/
+  - https://hoshi-no-ai.github.io/CAP/
+  - https://ttbray.github.io/SwingBot/
+  - https://tango-vla.github.io/tango-vla.github.io
+  - https://lok-i.github.io/vibe-control/
+  - https://yzc0731.github.io/SkillX/
+  - https://jiann-li.github.io/chip-project/
+  - https://cherry-leki.github.io/projects/ReCHOIR/
+  - https://humanoid-gm-locomotion.github.io/HUMANOID-GM/
+- Existing-paper updates:
+  - Unified Motion Retargeting for Humanoids with Learned Point Cloud Correspondence (2609.02134) revised to `v2` on 2026-09-07; no project or code repository surfaced.
+  - HiPHI (2608.16222) revised to `v2` on 2026-09-08 and is now marked CoRL 2026 with the official project page https://noitom-robotics.github.io/hiphi/ while keeping the GitHub and Hugging Face dataset links.
+  - SCRIPT (2605.22894) revised to `v3` on 2026-09-04; project page still exposes paper/video only and no implementation link.
+  - C2Dex (2608.07045) revised to `v2` on 2026-09-06; linked GitHub repository still contains README/assets only, so status remains `⏳ Code Coming Soon`.
+- Unresolved code-status items:
+  - https://github.com/Hoshi-No-Ai/CAP — reachable but contains only README/assets; project page labels code coming soon.
+  - https://github.com/lok-i/vibe — linked from the ViBe project page as coming soon, but returned not found during inspection.
+  - https://jiann-li.github.io/chip-project/ — project page has disabled repository button marked coming soon.
+  - https://cherry-leki.github.io/projects/ReCHOIR/ — project page has placeholder code button marked coming soon.
+  - https://humanoid-gm-locomotion.github.io/HUMANOID-GM/ — project page marks code coming soon and its arXiv button was a blank placeholder at inspection time.
+  - https://arxiv.org/abs/2609.05994, https://arxiv.org/abs/2609.07096, https://arxiv.org/abs/2609.07933, and https://arxiv.org/abs/2609.11357 — no project page or implementation repository surfaced.
+- Inspected but excluded: HuRo (2609.10706, broad robotized-human-video VLA pretraining without explicit humanoid whole-body control grounding), SEED-UMI (2609.11753, dexterous-hand exoskeleton demonstration collection rather than humanoid whole-body retargeting/control), Visible-Reachable Workspace for Perception-Aware Humanoid Design (2609.08905, design metric rather than control/policy method), MobileVLA-R1 2.0 (2609.06251, mobile robot VLA rather than humanoid WBC), M3-Tele (2609.07859, wheeled/mobile-manipulation teleoperation without humanoid specificity), CALM (2609.07430, HRI intervention-boundary study), generic VLA/WAM manipulation papers such as UniMPA, FARM, IMLE-VLA, CR-VLA-Force, ICI-VLA, OpenWAM, HaWMPO, and broad medical, driving, UAV, underwater, software, security, and foundation-model papers matched only by generic action/contact/motion terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-09-04 — 10 new, 2 updated
 - Window: 2026-08-28 → 2026-09-04.

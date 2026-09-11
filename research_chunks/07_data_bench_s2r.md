@@ -1504,10 +1504,10 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
 - title: HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object-Interaction
   authors: Jiahao Ji; Ji Ma; Runhan Zhang; Runyi Yu; Wenjia Wang; Weiheng Chi; Qianqian Peng; Weichao Yan; Yongfei Gu; Ye Tian; Ting Wu; Longwei Li; Chun Yuan; Ruoli Dai; Lei Han
   year: 2026
-  venue: arXiv 2026.08
+  venue: CoRL 2026 / arXiv 2026.08 (v2 Sep 2026)
   arxiv_id: 2608.16222
   paper_url: https://arxiv.org/abs/2608.16222
-  project_url: https://github.com/noitom-robotics/hiphi
+  project_url: https://noitom-robotics.github.io/hiphi/
   code_url: https://github.com/noitom-robotics/hiphi
   dataset_url: https://huggingface.co/datasets/noitomrobotics/HiPHI
   category: Dataset

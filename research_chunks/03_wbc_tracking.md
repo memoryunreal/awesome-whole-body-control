@@ -1436,7 +1436,7 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
 - title: SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-based Humanoid Control
   authors: Jingyan Zhang; Han Liang; Ruichi Zhang; Bin Li; Juze Zhang; Xin Chen; Jingya Wang; Lan Xu; Jingyi Yu
   year: 2026
-  venue: arXiv 2026.05
+  venue: arXiv 2026.05 (v3 Sep 2026)
   arxiv_id: 2605.22894
   paper_url: https://arxiv.org/abs/2605.22894
   project_url: https://zhanglele12138.github.io/SCRIPT/
@@ -2166,6 +2166,139 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Composes action and affect priors in a shared latent space to generate editable valence-arousal-conditioned whole-body G1 motions in real time.
   why_it_matters: Treats expressive style as a physically measured robot-control parameter rather than a post-hoc animation label.
+
+- title: CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising
+  authors: Hongjin Chen; Zijun Xu; Shihao Ma; Yi Zhao; Xilai Liu; Ke Ma; Wei Zhang; Chunyang Xie; Pengfei Li; Jieru Zhao; Wenchao Ding
+  year: 2026
+  venue: CoRL 2026 / arXiv 2026.09
+  arxiv_id: 2609.11553
+  paper_url: https://arxiv.org/abs/2609.11553
+  project_url: https://hoshi-no-ai.github.io/CAP/
+  code_url: https://github.com/Hoshi-No-Ai/CAP
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-locomotion, learned-denoising, perception-blind-adaptation, depth-corruption, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Trains a single G1 locomotion policy whose world-model encoder denoises corrupted depth while a proprioceptive pathway keeps control stable when perception degrades.
+  why_it_matters: Addresses the practical failure mode where humanoid terrain perception is intermittent rather than simply present or absent.
+
+- title: SwingBot: Learning Whole-Body Brachiation for Humanoid Robots
+  authors: Yujie Xiong; Peng Zhai; Taixian Hou; Quancheng Qian; Cunwang Liu; Kangmai Hu; Long Yang; Zhiyan Dong; Lihua Zhang
+  year: 2026
+  venue: CoRL 2026 / arXiv 2026.09
+  arxiv_id: 2609.10283
+  paper_url: https://arxiv.org/abs/2609.10283
+  project_url: https://ttbray.github.io/SwingBot/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [brachiation, whole-body-momentum, passive-hooks, privileged-state-estimation, humanoid]
+  robot_platform: high-DoF humanoid with passive wrist hooks
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns continuous humanoid brachiation by structuring exploration around release-swing-capture keyframes and recurrent latent estimation for hook contact.
+  why_it_matters: Adds an overhead-contact locomotion mode where whole-body momentum and alternating arm contacts replace ordinary footstep planning.
+
+- title: Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain
+  authors: Junnosuke Kamohara; Feiyang Wu; Andy Ningan Zong; Daniel I. Goldman; Yashwanth Nakka; Seth Hutchinson; Ye Zhao
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.10286
+  paper_url: https://arxiv.org/abs/2609.10286
+  project_url: https://humanoid-gm-locomotion.github.io/HUMANOID-GM/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [granular-terrain, terrain-adaptation, resistive-force-theory, teacher-student-RL, humanoid-locomotion]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Combines a 3D resistive-force granular contact model with teacher-student RL so humanoid locomotion policies adapt across sand, basalt, and beach terrain.
+  why_it_matters: Pushes sim-to-real humanoid locomotion into deformable granular supports where rigid-contact terrain curricula break down.
+
+- title: ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control
+  authors: Lokesh Krishna; Sarvesh Venkatesan; An Zhang; Quan Nguyen
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.09918
+  paper_url: https://arxiv.org/abs/2609.09918
+  project_url: https://lok-i.github.io/vibe-control/
+  code_url: https://github.com/lok-i/vibe
+  dataset_url: ""
+  category: WBC
+  task_tags: [visual-adaptation, perceptive-control, low-rank-adapters, motion-tracking, humanoid]
+  robot_platform: humanoid whole-body trackers
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Post-trains humanoid motion trackers for visual tasks by grafting pretrained visual features into the tracker through parameter-efficient adapters.
+  why_it_matters: Offers a modular route from strong proprioceptive whole-body trackers to visually robust parkour, dodgeball, and object loco-manipulation.
+
+- title: TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model
+  authors: Anqi Li; Yuxin Chen; Zhaobo Li; Zhuo Cao; Junli Ren; Masayoshi Tomizuka; Dhruv Shah
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.09158
+  paper_url: https://arxiv.org/abs/2609.09158
+  project_url: https://tango-vla.github.io/tango-vla.github.io
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [vision-language-navigation, whole-body-actions, cluttered-environments, obstacle-aware-motion, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Predicts 29-DoF whole-body actions from language and egocentric RGB so a G1 can traverse cluttered indoor scenes rather than plan only 2D paths.
+  why_it_matters: Turns vision-language navigation into a whole-body humanoid control problem with arm, torso, and gait adaptation around 3D obstacles.
+
+- title: PGMT: Perceptive General Motion Tracking for Humanoid Robots
+  authors: Hongyi Li; Li Peizhuo; Yucheng Tao; Ze Wang; Fangzhou Xu; Jinyi Chen; Yanyan Yuan; Dapeng Jia; Yongbin Jin; Mingfeng Fan; Guillaume Sartoretti; Hongtao Wang
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.08511
+  paper_url: https://arxiv.org/abs/2609.08511
+  project_url: https://luyili.github.io/pgmt/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-motion-tracking, terrain-glimpses, recovery-prior, teleoperation, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Extends general humanoid motion tracking with motion-conditioned terrain glimpses and relaxed terrain-aware tracking for uneven real-world terrain.
+  why_it_matters: Keeps a single G1 tracking policy useful for flat-ground motion imitation, teleoperation, fall recovery, and terrain-adaptive whole-body execution.
+
+- title: RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models
+  authors: Zhe Li; Yangyang Wei; Xichen Yuan; Zhenzhe Zhang; Weihao Yuan; Shanghang Zhang; Jianfei Yang
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.07096
+  paper_url: https://arxiv.org/abs/2609.07096
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [predictive-state-space-models, temporal-masking, Mamba, anticipatory-locomotion, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Distills clean-observation locomotion teachers into a temporal state-space student that infers masked observations from history and refines actions at inference time.
+  why_it_matters: Makes history and prediction first-class tools for humanoid locomotion robustness under imperfect sensing and control latency.
 
 ---
 

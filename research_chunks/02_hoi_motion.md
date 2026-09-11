@@ -1685,6 +1685,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Uses explicit per-hand manipulation plans as a frozen intermediate representation before synthesizing future bimanual hand motions from egocentric observations.
   why_it_matters: Separates high-level hand-object interaction intent from low-level motion generation, giving HOI forecasting a more inspectable bridge toward robot-useful manipulation priors.
 
+- title: ReCHOIR: Contact-guided Human Object Interaction Retargeting to Diverse Characters
+  authors: Chaelin Kim; Seokhyeon Hong; Kwan Yun; Soojin Choi; Inseo Jang; Junyong Noh
+  year: 2026
+  venue: SIGGRAPH Asia 2026 / arXiv 2026.09
+  arxiv_id: 2609.10982
+  paper_url: https://arxiv.org/abs/2609.10982
+  project_url: https://cherry-leki.github.io/projects/ReCHOIR/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [HOI-retargeting, contact-guidance, diverse-characters, object-motion, part-aware-motion]
+  robot_platform: humanoid character interaction retargeting
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ⏳ Code Coming Soon
+  one_line: Retargets human-object interaction sequences to humanoid characters with different skeletons while preserving object motion, contact cues, and interaction semantics.
+  why_it_matters: Extends HOI motion transfer beyond body-only retargeting by keeping manipulated objects and contacts aligned with the target character morphology.
+
 ---
 
 ## Summary

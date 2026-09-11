@@ -1849,3 +1849,60 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Learns proprioceptive omnidirectional seated locomotion by modeling unfixed pelvis-seat contact and intermittent foot-floor propulsion of a humanoid-chair system.
   why_it_matters: Opens a seated loco-manipulation regime where the humanoid must coordinate chair support, caster dynamics, and foot contact instead of standing balance alone.
+
+- title: GLoRI: Closed-Loop Whole-Body Tracking with Global-Local Reference Interaction for Humanoid Loco-Manipulation
+  authors: Qingyao Xu; Sheng Yin; Zibo Zhou; Ya Zhang; Siheng Chen; Yue Hu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.05994
+  paper_url: https://arxiv.org/abs/2609.05994
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [global-local-tracking, cross-attention, world-frame-correction, HuMoTo, Unitree-G1]
+  robot_platform: Unitree G1 / humanoid loco-manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses global-local cross attention to correct world-frame placement errors while preserving local motion structure for humanoid loco-manipulation tracking.
+  why_it_matters: Targets object-interaction failures where local pose imitation is not enough because the body must arrive at precise world-frame contact locations.
+
+- title: SkillX: Unified Multi-Skill Policy Learning for Humanoid Soccer
+  authors: Zhangchen Ye; Enxuan Ruan; Yifei Bao; Runhan Huang; Jiankun Yang; Jiakang Jin; Yixiao Huo; Pengyuan Wang; Yinan Han; Huaxing Huang; Wenhao Cui; Yiming Li; Xiaoyu Tian
+  year: 2026
+  venue: CoRL 2026 / arXiv 2026.09
+  arxiv_id: 2609.06718
+  paper_url: https://arxiv.org/abs/2609.06718
+  project_url: https://yzc0731.github.io/SkillX/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [humanoid-soccer, multi-skill-policy, adversarial-motion-priors, object-aware-encoder, sim2real]
+  robot_platform: Noetix E1 humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns a single command-conditioned humanoid soccer policy that composes dribbling, trapping, shooting, and transitions through skill-specific priors and critics.
+  why_it_matters: Treats dynamic humanoid object interaction as a multi-skill composition problem rather than a set of isolated sports controllers.
+
+- title: Unifying Physics-Based Humanoid Interaction with a Context-Conditioned Interaction Prior
+  authors: Jianan Li; Xiao Chen; Tien-Tsin Wong
+  year: 2026
+  venue: SIGGRAPH Asia 2026 / arXiv 2026.09
+  arxiv_id: 2609.06591
+  paper_url: https://arxiv.org/abs/2609.06591
+  project_url: https://jiann-li.github.io/chip-project/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [context-conditioned-prior, physics-based-humanoid, scene-interaction, VQ-VAE, transformer]
+  robot_platform: physics-based humanoid characters
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Learns a shared discrete interaction prior from heterogeneous scene and object-interaction motions, then conditions it on task and environment context.
+  why_it_matters: Unifies locomotion and object-centric humanoid interaction under one reusable physics-grounded prior instead of per-task reward engineering.

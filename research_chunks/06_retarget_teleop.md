@@ -1280,7 +1280,7 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
 - title: C2Dex: Contact-Consistent Reconstruction and Retargeting for Dexterous Manipulation from Monocular Video
   authors: Jie Ren; Zhehao Jiang; Yinhong Yang; Haorui Jia; Han Jiang; Ben Li; Yao Yao; Cheng Lin; Qiu Shen; Zhenshan Bing; Xiao-Xiao Long; Xun Cao
   year: 2026
-  venue: arXiv 2026.08
+  venue: arXiv 2026.08 (v2 Sep 2026)
   arxiv_id: 2608.07045
   paper_url: https://arxiv.org/abs/2608.07045
   project_url: https://k-jie.github.io/C2Dex/
@@ -1337,7 +1337,7 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
 - title: Unified Motion Retargeting for Humanoids with Learned Point Cloud Correspondence
   authors: Hanyang Cao; Yuetong Fang; Taesoo Kwon; Runyi Yu; Ji Ma; Jing Tan; Yangchen Zhou; Baoze Du; Yi Gu; Yukang Gao; Ruoli Dai; Lei Han; Renjing Xu
   year: 2026
-  venue: arXiv 2026.09
+  venue: arXiv 2026.09 (v2 Sep 2026)
   arxiv_id: 2609.02134
   paper_url: https://arxiv.org/abs/2609.02134
   project_url: ""
@@ -1352,6 +1352,44 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   code_status: ❌ No Code Found
   one_line: Learns dense human-to-humanoid point-cloud correspondences so retargeting no longer depends on manually designed sparse keypoint or body-part mappings.
   why_it_matters: Makes retargeting more scalable across motion sources, morphologies, and interaction-rich poses where sparse semantic anchors lose detail.
+
+- title: Morphology-Aware Human Motion Retargeting for Wheeled-Humanoid Loco-Manipulation
+  authors: Chenbo Xia; Chao Ye
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.11357
+  paper_url: https://arxiv.org/abs/2609.11357
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [morphology-aware-retargeting, wheeled-humanoid, SMPLX, Galaxea-R1-Pro, loco-manipulation]
+  robot_platform: Galaxea R1 Pro wheeled humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Converts SMPL-X human motion into executable loco-manipulation behaviors for a wheeled humanoid by redistributing lower-body motion across base and torso motion.
+  why_it_matters: Broadens humanoid retargeting beyond legged platforms to wheeled humanoids whose manipulation geometry depends on base, torso, and arm coordination.
+
+- title: SPOT: Spatial Perception-Oriented Long-Horizon Humanoid Teleoperation
+  authors: Lixing Fang; Ziyan Xiong; Sunli Chen; Zhiyang Dou; Chuang Gan
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.07933
+  paper_url: https://arxiv.org/abs/2609.07933
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [VR-teleoperation, spatial-awareness, long-horizon-demonstrations, fisheye-stereo, humanoid]
+  robot_platform: humanoid teleoperation platform
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Uses a wide-field stabilized stereoscopic VR interface with viewpoint-decoupled free-looking to improve long-horizon humanoid demonstration collection.
+  why_it_matters: Addresses the operator perceptual-horizon bottleneck that limits teleoperated humanoid loco-manipulation over large workspaces and recovery tasks.
 
 ---
 
