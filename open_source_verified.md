@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (239 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (240 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -459,7 +459,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://xbpeng.github.io/projects/DeepMimic/index.html) · [Code](https://github.com/xbpeng/DeepMimic) · [Paper](https://arxiv.org/abs/1804.02717)
 
 
-## Whole-Body Control and Loco-Manipulation (34)
+## Whole-Body Control and Loco-Manipulation (35)
 
 - ⭐ 🤖 🧍 **[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.23680)** `arXiv 2026.06` `Unitree G1 + WUJI hand` `Loco-Manipulation`
   Sikai Li et al..
@@ -490,6 +490,11 @@ This is the canonical list of papers with **verified official open-source code**
   Lizhi Yang et al..
   Couples control-barrier-function RL with onboard masked-depth perception so a G1 can dodge balls while maintaining whole-body link clearance.
   Links: [Project](https://lzyang2000.github.io/perceptive_cbf_rl/) · [Code](https://github.com/lzyang2000/perceptive_cbf_rl) · [Paper](https://arxiv.org/abs/2607.28623)
+
+- ⭐ 🤖 🧍 **[Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions](https://arxiv.org/abs/2609.16683)** `arXiv 2026.09` `humanoid with 29 body joints and 12 actuated finger joints` `Loco-Manipulation`
+  Liu Cao et al..
+  Converts captured human-object interactions into robot-object references, then trains a contact- and geometry-aware policy for whole-body dexterous humanoid manipulation.
+  Links: [Project](https://xiaohu-art.github.io/Weave/) · [Code](https://github.com/xiaohu-art/Weave) · [Paper](https://arxiv.org/abs/2609.16683) · [Dataset](https://huggingface.co/datasets/appolyn/Weave/tree/main)
 
 - ⭐ 🧍 🧱 **[Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation](https://arxiv.org/abs/2606.05687)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
   Junheng Li et al..

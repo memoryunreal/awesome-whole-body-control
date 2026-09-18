@@ -1704,6 +1704,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Retargets human-object interaction sequences to humanoid characters with different skeletons while preserving object motion, contact cues, and interaction semantics.
   why_it_matters: Extends HOI motion transfer beyond body-only retargeting by keeping manipulated objects and contacts aligned with the target character morphology.
 
+- title: LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction
+  authors: Zeyu Han; Zichong Meng; Julian Tanke; Minami Matsumoto; Sergey Bashkirov; Yingruo Fan; Selim Engin; Dongseok Shim; Takashi Shibuya; Yuki Mitsufuji; Huaizu Jiang
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.19688
+  paper_url: https://arxiv.org/abs/2609.19688
+  project_url: https://neu-vi.github.io/LYRIC/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [language-conditioned, physics-based-control, contact-rich-HOI, flow-matching, OMOMO]
+  robot_platform: simulated humanoid characters
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Uses a flow-matching planner and action generator to turn free-form language plus sparse object goals into closed-loop contact-rich whole-body object interactions.
+  why_it_matters: Bridges HOI motion generation and physics-based control by evaluating language-driven interaction success under contact and object-goal constraints.
+
 ---
 
 ## Summary

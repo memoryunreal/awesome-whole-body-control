@@ -1939,7 +1939,7 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Coordinates lower-body stabilization, upper-body throw tracking, and MPC follow-through to produce spin-stabilized football throws on a G1.
   why_it_matters: Shows whole-body humanoid control handling a fast transient hand-object release where contact timing and angular momentum matter.
 
-- title: GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction
+- title: GigaBrain-WBC-0.5: A Behavior World Model for Robust Humanoid Whole-Body Tracking with Environment Interaction
   authors: Ziyang Cheng; Tianshu Tang; Jinxin Lan; Xinze Chen; Yuhan Gong; Zhichao Liu; Changzhong Wu; Yahao Mao; Zongyan Deng; Mingxuan Ma; Huasen Xi; Yilong Liu; Yutong Wu; Xiaofeng Wang; Yang Wang; Yun Ye; Guan Huang; Xiaojie Jin; Zheng Zhu; Jiwen Lu
   year: 2026
   venue: arXiv 2026.08
@@ -2205,7 +2205,7 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Learns continuous humanoid brachiation by structuring exploration around release-swing-capture keyframes and recurrent latent estimation for hook contact.
   why_it_matters: Adds an overhead-contact locomotion mode where whole-body momentum and alternating arm contacts replace ordinary footstep planning.
 
-- title: Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain
+- title: GM-Loco: Terrain-Adaptive Humanoid Locomotion on Granular Media
   authors: Junnosuke Kamohara; Feiyang Wu; Andy Ningan Zong; Daniel I. Goldman; Yashwanth Nakka; Seth Hutchinson; Ye Zhao
   year: 2026
   venue: arXiv 2026.09
@@ -2299,6 +2299,158 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Distills clean-observation locomotion teachers into a temporal state-space student that infers masked observations from history and refines actions at inference time.
   why_it_matters: Makes history and prediction first-class tools for humanoid locomotion robustness under imperfect sensing and control latency.
+
+- title: DWMP: Leveraging Dual World Models for Humanoid Obstacle Traversal
+  authors: Rongjun Jin; Jianming Ma; Yue Gao
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.12347
+  paper_url: https://arxiv.org/abs/2609.12347
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [dual-world-models, obstacle-traversal, depth-perception, Koopman-dynamics, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Fuses a Koopman proprioceptive dynamics world model with an RSSM visual world model so a G1 can traverse randomized obstacle fields from onboard observations.
+  why_it_matters: Separates low-dimensional body dynamics from noisy egocentric depth, giving perceptive humanoid locomotion a more structured latent state than simple multimodal concatenation.
+
+- title: EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion
+  authors: Yi Lu; Tianhao Jiang; Honglong Tian; Yumeng Zhang; Qingrui Zhao; Zhengtao Wang; Xiao-Xiao Long; Qiu Shen; Xun Cao
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.14432
+  paper_url: https://arxiv.org/abs/2609.14432
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [expressive-locomotion, emotional-style-code, gait-generation, language-conditioned, humanoid]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Generates command-consistent humanoid gait trajectories from continuous emotion/style codes and tracks them with a unified RL locomotion policy.
+  why_it_matters: Treats expressive walking style as a controllable whole-body locomotion parameter instead of a post-processing animation layer.
+
+- title: Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning
+  authors: Yilin Zou; Chenghua Liu; Chenglong Wu; Fanghua Jiang
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.15631
+  paper_url: https://arxiv.org/abs/2609.15631
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Motion-Imitation
+  task_tags: [motion-prior, flow-matching, optimal-transport, imitation-learning, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns scalar imitation rewards from flow-matched optimal-transport paths between current rollouts and expert motion histories, improving G1 walking stability over AMP-style rewards.
+  why_it_matters: Offers a non-adversarial reward model for humanoid imitation when policy and demonstration supports start far apart.
+
+- title: ResSafe: Learning Safety Filtering with Residual Reinforcement Learning for Humanoids
+  authors: Gechen Qu; Tong Zhang; Bike Zhang; Yen-Jen Wang; Koushil Sreenath; Claire Tomlin; Jason Jangho Choi
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.15988
+  paper_url: https://arxiv.org/abs/2609.15988
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [safety-filtering, residual-RL, humanoid-control, robustness, falls]
+  robot_platform: humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Decouples task performance and safety by training a residual policy that corrects unsafe nominal humanoid-control actions before they cause instability or falls.
+  why_it_matters: Frames safety filtering as a learned residual controller, avoiding the usual reward-tuning fight between tracking quality and fall avoidance.
+
+- title: Collision-Aware Humanoid Whole-Body Control under Imperfect Tracking Targets
+  authors: Mohitvishnu S. Gadde; Ashish Malik; Pranay Dugar; Aayam Kumar Shrestha; Alan Fern
+  year: 2026
+  venue: Humanoids 2026 submission / arXiv 2026.09
+  arxiv_id: 2609.16405
+  paper_url: https://arxiv.org/abs/2609.16405
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [collision-aware-control, scene-geometry, cross-attention, object-carrying, Digit-V3]
+  robot_platform: Digit V3
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Wraps blind WBC trackers with RECAL, a robot-environment cross-attention layer that trades target tracking against scene and held-object collision avoidance.
+  why_it_matters: Addresses a common deployment failure where otherwise valid teleop or planner targets are geometrically unsafe for the robot body or carried objects.
+
+- title: PASSAGE: Scaling Scene-Aligned Motion Learning for Perceptive Humanoid Traversal in Cluttered Environments
+  authors: Yuxuan Ma; Zicheng Zeng; Chunlin Peng; Zhoujian Li; Zetong Zhao; Zhikai Zhang; Yunrui Lian; Han Xue; Sikai Liang; Weiyi Zhu; Mulin Chen; Chenghuai Lin; Jiayu Zeng; Yanwei An; Songan Zhang; Jiayuan Gu; Jilong Wang; Jingbo Wang; He Wang; Li Yi
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.18732
+  paper_url: https://arxiv.org/abs/2609.18732
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-traversal, scene-aligned-motion, flow-matching, LiDAR, humanoid]
+  robot_platform: humanoid with onboard Jetson AGX Orin
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Scales a planner-tracker stack with 100 hours of scene-aligned human motion so a humanoid can step over, squeeze past, and duck under clutter using onboard 3D perception.
+  why_it_matters: Moves perceptive humanoid traversal away from hand-labeled skill policies toward data-scaled whole-body behavior composition in unseen scenes.
+
+- title: Learning Safe Humanoid Navigation from Reduced Order Models
+  authors: William D. Compton; Zachary Olkin; Ryan Bena; Aaron D. Ames
+  year: 2026
+  venue: ICRA 2027 submission / arXiv 2026.09
+  arxiv_id: 2609.19272
+  paper_url: https://arxiv.org/abs/2609.19272
+  project_url: https://wdc3iii.github.io/rom-nav/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [safe-navigation, reduced-order-model, Poisson-safety-filter, stairs, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Transfers navigation knowledge from reduced-order dynamics into full-order G1 navigation with a frozen locomotion policy and a Poisson safety filter for OOD obstacles.
+  why_it_matters: Gives mapless multi-floor humanoid navigation a safer training path than asking a full-order single-stage RL policy to discover stair and terrain interactions directly.
+
+- title: Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction
+  authors: Songyang Liu; Shuai Li
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.20558
+  paper_url: https://arxiv.org/abs/2609.20558
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [slope-adaptation, construction-robotics, scene-grounded-retargeting, roof-work, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Grounds retargeted human roofer motions to metric roof geometry and trains G1 policies that preserve support and work-clearance relations across sloped construction tasks.
+  why_it_matters: Shows scene-grounded whole-body motion learning for practical construction primitives where the task surface defines both balance and manipulation constraints.
 
 ---
 

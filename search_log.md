@@ -5,26 +5,26 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 94 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 125 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 104 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 69 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 76 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 100 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `02_hoi_motion.md` | 95 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 133 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 109 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 73 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 77 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 101 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 630**
+**Total unique papers after deduplication: 650**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 55
+- Human-Object Interaction Motion Generation: 56
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 170
-- Whole-Body Control and Loco-Manipulation: 98
-- Humanoid Foundation Models and Generalist Policies: 83
+- Whole-Body Motion Tracking and Imitation: 178
+- Whole-Body Control and Loco-Manipulation: 103
+- Humanoid Foundation Models and Generalist Policies: 87
 - Human-to-Humanoid Retargeting: 21
-- Teleoperation and Demonstration Collection: 40
-- Datasets and Benchmarks: 69
+- Teleoperation and Demonstration Collection: 41
+- Datasets and Benchmarks: 70
 - Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
@@ -33,10 +33,10 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 239 |
-| ❌ No Code | 188 |
-| 🌐 Project Page | 148 |
-| ⏳ Code Coming Soon | 27 |
+| ⭐ Code | 240 |
+| ❌ No Code | 201 |
+| 🌐 Project Page | 151 |
+| ⏳ Code Coming Soon | 30 |
 | 📦 Dataset | 17 |
 | 🧩 Partial Code | 10 |
 | 🔁 Unofficial Code | 1 |
@@ -101,6 +101,46 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-09-18 — 20 new, 6 updated
+- Window: 2026-09-11 → 2026-09-18.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate sweeps over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv id-list revision checks for tracked papers; arXiv abstracts/comments; project pages; GitHub API repository/content checks; targeted exact-title web and GitHub searches for surfaced project/code links.
+- Counts: 1,826 unique arXiv records fetched in the submittedDate pass across the four categories; 585 tracked arXiv IDs checked for lastUpdatedDate changes; 20 in-scope new papers added; 6 existing records reviewed as updated arXiv revisions.
+- Query focus: humanoid obstacle traversal, scene-aligned perceptive traversal, safety filtering, collision-aware WBC, humanoid WAM/foundation models, whole-body dexterous loco-manipulation, multi-humanoid transport, keyframe/VLM humanoid control, body-hand teleoperation, and contact-rich HOI character control.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: LYRIC (2609.19688).
+  - `03_wbc_tracking.md` — 8 entries: DWMP (2609.12347), EMoG (2609.14432), Flow-Matched Motion Priors (2609.15631), ResSafe (2609.15988), Collision-Aware Humanoid Whole-Body Control (2609.16405), PASSAGE (2609.18732), Learning Safe Humanoid Navigation from Reduced Order Models (2609.19272), Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction (2609.20558).
+  - `04_loco_manip.md` — 5 entries: Weave (2609.16683), Learning Multi-Humanoid Pickup and Transport (2609.17824), KINO (2609.18869), Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator (2609.18930), ViLoMan (2609.19340).
+  - `05_foundation.md` — 4 entries: X-WBC (2609.15213), WholeBodyWAM: Generalizing Pre-trained World-Action Priors (2609.16644), XPACE (2609.17372), WholeBodyWAM: Learning Whole-Body World Action Models (2609.18197).
+  - `06_retarget_teleop.md` — 1 entry: Gated Residual Body-Hand Coordination (2609.18763).
+  - `07_data_bench_s2r.md` — 1 entry: How to Better Train VLAs / REAL-I Challenge (2609.13679).
+- Verified official full-code repos:
+  - https://github.com/xiaohu-art/Weave — reachable and contains implementation structure (`source`, `configs`, `scripts`, `pyproject.toml`) plus dataset link on the project page.
+- Verified project pages:
+  - https://xiaohu-art.github.io/Weave/
+  - https://zbzyjya.github.io/WholeBodyWAM/
+  - https://wholebodywam.github.io/
+  - https://viloman-anonymous.pages.dev/
+  - https://neu-vi.github.io/LYRIC/
+  - https://wdc3iii.github.io/rom-nav/
+  - https://decmht.github.io/
+- Existing-paper updates:
+  - SkillX (2609.06718) revised to `v2` on 2026-09-11; record already had CoRL 2026 and the official project page, with no verified code release.
+  - SwingBot (2609.10283) revised to `v3` on 2026-09-13; project page status unchanged and no implementation repository surfaced.
+  - GM-Loco (2609.10286) revised to `v2` on 2026-09-14; title updated from the earlier "Learning Terrain-Adaptive..." wording to `GM-Loco: Terrain-Adaptive Humanoid Locomotion on Granular Media`.
+  - SafeFlow (2603.23983) revised to `v2` on 2026-09-15; seed-sourced record still has the project page only and no code link surfaced.
+  - EgoPHI (2608.13014) revised to `v2` on 2026-09-15; title updated to `Estimating 3D Hand-Object Contact and Force from Egocentric Vision`.
+  - GigaBrain-WBC-0.5 (2608.18234) revised to `v4` on 2026-09-17; title updated to `Robust Humanoid Whole-Body Tracking with Environment Interaction`.
+- Unresolved code-status items:
+  - https://zbzyjya.github.io/WholeBodyWAM/ — project page marks code coming soon.
+  - https://wholebodywam.github.io/ — project page reachable, but no implementation link surfaced.
+  - https://decmht.github.io/ — project page contains a placeholder/TODO repository link rather than a public implementation.
+  - https://viloman-anonymous.pages.dev/ — project page reachable, but no code link surfaced.
+  - https://neu-vi.github.io/LYRIC/ — project page has a code button without a repository URL.
+  - https://wdc3iii.github.io/rom-nav/ — project page reachable, but no implementation repository surfaced.
+  - arXiv-only additions with no official project or code surfaced: 2609.12347, 2609.14432, 2609.15631, 2609.15988, 2609.16405, 2609.15213, 2609.17372, 2609.18732, 2609.18763, 2609.18869, 2609.18930, 2609.20558, and 2609.13679.
+- Inspected but excluded: ArtManip (2609.12498, dexterous in-hand manipulation without humanoid whole-body scope), Understanding Whole-Body Robot Teleoperation Strategies (2609.12384, TIAGo mobile manipulator rather than humanoid teleoperation), ConGraspXL (2609.16319, grasp-motion synthesis rather than humanoid/HOI whole-body generation), Track, Articulate, Act (2609.19119, casual-video articulation reconstruction rather than HOI motion/control), Skill Composition for Legged Robot RL (2609.14647, position-style note without a concrete humanoid WBC method), OmniCalib (2609.19582, calibration rather than control/policy learning), TouchSight (2609.20414, tactile/contact prediction rather than HOI motion generation), DATAFARM (2609.12316, tabletop/TAMP VLA fine-tuning without humanoid grounding), World-Action Models survey (2609.16074, broad survey rather than list-specific humanoid contribution), One-Step Drifting Action Heads for GR00T N1.7 (2609.18108, generic LIBERO action-head report), SWIM (2609.17035, soft/continuum robot whole-body manipulation), Towards High-DoF Dexterous Manipulation through VLA Post-Training (2609.19666, dexterous hands without humanoid whole-body scope), and broad medical, driving, UAV, underwater, soft-robot, morphology-only, calibration-only, navigation-only, and generic VLA papers matched only by generic action/contact/motion terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-09-11 — 13 new, 4 updated
 - Window: 2026-09-04 → 2026-09-11.

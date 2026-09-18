@@ -1218,6 +1218,82 @@ Code-status legend:
   one_line: Factorizes egocentric interaction data into action, camera, and embodiment controls to generate robot-native video-action rollouts and improve real IRON humanoid manipulation.
   why_it_matters: Provides a verified open world-model pipeline for recomposing unpaired human interaction videos into humanoid-relevant manipulation experience.
 
+- title: X-WBC: A Cross-Embodiment Foundation Model for Humanoid Whole-Body Control
+  authors: Juntong Zhang; Chun Gu; Li Zhang
+  year: 2026
+  venue: CoRL 2026 / arXiv 2026.09
+  arxiv_id: 2609.15213
+  paper_url: https://arxiv.org/abs/2609.15213
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [cross-embodiment, whole-body-control, causal-transformer, multi-humanoid, VR-commands]
+  robot_platform: nine simulated embodiments / four real humanoids
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Separates shared human motion semantics from robot-specific execution modules so heterogeneous humanoids can jointly train a reusable WBC representation.
+  why_it_matters: Treats humanoid embodiments as shared data sources for foundation-scale whole-body control instead of isolated one-policy-per-robot projects.
+
+- title: WholeBodyWAM: Generalizing Pre-trained World-Action Priors to Humanoid Loco-Manipulation via WBC-Grounded Coordination
+  authors: Zhuo Li; Yiming Yao; Jim Tan; Mengjie Jing; Zhipeng Dong; Fei Chen
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.16644
+  paper_url: https://arxiv.org/abs/2609.16644
+  project_url: https://wholebodywam.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [world-action-model, WBC-grounding, humanoid-loco-manipulation, visual-dynamics, coordination]
+  robot_platform: humanoid loco-manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Extends pretrained world-action priors with WBC-grounded coordination signals so humanoid policies predict visual dynamics, manipulation actions, and whole-body intents together.
+  why_it_matters: Reuses broad WAM pretraining while respecting the heterogeneous controller interfaces that make humanoid loco-manipulation different from tabletop manipulation.
+
+- title: XPACE: Joint World and Action Modeling from Heterogeneous Experience
+  authors: Jiacheng Wei; Jerry Bai; Xiaoyu Yue; Zidong Wang; Xiaoyang Guo; Cheng Chen; Fanqi Pu; Fan Wu; Zhixu Yue; Yizhuo Li; Feng Qiu; Bo Liu; Yuying Ge; Hui Zhou; Chenyi Chen; Yixiao Ge
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.17372
+  paper_url: https://arxiv.org/abs/2609.17372
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [world-action-model, heterogeneous-experience, video-prediction, recovery-data, IRON-humanoid]
+  robot_platform: XPENG IRON humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Jointly models future video and executable robot actions from heterogeneous human and robot experience, then uses its simulator to synthesize recovery supervision.
+  why_it_matters: Shows how a humanoid world-action model can transfer human-observed skills and improve closed-loop recovery without collecting every failure mode on hardware.
+
+- title: WholeBodyWAM: Learning Whole-Body World Action Models with Scalable Motion Priors
+  authors: Bowei Zhang; Qiyao Zhang; Shuanghao Bai; Xinhua Wang; Meng Li; Yilei Wang; Leiwang Zhang; Jian Tang; Lu Zhou; Lei Sun; Zhengping Che
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.18197
+  paper_url: https://arxiv.org/abs/2609.18197
+  project_url: https://zbzyjya.github.io/WholeBodyWAM/
+  code_url: ""
+  dataset_url: UniMotion-4K announced in paper
+  category: Foundation
+  task_tags: [world-action-model, motion-prior, UniMotion-4K, mixture-of-transformers, humanoid-manipulation]
+  robot_platform: real-world humanoid manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Pretrains a language-conditioned motion expert on heterogeneous human and humanoid motion, then integrates it with video and action experts for target-robot post-training.
+  why_it_matters: Makes large-scale motion pretraining a reusable predictive prior for humanoid world-action modeling when target-robot trajectories are scarce.
+
 ---
 
 ## Quick stats

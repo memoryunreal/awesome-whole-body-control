@@ -1482,7 +1482,7 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Builds a physics-grounded VLN benchmark across multiple humanoid embodiments with locomotion-induced egocentric observations and hierarchical control.
   why_it_matters: Keeps humanoid navigation evaluation tied to bipedal dynamics, morphology, and gait camera motion rather than teleporting wheeled-agent assumptions.
 
-- title: EgoPHI: Estimating Contact and Force from Egocentric Vision
+- title: EgoPHI: Estimating 3D Hand-Object Contact and Force from Egocentric Vision
   authors: Andela Ilic; Rachel Schuchert; Yijing Jiang; Christian Holz
   year: 2026
   venue: ECCV 2026 / arXiv 2026.08
@@ -1519,6 +1519,25 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   code_status: 📦 Dataset
   one_line: Releases a 600-hour-scale high-precision whole-body human motion and object-interaction benchmark with motion diversity and grounding metrics.
   why_it_matters: Provides high-fidelity object-interaction motion coverage for humanoid policy learning and motion-prior evaluation, with an official dataset and tooling release.
+
+- title: How to Better Train VLAs: Lessons Learned From the REAL-I Challenge at ICRA 2026
+  authors: Jiaming Wang; Jizhuo Chen; Diwen Liu; Wang Song; Qiang Wang; Jie Ren; Chao Fu; Dingkun Zhu; Minchi Ruan; Hongtong Li; Yuhua Jiang; Zhiwei Xue; Yongping Pan; Harold Soh
+  year: 2026
+  venue: ICRA 2026 REAL-I Challenge report / arXiv 2026.09
+  arxiv_id: 2609.13679
+  paper_url: https://arxiv.org/abs/2609.13679
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Dataset
+  task_tags: [VLA-training, fixed-demonstration-budget, humanoid-platform, closed-loop-evaluation, challenge-report]
+  robot_platform: shared dual-arm humanoid platform
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Summarizes the REAL-I Challenge tasks, shared humanoid deployment setup, winning approaches, and lessons for training VLAs from a fixed demonstration budget.
+  why_it_matters: Documents practical closed-loop evaluation and data-curation findings for humanoid VLA adaptation that offline action-prediction metrics can miss.
 
 ---
 

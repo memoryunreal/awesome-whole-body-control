@@ -1391,6 +1391,25 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Uses a wide-field stabilized stereoscopic VR interface with viewpoint-decoupled free-looking to improve long-horizon humanoid demonstration collection.
   why_it_matters: Addresses the operator perceptual-horizon bottleneck that limits teleoperated humanoid loco-manipulation over large workspaces and recovery tasks.
 
+- title: Gated Residual Body-Hand Coordination for Whole-Body Humanoid Teleoperation
+  authors: Ruiming Wu; Shuang Li; Liding Zhang; Alois Knoll; Zhaopeng Chen
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.18763
+  paper_url: https://arxiv.org/abs/2609.18763
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [whole-body-teleoperation, body-hand-coordination, residual-policy, SONIC-tracker, Agile-One]
+  robot_platform: Agile One humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Keeps the body tracker and hand retargeter frozen, then learns gated residual corrections that reduce wrist and fingertip geometry errors during bimanual teleoperation.
+  why_it_matters: Fixes the practical mismatch that appears when independently composed body and hand teleop modules do not preserve human-relative interaction geometry.
+
 ---
 
 ## Notes

@@ -1906,3 +1906,98 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ⏳ Code Coming Soon
   one_line: Learns a shared discrete interaction prior from heterogeneous scene and object-interaction motions, then conditions it on task and environment context.
   why_it_matters: Unifies locomotion and object-centric humanoid interaction under one reusable physics-grounded prior instead of per-task reward engineering.
+
+- title: Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions
+  authors: Liu Cao; Xingze Wu; Jingzhi Cui; Botian Xu; Mingzhi Pei; Ruoqu Chen; Mengdi Xu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.16683
+  paper_url: https://arxiv.org/abs/2609.16683
+  project_url: https://xiaohu-art.github.io/Weave/
+  code_url: https://github.com/xiaohu-art/Weave
+  dataset_url: https://huggingface.co/datasets/appolyn/Weave/tree/main
+  category: Loco-Manipulation
+  task_tags: [human-object-interaction, dexterous-loco-manipulation, contact-aware-retargeting, Unitree-G1, dataset]
+  robot_platform: humanoid with 29 body joints and 12 actuated finger joints
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Converts captured human-object interactions into robot-object references, then trains a contact- and geometry-aware policy for whole-body dexterous humanoid manipulation.
+  why_it_matters: Connects HOI demonstrations directly to executable humanoid loco-manipulation and releases both implementation code and physically executed robot-object rollouts.
+
+- title: Learning Multi-Humanoid Pickup and Transport via Decentralized Object-Centric Control
+  authors: Bikram Pandit; Mohitvishnu S. Gadde; Aayam Kumar Shrestha; Alan Fern
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.17824
+  paper_url: https://arxiv.org/abs/2609.17824
+  project_url: https://decmht.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [multi-humanoid, cooperative-manipulation, decentralized-control, object-centric-control, sim2real]
+  robot_platform: multiple humanoids
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Assigns each humanoid a local object attachment region so teams can learn pickup, transport, and handover through decentralized gripperless bimanual pinching.
+  why_it_matters: Extends humanoid loco-manipulation from single-robot object handling to shared-object coordination across different team sizes and geometries.
+
+- title: KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation
+  authors: Sitong Chen; Fatemeh Zargarbashi; Jin Cheng; Tianxu An; Stelian Coros
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.18869
+  paper_url: https://arxiv.org/abs/2609.18869
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [VLM-planning, keyframe-interface, whole-body-control, object-pickup, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses motion keyframes as the interface between VLM task planning and a keyframe-conditioned whole-body policy for G1 pickup, transport, and placement tasks.
+  why_it_matters: Gives high-level VLM planners a body-pose and object-pose command language that a low-level humanoid policy can actually execute.
+
+- title: Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator
+  authors: Zhongyu Chen; Yuxuan Nai; Qian Chen; Yidong Zhu; Chen Jing; Qihan Wang; Xudong Li; Zhizhan Li; Leixin Chang; Liangjing Yang; Hua Chen
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.18930
+  paper_url: https://arxiv.org/abs/2609.18930
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [bipedal-loco-manipulation, end-effector-interface, reward-gating, VR-teleoperation, diffusion-policy]
+  robot_platform: bipedal mobile manipulator with arm
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains a unified low-level controller that maps 6-DoF end-effector targets into coordinated stepping, reaching, and balance actions.
+  why_it_matters: Provides a common end-effector command interface for teleoperation, learned policies, and scripted tasks without explicit base-velocity or footstep commands.
+
+- title: ViLoMan: Learning Visual-Proprioceptive Whole-Body Loco-Manipulation Skills for Humanoid Robots
+  authors: Zejie Tian; Ruibing Hou; Bingpeng Ma; Börje F. Karlsson; Shiguang Shan
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.19340
+  paper_url: https://arxiv.org/abs/2609.19340
+  project_url: https://viloman-anonymous.pages.dev/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [visual-proprioceptive-control, door-closing, teacher-student-distillation, human-object-interaction, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Turns partial human-object kinematic demonstrations into complete robot trajectories, then distills them into a G1 depth-plus-proprioception policy for autonomous door closing.
+  why_it_matters: Removes reference motions and intermediate commands at deployment, making real humanoid loco-manipulation more directly sensorimotor.
