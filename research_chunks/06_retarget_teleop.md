@@ -964,7 +964,7 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Learns self-other distinction and a predictive 3D body occupancy model from proprioceptive-visual correspondence.
   why_it_matters: Provides a self-model useful for collision-aware planning and human-to-robot retargeting in shared workspaces.
 
-- title: Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Open-World Contact Localization
+- title: Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Object Category-agnostic Temporal Localization
   authors: Yitian Shi; Di Wen; Zhengqi Han; Zicheng Guo; Yu Hu; Edgar Welte; Kunyu Peng; Rainer Stiefelhagen; Rania Rayyes
   year: 2026
   venue: arXiv 2026.06
@@ -1409,6 +1409,63 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   code_status: ❌ No Code Found
   one_line: Keeps the body tracker and hand retargeter frozen, then learns gated residual corrections that reduce wrist and fingertip geometry errors during bimanual teleoperation.
   why_it_matters: Fixes the practical mismatch that appears when independently composed body and hand teleop modules do not preserve human-relative interaction geometry.
+
+- title: MATE: Multi-Agent Virtual Teleoperation Platform for Humanoid Collaboration Data Collection
+  authors: Yichuan Yu; Youzhuo Wang; Yiming Ren; Di Feng; Yexuan Yang; Bingxi Yang; Shengxiao Gong; Yujing Sun; Yuexin Ma
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.26520
+  paper_url: https://arxiv.org/abs/2609.26520
+  project_url: https://yerik-yu.github.io/MATE/
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [virtual-teleoperation, multi-humanoid-collaboration, data-collection, imitation-learning, sim2real]
+  robot_platform: multi-humanoid collaboration
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Lets distributed operators teleoperate multiple whole-body humanoids in one physics environment and collects coordinated interaction demonstrations.
+  why_it_matters: Scales collaboration data for handover, relay, environment interaction, and cooperative transport without requiring multiple physical humanoids.
+
+- title: Morphometric Imitation: From Morphology and Contact Aware Hand Retargeting to Sim-to-Real Visuomotor Policy
+  authors: Tara Sadjadpour; Siming He; C. K. Wolfe; Haozhi Qi; Lea Wilken; S. Shankar Sastry; Claire Tomlin; Jitendra Malik
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.28660
+  paper_url: https://arxiv.org/abs/2609.28660
+  project_url: https://morphometricimitation.github.io/
+  code_url: https://github.com/tsadja/morphometric
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [hand-object-interaction, morphology-aware-retargeting, residual-RL, visuomotor-policy, sim2real]
+  robot_platform: dexterous robot hands / humanoid-relevant manipulation
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Retargets reconstructed human hand-object interactions across robot hand morphologies, refines them with residual RL, and distills zero-shot visuomotor policies.
+  why_it_matters: Preserves demonstrated contacts across morphology gaps, a key subproblem for turning human HOI data into dexterous humanoid manipulation skills.
+
+- title: BeyondRetarget: Learning Executable Humanoid Motions Directly from Monocular Video
+  authors: Tianyu Xiong; Yi Lu; Jinrui Wang; Ziqi Liang; Dandan Lei; Xiaoyang Zhou; Xiao-xiao Long; Qiu Shen; Xun Cao
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.29850
+  paper_url: https://arxiv.org/abs/2609.29850
+  project_url: https://bear-ty.github.io/Beyondretarget_page/
+  code_url: https://github.com/bear-ty/BeyondRetarget
+  dataset_url: https://huggingface.co/spaces/bear-ty/BeyondRetarget
+  category: Retargeting
+  task_tags: [monocular-video, direct-robot-motion, contact-aware-refinement, multi-humanoid, real-time-teleoperation]
+  robot_platform: Unitree G1 / R1 / H1, Fourier GR1/GR2, Atlas, Booster T1, Tienkung
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Maps monocular RGB video directly into executable humanoid trajectories through a shared robot-oriented motion representation and robot-specific decoders.
+  why_it_matters: Avoids explicit human-motion reconstruction at inference time and releases a runnable base-version code/demo stack for multiple humanoid embodiments.
 
 ---
 

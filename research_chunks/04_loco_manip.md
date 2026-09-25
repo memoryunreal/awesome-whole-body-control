@@ -2001,3 +2001,136 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Turns partial human-object kinematic demonstrations into complete robot trajectories, then distills them into a G1 depth-plus-proprioception policy for autonomous door closing.
   why_it_matters: Removes reference motions and intermediate commands at deployment, making real humanoid loco-manipulation more directly sensorimotor.
+
+- title: Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip
+  authors: Yuhyeon Hwang; Daniel Sungho Jung; YongHyeok Seo; Mingi Jung; Chang Nho Cho; Jung-Hoon Hwang; Dongin Shin
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.21467
+  paper_url: https://arxiv.org/abs/2609.21467
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [object-transport, single-motion-clip, distance-conditioned-control, DCRR, humanoid]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Recombines a single retargeted transport clip into distance-conditioned references, then distills achieved object placements into a reference-free policy.
+  why_it_matters: Converts one fixed humanoid interaction demonstration into commandable carry, kick-push, crouch-push, and drag behavior with distance modulation on hardware.
+
+- title: FRAMES: Failure Recovery And Monitoring of Embodied Skills for Humanoid Loco-Manipulation
+  authors: Ajay Vikram Periasami; Xinyuan Luo; Haoyu Li; Xianyi Cheng
+  year: 2026
+  venue: IROS 2026 Workshop / arXiv 2026.09
+  arxiv_id: 2609.22538
+  paper_url: https://arxiv.org/abs/2609.22538
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [failure-monitoring, recovery-agent, VLM-monitor, skill-supervision, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Supervises parameterized G1 loco-manipulation skills with a planner, VLM monitor, recovery agent, semantic memory, and geometric grounding.
+  why_it_matters: Adds execution monitoring and recovery to whole-body skill libraries, where a correct high-level plan can still fail physically.
+
+- title: Whole-Body UMI: Transferring UMI Manipulation Skills to Humanoid Whole-Body Manipulation via Real-Time Motion Generation
+  authors: Yuxuan Nai; Leixin Chang; Liangjing Yang; Shuo Yang; Zhongyu Li
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.22829
+  paper_url: https://arxiv.org/abs/2609.22829
+  project_url: https://wholebody-umi.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [UMI, real-time-motion-generation, end-effector-conditioned-control, humanoid-manipulation, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Transfers native UMI end-effector manipulation policies to whole-body humanoid execution through an asynchronous real-time motion generator and WBC layer.
+  why_it_matters: Decouples scalable UMI task demonstrations from expensive humanoid body teleoperation while preserving closed-loop G1 manipulation.
+
+- title: STRIDER: Stepping-Enabled Multi-Gait Hierarchical 3D Loco-Manipulation Framework for Humanoid Robots
+  authors: Yuanzhuo Li; Wen Zhao; Zhe Yong; Xiang Meng; Gang Han; Hengle Ren; Xiaoyang Zheng; Zhen Wang; Yijie Guo
+  year: 2026
+  venue: ICRA 2027 submission / arXiv 2026.09
+  arxiv_id: 2609.23483
+  paper_url: https://arxiv.org/abs/2609.23483
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [stepping-control, multi-gait, hierarchical-control, latent-distillation, TianGong-Omni]
+  robot_platform: TianGong Omni humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Combines terrain-aware 3D stepping, AMP walking, and Cartesian upper-body control with latent-aligned distillation into one hardware-deployed humanoid policy.
+  why_it_matters: Bridges footstep-accurate locomotion and whole-body manipulation instead of relying only on continuous velocity commands.
+
+- title: Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation
+  authors: Fukang Liu; Yipu Chen; Jaehwi Jang; Danfei Xu; Zsolt Kira; Ye Zhao
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.23968
+  paper_url: https://arxiv.org/abs/2609.23968
+  project_url: https://opt2vla.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [force-aware-VLA, contact-rich-manipulation, whole-body-trajectory-optimization, humanoid-hardware]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Adds explicit force commands to the VLA-to-WBC interface and trains them from force-consistent whole-body trajectory optimization data.
+  why_it_matters: Gives language-conditioned humanoid manipulation a way to modulate contact force, not just geometric hand or body goals.
+
+- title: HOTICE: Whole-Body Humanoid Object Transportation in Cluttered Environments
+  authors: Toan Nguyen; Weiduo Yuan; Siheng Zhao; Yue Wang; Daniel Seita
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.25363
+  paper_url: https://arxiv.org/abs/2609.25363
+  project_url: https://hotice2027.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [object-transport, cluttered-environments, dual-agent-RL, obstacle-avoidance, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Coordinates robot-body and carried-object collision avoidance through decoupled potential fields and dual-agent upper/lower-body RL.
+  why_it_matters: Handles payload-aware cluttered object transport on real G1 hardware instead of treating the carried object as an afterthought.
+
+- title: Brace Yourself: Task-Conditioned Environmental Bracing for Forceful Humanoid Manipulation
+  authors: Zongyuan Zhang; Christopher Lehnert; Will N. Browne; Jonathan M. Roberts
+  year: 2026
+  venue: RA-L submission / arXiv 2026.09
+  arxiv_id: 2609.25486
+  paper_url: https://arxiv.org/abs/2609.25486
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [forceful-manipulation, environmental-bracing, support-hand, reinforcement-learning, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns a task-conditioned support-hand bracing strategy that lets a G1 exert much larger manipulation forces while preserving balance.
+  why_it_matters: Turns the environment into an intentional stabilizing contact for humanoid manipulation rather than an obstacle to avoid.

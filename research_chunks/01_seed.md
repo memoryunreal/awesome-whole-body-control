@@ -52,7 +52,7 @@ Note: Authors are not provided in the source list (only titles + dates + URLs). 
   category_hint: Foundation
   one_line: Open foundation model targeting universal humanoid loco-manipulation.
 
-- title: ULTRA - Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation
+- title: "ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation"
   authors: unknown
   year: 2026
   venue: arXiv 2026.03
@@ -184,7 +184,7 @@ Note: Authors are not provided in the source list (only titles + dates + URLs). 
   category_hint: SimToReal
   one_line: Scalable visual sim-to-real for humanoid loco-manipulation.
 
-- title: Thor - Towards Human-Level Whole-Body Reactions for Intense Contact-Rich Environments
+- title: "Thor: Towards Human-Inspired Whole-Body Reactions for Intense Contact-Rich Environments"
   authors: unknown
   year: 2025
   venue: arXiv 2025.10

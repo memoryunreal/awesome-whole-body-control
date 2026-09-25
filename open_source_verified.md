@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (240 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (242 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -168,7 +168,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (58)
+## Whole-Body Motion Tracking and Imitation (59)
 
 - ⭐ 🤖 🧍 **[Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions](https://arxiv.org/abs/2608.26505)** `arXiv 2026.08` `Poppy Humanoid` `WBC`
   Xulin Chen et al..
@@ -209,6 +209,11 @@ This is the canonical list of papers with **verified official open-source code**
   J. M. A. Marcelo et al..
   Routes live music and speech through semantic audio branches that select and schedule imitation-learned whole-body skills on a G1.
   Links: [Project](https://lab-rococo-sapienza.github.io/semantic-WBC/) · [Code](https://github.com/Lab-RoCoCo-Sapienza/semantic-WBC) · [Paper](https://arxiv.org/abs/2607.14182)
+
+- ⭐ 🤖 🧍 **[Smoothness as a Constraint for Stable Humanoid Locomotion](https://arxiv.org/abs/2609.24552)** `arXiv 2026.09` `Unitree G1` `WBC`
+  Utsav Panchal et al..
+  Introduces DeCap, a constrained RL policy that separates upper- and lower-body smoothness limits instead of hiding smoothness inside reward weights.
+  Links: [Project](https://panchalutsav.github.io/decap/) · [Code](https://github.com/panchalutsav/decap) · [Paper](https://arxiv.org/abs/2609.24552)
 
 - ⭐ 🤖 🧍 **[TEXEDO: Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation](https://arxiv.org/abs/2606.22998)** `arXiv 2026.06` `Unitree G1` `Motion-Imitation`
   Jianuo Cao et al..
@@ -801,7 +806,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://motion-gpt.github.io/) · [Code](https://github.com/OpenMotionLab/MotionGPT) · [Paper](https://arxiv.org/abs/2306.14795)
 
 
-## Human-to-Humanoid Retargeting (5)
+## Human-to-Humanoid Retargeting (6)
+
+- ⭐ 🤖 🧍 **[BeyondRetarget: Learning Executable Humanoid Motions Directly from Monocular Video](https://arxiv.org/abs/2609.29850)** `arXiv 2026.09` `Unitree G1 / R1 / H1, Fourier GR1/GR2, Atlas, Booster T1, Tienkung` `Retargeting`
+  Tianyu Xiong et al..
+  Maps monocular RGB video directly into executable humanoid trajectories through a shared robot-oriented motion representation and robot-specific decoders.
+  Links: [Project](https://bear-ty.github.io/Beyondretarget_page/) · [Code](https://github.com/bear-ty/BeyondRetarget) · [Paper](https://arxiv.org/abs/2609.29850) · [Dataset](https://huggingface.co/spaces/bear-ty/BeyondRetarget)
 
 - ⭐ 🤖 🧍 **[Shooting for Contact: Contact-Implicit Multiple Shooting for Dynamic Motion Retargeting](https://arxiv.org/abs/2608.03116)** `arXiv 2026.08` `Unitree G1 / Go2 / legged systems` `Retargeting`
   Sergio A. Esteban et al..

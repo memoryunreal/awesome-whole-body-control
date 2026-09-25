@@ -1723,6 +1723,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Uses a flow-matching planner and action generator to turn free-form language plus sparse object goals into closed-loop contact-rich whole-body object interactions.
   why_it_matters: Bridges HOI motion generation and physics-based control by evaluating language-driven interaction success under contact and object-goal constraints.
 
+- title: HIGenNTO: Scalable Humanoid Interaction Generation via Noise-Space Trajectory Optimization
+  authors: Lalit Jayanti; Kashu Yamazaki; Yuto Shibata; Kotaro Amaya; Katerina Fragkiadaki
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.22611
+  paper_url: https://arxiv.org/abs/2609.22611
+  project_url: https://higennto.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [humanoid-interaction-generation, noise-space-optimization, text-conditioned-motion, contact-rich-scenes, Unitree-G1]
+  robot_platform: Unitree G1 / humanoid interaction scenes
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Optimizes the initial noise of a pretrained text-conditioned motion model under contact, collision, support, and scene constraints to synthesize executable humanoid-scene interaction references.
+  why_it_matters: Turns high-level task prompts into physically trackable humanoid interaction motions, including long-horizon composed behaviors and real G1 deployments.
+
 ---
 
 ## Summary

@@ -2452,6 +2452,291 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Grounds retargeted human roofer motions to metric roof geometry and trains G1 policies that preserve support and work-clearance relations across sloped construction tasks.
   why_it_matters: Shows scene-grounded whole-body motion learning for practical construction primitives where the task surface defines both balance and manipulation constraints.
 
+- title: FootQuery: Future-Touchdown-Guided Retrieval from Depth History for Perceptive Humanoid Locomotion
+  authors: Tao Dong; Jia Yu; Yuxuan Fan; Linna Zhao; Jiaqi Gong; Andong Yang; Chao Gao; Guyue Zhou
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.21447
+  paper_url: https://arxiv.org/abs/2609.21447
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-locomotion, depth-history, future-touchdown, terrain-memory, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Queries historical depth frames around predicted future touchdowns so a G1 can use terrain that is currently occluded or outside the latest camera view.
+  why_it_matters: Makes contact-conditioned visual memory explicit for humanoid stairs, gaps, platforms, and mixed indoor/outdoor traversal.
+
+- title: LIMBO: Learning and Internalizing Model-Free Barrier Objectives for Agile and Safe Whole-Body Control
+  authors: Jake Gonzales; Arturo Flores Alvarez; Yu-Ming Chen; Aaron D. Ames; Lillian J. Ratliff; Manikantan Nambi
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.22075
+  paper_url: https://arxiv.org/abs/2609.22075
+  project_url: https://www.max-robotics.com/en/research/publications/cmuba8yjj0005mt42m7wu2goo
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [safe-whole-body-control, control-barrier-functions, residual-actions, humanoid-safety, hardware-transfer]
+  robot_platform: 29-DoF humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns a state-action control-barrier certificate around a frozen base controller, then distills that safety structure into agile humanoid task policies.
+  why_it_matters: Shows model-free safety synthesis scaling to full-body dodgeball avoidance and low-obstacle limbo-style locomotion without an online safety filter.
+
+- title: EmoPose: Vision-Language Model Guided Emotion-Aware Gesture Generation for Humanoid Robots
+  authors: Daojie Peng; Bingtao Wang; Fulong Ma; Wenjun Yue; Liang Zhang; Jun Ma
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.23414
+  paper_url: https://arxiv.org/abs/2609.23414
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [gesture-generation, emotion-aware-motion, VLM-planning, motion-library, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Routes language, dialogue context, and visual cues through a structured VLM gesture plan that maps onto validated 14-DoF G1 joint trajectories.
+  why_it_matters: Extends humanoid motion generation beyond locomotion into executable affective gestures with deterministic robot-side validation and interruption handling.
+
+- title: UniPoint: Unified Point-Level Sensor Fusion for Humanoid Locomotion Across Challenging Terrains
+  authors: Sicen Li; Zhen Chu; Chao Li; Qiuguo Zhu; Jun Wu
+  year: 2026
+  venue: RA-L submission / arXiv 2026.09
+  arxiv_id: 2609.23666
+  paper_url: https://arxiv.org/abs/2609.23666
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [point-level-fusion, LiDAR-depth, perceptive-locomotion, challenging-terrain, DR02-humanoid]
+  robot_platform: DR02 humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Early-fuses 360-degree LiDAR and dual depth-camera point tokens with proprioception to drive a single humanoid locomotion policy across heterogeneous terrain.
+  why_it_matters: Shows point-level perception can preserve thin obstacles and degrade gracefully under sensor failures while running onboard.
+
+- title: Smoothness as a Constraint for Stable Humanoid Locomotion
+  authors: Utsav Panchal; Denis Kleyko; Unal Artan; Amy Loutfi
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.24552
+  paper_url: https://arxiv.org/abs/2609.24552
+  project_url: https://panchalutsav.github.io/decap/
+  code_url: https://github.com/panchalutsav/decap
+  dataset_url: ""
+  category: WBC
+  task_tags: [constraint-aware-RL, smoothness-constraints, humanoid-locomotion, IsaacLab, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Introduces DeCap, a constrained RL policy that separates upper- and lower-body smoothness limits instead of hiding smoothness inside reward weights.
+  why_it_matters: Provides a verified IsaacLab/Unitree implementation for training smoother G1 locomotion policies that transfer across terrains and payload settings.
+
+- title: PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control
+  authors: Lei Ye; Haibo Gao; Yitang Li; Peng Xu; Zetong Jing; Junhan Sun; Fanrong Dong; Ziqi Han; Xue Wang; Jianhua Sun; Cewu Lu; Hao Zhao; Liang Ding
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.24840
+  paper_url: https://arxiv.org/abs/2609.24840
+  project_url: https://masteryip.github.io/predactor.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [action-diffusion, steerable-control, onboard-inference, text-conditioned-motion, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Jointly denoises executable actions and an internal future-state trajectory so a proprioceptive G1 policy can be steered by text and test-time objectives onboard.
+  why_it_matters: Collapses generator-plus-tracker stacks into a direct action policy while preserving a future-motion handle for semantic and geometric steering.
+
+- title: PLAT: Sparse Timed Keyframe Motion Tracking for Humanoid Control via Privileged Latent Transition Learning
+  authors: Zepeng Wang; Jiangxing Wang; Chao Ma; Xiaochuan Shi; Zongqing Lu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.25754
+  paper_url: https://arxiv.org/abs/2609.25754
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [sparse-keyframes, timed-motion-tracking, latent-transition, DAgger, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns a sparse timed-keyframe tracker by supervising latent transitions from dense expert motion and refining them with residual RL.
+  why_it_matters: Gives planners and interactive motion generators a lower-bandwidth command interface than frame-by-frame humanoid tracking references.
+
+- title: "Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training"
+  authors: Raphael Memmesheimer; Sven Behnke
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.26420
+  paper_url: https://arxiv.org/abs/2609.26420
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [text-to-motion, physics-in-the-loop, candidate-selection, SONIC-tracker, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Samples text-to-motion candidates, retargets them to G1, simulates them with a pretrained SONIC tracker, and selects the most executable motion without new training.
+  why_it_matters: Quantifies how far simple simulator-in-the-loop selection can close the gap between human text-to-motion priors and real humanoid execution.
+
+- title: Humanoid Locomotion with a Fly-Inspired Recurrent Controller
+  authors: Isabel Guan; Yuntian Zhao; Dingyuan Zhang; Shipeng Lyu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.27001
+  paper_url: https://arxiv.org/abs/2609.27001
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [recurrent-controller, embodied-control, circuit-analysis, locomotion, Unitree-G1]
+  robot_platform: simulated Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Couples 3,609 recurrent neural states to a simulated G1 and analyzes which state pathways actually support deployed locomotion behavior.
+  why_it_matters: Treats learned humanoid locomotion policies as embodied recurrent systems whose internal communication and memory can be inspected.
+
+- title: Learning Expressive Humanoid Locomotion from Monocular Runway Videos for Robot Fashion Shows
+  authors: Kyrylo Kolesnichenko; Irvin Steve Cardenas; Jong-Hoon Kim
+  year: 2026
+  venue: IROS 2026 / arXiv 2026.09
+  arxiv_id: 2609.27003
+  paper_url: https://arxiv.org/abs/2609.27003
+  project_url: ""
+  code_url: https://github.com/BoosterRobotics/booster_train
+  dataset_url: https://github.com/BoosterRobotics/booster_deploy
+  category: WBC
+  task_tags: [monocular-video, expressive-locomotion, retargeting, fashion-walk, Booster-K1]
+  robot_platform: Booster K1 humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🧩 Partial Code
+  one_line: Converts monocular runway videos into retargeted, corrected, and trained humanoid catwalk policies deployed on a Booster K1.
+  why_it_matters: Shows a narrow but useful video-to-policy pipeline for expressive style transfer, with public Booster training/deployment frameworks but no paper-specific release.
+
+- title: Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer
+  authors: Hao E. Zhang; Ruize Geng; Raihan Haque; Khalil Zbiss; Guanyang Luo; Hui-ping Wang; H. Eric Tseng; Ding Zhao
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.27269
+  paper_url: https://arxiv.org/abs/2609.27269
+  project_url: https://haozhang-thu.github.io/bananakick/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [humanoid-soccer, contact-rich-kicking, curriculum, sim2real, ball-spin]
+  robot_platform: humanoid soccer robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Evolves an ordinary humanoid kicking prior into a high-spin curved kick by adapting task objectives only when cached rollout responses show learnable progress.
+  why_it_matters: Targets contact-rich skill adaptation failures where dense rewards saturate and no longer expose a gradient toward qualitatively new behavior.
+
+- title: DAVIS: A Depth-Only End-to-End Active-Vision Framework for Humanoid Soccer Skills
+  authors: Jiakang Jin; Yixiao Huo; Pengyuan Wang; Yinan Han; Tingxuan Zhang; Zhuobing Zhao; Xuanxin Zhou; Zhangchen Ye; Enxuan Ruan; Yifei Bao; Jiankun Yang; Chenghao Sun; Wenhao Cui; Xiaoyu Tian; Yiming Li
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.28175
+  paper_url: https://arxiv.org/abs/2609.28175
+  project_url: https://thusi-lab.github.io/DAVIS/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [humanoid-soccer, active-vision, depth-only-policy, AMP, Noetix-E1]
+  robot_platform: Noetix E1 humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns depth-only end-to-end humanoid soccer skills that close the loop over perception, approach, impact, and recovery from head-mounted depth plus proprioception.
+  why_it_matters: Pushes humanoid ball-contact skills toward deployable onboard perception without a separate runtime detector or planner.
+
+- title: ForgetMimic: Motion Unlearning for Reinforcement Learning Humanoid Control
+  authors: Xukun Luan; Zhongxiang Lei; Chen Gong; Shaowei Li; Yuanguo Bi; Jinyan Liu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.28378
+  paper_url: https://arxiv.org/abs/2609.28378
+  project_url: ""
+  code_url: https://github.com/Zili1000/ForgetMimic
+  dataset_url: ""
+  category: WBC
+  task_tags: [motion-unlearning, humanoid-control, policy-safety, Unitree-G1, H2]
+  robot_platform: Unitree G1 / H2 humanoids
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Selectively degrades target motions in a multi-motion humanoid RL policy while preserving the remaining repertoire.
+  why_it_matters: Introduces motion-level unlearning as a safety and data-governance tool for deployed humanoid behavior libraries.
+
+- title: TactileStep: Sole Tactile Learning for Regulating Foot-Terrain Interaction in Humanoid Locomotion
+  authors: Zizhuo Wang; Ming-ju Lee; Shaoting Zhu; Haozhe Lou; Hang Zhao; Yiming Li
+  year: 2026
+  venue: CoRL 2026 / arXiv 2026.09
+  arxiv_id: 2609.28959
+  paper_url: https://arxiv.org/abs/2609.28959
+  project_url: https://tactilestep.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [tactile-locomotion, sole-pressure, foot-terrain-contact, parkour, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Aligns simulated sole-pressure signals with real pressure insoles so humanoid policies can regulate touchdown force and stance contact area.
+  why_it_matters: Adds tactile contact feedback to perceptive humanoid locomotion, reducing impact forces and noise on real G1 terrain traversal.
+
+- title: "Echo in the Steps: Learning Perceptive Humanoid Parkour with Gated Memory"
+  authors: Ming-Ju Lee; Zizhuo Wang; Shaoting Zhu; Haozhe Lou; Hang Zhao; Yiming Li
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.28960
+  paper_url: https://arxiv.org/abs/2609.28960
+  project_url: https://echo-in-the-steps.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-parkour, gated-memory, sparse-footholds, depth-observation, humanoid]
+  robot_platform: humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Uses saliency-guided gated visual memory and gait alternation regularization to cross sparse footholds and narrow support regions from onboard depth.
+  why_it_matters: Directly attacks the temporal perception problem in humanoid parkour where critical footholds vanish from the current camera frame before contact.
+
 ---
 
 ## Notes on Verification

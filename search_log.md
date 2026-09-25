@@ -5,25 +5,25 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 95 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 133 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 109 | Whole-body control and loco-manipulation |
+| `02_hoi_motion.md` | 96 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 148 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 116 | Whole-body control and loco-manipulation |
 | `05_foundation.md` | 73 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 77 | Human-to-humanoid retargeting + teleop |
+| `06_retarget_teleop.md` | 80 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 101 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 650**
+**Total unique papers after deduplication: 676**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 56
+- Human-Object Interaction Motion Generation: 57
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 178
-- Whole-Body Control and Loco-Manipulation: 103
+- Whole-Body Motion Tracking and Imitation: 193
+- Whole-Body Control and Loco-Manipulation: 110
 - Humanoid Foundation Models and Generalist Policies: 87
-- Human-to-Humanoid Retargeting: 21
-- Teleoperation and Demonstration Collection: 41
+- Human-to-Humanoid Retargeting: 23
+- Teleoperation and Demonstration Collection: 42
 - Datasets and Benchmarks: 70
 - Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
@@ -33,12 +33,12 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 240 |
-| ❌ No Code | 201 |
-| 🌐 Project Page | 151 |
-| ⏳ Code Coming Soon | 30 |
+| ⭐ Code | 242 |
+| ❌ No Code | 212 |
+| 🌐 Project Page | 156 |
+| ⏳ Code Coming Soon | 37 |
 | 📦 Dataset | 17 |
-| 🧩 Partial Code | 10 |
+| 🧩 Partial Code | 11 |
 | 🔁 Unofficial Code | 1 |
 
 ## Search Queries Used (representative)
@@ -101,6 +101,58 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-09-25 — 26 new, 3 updated
+- Window: 2026-09-18 → 2026-09-25.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate sweeps over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv id-list revision checks for tracked papers; arXiv abstracts/comments; PDF URL extraction via `pdftotext`; project pages; GitHub API repository/content checks; Hugging Face demo checks; targeted exact-title web and GitHub searches for surfaced project/code links.
+- Counts: 1,963 unique arXiv records fetched in the submittedDate pass across the four categories; 607 tracked arXiv IDs checked for lastUpdatedDate changes; 26 in-scope new papers added; 6 existing records reviewed as updated arXiv revisions, with 3 metadata/title updates applied.
+- Query focus: perceptive humanoid locomotion, safety-filtered whole-body control, humanoid soccer/contact skills, force-aware and object-transport loco-manipulation, UMI-to-humanoid transfer, humanoid teleoperation/collaboration data, HOI-to-robot retargeting, and monocular-video-to-humanoid retargeting.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: HIGenNTO (2609.22611).
+  - `03_wbc_tracking.md` — 15 entries: FootQuery (2609.21447), LIMBO (2609.22075), EmoPose (2609.23414), UniPoint (2609.23666), Smoothness as a Constraint for Stable Humanoid Locomotion (2609.24552), PredActor (2609.24840), PLAT (2609.25754), Sample, Simulate, Select (2609.26420), Humanoid Locomotion with a Fly-Inspired Recurrent Controller (2609.27001), Learning Expressive Humanoid Locomotion from Monocular Runway Videos for Robot Fashion Shows (2609.27003), Banana Kick (2609.27269), DAVIS (2609.28175), ForgetMimic (2609.28378), TactileStep (2609.28959), Echo in the Steps (2609.28960).
+  - `04_loco_manip.md` — 7 entries: Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip (2609.21467), FRAMES (2609.22538), Whole-Body UMI (2609.22829), STRIDER (2609.23483), Opt2VLA (2609.23968), HOTICE (2609.25363), Brace Yourself (2609.25486).
+  - `06_retarget_teleop.md` — 3 entries: MATE (2609.26520), Morphometric Imitation (2609.28660), BeyondRetarget (2609.29850).
+- Verified official full-code repos:
+  - https://github.com/panchalutsav/decap — reachable and contains implementation structure (`source`, `deploy`, `scripts`, training/eval shell scripts, `pyproject.toml`) for DeCap / Smoothness as a Constraint.
+  - https://github.com/bear-ty/BeyondRetarget — reachable and contains runnable implementation/demo structure (`app`, `lib`, `stream_infer`, `postprocess`, `scripts`, tests, requirements).
+- Verified official partial/supporting-code repos:
+  - https://github.com/BoosterRobotics/booster_train and https://github.com/BoosterRobotics/booster_deploy — real Booster training/deployment frameworks cited by the runway-locomotion paper, but not a paper-specific policy release.
+- Verified project pages and demos:
+  - https://higennto.github.io/
+  - https://www.max-robotics.com/en/research/publications/cmuba8yjj0005mt42m7wu2goo
+  - https://panchalutsav.github.io/decap/
+  - https://masteryip.github.io/predactor.github.io/
+  - https://wholebody-umi.github.io/
+  - https://opt2vla.github.io/
+  - https://hotice2027.github.io/
+  - https://thusi-lab.github.io/DAVIS/
+  - https://tactilestep.github.io/
+  - https://echo-in-the-steps.github.io/
+  - https://yerik-yu.github.io/MATE/
+  - https://morphometricimitation.github.io/
+  - https://bear-ty.github.io/Beyondretarget_page/
+  - https://huggingface.co/spaces/bear-ty/BeyondRetarget
+- Existing-paper updates:
+  - ULTRA (2603.03279) revised to `v2` on 2026-09-18; title normalized to `ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation`, with project-page-only status unchanged.
+  - LYRIC (2609.19688) revised to `v2` on 2026-09-19; project page still exposes no implementation repository.
+  - HOWTransfer (2606.10743) revised to `v2` on 2026-09-19; title updated to `Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Object Category-agnostic Temporal Localization`.
+  - EMoG (2609.14432) revised to `v2` on 2026-09-20; no official project or code surfaced.
+  - PAMoR (2608.28213) revised to `v2` on 2026-09-21; no official project or code surfaced.
+  - Thor (2510.26280) revised to `v4` on 2026-09-21; title updated to `Thor: Towards Human-Inspired Whole-Body Reactions for Intense Contact-Rich Environments`.
+- Unresolved code-status items:
+  - https://higennto.github.io/ — code and dataset buttons disabled as available upon publication.
+  - https://wholebody-umi.github.io/ — GitHub button marked coming soon; only site/template repository surfaced.
+  - https://yerik-yu.github.io/MATE/ — page says paper/code links will be added after release; dataset/code buttons disabled.
+  - https://github.com/tsadja/morphometric — reachable but README/assets only and says code will be released soon.
+  - https://github.com/Zili1000/ForgetMimic — reachable but README/assets only and says code will be open-sourced soon.
+  - https://tactilestep.github.io/ and https://echo-in-the-steps.github.io/ — project pages reachable with disabled `Code Soon` buttons.
+  - https://opt2vla.github.io/ — page reachable but code button is forthcoming / points back to the project page.
+  - https://masteryip.github.io/predactor.github.io/ — project page reachable but no implementation repository surfaced.
+  - https://hotice2027.github.io/ and https://thusi-lab.github.io/DAVIS/ — project pages reachable but no code link surfaced.
+  - https://haozhang-thu.github.io/bananakick/ — advertised in the PDF, but returned 404 during inspection.
+  - arXiv-only additions with no official project or code surfaced: 2609.21447, 2609.21467, 2609.22538, 2609.23414, 2609.23483, 2609.23666, 2609.25486, 2609.25754, 2609.26420, and 2609.27001.
+- Inspected but excluded: When to Waddle (2609.21185, small low-friction biped rather than humanoid WBC), KnowDemo (2609.21229, generic robot demonstration generation without humanoid whole-body scope), FORTE (2609.21497, mobile manipulator force capability), DPed-VLN (2609.21504, humanoid pedestrians in a navigation benchmark rather than humanoid control), SABER (2609.21572, generic legged semantic locomotion), ForceTwin (2609.21751, articulated-object digital twins), Contact-Rich Motion Planning via GPU-Parallel Mode Evaluation (2609.21803, generic contact planning), GALA (2609.21948, generic latent action VLA), SkelWAM (2609.21983, skeleton-guided cross-embodiment manipulation without humanoid WBC), Duty Factor quadruped locomotion (2609.22073), KIWI capture kit (2609.22809, bimanual UMI-style capture without humanoid control), ForceRFT (2609.22840, generic force-guided VLA residual RL), HOIBlender (2609.23431, HOI detection rather than motion generation), RopeFormer (2609.23432, rope manipulation), PRIMO (2609.23610, odometry rather than WBC/control), EgoWild2Dex (2609.23755, dexterous manipulation without humanoid whole-body scope), ReVeal (2609.23910, generic VLA real-to-sim evaluation), What Matters in Designing WAMs (2609.24048, generic WAM study), contact-anchored dexterous manipulation / Touch2Robot / TACIT / DEAL-Grasp style hand-only or generic manipulation papers, MSK-Bench musculoskeletal benchmark, CrossSafe, Rolling-WAM, and broad medical, vision, language, finance, infrastructure, navigation-only, quadruped-only, soft/underwater-robot, and generic VLA papers matched only by generic action/contact/motion terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-09-18 — 20 new, 6 updated
 - Window: 2026-09-11 → 2026-09-18.
