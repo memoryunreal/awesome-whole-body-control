@@ -616,7 +616,7 @@ _26 entries._
 
 ## Whole-Body Motion Tracking and Imitation
 
-_193 entries._
+_194 entries._
 
 - ⏳ 🌐 🤖 🧍 [OTRetarget: Joint Robot and Object Motion Retargeting via Optimal Transport](https://simple-robotics.github.io/publications/otretarget) 'arxiv 2026.09'  Unitree G1 Retargeting` Besset, Carn et al... 
   Jointly retargets robot and multi-object motion via optimal-transport correspondences over surface proximity triples (signed distance, witness point, direction), preserving ground and object contacts without scaling the scene, and transfers the retargeted references to a physical Unitree G1 for two-handed box pick-and-place.                                                
