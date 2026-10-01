@@ -616,7 +616,11 @@ _26 entries._
 
 ## Whole-Body Motion Tracking and Imitation
 
-_193 entries._
+_194 entries._
+
+- ⏳ 🌐 🤖 🧍 [OTRetarget: Joint Robot and Object Motion Retargeting via Optimal Transport](https://simple-robotics.github.io/publications/otretarget) 'arxiv 2026.09'  Unitree G1 Retargeting` Besset, Carn et al... 
+  Jointly retargets robot and multi-object motion via optimal-transport correspondences over surface proximity triples (signed distance, witness point, direction), preserving ground and object contacts without scaling the scene, and transfers the retargeted references to a physical Unitree G1 for two-handed box pick-and-place.                                                
+    Links: [Project](https://simple-robotics.github.io/publications/otretarget) · [Paper](https://arxiv.org/abs/2609.36602)
 
 - ⭐ 🤖 🧍 **[Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions](https://arxiv.org/abs/2608.26505)** `arXiv 2026.08` `Poppy Humanoid` `WBC`
   Xulin Chen et al..
@@ -1557,6 +1561,8 @@ _193 entries._
 
 | Year | Paper | Robot/Data | Real Robot | Code | Key Idea |
 |---|---|---|---|---|---|
+| 2026 | [OTRetarget: Joint Robot and Object Motion Retargeting via Op](https://arxiv.org/abs/2609.36602) | Unitree G1 | ✅ | ⏳ Code Coming Soon | Jointly retargets robot and multi-object motion via optimal-transport correspon |
+
 | 2026 | [Closing the Loop on the Poppy Humanoid: Bipedal Locomotion w](https://arxiv.org/abs/2608.26505) | Poppy Humanoid | ✅ | ⭐ Code | Learns an LQR cost function from open-loop Poppy walking data to close the contr |
 | 2026 | [GMR: General Motion Retargeting (Retargeter for TWIST)](https://github.com/YanjieZe/GMR) | Unitree H1, H1-2, G1, multi-robot | ✅ | ⭐ Code | Real-time CPU motion retargeting library handling SMPL→multi-humanoid mapping wi |
 | 2026 | [LIMMT: Less is More for Motion Tracking](https://arxiv.org/abs/2606.06953) | Unitree G1 / humanoid | ✅ | ⭐ Code | Data-centric motion-tracking study showing that carefully filtered high-quality  |
@@ -2542,7 +2548,12 @@ _87 entries._
 
 ## Human-to-Humanoid Retargeting
 
-_23 entries._
+_24 entries._
+
+- ⏳ 🤖 🧍 **[OTRetarget: Joint Robot and Object Motion Retargeting via Optimal Transport](https://simple-robotics.github.io/publications/otretarget)** 'arxiv 2026.09' ` `Unitree G1` `Retargeting` Besset, Carn et al...
+Jointly retargets robot and multi-object motion via optimal-transport correspondences over surface proximity triples (signed distance, witness point, direction), preserving ground and object contacts without scaling the scene, and transfers the retargeted references to a physical Unitree G1 for two-handed box pick-and-place.
+  Links: [Project](https://simple-robotics.github.io/publications/otretarget) · [Paper](https://arxiv.org/abs/2609.36602)
+
 
 - ⭐ 🤖 🧍 **[BeyondRetarget: Learning Executable Humanoid Motions Directly from Monocular Video](https://arxiv.org/abs/2609.29850)** `arXiv 2026.09` `Unitree G1 / R1 / H1, Fourier GR1/GR2, Atlas, Booster T1, Tienkung` `Retargeting`
   Tianyu Xiong et al..
@@ -2662,6 +2673,8 @@ _23 entries._
 
 | Year | Paper | Robot/Data | Real Robot | Code | Key Idea |
 |---|---|---|---|---|---|
+| 2026 | [OTRetarget: Joint Robot and Object Motion Retargeting via Op](https://arxiv.org/abs/2609.36602) | Unitree G1 | ✅ | ⏳ Code Coming Soon | Jointly retargets robot and multi-object motion via optimal-transport 
+  correspon |
 | 2026 | [BeyondRetarget: Learning Executable Humanoid Motions Directl](https://arxiv.org/abs/2609.29850) | Unitree G1 / R1 / H1, Fourier GR1/GR2, Atlas, Booster T1, Tienkung | ✅ | ⭐ Code | Maps monocular RGB video directly into executable humanoid trajectories through  |
 | 2026 | [Shooting for Contact: Contact-Implicit Multiple Shooting for](https://arxiv.org/abs/2608.03116) | Unitree G1 / Go2 / legged systems | ✅ | ⭐ Code | Uses contact-implicit direct simulation multiple shooting to convert kinematic r |
 | 2026 | [Wh0: Generative World Models as Scalable Sources of Egocentr](https://arxiv.org/abs/2606.22136) | dexterous hands / humanoid-relevant manipulation | ✅ | ⭐ Code | Uses generative video world models to synthesize egocentric human-object manipul |
