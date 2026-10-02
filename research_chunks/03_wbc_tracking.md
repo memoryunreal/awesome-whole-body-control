@@ -2737,6 +2737,234 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Uses saliency-guided gated visual memory and gait alternation regularization to cross sparse footholds and narrow support regions from onboard depth.
   why_it_matters: Directly attacks the temporal perception problem in humanoid parkour where critical footholds vanish from the current camera frame before contact.
 
+- title: SocialHumanoid: Towards Expressive Humanoid Behavior via One-Step Co-Speech Motion Generation
+  authors: Chengqun Yang; Tengjie Zhu; Liang Xu; Fulong Liu; Guanzhu Ren; Yitong Xing; Xuefeng Lu; Fei Shi; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.33311
+  paper_url: https://arxiv.org/abs/2609.33311
+  project_url: https://rex0191.github.io/SocialHumanoid/
+  code_url: ""
+  dataset_url: AffectMoCap announced in paper
+  category: Motion-Imitation
+  task_tags: [co-speech-motion, expressive-humanoid, affect-control, real-time-generation, whole-body-tracking]
+  robot_platform: physical humanoid social behavior
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Generates affect-conditioned full-body co-speech motion in one step and tracks it through an embodiment-compatible whole-body controller.
+  why_it_matters: Extends humanoid WBC from athletic tracking toward low-latency expressive behavior with speech-synchronized full-body execution.
+
+- title: Model-Informed Safe Reinforcement Learning for Bipedal Locomotion via Step-to-Step Prediction
+  authors: Victor Paredes; Ayonga Hereid
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.34486
+  paper_url: https://arxiv.org/abs/2609.34486
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [safe-RL, bipedal-locomotion, ALIP, control-barrier-function, Digit]
+  robot_platform: Digit humanoid in MuJoCo
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses an ALIP step-to-step safety certificate as both a training signal and runtime swing-foot action filter for humanoid locomotion.
+  why_it_matters: Offers a model-informed safety layer for learned bipedal policies instead of relying only on reward shaping.
+
+- title: NEXUS: Perceptive Whole-Body Control for Terrain-Adaptive Teleoperation
+  authors: Xiangyu Miao; Junsong Wu; Jiyuan Shi; Weiji Xie; Jinrui Han; Xingyi Wang; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.39000
+  paper_url: https://arxiv.org/abs/2609.39000
+  project_url: https://nexus-humanoid.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [terrain-adaptive-teleoperation, perceptive-control, teacher-student, whole-body-motion, humanoid]
+  robot_platform: humanoid real-world teleoperation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains a perceptive whole-body controller on nearly 1,000 hours of generated motion pairs so teleoperated behaviors adapt to terrain unseen by the operator.
+  why_it_matters: Separates human motion intent from robot terrain response, which is essential for usable whole-body teleoperation outside flat labs.
+
+- title: Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library
+  authors: Abu Hanif Muhammad Syarubany; Jaehyun Jang; Hwanhee Kim; Kyuwon Kim; Seungyeon Ryu; Chang D. Yoo
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38852
+  paper_url: https://arxiv.org/abs/2609.38852
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [humanoid-soccer, kicking-library, task-gated-RL, locomotion-substrate, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Builds a command-conditioned locomotion substrate first, then gates a multi-directional library of retargeted kicking skills on top.
+  why_it_matters: Treats locomotion as the composition hub for humanoid soccer instead of overfitting gait to a narrow ball-approach distribution.
+
+- title: CompliantWBC: Whole-Body Compliance for Heavy Humanoids via Force Latent Estimation and Residual Impedance Targets
+  authors: Tan-Dzung Do; Cuc T. Trinh; Tuan Dat Phuong; Chien Le; Thanh Ly; Vien Anh Ngo; An Thai Le
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.33310
+  paper_url: https://arxiv.org/abs/2609.33310
+  project_url: https://dotandung.github.io/compliantwbc/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [whole-body-compliance, residual-impedance, force-latent-estimation, heavy-humanoid, payload]
+  robot_platform: heavy humanoid hardware
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns residual per-link impedance targets over a structured compliance base policy so heavy humanoids can yield or resist arbitrary-site forces.
+  why_it_matters: Moves force-aware humanoid control beyond end-effector compliance to lower-body-inclusive whole-body interactions and payload tasks.
+
+- title: Humanoid Badminton: Learning Dynamic Racket Skills from Limited Human Motion Data
+  authors: Jingzhi Cui; Zhexiong Wang; Bangjie Xu; Pengyu Zhao; Youyuan Li; Zhi Su; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.31840
+  paper_url: https://arxiv.org/abs/2609.31840
+  project_url: https://sunlight02.github.io/humanoid-badminton/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [humanoid-sports, racket-skills, hierarchical-RL, motion-augmentation, dynamic-contact]
+  robot_platform: physical humanoid badminton
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains a hierarchical racket-skill controller from sparse human badminton strokes and deploys multi-skill rallies with jump returns on hardware.
+  why_it_matters: Adds time-critical projectile interception and high-speed impact control to the growing set of real humanoid athletic skills.
+
+- title: Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators
+  authors: Zachary Olkin; William D. Compton; Aaron D. Ames
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.31577
+  paper_url: https://arxiv.org/abs/2609.31577
+  project_url: https://zolkin1.github.io/generate-track-improve/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [perceptive-locomotion, flow-matching, RL-fine-tuning, terrain-traversal, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Combines a depth-conditioned flow-matching motion generator with a perceptive tracker, then improves the generator through off-policy RL fine-tuning.
+  why_it_matters: Shows a practical loop for improving multi-skill humanoid locomotion generators after deployment failures on stairs, boxes, and outdoor terrain.
+
+- title: AMBIT: Anticipatory Multimodal Body Recruitment for Bimanual Tracking on a Humanoid
+  authors: Hanlong Li; Sihan Tan; Takeshi Ashizawa; Benjamin Yen; Kazuhiro Nakadai
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.33484
+  paper_url: https://arxiv.org/abs/2609.33484
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [bimanual-tracking, body-recruitment, CVAE, whole-body-IK, Unitree-G1]
+  robot_platform: Unitree R1 / Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Samples diverse pelvis and waist recruitment strategies before arm saturation, then verifies them inside a receding-horizon whole-body IK loop.
+  why_it_matters: Makes underactuated humanoid arms more capable by planning when the body should join a bimanual tracking task.
+
+- title: Passive-Dynamic-Walking-Inspired Dynamics Guidance for Energy-Efficient Humanoid Locomotion
+  authors: Hyeonjin Choi; Joongheon Kim; Daekyum Kim
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.35935
+  paper_url: https://arxiv.org/abs/2609.35935
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [energy-efficient-locomotion, passive-dynamic-walking, RL-curriculum, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Temporarily shapes RL training with passive-dynamic-walking-inspired tilted-gravity guidance, then removes the guidance for nominal humanoid walking.
+  why_it_matters: Provides a simple curriculum for lowering mechanical cost of transport on G1 without hard-coding reference trajectories or gait phases.
+
+- title: Continue, Abort, or Fall: Viability-Aware Policy Selection (VAPS) for Safe Humanoid Acrobatics
+  authors: Siwei Ju; Lu Liu; Jan Peters; Oleg Arenz
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.01397
+  paper_url: https://arxiv.org/abs/2610.01397
+  project_url: https://vaps-r-al.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [safe-acrobatics, viability-prediction, policy-selection, abort-policy, Unitree-G1]
+  robot_platform: Unitree G1 / LimX Oli
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Routes between nominal tracking, abort, and protective fall policies using learned short-horizon viability predictors during risky acrobatic motions.
+  why_it_matters: Gives dynamic humanoid skills a damage-reducing fallback hierarchy instead of assuming the tracker can always recover.
+
+- title: Reactive Humanoid Multi-Contact Using Learned Stability Models
+  authors: Stephen McCrory; Beomyeong Park; Nicholas Kitchel; Nehar Poddar; Robert Griffin
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.00823
+  paper_url: https://arxiv.org/abs/2610.00823
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: WBC
+  task_tags: [multi-contact-recovery, hand-bracing, learned-stability-model, push-recovery, humanoid]
+  robot_platform: humanoid hardware
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Scores reachable hand-contact regions with a learned post-impact CoP model so the humanoid can brace itself during standing and walking pushes.
+  why_it_matters: Converts nearby walls and supports into reactive stability resources for humanoid recovery instead of treating them as collision hazards.
+
+- title: ECHO-G: Embodied Co-speech Humanoid mOtion Generation
+  authors: Yizhao Li; Pusen Gao; Ming Wang; Shaojie Shen; Shuo Yang; Hao Xu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.39575
+  paper_url: https://arxiv.org/abs/2609.39575
+  project_url: ""
+  code_url: ""
+  dataset_url: audio-text-robot co-speech dataset announced in paper
+  category: Motion-Imitation
+  task_tags: [co-speech-motion, humanoid-motion-generation, audio-text-conditioning, rectified-flow, robot-space-generation]
+  robot_platform: physical humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Generates robot-space full-body co-speech motion from aligned audio and timed transcripts with a speech-grounded diffusion transformer.
+  why_it_matters: Avoids a human-motion-then-retarget pipeline for social humanoid gestures by learning directly in the robot action space.
+
 ---
 
 ## Notes on Verification

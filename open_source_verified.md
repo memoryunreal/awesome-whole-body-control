@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (242 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (246 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -464,12 +464,17 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://xbpeng.github.io/projects/DeepMimic/index.html) · [Code](https://github.com/xbpeng/DeepMimic) · [Paper](https://arxiv.org/abs/1804.02717)
 
 
-## Whole-Body Control and Loco-Manipulation (35)
+## Whole-Body Control and Loco-Manipulation (36)
 
 - ⭐ 🤖 🧍 **[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.23680)** `arXiv 2026.06` `Unitree G1 + WUJI hand` `Loco-Manipulation`
   Sikai Li et al..
   Coordinates body and dexterous-hand latent priors with residual RL so a G1 can manipulate objects continuously while walking.
   Links: [Project](https://skevinci.github.io/coordex/) · [Code](https://github.com/Skevinci/CoorDex) · [Paper](https://arxiv.org/abs/2606.23680)
+
+- ⭐ 🤖 🧍 **[DexRoam: Learning Mobile Bimanual Dexterous Manipulation from Egocentric Whole-Body Human Demonstrations](https://arxiv.org/abs/2609.35761)** `arXiv 2026.09` `humanoid mobile bimanual dexterous manipulation` `Loco-Manipulation`
+  Rui Zhou et al..
+  Captures tracker-free egocentric whole-body demonstrations and aligns them into robot action space for GR00T N1.7 and pi0.5 policy training.
+  Links: [Project](https://dexroam.github.io/) · [Code](https://github.com/zhourui9813/DexRoam) · [Paper](https://arxiv.org/abs/2609.35761) · [Dataset](https://huggingface.co/datasets/zhourui9813/DexRoam_Realworld_Data)
 
 - ⭐ 🤖 🧍 **[GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors](https://arxiv.org/abs/2606.05160)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
   Tianyi Xie et al..
@@ -806,12 +811,17 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://motion-gpt.github.io/) · [Code](https://github.com/OpenMotionLab/MotionGPT) · [Paper](https://arxiv.org/abs/2306.14795)
 
 
-## Human-to-Humanoid Retargeting (6)
+## Human-to-Humanoid Retargeting (7)
 
 - ⭐ 🤖 🧍 **[BeyondRetarget: Learning Executable Humanoid Motions Directly from Monocular Video](https://arxiv.org/abs/2609.29850)** `arXiv 2026.09` `Unitree G1 / R1 / H1, Fourier GR1/GR2, Atlas, Booster T1, Tienkung` `Retargeting`
   Tianyu Xiong et al..
   Maps monocular RGB video directly into executable humanoid trajectories through a shared robot-oriented motion representation and robot-specific decoders.
   Links: [Project](https://bear-ty.github.io/Beyondretarget_page/) · [Code](https://github.com/bear-ty/BeyondRetarget) · [Paper](https://arxiv.org/abs/2609.29850) · [Dataset](https://huggingface.co/spaces/bear-ty/BeyondRetarget)
+
+- ⭐ 🤖 🧍 **[HOI-Retarget: Contact-Centric Retargeting for Human-Object Interaction](https://arxiv.org/abs/2609.34674)** `arXiv 2026.09` `Unitree G1 / Unitree H2` `Retargeting`
+  Jihwan Shin et al..
+  Retargets SMPL-X human-object clips into humanoid references by making each labeled contact a target in the object frame.
+  Links: [Project](https://shinben0327.github.io/hoi-retarget/) · [Code](https://github.com/leggedrobotics/hoi-retarget) · [Paper](https://arxiv.org/abs/2609.34674) · [Dataset](https://huggingface.co/datasets/shinben0327/hoi-retarget)
 
 - ⭐ 🤖 🧍 **[Shooting for Contact: Contact-Implicit Multiple Shooting for Dynamic Motion Retargeting](https://arxiv.org/abs/2608.03116)** `arXiv 2026.08` `Unitree G1 / Go2 / legged systems` `Retargeting`
   Sergio A. Esteban et al..
@@ -950,7 +960,17 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://www.science.org/doi/10.1126/scirobotics.adh3834) · [Code](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system) · [Paper](https://arxiv.org/abs/2203.06972)
 
 
-## Datasets and Benchmarks (36)
+## Datasets and Benchmarks (38)
+
+- ⭐ 🤖 🧍 **[HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution](https://arxiv.org/abs/2610.02089)** `arXiv 2026.10` `Unitree G1` `Dataset`
+  Kyochul Jang et al..
+  Benchmarks humanoid tool use across 18 tasks spanning tool selection, manipulation, locomotion, simulation, and real G1 execution.
+  Links: [Project](https://snu-pi.github.io/HumanoidToolBench/) · [Code](https://github.com/SNU-PI/HumanoidToolBench) · [Paper](https://arxiv.org/abs/2610.02089) · [Dataset](https://huggingface.co/datasets/snupilab/humanoidtoolbench-teleop)
+
+- ⭐ 🧍 🧱 **[Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement](https://arxiv.org/abs/2609.38216)** `arXiv 2026.09` `Unitree G1` `Dataset`
+  Pavel Bushuyeu et al..
+  Defines a 12-subtask Isaac Lab benchmark for positioning a ladder, climbing, replacing a light bulb, and disposing of the spent bulb.
+  Links: [Project](https://fiatlux-bench.github.io/) · [Code](https://github.com/haw-ai-i/fiatlux) · [Paper](https://arxiv.org/abs/2609.38216) · [Dataset](https://huggingface.co/datasets/haw-ai-i/fiatlux-teleoperation)
 
 - ⭐ 🤖 🧍 **[MuJoCo Playground](https://arxiv.org/abs/2502.08844)** `arXiv preprint` `Berkeley Humanoid, Unitree H1/G1, Booster T1, Spot, Go1, Barkour` `Benchmark`
   Kevin Zakka, Baruch Tabanpour, Qiayuan Liao, et al. (Google DeepMind).

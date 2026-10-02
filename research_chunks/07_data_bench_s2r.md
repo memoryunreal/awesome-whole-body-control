@@ -1539,6 +1539,82 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Summarizes the REAL-I Challenge tasks, shared humanoid deployment setup, winning approaches, and lessons for training VLAs from a fixed demonstration budget.
   why_it_matters: Documents practical closed-loop evaluation and data-curation findings for humanoid VLA adaptation that offline action-prediction metrics can miss.
 
+- title: Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement
+  authors: Pavel Bushuyeu; Yujin Chen; Anton Nikolaev; Brian Shu; Igor Molybog
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38216
+  paper_url: https://arxiv.org/abs/2609.38216
+  project_url: https://fiatlux-bench.github.io/
+  code_url: https://github.com/haw-ai-i/fiatlux
+  dataset_url: https://huggingface.co/datasets/haw-ai-i/fiatlux-teleoperation
+  category: Dataset
+  task_tags: [humanoid-benchmark, ladder-climbing, tool-use, Isaac-Lab, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Defines a 12-subtask Isaac Lab benchmark for positioning a ladder, climbing, replacing a light bulb, and disposing of the spent bulb.
+  why_it_matters: Evaluates vertical mobility, fragile-object handling, and long-horizon whole-body manipulation in one reproducible humanoid task suite.
+
+- title: Traceable Human-to-Humanoid Sign Language Benchmarking
+  authors: Ao Liu; Shengeng Tang; Lechao Cheng; Yanbin Hao; Bingkun Bao; Richang Hong
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.33354
+  paper_url: https://arxiv.org/abs/2609.33354
+  project_url: ""
+  code_url: ""
+  dataset_url: HumanoidCSL-20K announced in paper
+  category: Dataset
+  task_tags: [sign-language, human-to-humanoid, benchmark, traceable-retargeting, motion-repair]
+  robot_platform: humanoid signing
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Builds HumanoidCSL-20K with source, repaired human motion, direct robot reference, and geometry-repaired robot reference for traceable signing evaluation.
+  why_it_matters: Separates errors across fitting, repair, retargeting, geometry repair, and control instead of scoring only the final humanoid trajectory.
+
+- title: HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution
+  authors: Kyochul Jang; Seohyeon Park; Ohchul Kwon; Sangjun Park; Junhyeok Choi; Seungyeop Yi; Chaeyun Kim; Sangkyu Lee; et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.02089
+  paper_url: https://arxiv.org/abs/2610.02089
+  project_url: https://snu-pi.github.io/HumanoidToolBench/
+  code_url: https://github.com/SNU-PI/HumanoidToolBench
+  dataset_url: https://huggingface.co/datasets/snupilab/humanoidtoolbench-teleop
+  category: Dataset
+  task_tags: [humanoid-tool-use, benchmark, ToolBook, Unitree-G1, mobile-manipulation]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Benchmarks humanoid tool use across 18 tasks spanning tool selection, manipulation, locomotion, simulation, and real G1 execution.
+  why_it_matters: Exposes the gap between choosing an appropriate tool and executing the whole-body mobile manipulation needed to use it.
+
+- title: CoHuB: A Simulation Benchmark for Multi-Humanoid Collaboration
+  authors: Hyunjin Park; Jebeom Chae; Minwoo Park; Sunghyun Park; Hanjun Yoo; Seoyeon Choi; Soochul Yoo; Joohwan Seo; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.34782
+  paper_url: https://arxiv.org/abs/2609.34782
+  project_url: ""
+  code_url: ""
+  dataset_url: synchronized VR teleoperation demonstrations announced in paper
+  category: Dataset
+  task_tags: [multi-humanoid, collaboration-benchmark, egocentric-vision, VR-teleoperation, simulation]
+  robot_platform: two- and three-humanoid collaboration
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Provides 10 simulated multi-humanoid collaboration tasks with synchronized demonstrations collected by multi-operator VR teleoperation.
+  why_it_matters: Makes coordinated humanoid perception and control measurable beyond single-agent locomotion or tabletop manipulation benchmarks.
+
 ---
 
 ## Notes

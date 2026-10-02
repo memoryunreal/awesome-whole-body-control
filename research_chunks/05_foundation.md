@@ -1294,6 +1294,44 @@ Code-status legend:
   one_line: Pretrains a language-conditioned motion expert on heterogeneous human and humanoid motion, then integrates it with video and action experts for target-robot post-training.
   why_it_matters: Makes large-scale motion pretraining a reusable predictive prior for humanoid world-action modeling when target-robot trajectories are scarce.
 
+- title: CrossBFM: Distilling a Shared Latent Behavior Space Across Humanoid Embodiments
+  authors: Tan-Dzung Do; Tuan Dat Phuong; Nico Bohlinger; Cuc T. Trinh; Siwei Ju; Vien Anh Ngo; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38087
+  paper_url: https://arxiv.org/abs/2609.38087
+  project_url: https://dotandung.github.io/crossbfm/
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [behavior-foundation-model, cross-embodiment, latent-distillation, motion-tracking, humanoid]
+  robot_platform: multiple real humanoids
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Distills a shared latent behavior space across humanoid embodiments using retargeting correspondences, then trains latent-conditioned trackers per robot.
+  why_it_matters: Treats the BFM latent space itself as the transferable asset, lowering the cost of building promptable behavior models for new humanoids.
+
+- title: Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies
+  authors: Galbot Team; Xuchuan Chen; Xiaoqian Cheng; Yu Deng; Lihe Ding; Shaocong Dong; Xiangjun Gao; Haozhe Jia; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38537
+  paper_url: https://arxiv.org/abs/2609.38537
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [embodied-policy, generalist-model-evaluation, humanoid-bench, VLA, locomotion]
+  robot_platform: HumanoidBench / multiple robot domains
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Evaluates GPT-6 Astra across robot domains, including humanoid locomotion and humanoid loco-manipulation with pretrained whole-body controllers.
+  why_it_matters: Provides a broad negative/positive capability map for using frontier generalist models as action generators or high-level embodied policy components.
+
 ---
 
 ## Quick stats

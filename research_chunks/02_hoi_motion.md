@@ -1742,6 +1742,25 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Optimizes the initial noise of a pretrained text-conditioned motion model under contact, collision, support, and scene constraints to synthesize executable humanoid-scene interaction references.
   why_it_matters: Turns high-level task prompts into physically trackable humanoid interaction motions, including long-horizon composed behaviors and real G1 deployments.
 
+- title: PAMI: Part Anchored Motion for Text to Human-Object Interaction Generation
+  authors: Chuqiao Li; Xianghui Xie; Yong Cao; Andreas Geiger; Gerard Pons-Moll
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38466
+  paper_url: https://arxiv.org/abs/2609.38466
+  project_url: https://coral79.github.io/pami/
+  code_url: https://github.com/Coral79/PAMI-Code
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [text-to-HOI, part-anchored-motion, contact-refinement, InterAct, diffusion]
+  robot_platform: human-object interaction generation
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ⏳ Code Coming Soon
+  one_line: Represents object motion through body-part anchored votes, then refines text-conditioned HOI sequences with surface-sensing contact cues.
+  why_it_matters: Tackles a core HOI-generation failure mode -- object drift and missed contact -- with a structured human-relative object-motion representation.
+
 ---
 
 ## Summary

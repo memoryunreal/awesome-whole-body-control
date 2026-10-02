@@ -2134,3 +2134,288 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Learns a task-conditioned support-hand bracing strategy that lets a G1 exert much larger manipulation forces while preserving balance.
   why_it_matters: Turns the environment into an intentional stabilizing contact for humanoid manipulation rather than an obstacle to avoid.
+
+- title: Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining
+  authors: Chongyang Xu; Zhao Wu; Jin Chen; Yiming Jiang; Jinhui Ye; Yuming Jiang; Shifeng Zhang; Ziliang Feng; et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.00438
+  paper_url: https://arxiv.org/abs/2610.00438
+  project_url: ""
+  code_url: ""
+  dataset_url: HumanVerse-500 announced in paper
+  category: Loco-Manipulation
+  task_tags: [egocentric-human-data, whole-body-VLA, HumanVerse-500, body-hand-coordination, SIMPLE]
+  robot_platform: humanoid loco-manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Pretrains lambda0, a whole-body humanoid VLA policy, from 500 hours of synchronized egocentric video plus body and hand motion.
+  why_it_matters: Treats egocentric human experience as scalable supervision for coordinated humanoid locomotion, posture, bimanual interaction, and dexterous hand actions.
+
+- title: DexWeave: Learning Dexterous Humanoid Loco-Manipulation from Human Demonstrations
+  authors: Naichuan Sun; Haotian Shen; Yizhang Zhang; Luying Feng; Haoze Wang; Yuanbo Xiangli; Yaochu Jin; Peidong Liu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.34724
+  paper_url: https://arxiv.org/abs/2609.34724
+  project_url: https://dexweave.github.io
+  code_url: https://github.com/WU-CVGL/DexWeave
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [dexterous-loco-manipulation, anatomy-aware-transformer, interaction-retargeting, Unitree-G1, Inspire-hands]
+  robot_platform: Unitree G1 + Inspire dexterous hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Couples interaction-consistent body/hand retargeting with an anatomy-aware Transformer policy for real G1 dexterous whole-body tasks.
+  why_it_matters: Preserves the coupled structure among gait, wrist placement, finger articulation, and object contact instead of tracking body and hands independently.
+
+- title: WB-WAM: Heterogeneous Body-Hand Pre-training for Humanoid Loco-Manipulation
+  authors: Chuan Qin; Shaoting Zhu; Siyuan Luo; Siqiao Huang; Hongyu Zhao; Shanaka Baduge; Hang Zhao
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.34199
+  paper_url: https://arxiv.org/abs/2609.34199
+  project_url: https://wb-wam.github.io/
+  code_url: ""
+  dataset_url: WB-Datasets announced in paper
+  category: Loco-Manipulation
+  task_tags: [world-action-model, body-hand-pretraining, heterogeneous-data, HumanoidArena, SONIC]
+  robot_platform: humanoid loco-manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Adds explicit body, root, and dexterous-hand action supervision to video-action pretraining from 1,880.2 hours of heterogeneous data.
+  why_it_matters: Shows how partially annotated human, motion, and robot data can be fused into a whole-body action prior for humanoid manipulation.
+
+- title: Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation
+  authors: Zihan Wang; Zhen Wu; Pieter Abbeel; Rocky Duan; Jitendra Malik; Carmelo Sferrazza; C. Karen Liu; Guanya Shi; Angjoo Kanazawa
+  year: 2026
+  venue: CoRL 2026 / arXiv 2026.09
+  arxiv_id: 2609.38172
+  paper_url: https://arxiv.org/abs/2609.38172
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [counterfactual-video, real-to-sim-to-real, visual-imitation, object-transport, humanoid]
+  robot_platform: 29-DoF humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses video-to-video generation plus contact-anchored real-to-sim retargeting to amplify a few carrying videos into humanoid object-transport policy data.
+  why_it_matters: Demonstrates a data-scaling route for pick-carry-drop humanoid tasks without collecting many clean full-body interaction videos.
+
+- title: Uni-VLaT: Whole-Body Tactile Adaptation of VLA Policies for Humanoid Loco-Manipulation
+  authors: Zihao Wang; Shutong Liu; Siqi Zheng; Liu Cao; Ruoqu Chen; Rundong Liu; Yanchao Yang; Mengdi Xu
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.35450
+  paper_url: https://arxiv.org/abs/2609.35450
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [whole-body-tactile, VLA-adaptation, contact-rich-control, tactile-prediction, humanoid]
+  robot_platform: tactile humanoid platform
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adapts pretrained VLA policies with whole-body tactile latents trained to predict future tactile, proprioceptive, and visual representations.
+  why_it_matters: Makes distributed touch a first-class input for humanoid loco-manipulation where vision cannot observe the contact region.
+
+- title: EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation
+  authors: Yiming Jiang; Jin Chen; Chongyang Xu; Yilun Chen; Aimin Hao; Yisheng He
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38046
+  paper_url: https://arxiv.org/abs/2609.38046
+  project_url: https://lambdahumanoid.github.io/EgoAlign/
+  code_url: https://github.com/LambdaHumanoid/EgoAlign
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [egocentric-human-demonstrations, data-construction, long-range-loco-manipulation, VLA, zero-shot-transfer]
+  robot_platform: physical humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Converts egocentric human demonstrations into robot-compatible state/action supervision through scale alignment and controller-in-the-loop refinement.
+  why_it_matters: Reduces humanoid teleoperation collection needs by turning ordinary human demos into deployable long-range loco-manipulation training data.
+
+- title: EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation
+  authors: Jin Chen; Yiming Jiang; Chongyang Xu; Modi Shi; Shijia Peng; Li Chen; Tianyu Li; Mu Xu; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.37181
+  paper_url: https://arxiv.org/abs/2609.37181
+  project_url: https://opendrivelab.com/EgoHumanoid-V2/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [human-to-humanoid, egocentric-transfer, action-alignment, VLA, coordinated-skills]
+  robot_platform: physical humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Aligns egocentric human demonstrations through coarse-to-fine kinematic correction, dynamics-aware refinement, and robot-arm rendering.
+  why_it_matters: Directly transfers coordinated whole-body loco-manipulation skills from human data without target-task robot demonstrations.
+
+- title: DexRoam: Learning Mobile Bimanual Dexterous Manipulation from Egocentric Whole-Body Human Demonstrations
+  authors: Rui Zhou; Yibo Yuan; Junkai Zhao; Fangyuan Zhao; Xiaoguang Zhao; Shanghang Zhang; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.35761
+  paper_url: https://arxiv.org/abs/2609.35761
+  project_url: https://dexroam.github.io/
+  code_url: https://github.com/zhourui9813/DexRoam
+  dataset_url: https://huggingface.co/datasets/zhourui9813/DexRoam_Realworld_Data
+  category: Loco-Manipulation
+  task_tags: [egocentric-demonstrations, mobile-bimanual-manipulation, GR00T, pi0.5, dexterous-hands]
+  robot_platform: humanoid mobile bimanual dexterous manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Captures tracker-free egocentric whole-body demonstrations and aligns them into robot action space for GR00T N1.7 and pi0.5 policy training.
+  why_it_matters: Releases both alignment/data code and policy-training code for using human whole-body demonstrations in mobile dexterous humanoid tasks.
+
+- title: Praxis: Distilling Physical Interaction Priors from Egocentric Videos for Generalizable Whole-Body Manipulation
+  authors: Shuliang He; Ruiyan Xu; Bo Yue; Hengming Zhang; Huayi Zhou; Shuai Wang; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.30735
+  paper_url: https://arxiv.org/abs/2609.30735
+  project_url: https://edem-ai.github.io/Praxis/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [egocentric-video, physical-interaction-priors, one-shot-demonstration, tactile-feedback, whole-body-manipulation]
+  robot_platform: mobile humanoid manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Combines one-shot egocentric interaction priors, closed-loop posture calibration, online perception, and tactile adaptation for long-horizon manipulation.
+  why_it_matters: Connects human-video priors to deployment-time workspace alignment and contact recovery instead of treating video as static imitation data.
+
+- title: IronMind: Scaling Humanoid Dexterous Manipulation via Camera-Space Ego-Centric Pretraining
+  authors: Huimin Pan; Yufan Ren; Kunpeng Song; Siyang Wang; Xiwen Zhang; Xiaoyun Hu; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.39403
+  paper_url: https://arxiv.org/abs/2609.39403
+  project_url: https://xpeng-robotics.github.io/ironmind/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [egocentric-pretraining, camera-space-actions, VLA, dexterous-manipulation, humanoid]
+  robot_platform: humanoid dexterous manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Scales egocentric human-video pretraining for humanoid dexterous manipulation using a camera-space action representation instead of explicit torso retargeting.
+  why_it_matters: Shows large-scale egocentric pretraining can improve out-of-distribution real humanoid manipulation when action representation matches the video frame.
+
+- title: EquivDP3: A SIM(3)-Invariant Point-Cloud Encoder for Data-Efficient Humanoid Loco-Manipulation
+  authors: Abu Hanif Muhammad Syarubany; Chang D. Yoo
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.36575
+  paper_url: https://arxiv.org/abs/2609.36575
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [point-cloud-policy, SIM3-equivariance, diffusion-policy, low-data-imitation, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adds a SIM(3)-equivariant point-cloud encoder to a hierarchical diffusion policy for low-demo Unitree G1 loco-manipulation.
+  why_it_matters: Shows geometric equivariance matters most when humanoid loco-manipulation demos are scarce.
+
+- title: MASkillBlender: Decentralized Whole-Body Coordination for Multi-Humanoid Loco-Manipulation via Skill Blending
+  authors: Yifan Hu; Luhang Hong; Mingkang Long; Danning Wang; Chengfeng Jia; Rong Su; et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.01102
+  paper_url: https://arxiv.org/abs/2610.01102
+  project_url: https://maskillblender.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [multi-humanoid, skill-blending, decentralized-MARL, coordination, whole-body-control]
+  robot_platform: multiple humanoid embodiments
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns decentralized high-level policies over reusable single-humanoid skills for coordinated multi-humanoid loco-manipulation.
+  why_it_matters: Extends skill-blending style WBC from one robot to homogeneous multi-humanoid coordination without task-specific motion references.
+
+- title: CEER2: Directional and Tunable End-Effector and Root Compliance for Humanoid Loco-Manipulation
+  authors: Xinyuan Luo; Chunyuan Yang; Boyuan Chen; Xianyi Cheng
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38709
+  paper_url: https://arxiv.org/abs/2609.38709
+  project_url: https://ee-root-compliance.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [directional-compliance, root-compliance, force-following, collaborative-carrying, humanoid]
+  robot_platform: physical humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Modulates a fixed whole-body tracker with high-level directional end-effector and root compliance commands estimated from proprioceptive force history.
+  why_it_matters: Lets a humanoid choose when to preserve motion accuracy, yield to contact, or follow external force during collaborative manipulation.
+
+- title: Humanoid Loco-Manipulation With Discrete VLA Model
+  authors: Wenxin Shao; Siqi Chai; Kun Li; Kerou Zhang; Xinzhou Jiang; Wei Xu; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.35709
+  paper_url: https://arxiv.org/abs/2609.35709
+  project_url: https://horizonrobotics.github.io/gail/Holo-M/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [discrete-VLA, action-tokenization, grouped-diffusion-decoding, SIMPLE, Holo-M]
+  robot_platform: humanoid loco-manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Extends a language model vocabulary with body-part-specific humanoid action tokens and decodes them through grouped discrete diffusion.
+  why_it_matters: Makes discrete VLA action modeling viable for heterogeneous whole-body humanoid action spaces instead of only tabletop arms.
+
+- title: KPI: A Promptable Kernel for Physical Interaction on Humanoids
+  authors: Yikai Wang; Honghao Zhu; Xiao Hu; Hao Zhang; Zelin Wang; Yip Fun Yeung; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.36151
+  paper_url: https://arxiv.org/abs/2609.36151
+  project_url: https://kpi-robot.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [promptable-interaction, compliance-contract, physical-interaction, humanoid-agent, whole-body-tracking]
+  robot_platform: physical humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Lets a trajectory source provide per-direction interaction contracts so a kernel can adapt stiffness, damping, references, and feedforward at contact rate.
+  why_it_matters: Gives agentic humanoid task plans a compact interface for specifying how contact should feel, not just where the body should move.

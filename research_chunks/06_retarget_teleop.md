@@ -1467,6 +1467,101 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Maps monocular RGB video directly into executable humanoid trajectories through a shared robot-oriented motion representation and robot-specific decoders.
   why_it_matters: Avoids explicit human-motion reconstruction at inference time and releases a runnable base-version code/demo stack for multiple humanoid embodiments.
 
+- title: OTRetarget: Joint Robot and Object Motion Retargeting via Optimal Transport
+  authors: Guillaume Besset; Erwann Carn; Timothee Carecchio; Valentin Tordjman-Levavasseur; Fabian Schramm; Yann de Mont-Marin; Justin Carpentier; Ajay Suresha Sathya
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.36602
+  paper_url: https://arxiv.org/abs/2609.36602
+  project_url: https://maestro-consortium.org/posts/news-post-60/
+  code_url: ""
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [optimal-transport, robot-object-retargeting, contact-preservation, OMOMO, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Retargets robot and object motion jointly by transferring signed-distance and surface-interaction quantities through entropic optimal transport.
+  why_it_matters: Addresses a key gap in humanoid HOI transfer: adapting manipulated-object trajectories together with the robot body instead of holding the scene fixed.
+
+- title: HOI-Retarget: Contact-Centric Retargeting for Human-Object Interaction
+  authors: Jihwan Shin; Adria Lopez Escoriza; Junzhe He; Matthias Heyrman; Marco Hutter
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.34674
+  paper_url: https://arxiv.org/abs/2609.34674
+  project_url: https://shinben0327.github.io/hoi-retarget/
+  code_url: https://github.com/leggedrobotics/hoi-retarget
+  dataset_url: https://huggingface.co/datasets/shinben0327/hoi-retarget
+  category: Retargeting
+  task_tags: [contact-centric-retargeting, HOI, trajectory-optimization, Unitree-G1, dataset]
+  robot_platform: Unitree G1 / Unitree H2
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Retargets SMPL-X human-object clips into humanoid references by making each labeled contact a target in the object frame.
+  why_it_matters: Releases a real implementation and retargeted dataset for turning HOI demonstrations into robot-compatible contact-preserving humanoid motions.
+
+- title: GAE: General Action Expert for Real-Time Humanoid Teleoperation
+  authors: Yuefan Wang; Huaicheng Zhou; Xiao He; Zhijie He; Mingchuan Yang; Huayi Zhang; et al.
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.34233
+  paper_url: https://arxiv.org/abs/2609.34233
+  project_url: https://wangyf0928.github.io/gae-wlrobotics/
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [real-time-teleoperation, latency-compensation, whole-body-motion, Unitree-G1, Westlake-O1]
+  robot_platform: Unitree G1 / Westlake O1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains a privileged generator and deployable executor over large heterogeneous motion data, with latency-conditioned anticipation for real-time teleop.
+  why_it_matters: Targets the practical synchronization bottleneck in agile whole-body humanoid teleoperation, not only reference tracking quality.
+
+- title: Dense Temporal Motion Retargeting for Legged Robots
+  authors: Jaeryeong Kim; Taerim Yoon; Jin Cheng; Sungjoon Choi; Stelian Coros
+  year: 2026
+  venue: arXiv 2026.09
+  arxiv_id: 2609.38617
+  paper_url: https://arxiv.org/abs/2609.38617
+  project_url: https://jaeryeongnicolekim.com/
+  code_url: ""
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [temporal-retargeting, dense-time-warping, MPC, legged-robots, humanoid]
+  robot_platform: four humanoid robots / real humanoid transfer
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Jointly optimizes motion timing and control at every control step with GPU-parallel sampling-based MPC.
+  why_it_matters: Shows that dense temporal deformation improves dynamic humanoid motion retargeting and transfers to real hardware-trained policies.
+
+- title: Toward Humanoid Robots in Construction: A Teleoperation Feasibility Study
+  authors: Parastoo Ali Pour; David R. Martin; Chang Min Hur; Bo Zhang; Tommy Zhou; Brandon Thomas Lichter; et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.00718
+  paper_url: https://arxiv.org/abs/2610.00718
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [construction-teleoperation, XR-control, pedal-locomotion, Unitree-G1, demonstration-data]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Combines XR upper-body teleoperation with pedal-based locomotion so one operator can perform tool transport and surface painting on a G1.
+  why_it_matters: Provides an application-grounded feasibility datapoint for near-term humanoid teleoperation in construction and demonstration collection.
+
 ---
 
 ## Notes

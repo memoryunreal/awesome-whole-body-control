@@ -5,26 +5,26 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 96 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 148 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 116 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 73 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 80 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 101 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `02_hoi_motion.md` | 97 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 160 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 131 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 75 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 85 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 105 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 676**
+**Total unique papers after deduplication: 715**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 57
+- Human-Object Interaction Motion Generation: 58
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 193
-- Whole-Body Control and Loco-Manipulation: 110
-- Humanoid Foundation Models and Generalist Policies: 87
-- Human-to-Humanoid Retargeting: 23
-- Teleoperation and Demonstration Collection: 42
-- Datasets and Benchmarks: 70
+- Whole-Body Motion Tracking and Imitation: 205
+- Whole-Body Control and Loco-Manipulation: 125
+- Humanoid Foundation Models and Generalist Policies: 89
+- Human-to-Humanoid Retargeting: 26
+- Teleoperation and Demonstration Collection: 44
+- Datasets and Benchmarks: 74
 - Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
@@ -33,10 +33,10 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 242 |
-| ❌ No Code | 212 |
-| 🌐 Project Page | 156 |
-| ⏳ Code Coming Soon | 37 |
+| ⭐ Code | 246 |
+| ❌ No Code | 225 |
+| 🌐 Project Page | 173 |
+| ⏳ Code Coming Soon | 42 |
 | 📦 Dataset | 17 |
 | 🧩 Partial Code | 11 |
 | 🔁 Unofficial Code | 1 |
@@ -101,6 +101,61 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-10-02 — 39 new, 0 updated
+- Window: 2026-09-25 → 2026-10-02.
+- Sources searched: pulled `origin/main`; arXiv API submittedDate sweep over cs.RO, cs.CV, cs.LG, and cs.GR; arXiv id-list revision checks for tracked chunk IDs; arXiv abstracts and PDFs; project pages surfaced in abstracts/PDFs; GitHub API repository/content checks; Hugging Face dataset checks; targeted exact-title web and GitHub searches for surfaced project/code links.
+- Counts: 3,892 unique arXiv records fetched in the submittedDate pass across the four categories; 633 tracked arXiv IDs checked for lastUpdatedDate changes; 39 in-scope new papers added; 11 existing records reviewed as updated arXiv revisions, with 0 metadata/title/code-status edits applied.
+- Query focus: egocentric human-data pretraining for humanoid loco-manipulation, whole-body VLA/WAM policies, tactile/contact-aware humanoid interaction, humanoid sports and recovery, contact-preserving HOI retargeting, real-time teleoperation, multi-humanoid collaboration, and humanoid tool-use/ladder/sign-language benchmarks.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: PAMI (2609.38466).
+  - `03_wbc_tracking.md` — 12 entries: SocialHumanoid (2609.33311), Model-Informed Safe Reinforcement Learning for Bipedal Locomotion (2609.34486), NEXUS (2609.39000), Locomotion-Grounded Humanoid Soccer (2609.38852), CompliantWBC (2609.33310), Humanoid Badminton (2609.31840), Generate, Track, Improve (2609.31577), AMBIT (2609.33484), Passive-Dynamic-Walking-Inspired Dynamics Guidance (2609.35935), VAPS (2610.01397), Reactive Humanoid Multi-Contact (2610.00823), ECHO-G (2609.39575).
+  - `04_loco_manip.md` — 15 entries: Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining (2610.00438), DexWeave (2609.34724), WB-WAM (2609.34199), Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation (2609.38172), Uni-VLaT (2609.35450), EgoAlign (2609.38046), EgoHumanoid-V2 (2609.37181), DexRoam (2609.35761), Praxis (2609.30735), IronMind (2609.39403), EquivDP3 (2609.36575), MASkillBlender (2610.01102), CEER2 (2609.38709), Humanoid Loco-Manipulation With Discrete VLA Model (2609.35709), KPI (2609.36151).
+  - `05_foundation.md` — 2 entries: CrossBFM (2609.38087), Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies (2609.38537).
+  - `06_retarget_teleop.md` — 5 entries: OTRetarget (2609.36602), HOI-Retarget (2609.34674), GAE (2609.34233), Dense Temporal Motion Retargeting (2609.38617), Toward Humanoid Robots in Construction (2610.00718).
+  - `07_data_bench_s2r.md` — 4 entries: Fiatlux (2609.38216), Traceable Human-to-Humanoid Sign Language Benchmarking (2609.33354), HumanoidToolBench (2610.02089), CoHuB (2609.34782).
+- Verified official full-code repos:
+  - https://github.com/leggedrobotics/hoi-retarget — reachable and contains implementation structure (`hoi_retarget`, `tests`, `docs`, `assets`, `pyproject.toml`) plus Hugging Face dataset link for HOI-Retarget.
+  - https://github.com/zhourui9813/DexRoam and https://github.com/zhourui9813/DexRoam-Policy-Training — reachable and contain alignment/capture code plus GR00T/pi0.5 policy-training code and data scripts.
+  - https://github.com/haw-ai-i/fiatlux — reachable and contains Isaac Lab benchmark implementation (`source`, `scripts`, `auto`, `docs`, `pyproject.toml`) plus Hugging Face teleoperation/assets/baseline datasets.
+  - https://github.com/SNU-PI/HumanoidToolBench — reachable and contains implementation structure (`src`, `scripts`, `examples`, `tests`, `docs`, `data`) plus Hugging Face dataset/model collection links.
+- Verified project pages and dataset/demo pages:
+  - https://coral79.github.io/pami/
+  - https://rex0191.github.io/SocialHumanoid/
+  - https://nexus-humanoid.github.io/
+  - https://dotandung.github.io/compliantwbc/
+  - https://sunlight02.github.io/humanoid-badminton/
+  - https://zolkin1.github.io/generate-track-improve/
+  - https://vaps-r-al.github.io/
+  - https://dexweave.github.io
+  - https://wb-wam.github.io/
+  - https://lambdahumanoid.github.io/EgoAlign/
+  - https://opendrivelab.com/EgoHumanoid-V2/
+  - https://dexroam.github.io/
+  - https://edem-ai.github.io/Praxis/
+  - https://xpeng-robotics.github.io/ironmind/
+  - https://maskillblender.github.io/
+  - https://ee-root-compliance.github.io/
+  - https://horizonrobotics.github.io/gail/Holo-M/
+  - https://kpi-robot.github.io/
+  - https://dotandung.github.io/crossbfm/
+  - https://maestro-consortium.org/posts/news-post-60/
+  - https://shinben0327.github.io/hoi-retarget/
+  - https://wangyf0928.github.io/gae-wlrobotics/
+  - https://jaeryeongnicolekim.com/
+  - https://fiatlux-bench.github.io/
+  - https://snu-pi.github.io/HumanoidToolBench/
+- Existing-paper revisions reviewed with no applied local edits: EgoPriMo (2606.08495) revised to `v2`; Critic Architecture Matters (2606.11891) revised to `v3`; HANDOFF (2606.06493) revised to `v4`; Collision-Aware Humanoid Whole-Body Control (2609.16405) revised to `v2`; TANGO (2609.09158) revised to `v2`; RoboEdit (2608.18948) revised to `v3`; PAC-MAN (2607.28623) revised to `v2`; WholeBodyWAM (2609.18197) revised to `v2`; Morphometric Imitation (2609.28660) revised to `v2`; FootQuery (2609.21447) revised to `v2`; PredActor (2609.24840) revised to `v2`.
+- Unresolved code-status items:
+  - https://github.com/Coral79/PAMI-Code — official repository reachable but README says code/checkpoints/evaluation scripts are coming soon; only README/assets at inspection.
+  - https://github.com/WU-CVGL/DexWeave — official repository reachable but README/TODO says code will be released soon; only README/assets at inspection.
+  - https://github.com/LambdaHumanoid/EgoAlign — official repository reachable but README says code will be released in the future; only README/docs/license at inspection.
+  - https://nexus-humanoid.github.io/, https://dotandung.github.io/compliantwbc/, https://sunlight02.github.io/humanoid-badminton/, https://zolkin1.github.io/generate-track-improve/, https://vaps-r-al.github.io/, https://opendrivelab.com/EgoHumanoid-V2/, https://edem-ai.github.io/Praxis/, https://xpeng-robotics.github.io/ironmind/, https://maskillblender.github.io/, https://ee-root-compliance.github.io/, https://horizonrobotics.github.io/gail/Holo-M/, https://kpi-robot.github.io/, https://dotandung.github.io/crossbfm/, https://wangyf0928.github.io/gae-wlrobotics/ — project pages reachable but no implementation repository surfaced.
+  - https://wb-wam.github.io/ — project page reachable, no public code/data repository surfaced.
+  - https://maestro-consortium.org/posts/news-post-60/ — OTRetarget project/news page reachable, no implementation repo surfaced.
+  - arXiv-only additions with no official project or code surfaced: 2609.34486, 2609.38852, 2609.35935, 2610.00823, 2609.39575, 2610.00438, 2609.38172, 2609.35450, 2609.36575, 2610.01102, 2610.00718, 2609.33354, and 2609.34782.
+- Inspected but excluded: FlashDexRetarget (2610.01849, dexterous hand retargeting rather than humanoid whole-body control), DexTaG, OccluDex, HACo, FINGR, FoLD, Grasp2Twist, VisTacAlign, TACTIC, and similar hand-only dexterous manipulation papers; Wrench-ACT, Imp-ACT, Impedance Cloning, TaRL, SkillWeaver, FORM, Tactile Curiosity, and other generic contact/manipulation papers without humanoid whole-body scope; Copper-Policy, X-Reset, EmbodiRSI, SplineWAM, LIBERO-Agent, DriftOPD, Q-WAM, CoRe-VLA, EWAM, DSDyn-VLA, and broad generic VLA/WAM/action-token papers not grounded in humanoid WBC; PROMO (quadruped), ReCo (legged manipulation without humanoid-specific WBC), aerial manipulation papers, navigation-only/HRI-only papers; MotionMaestro, Timo, ReFM, BiMoGen, World2Motion, and other general human-motion generators without HOI or humanoid control; DynamicHOI and Exo2EgoHOI (HOI reconstruction/video generation rather than motion generation/control); GestAdapt and Geometry-Preserving Upper-Body Retargeting (upper-body/social gesture focus rather than whole-body humanoid WBC); and broad medical, driving, UAV, molecular, software, and language-model papers matched only by generic action/motion/control terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-09-25 — 26 new, 3 updated
 - Window: 2026-09-18 → 2026-09-25.
