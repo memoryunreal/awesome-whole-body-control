@@ -1332,6 +1332,63 @@ Code-status legend:
   one_line: Evaluates GPT-6 Astra across robot domains, including humanoid locomotion and humanoid loco-manipulation with pretrained whole-body controllers.
   why_it_matters: Provides a broad negative/positive capability map for using frontier generalist models as action generators or high-level embodied policy components.
 
+- title: Being-M0.7: A Latent World-Action Model for Humanoid Robots
+  authors: Junpeng Yue; Boyuan Li; Yuxuan Wang; Zepeng Wang; Yuhui Fu; Feiyang Xie; Yu Zhang; Jing Zhang; Xianqi Zhang; Weibo Li; Xiaofei Zheng; Yuming Fang; Jiangxing Wang; Zongqing Lu
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.11283
+  paper_url: https://arxiv.org/abs/2610.11283
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [latent-world-action-model, humanoid-loco-manipulation, mixed-modality-human-data, whole-body-motion]
+  robot_platform: humanoid robots
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Transfers visual-motion priors from mixed video-only, motion-only, and paired human data into humanoid control through pretraining, mid-training, and action post-training.
+  why_it_matters: Uses large unpaired human-centric corpora to address scarce paired video-motion-action supervision for humanoid loco-manipulation.
+
+- title: Humanoid World Action Model With Joint State--Action Generation
+  authors: Yan Yang; Jikun Rong; Minzhao Zhu; Zheyi Zhao; Qirui Hu; Zihan Lan; Weixin Mao; Yinhao Li; Zhen Fu; Hua Chen
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.12026
+  paper_url: https://arxiv.org/abs/2610.12026
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [humanoid-WAM, joint-state-action-generation, VLA, whole-body-control]
+  robot_platform: humanoid manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Models future visual observations together with realized humanoid body states and reference actions to reduce the action-execution gap in hierarchical WAM/VLA systems.
+  why_it_matters: Explicitly accounts for the difference between commanded actions and what whole-body control actually executes on a balancing humanoid.
+
+- title: VioLA: Learning Generalist Humanoid Control Policies from Human Data
+  authors: Mert Albaba; Jens Beißwenger; Anna Manasyan; Daniel Marta; Michael J. Black; Wieland Brendel; Andreas Krause; Georg Martius; Martin Riedmiller
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.12435
+  paper_url: https://arxiv.org/abs/2610.12435
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Foundation
+  task_tags: [generalist-humanoid-policy, human-data, motion-latents, body-hand-control]
+  robot_platform: humanoid robots with hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Predicts shared body and hand motion latents from human data, then executes them through pretrained humanoid body and hand controllers.
+  why_it_matters: Reframes generalist humanoid policy learning around transferable motion latents instead of sparse robot joint-command demonstrations.
+
 ---
 
 ## Quick stats

@@ -5,26 +5,26 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 97 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 160 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 131 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 75 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 85 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 105 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `02_hoi_motion.md` | 100 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 166 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 144 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 78 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 87 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 106 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 715**
+**Total unique papers after deduplication: 743**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 58
+- Human-Object Interaction Motion Generation: 61
 - Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 205
-- Whole-Body Control and Loco-Manipulation: 125
-- Humanoid Foundation Models and Generalist Policies: 89
-- Human-to-Humanoid Retargeting: 26
-- Teleoperation and Demonstration Collection: 44
-- Datasets and Benchmarks: 74
+- Whole-Body Motion Tracking and Imitation: 211
+- Whole-Body Control and Loco-Manipulation: 138
+- Humanoid Foundation Models and Generalist Policies: 92
+- Human-to-Humanoid Retargeting: 27
+- Teleoperation and Demonstration Collection: 45
+- Datasets and Benchmarks: 75
 - Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
@@ -33,12 +33,12 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 246 |
-| ❌ No Code | 225 |
-| 🌐 Project Page | 173 |
+| ⭐ Code | 247 |
+| ❌ No Code | 244 |
+| 🌐 Project Page | 180 |
 | ⏳ Code Coming Soon | 42 |
 | 📦 Dataset | 17 |
-| 🧩 Partial Code | 11 |
+| 🧩 Partial Code | 12 |
 | 🔁 Unofficial Code | 1 |
 
 ## Search Queries Used (representative)
@@ -101,6 +101,37 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-10-09 — 28 new, 0 updated
+- Window: 2026-10-02T12:00Z → 2026-10-09T12:00Z, aligned to the prior automation timestamp and current run date.
+- Sources searched: pulled `origin/main`; attempted arXiv API `submittedDate` sweeps over cs.RO, cs.CV, cs.LG, and cs.GR, but `export.arxiv.org` returned HTTP 429 / timeout responses; used arXiv October 2026 category listing pages for cs.RO, cs.CV, cs.LG, and cs.GR as the fallback source; fetched arXiv abstract pages for strong candidates; checked `papers.csv` and all `research_chunks/*.md` for arXiv-ID/title duplicates; inspected project pages and GitHub/anonymous code links surfaced by arXiv comments or abstracts.
+- Counts: 4 arXiv category listing pages fetched, covering 719 cs.RO entries, 1,183 cs.CV entries, 2,349 cs.LG entries, and 74 cs.GR entries; 3,577 unique October arXiv records parsed after cross-list deduplication; 178 keyword candidates screened; 38 strong humanoid/HOI candidates read at abstract level; 28 in-scope new papers added; 0 existing records updated. Bulk tracked-ID revision checks could not be completed through the arXiv API because of the 429 throttle, so no revision-only local edits were applied.
+- Query focus: humanoid whole-body motion tracking from video, continual skill learning, force/terrain-aware tracking, humanoid loco-manipulation under heavy loads and long horizons, human-data foundation policies, tactile/contact navigation, retargeting-free teleoperation, mobile-base humanoid retargeting, and scene-aware HOI generation.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 3 entries: From Digital Human Interactions to Physics-Based Humanoid Skills (2610.10322), From Solo to Ensemble (2610.11722), MAMHOI (2610.12416).
+  - `03_wbc_tracking.md` — 6 entries: KungfuAthleteBot (2610.03388), Continual Humanoid Motion Learning (2610.04231), BRACE (2610.07052), MimicX (2610.09055), HuMBLE (2610.10489), DAMP (2610.11505).
+  - `04_loco_manip.md` — 13 entries: Humanoid Rickshaw Pulling (2610.04238), Exploiting Hierarchical Controller Structure in Contextual Parameter Learning for Humanoid Loco-Manipulation (2610.04609), CoDance (2610.05324), Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture (2610.05678), I-BFM (2610.06129), InterMimicGen (2610.06850), iGPC (2610.08120), Humanoid Horizon (2610.08320), HULK (2610.08970), Workhorse (2610.09117), Precise SE(3) End-Effector Tracking in Whole-Body Humanoid Control (2610.09479), TAPNAV (2610.10748), Co${}^{2}$Skill (2610.09291).
+  - `05_foundation.md` — 3 entries: Being-M0.7 (2610.11283), Humanoid World Action Model With Joint State--Action Generation (2610.12026), VioLA (2610.12435).
+  - `06_retarget_teleop.md` — 2 entries: Beyond Retargeting (2610.07891), From Legs to Wheels (2610.08381).
+  - `07_data_bench_s2r.md` — 1 entry: BiGym 2.0 (2610.07594).
+- Verified official full-code repos:
+  - https://github.com/swirl-uk/BiGym2 — reachable through GitHub and API; contains implementation structure (`bigym`, `docs`, `examples`, `scripts`, `tests`, `pyproject.toml`, `uv.lock`) for BiGym 2.0.
+- Verified partial / anonymous code links:
+  - https://anonymous.4open.science/r/continual-humanoid-learning-35D3 — reachable anonymous code mirror linked from arXiv for Continual Humanoid Motion Learning; marked conservatively as partial/anonymous rather than full official GitHub.
+- Verified project pages:
+  - https://oclo-humanoid.github.io/
+  - https://generalroboticslab.com/CoDance
+  - https://sirui-xu.github.io/InterMimicGen/
+  - https://haozhuo-zhang.github.io/Humanoid-Horizon-project-page/
+  - https://resgac.github.io/ResGAC-website/
+  - https://nebulis-lab.com/MimicX/
+  - https://leimingyuan.github.io/MAMHOI-project-page/
+- Unresolved code-status items:
+  - https://hsb0508.github.io/workhorse/ — project URL surfaced from arXiv but returned 404 during inspection; Workhorse kept as arXiv-only/no-code.
+  - Project pages reachable but no implementation repository surfaced: https://oclo-humanoid.github.io/, https://generalroboticslab.com/CoDance, https://sirui-xu.github.io/InterMimicGen/, https://haozhuo-zhang.github.io/Humanoid-Horizon-project-page/, https://resgac.github.io/ResGAC-website/, https://nebulis-lab.com/MimicX/, https://leimingyuan.github.io/MAMHOI-project-page/.
+  - arXiv-only additions with no project or code surfaced: 2610.03388, 2610.04238, 2610.04609, 2610.06129, 2610.07052, 2610.07891, 2610.08120, 2610.08381, 2610.08970, 2610.09291, 2610.10322, 2610.10489, 2610.10748, 2610.11283, 2610.11505, 2610.11722, 2610.12026, and 2610.12435.
+- Inspected but excluded: HumanoidTTT (2610.00198), InterEvolve (2610.02196), Filter-Aware Fine-Tuning (2610.02341), and early-October items already outside the post-last-run window or previously covered; Beyond Reward Hacking (2610.03196, conceptual/proxy analysis rather than a concrete WBC method); TAME (2610.04529, text-driven humanoid-skeleton animation editing without control/HOI transfer); DASH (2610.05792, surgical hardware adapter/platform rather than humanoid WBC); Talk, Render, Act (2610.06153, conversational face/gesture system); Human-Object Interaction Detection (2610.06394, detection rather than generation/control); What the Elevation Map Cannot See (2610.07396, navigation-oriented and weaker than WBC/loco-manip additions); PhoneBot (2610.08737, platform note); generic VLA/WAM/action-token papers without humanoid whole-body grounding; hand-only dexterous manipulation/retargeting papers; quadruped, UAV, autonomous-driving, medical, navigation-only, and broad robotics papers matched only by generic motion/action/control terms.
+- Notion escalations: not run in this repo-only update.
 
 ### 2026-10-02 — 39 new, 0 updated
 - Window: 2026-09-25 → 2026-10-02.

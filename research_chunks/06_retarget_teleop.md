@@ -1562,6 +1562,44 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Combines XR upper-body teleoperation with pedal-based locomotion so one operator can perform tool transport and surface painting on a G1.
   why_it_matters: Provides an application-grounded feasibility datapoint for near-term humanoid teleoperation in construction and demonstration collection.
 
+- title: Beyond Retargeting: Low-Latency and Robust Humanoid Whole-Body Teleoperation with Learned Atomic Motion Primitives
+  authors: Xiayan Xu; Jiyu Yu; Xingzhou Chen; Siyi Qian; Zongyu Ma; Lilu Liu; Ling Shi; Haodong Zhang
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.07891
+  paper_url: https://arxiv.org/abs/2610.07891
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Teleoperation
+  task_tags: [retargeting-free-teleoperation, atomic-motion-primitives, low-latency, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Maps raw human motion directly to robot joint commands through learned full-body atomic motion primitives, avoiding online kinematic retargeting latency.
+  why_it_matters: Targets robust real-time teleoperation from VR, mocap, text-to-motion, and monocular video inputs with one policy interface.
+
+- title: From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids
+  authors: Jiyeon Koo; Eunseom Pyo; Jeonghee Seo; Taehwa Kim; Andrew Jaeyong Choi
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.08381
+  paper_url: https://arxiv.org/abs/2610.08381
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Retargeting
+  task_tags: [mobile-base-humanoids, embodiment-aware-retargeting, human-motion, wheeled-locomotion]
+  robot_platform: mobile-base humanoids
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Retargets human legged motion to wheeled/mobile-base humanoids by accounting for the embodiment mismatch between human locomotion and mobile-base support.
+  why_it_matters: Covers a growing class of humanoid platforms whose lower bodies are not legged but still need human-derived whole-body behavior.
+
 ---
 
 ## Notes

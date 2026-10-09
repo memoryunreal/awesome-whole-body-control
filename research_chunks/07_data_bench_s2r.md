@@ -1615,6 +1615,25 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
   one_line: Provides 10 simulated multi-humanoid collaboration tasks with synchronized demonstrations collected by multi-operator VR teleoperation.
   why_it_matters: Makes coordinated humanoid perception and control measurable beyond single-agent locomotion or tabletop manipulation benchmarks.
 
+- title: BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation
+  authors: Zexi Zhang; Zecheng Zhu; Zidong Chen; Zulkhuu Tuya; Stephen James
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.07594
+  paper_url: https://arxiv.org/abs/2610.07594
+  project_url: https://github.com/swirl-uk/BiGym2
+  code_url: https://github.com/swirl-uk/BiGym2
+  dataset_url: ""
+  category: Dataset
+  task_tags: [humanoid-household-manipulation, benchmark, agent-developed-policies, simulation]
+  robot_platform: humanoid household manipulation benchmark
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Releases an open benchmark for learned and agent-developed humanoid household manipulation policies with tasks, examples, docs, scripts, and tests.
+  why_it_matters: Provides a reproducible simulation suite for evaluating humanoid household manipulation beyond single-task demos.
+
 ---
 
 ## Notes

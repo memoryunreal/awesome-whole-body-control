@@ -1761,6 +1761,63 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Represents object motion through body-part anchored votes, then refines text-conditioned HOI sequences with surface-sensing contact cues.
   why_it_matters: Tackles a core HOI-generation failure mode -- object drift and missed contact -- with a structured human-relative object-motion representation.
 
+- title: From Digital Human Interactions to Physics-Based Humanoid Skills: Physics-Grounded Post-Training of Interaction Generators
+  authors: Kerui Chen; Jianrong Zhang; Kai Lv; Hehe Fan
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.10322
+  paper_url: https://arxiv.org/abs/2610.10322
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [physics-grounded-generation, humanoid-tracking, interaction-generator, preference-post-training]
+  robot_platform: simulated humanoid interaction skills
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Couples a digital interaction generator with a humanoid tracking policy, then post-trains the generator from rollout-derived executability and interaction-fidelity preferences.
+  why_it_matters: Makes HOI generation aware of what a physics-based humanoid tracker can actually execute, rather than scoring only visual plausibility.
+
+- title: From Solo to Ensemble: A Hierarchical Framework for Composable Multi-Agent Human-Object Interaction
+  authors: Zekai Deng; Kangyi Chen; Ye Shi; Jingya Wang
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.11722
+  paper_url: https://arxiv.org/abs/2610.11722
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [multi-agent-HOI, object-oriented-action-space, compositional-skills, physics-based-control]
+  robot_platform: physics-based human-object interaction agents
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Distills single-agent HOI teachers into object-oriented low-level skills, then composes them with a high-level policy for cooperative multi-agent object interaction.
+  why_it_matters: Extends reusable contact-rich HOI policies from one actor to cooperative transport and handoff-style interaction settings.
+
+- title: MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances
+  authors: Mingyuan Lei; Yoonchang Sung; Tat-Jen Cham
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.12416
+  paper_url: https://arxiv.org/abs/2610.12416
+  project_url: https://leimingyuan.github.io/MAMHOI-project-page/
+  code_url: ""
+  dataset_url: ""
+  category: HOI-Motion-Gen
+  task_tags: [scene-aware-HOI, affordance-conditioned-motion, human-object-scene, motion-synthesis]
+  robot_platform: scene-aware human-object interaction generation
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 🌐 Project Page
+  one_line: Factorizes scene-aware HOI generation through an affordance interface: first predict feasible interaction locations and modes, then synthesize affordance-conditioned HOI motion.
+  why_it_matters: Connects scene understanding and contact-rich HOI motion synthesis without requiring scarce paired human-object-scene supervision.
+
 ---
 
 ## Summary

@@ -2419,3 +2419,250 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Lets a trajectory source provide per-direction interaction contracts so a kernel can adapt stiffness, damping, references, and feedforward at contact rate.
   why_it_matters: Gives agentic humanoid task plans a compact interface for specifying how contact should feel, not just where the body should move.
+
+- title: Humanoid Rickshaw Pulling: Whole-Body Locomotion under Coupled Wheeled Loads
+  authors: Yangzhi Yang; Xiansheng Lin; Zhaoming Xie; Xiaobin Xiong
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.04238
+  paper_url: https://arxiv.org/abs/2610.04238
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [payload-transport, coupled-loads, rickshaw-pulling, teacher-student, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Distills privileged load and interaction-force information into a history-conditioned G1 policy for starting, turning, and stopping a loaded wheeled rickshaw.
+  why_it_matters: Demonstrates persistent upper-body contact and heavy-load locomotion on hardware, including human-passenger payloads up to 115 kg.
+
+- title: Exploiting Hierarchical Controller Structure in Contextual Parameter Learning for Humanoid Loco-Manipulation
+  authors: Sebastian Hirt; Lukas Theiner; Jan Peters; Rolf Findeisen
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.04609
+  paper_url: https://arxiv.org/abs/2610.04609
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [hierarchical-control, contextual-parameter-learning, Bayesian-optimization, performance-decomposition]
+  robot_platform: humanoid loco-manipulation controller hierarchy
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses correlated multi-output contextual Bayesian optimization to tune parameters across hierarchical humanoid loco-manipulation control layers.
+  why_it_matters: Addresses the cross-layer tuning problem that appears when task planning, whole-body motion, and low-level control are optimized independently.
+
+- title: CoDance: Learning Reactive and Compliant Human-Humanoid Interaction from Video
+  authors: Zhuoqun Chen; Shucheng Jia; Boyuan Chen
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.05324
+  paper_url: https://arxiv.org/abs/2610.05324
+  project_url: https://generalroboticslab.com/CoDance
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [human-humanoid-interaction, partnered-dance, compliance-augmentation, video-to-policy]
+  robot_platform: humanoid partnered interaction
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Retargets partnered human dance video into humanoid references and augments them with multi-link compliance so policies coordinate footsteps and two-hand contact with a moving partner.
+  why_it_matters: Adds physically compliant human-humanoid interaction from video, where locomotion and sustained hand contact must be solved together.
+
+- title: Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture
+  authors: Seungho Yeom; Zhenyu Wu; Jaeyoung Huh; Diego Williams; Yuheng Zhi; Soofiyan Atar; Michael Yip
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.05678
+  paper_url: https://arxiv.org/abs/2610.05678
+  project_url: https://oclo-humanoid.github.io/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [dataset-free, compliant-control, online-posture, end-effector-targets, humanoid]
+  robot_platform: humanoid loco-manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains OCLO without human motion data, generating pelvis and torso posture online from reachability priors while learning whole-body compliance from measured forces.
+  why_it_matters: Reduces dependence on curated human-motion corpora for end-effector-commanded humanoid loco-manipulation.
+
+- title: I-BFM: Reward-Conditioned Robust Humanoid Interaction via Unsupervised Reinforcement Learning
+  authors: Ziqi Han; Yitang Li; Junhan Sun; Fanrong Dong; Yaojie Shen; Lei Ye; Zetong Jing; Yongqi Zhang; Yiming Zhang; Xue Wang; Hao Zhao
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.06129
+  paper_url: https://arxiv.org/abs/2610.06129
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [behavior-foundation-model, humanoid-object-interaction, unsupervised-RL, forward-backward-representations]
+  robot_platform: humanoid-object interaction
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns a reward-conditioned behavior foundation model over coupled humanoid, object, and contact dynamics for closed-loop humanoid-object interaction.
+  why_it_matters: Moves promptable humanoid BFMs from motion tracking toward physical interaction where object state and contact dynamics are part of the policy state.
+
+- title: InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation
+  authors: Yucheng Zhang; Sirui Xu; Jinhong Li; Liuyu Bian; Anatulya Nandi; Derek Zhang; Xiangchen Liu; Xueting Li; Umar Iqbal; Yu-Xiong Wang; Liang-Yan Gui
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.06850
+  paper_url: https://arxiv.org/abs/2610.06850
+  project_url: https://sirui-xu.github.io/InterMimicGen/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [self-evolving-imitation, HOI-retargeting, dexterous-loco-manipulation, humanoid-motion-resource]
+  robot_platform: humanoid with dexterous hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Retargets heterogeneous human-object interaction datasets into humanoid references, trains a generalist tracker, then iteratively keeps executable task-preserving motion variants.
+  why_it_matters: Builds a data flywheel for expanding sparse HOI demonstrations into a broader executable humanoid loco-manipulation motion resource.
+
+- title: iGPC: Generative Motion Priors for Object-Aware Humanoid Interaction
+  authors: Anujith Muraleedharan; Abdul Ahad Butt; Nolan Fey; Yash Prabhu; Anamika J H; Sandor Felber; Maurice Rahme; Ivan Laptev
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.08120
+  paper_url: https://arxiv.org/abs/2610.08120
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [generative-motion-prior, object-aware-interaction, affordance-cues, perception-driven-student]
+  robot_platform: humanoid object-interaction
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adapts a generative pretrained controller into interaction experts conditioned on scene affordances, then distills object-interaction skills into a perception-driven student.
+  why_it_matters: Tests whether large human-motion priors can transfer to contact-rich humanoid environment interaction rather than only free-space tracking.
+
+- title: Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating
+  authors: Haozhuo Zhang; Qiang Zhang; Jian Tang; Mingzhe Ni; Michele Caprio; Angelo Cangelosi; Wei Pan
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.08320
+  paper_url: https://arxiv.org/abs/2610.08320
+  project_url: https://haozhuo-zhang.github.io/Humanoid-Horizon-project-page/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [long-horizon, reward-gating, dynamic-starting, parallel-training, object-transport]
+  robot_platform: LHM-Humanoid benchmark
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses parallel stage streams, dynamic starts, and reward gating to train a shared humanoid policy for multi-object sequential transport without forgetting earlier stages.
+  why_it_matters: Focuses on the task-horizon bottleneck in indoor humanoid loco-manipulation, where preserving already-placed objects matters as much as moving the next one.
+
+- title: HULK: Learning Whole-Body Forceful Loco-Manipulation for Humanoids
+  authors: An Dang; Arturo Flores Alvarez; Yu-Ming Chen; Conor Mc Gartoll; Helen Sun; Aaron Ames; Nima Fazeli; Manikantan Nambi
+  year: 2026
+  venue: ICRA 2027 / arXiv 2026.10
+  arxiv_id: 2610.08970
+  paper_url: https://arxiv.org/abs/2610.08970
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [forceful-loco-manipulation, MPC-guided-RL, CBF, large-payloads, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Distills MPC-guided arm-force and loaded-locomotion teachers into one G1 policy for whole-body manipulation of large, heavy objects.
+  why_it_matters: Extends humanoid loco-manipulation to sustained forceful contact where payload mass shifts balance and command tracking.
+
+- title: Workhorse: Learning Robust Whole-Body Humanoid Loco-Manipulation from Human Data
+  authors: Songbo Hu; Qiayuan Liao; Yufeng Chi; Kevin Zakka; Yakun Sophia Shao; Pieter Abbeel; Koushil Sreenath
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.09117
+  paper_url: https://arxiv.org/abs/2610.09117
+  project_url: https://hsb0508.github.io/workhorse/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [human-demonstrations, visual-planning, whole-body-tracking, robot-free-data, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns a visual planner and whole-body tracker from the same robot-free human poses so a G1 can sort, catch, topple, and climb objects with recovery.
+  why_it_matters: Demonstrates human-data-driven loco-manipulation where feet, hands, and torso targets are planned jointly instead of collecting teleop demos per task.
+
+- title: Precise SE(3) End-Effector Tracking in Whole-Body Humanoid Control
+  authors: Joohwan Seo; Xiaofeng Guo; Jinkun Cao; Roberto Horowitz; Rocky Duan; Guanya Shi; Koushil Sreenath
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.09479
+  paper_url: https://arxiv.org/abs/2610.09479
+  project_url: https://resgac.github.io/ResGAC-website/
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [end-effector-tracking, geometric-admittance-control, residual-RL, SE3, whole-body-control]
+  robot_platform: humanoid whole-body manipulation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Combines geometric admittance control with residual RL so humanoids track precise SE(3) end-effector poses while locomotion and balance share the action space.
+  why_it_matters: Gives whole-body controllers a more accurate task-space manipulation interface without abandoning learned locomotion coordination.
+
+- title: TAPNAV: Humanoid Navigation through Tactile Active Perception
+  authors: Huaze Liu; Zhenyu Wu; Jaehwi Jang; Junjie Sheng; Andrew Collins; Aaron Xie; Zhaoyuan Gu; Kaijie Zhu; Ding Jiang; Kevin Cai; Ye Zhao
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.10748
+  paper_url: https://arxiv.org/abs/2610.10748
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [tactile-active-perception, vision-denied-navigation, whole-body-contact, humanoid]
+  robot_platform: humanoid navigation
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Couples belief-space route planning with information-gain tactile probing and whole-body end-effector contact control for vision-denied humanoid navigation.
+  why_it_matters: Treats walls and surrounding structures as active perception resources, expanding humanoid WBC beyond visual navigation.
+
+- title: Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction
+  authors: Jeonghwan Kim; Hyeonwoo Kim; Hanbyul Joo
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.09291
+  paper_url: https://arxiv.org/abs/2610.09291
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Loco-Manipulation
+  task_tags: [skill-composition, human-environment-interaction, motion-prior, long-horizon, dexterous-manipulation]
+  robot_platform: simulated humanoid whole-body interaction
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Composes scene-interaction and dexterous object-manipulation skills under a unified policy with goal-conditioned and cross-task curricula.
+  why_it_matters: Connects physics-based human-environment interaction with longer-horizon object tasks, a useful bridge between character control and humanoid WBC.

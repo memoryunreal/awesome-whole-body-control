@@ -1,8 +1,8 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (267 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (286 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
-## Human-Object Interaction Motion Generation (23)
+## Human-Object Interaction Motion Generation (25)
 
 - ⏳ 🤖 🧍 **[HIGenNTO: Scalable Humanoid Interaction Generation via Noise-Space Trajectory Optimization](https://arxiv.org/abs/2609.22611)** `arXiv 2026.09` `Unitree G1 / humanoid interaction scenes` `HOI-Motion-Gen`
   Lalit Jayanti et al..
@@ -38,6 +38,16 @@ Papers where official code could not be verified (267 entries). Status is one of
   (see paper).
   Anchor NeRFs + anchor keypoints distill image and video diffusion priors for 4D HOI.
   Links: [Paper](https://arxiv.org/abs/2512.14095)
+
+- ❌ 🧍 🧱 **[From Digital Human Interactions to Physics-Based Humanoid Skills: Physics-Grounded Post-Training of Interaction Generators](https://arxiv.org/abs/2610.10322)** `arXiv 2026.10` `simulated humanoid interaction skills` `HOI-Motion-Gen`
+  Kerui Chen et al..
+  Couples a digital interaction generator with a humanoid tracking policy, then post-trains the generator from rollout-derived executability and interaction-fidelity preferences.
+  Links: [Paper](https://arxiv.org/abs/2610.10322)
+
+- ❌ 🧍 🧱 **[From Solo to Ensemble: A Hierarchical Framework for Composable Multi-Agent Human-Object Interaction](https://arxiv.org/abs/2610.11722)** `arXiv 2026.10` `physics-based human-object interaction agents` `HOI-Motion-Gen`
+  Zekai Deng et al..
+  Distills single-agent HOI teachers into object-oriented low-level skills, then composes them with a high-level policy for cooperative multi-agent object interaction.
+  Links: [Paper](https://arxiv.org/abs/2610.11722)
 
 - ❌ **[InterPrior - Scaling Generative Control for Physics-Based Human-Object Interactions](https://arxiv.org/abs/2602.06035)** `arXiv 2026.02` `HOI`
   Scaling generative control for physics-based HOI.
@@ -169,7 +179,7 @@ Papers where official code could not be verified (267 entries). Status is one of
   Links: [Paper](https://dl.acm.org/doi/10.1145/3450626.3459830)
 
 
-## Whole-Body Motion Tracking and Imitation (91)
+## Whole-Body Motion Tracking and Imitation (95)
 
 - ⏳ 🤖 🧍 **[ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control](https://arxiv.org/abs/2609.00677)** `arXiv 2026.09` `Unitree G1` `WBC`
   Yan Wu et al..
@@ -256,6 +266,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Evolves an ordinary humanoid kicking prior into a high-spin curved kick by adapting task objectives only when cached rollout responses show learnable progress.
   Links: [Project](https://haozhang-thu.github.io/bananakick/) · [Paper](https://arxiv.org/abs/2609.27269)
 
+- ❌ 🤖 🧍 **[BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking](https://arxiv.org/abs/2610.07052)** `arXiv 2026.10` `humanoid motion tracking` `Motion-Imitation`
+  Sudarshan Harithas et al..
+  Adapts whole-body reference motions online so humanoid trackers account for terrain changes and external forces rather than blindly following nominal clips.
+  Links: [Paper](https://arxiv.org/abs/2610.07052)
+
 - ❌ 🤖 🧍 **[CLOT: Closed-Loop Global Motion Tracking for Whole-Body Humanoid Teleoperation](https://arxiv.org/abs/2602.15060)** `arXiv 2026.02` `Unitree G1` `WBC-Tracking`
   arXiv 2026.02.
   Closed-loop high-frequency localization feedback for drift-free long-horizon humanoid teleoperation; transformer trained 1.3K GPU-hr.
@@ -265,6 +280,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Mohitvishnu S. Gadde et al..
   Wraps blind WBC trackers with RECAL, a robot-environment cross-attention layer that trades target tracking against scene and held-object collision avoidance.
   Links: [Paper](https://arxiv.org/abs/2609.16405)
+
+- ❌ 🤖 🧍 **[DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors](https://arxiv.org/abs/2610.11505)** `arXiv 2026.10` `humanoid locomotion` `Motion-Imitation`
+  Puying Shen et al..
+  Learns robust humanoid locomotion without exteroceptive perception by denoising recurrent belief states and shaping behavior with adversarial motion priors.
+  Links: [Paper](https://arxiv.org/abs/2610.11505)
 
 - ❌ 🤖 🧍 **[Deep Whole-Body Parkour](https://arxiv.org/abs/2601.07701)** `arXiv 2026.01` `humanoid` `WBC-Tracking`
   arXiv 2026.01.
@@ -301,10 +321,20 @@ Papers where official code could not be verified (267 entries). Status is one of
   Dynamics-aware world model for agile humanoid object interaction with whole-body control.
   Links: [Project](https://arxiv.org/abs/2602.11758) · [Paper](https://arxiv.org/abs/2602.11758)
 
+- ❌ 🤖 🧍 **[HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion](https://arxiv.org/abs/2610.10489)** `arXiv 2026.10` `humanoid locomotion` `Motion-Imitation`
+  Mike Zhang et al..
+  Distills human-motion-conditioned locomotion into a steerable prior, then fine-tunes it for broader command coverage and robustness.
+  Links: [Paper](https://arxiv.org/abs/2610.10489)
+
 - ❌ 🤖 🧍 **[Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control](https://arxiv.org/abs/2602.21599)** `arXiv 2026.02` `humanoid (sim/real)` `WBC-Tracking`
   arXiv 2026.02.
   Closed-loop synthesis pipeline that grows tracker repertoire across martial-arts/dance/combat/sports/gymnastics.
   Links: [Project](https://arxiv.org/abs/2602.21599) · [Paper](https://arxiv.org/abs/2602.21599)
+
+- ❌ 🤖 🧍 **[KungfuAthleteBot: learning high-dynamic humanoid motion from video with unified robust recovery](https://arxiv.org/abs/2610.03388)** `arXiv 2026.10` `Unitree G1 / humanoid athletic motion` `Motion-Imitation`
+  Zhongxiang Lei et al..
+  Converts high-dynamic martial-arts video into humanoid-executable references with physics-guided correction, robust recovery learning, and rollout-based self-improvement.
+  Links: [Paper](https://arxiv.org/abs/2610.03388) · [Dataset](KungfuAthlete dataset announced in paper)
 
 - ❌ 🤖 🧍 **[Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots](https://arxiv.org/abs/2606.25706)** `arXiv 2026.06` `Unitree G1` `WBC`
   Yumeng Liu et al..
@@ -610,7 +640,7 @@ Papers where official code could not be verified (267 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2011.01387)
 
 
-## Whole-Body Control and Loco-Manipulation (41)
+## Whole-Body Control and Loco-Manipulation (49)
 
 - ⏳ 🤖 🧍 **[DexWeave: Learning Dexterous Humanoid Loco-Manipulation from Human Demonstrations](https://arxiv.org/abs/2609.34724)** `arXiv 2026.09` `Unitree G1 + Inspire dexterous hands` `Loco-Manipulation`
   Naichuan Sun et al..
@@ -697,10 +727,25 @@ Papers where official code could not be verified (267 entries). Status is one of
   Uses global-local cross attention to correct world-frame placement errors while preserving local motion structure for humanoid loco-manipulation tracking.
   Links: [Paper](https://arxiv.org/abs/2609.05994)
 
+- ❌ 🤖 🧍 **[HULK: Learning Whole-Body Forceful Loco-Manipulation for Humanoids](https://arxiv.org/abs/2610.08970)** `ICRA 2027 / arXiv 2026.10` `Unitree G1` `Loco-Manipulation`
+  An Dang et al..
+  Distills MPC-guided arm-force and loaded-locomotion teachers into one G1 policy for whole-body manipulation of large, heavy objects.
+  Links: [Paper](https://arxiv.org/abs/2610.08970)
+
+- ❌ 🤖 🧍 **[Humanoid Rickshaw Pulling: Whole-Body Locomotion under Coupled Wheeled Loads](https://arxiv.org/abs/2610.04238)** `arXiv 2026.10` `Unitree G1` `Loco-Manipulation`
+  Yangzhi Yang et al..
+  Distills privileged load and interaction-force information into a history-conditioned G1 policy for starting, turning, and stopping a loaded wheeled rickshaw.
+  Links: [Paper](https://arxiv.org/abs/2610.04238)
+
 - ❌ 🤖 🧍 **[Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control](https://arxiv.org/abs/2608.19443)** `arXiv 2026.08` `humanoid locomotion and manipulation tasks` `Loco-Manipulation`
   Chaoyi Pan et al..
   Improves sampling-based MPC by sampling around optimized feedback policies, with validation on contact-rich humanoid loco-manipulation and dexterous tasks.
   Links: [Paper](https://arxiv.org/abs/2608.19443)
+
+- ❌ 🤖 🧍 **[I-BFM: Reward-Conditioned Robust Humanoid Interaction via Unsupervised Reinforcement Learning](https://arxiv.org/abs/2610.06129)** `arXiv 2026.10` `humanoid-object interaction` `Loco-Manipulation`
+  Ziqi Han et al..
+  Learns a reward-conditioned behavior foundation model over coupled humanoid, object, and contact dynamics for closed-loop humanoid-object interaction.
+  Links: [Paper](https://arxiv.org/abs/2610.06129)
 
 - ❌ 🤖 🧍 **[KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation](https://arxiv.org/abs/2609.18869)** `arXiv 2026.09` `Unitree G1` `Loco-Manipulation`
   Sitong Chen et al..
@@ -737,6 +782,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Combines terrain-aware 3D stepping, AMP walking, and Cartesian upper-body control with latent-aligned distillation into one hardware-deployed humanoid policy.
   Links: [Paper](https://arxiv.org/abs/2609.23483)
 
+- ❌ 🤖 🧍 **[TAPNAV: Humanoid Navigation through Tactile Active Perception](https://arxiv.org/abs/2610.10748)** `arXiv 2026.10` `humanoid navigation` `Loco-Manipulation`
+  Huaze Liu et al..
+  Couples belief-space route planning with information-gain tactile probing and whole-body end-effector contact control for vision-denied humanoid navigation.
+  Links: [Paper](https://arxiv.org/abs/2610.10748)
+
 - ❌ 🤖 🧍 **[TaskNPoint: How to Teach Your Humanoid to Hit a Backhand in Minutes](https://arxiv.org/abs/2606.26215)** `arXiv 2026.06` `Unitree G1` `Loco-Manipulation`
   Blake Werner et al..
   Teaches dynamic humanoid object-interaction skills from a coach-specified interaction window and a small set of demonstrations.
@@ -747,10 +797,20 @@ Papers where official code could not be verified (267 entries). Status is one of
   Adapts pretrained VLA policies with whole-body tactile latents trained to predict future tactile, proprioceptive, and visual representations.
   Links: [Paper](https://arxiv.org/abs/2609.35450)
 
+- ❌ 🤖 🧍 **[Workhorse: Learning Robust Whole-Body Humanoid Loco-Manipulation from Human Data](https://arxiv.org/abs/2610.09117)** `arXiv 2026.10` `Unitree G1` `Loco-Manipulation`
+  Songbo Hu et al..
+  Learns a visual planner and whole-body tracker from the same robot-free human poses so a G1 can sort, catch, topple, and climb objects with recovery.
+  Links: [Project](https://hsb0508.github.io/workhorse/) · [Paper](https://arxiv.org/abs/2610.09117)
+
 - ❌ 🧍 🧱 **[Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control](https://arxiv.org/abs/2607.29625)** `arXiv 2026.07` `humanoid` `Loco-Manipulation`
   Hyunjong Song et al..
   Analyzes how object mass changes humanoid balance boundaries and uses those dynamics to design lifting and momentum-regulation controllers.
   Links: [Paper](https://arxiv.org/abs/2607.29625)
+
+- ❌ 🧍 🧱 **[Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction](https://arxiv.org/abs/2610.09291)** `arXiv 2026.10` `simulated humanoid whole-body interaction` `Loco-Manipulation`
+  Jeonghwan Kim et al..
+  Composes scene-interaction and dexterous object-manipulation skills under a unified policy with goal-conditioned and cross-task curricula.
+  Links: [Paper](https://arxiv.org/abs/2610.09291)
 
 - ❌ 🧍 🧱 **[Critic Architecture Matters: Dual vs. Unified Critics for Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.11891)** `ICRA 2026 Workshop RL4IL` `Unitree G1` `Loco-Manipulation`
   Mehmet Turan Yardımcı.
@@ -762,6 +822,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Adds a SIM(3)-equivariant point-cloud encoder to a hierarchical diffusion policy for low-demo Unitree G1 loco-manipulation.
   Links: [Paper](https://arxiv.org/abs/2609.36575)
 
+- ❌ 🧍 🧱 **[Exploiting Hierarchical Controller Structure in Contextual Parameter Learning for Humanoid Loco-Manipulation](https://arxiv.org/abs/2610.04609)** `arXiv 2026.10` `humanoid loco-manipulation controller hierarchy` `Loco-Manipulation`
+  Sebastian Hirt et al..
+  Uses correlated multi-output contextual Bayesian optimization to tune parameters across hierarchical humanoid loco-manipulation control layers.
+  Links: [Paper](https://arxiv.org/abs/2610.04609)
+
 - ❌ 🧍 🧱 **[FRAMES: Failure Recovery And Monitoring of Embodied Skills for Humanoid Loco-Manipulation](https://arxiv.org/abs/2609.22538)** `IROS 2026 Workshop / arXiv 2026.09` `Unitree G1` `Loco-Manipulation`
   Ajay Vikram Periasami et al..
   Supervises parameterized G1 loco-manipulation skills with a planner, VLM monitor, recovery agent, semantic memory, and geometric grounding.
@@ -771,6 +836,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Pranav Debbad et al..
   Bootstraps humanoid loco-manipulation from sparse demos by expanding goal-conditioned trajectories with diffusion generation and RL tracking.
   Links: [Paper](https://arxiv.org/abs/2606.26855)
+
+- ❌ 🧍 🧱 **[iGPC: Generative Motion Priors for Object-Aware Humanoid Interaction](https://arxiv.org/abs/2610.08120)** `arXiv 2026.10` `humanoid object-interaction` `Loco-Manipulation`
+  Anujith Muraleedharan et al..
+  Adapts a generative pretrained controller into interaction experts conditioned on scene affordances, then distills object-interaction skills into a perception-driven student.
+  Links: [Paper](https://arxiv.org/abs/2610.08120)
 
 - ❌ 🧍 🧱 **[LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation](https://arxiv.org/abs/2608.07746)** `arXiv 2026.08` `simulated humanoid` `Loco-Manipulation`
   Cheng Guo et al..
@@ -816,7 +886,7 @@ Papers where official code could not be verified (267 entries). Status is one of
   Links: [Project](https://arxiv.org/abs/2412.00396) · [Code](❌) · [Paper](https://arxiv.org/abs/2412.00396)
 
 
-## Humanoid Foundation Models and Generalist Policies (26)
+## Humanoid Foundation Models and Generalist Policies (29)
 
 - ⏳ 🤖 🧍 **[One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation](https://arxiv.org/abs/2608.26058)** `arXiv 2026.08` `humanoids / robot arms / human hands` `Foundation`
   Xiaomi Embodied Intelligence Team et al..
@@ -827,6 +897,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Bowei Zhang et al..
   Pretrains a language-conditioned motion expert on heterogeneous human and humanoid motion, then integrates it with video and action experts for target-robot post-training.
   Links: [Project](https://zbzyjya.github.io/WholeBodyWAM/) · [Paper](https://arxiv.org/abs/2609.18197) · [Dataset](UniMotion-4K announced in paper)
+
+- ❌ 🤖 🧍 **[Being-M0.7: A Latent World-Action Model for Humanoid Robots](https://arxiv.org/abs/2610.11283)** `arXiv 2026.10` `humanoid robots` `Foundation`
+  Junpeng Yue et al..
+  Transfers visual-motion priors from mixed video-only, motion-only, and paired human data into humanoid control through pretraining, mid-training, and action post-training.
+  Links: [Paper](https://arxiv.org/abs/2610.11283)
 
 - ❌ 🤖 🧍 **[CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning](https://arxiv.org/abs/2607.29172)** `arXiv 2026.07` `humanoid manipulation` `Foundation`
   Yuxin Chen et al..
@@ -848,6 +923,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Routes auxiliary stereo-view tokens into a frozen VLA according to primary-view alignment and body-segment proprioception for humanoid manipulation.
   Links: [Paper](https://arxiv.org/abs/2608.17453)
 
+- ❌ 🤖 🧍 **[Humanoid World Action Model With Joint State--Action Generation](https://arxiv.org/abs/2610.12026)** `arXiv 2026.10` `humanoid manipulation` `Foundation`
+  Yan Yang et al..
+  Models future visual observations together with realized humanoid body states and reference actions to reduce the action-execution gap in hierarchical WAM/VLA systems.
+  Links: [Paper](https://arxiv.org/abs/2610.12026)
+
 - ❌ 🤖 🧍 **[MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.09215)** `arXiv 2026.06` `Unitree G1` `Foundation`
   Jia Zheng et al..
   Real-time world-action model for humanoid loco-manipulation that avoids slow video-action denoising loops.
@@ -867,6 +947,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Yehao Lu et al..
   Injects spatial and semantic visual query features back into an Action DiT so VLA action heads retain 3D geometry and semantic grounding.
   Links: [Paper](https://arxiv.org/abs/2608.25308)
+
+- ❌ 🤖 🧍 **[VioLA: Learning Generalist Humanoid Control Policies from Human Data](https://arxiv.org/abs/2610.12435)** `arXiv 2026.10` `humanoid robots with hands` `Foundation`
+  Mert Albaba et al..
+  Predicts shared body and hand motion latents from human data, then executes them through pretrained humanoid body and hand controllers.
+  Links: [Paper](https://arxiv.org/abs/2610.12435)
 
 - ❌ 🤖 🧍 **[X-WBC: A Cross-Embodiment Foundation Model for Humanoid Whole-Body Control](https://arxiv.org/abs/2609.15213)** `CoRL 2026 / arXiv 2026.09` `nine simulated embodiments / four real humanoids` `Foundation`
   Juntong Zhang et al..
@@ -937,7 +1022,7 @@ Papers where official code could not be verified (267 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2410.03311)
 
 
-## Human-to-Humanoid Retargeting (13)
+## Human-to-Humanoid Retargeting (14)
 
 - ⏳ 🤖 🧍 **[C2Dex: Contact-Consistent Reconstruction and Retargeting for Dexterous Manipulation from Monocular Video](https://arxiv.org/abs/2608.07045)** `arXiv 2026.08 (v2 Sep 2026)` `Inspire dexterous hand / humanoid-relevant dexterous hands` `Retargeting`
   Jie Ren et al..
@@ -953,6 +1038,11 @@ Papers where official code could not be verified (267 entries). Status is one of
   Tara Sadjadpour et al..
   Retargets reconstructed human hand-object interactions across robot hand morphologies, refines them with residual RL, and distills zero-shot visuomotor policies.
   Links: [Project](https://morphometricimitation.github.io/) · [Code](https://github.com/tsadja/morphometric) · [Paper](https://arxiv.org/abs/2609.28660)
+
+- ❌ 🤖 🧍 **[From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids](https://arxiv.org/abs/2610.08381)** `arXiv 2026.10` `mobile-base humanoids` `Retargeting`
+  Jiyeon Koo et al..
+  Retargets human legged motion to wheeled/mobile-base humanoids by accounting for the embodiment mismatch between human locomotion and mobile-base support.
+  Links: [Paper](https://arxiv.org/abs/2610.08381)
 
 - ❌ 🤖 🧍 **[From Sign Language Generation to Humanoid Execution: Vision-Language Guided Retargeting with Collision Mitigation](https://arxiv.org/abs/2607.17769)** `arXiv 2026.07` `humanoid robot` `Retargeting`
   Nabeela Khan et al..
@@ -1003,12 +1093,17 @@ Papers where official code could not be verified (267 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2510.04353)
 
 
-## Teleoperation and Demonstration Collection (15)
+## Teleoperation and Demonstration Collection (16)
 
 - ⏳ 🤖 🧍 **[MATE: Multi-Agent Virtual Teleoperation Platform for Humanoid Collaboration Data Collection](https://arxiv.org/abs/2609.26520)** `arXiv 2026.09` `multi-humanoid collaboration` `Teleoperation`
   Yichuan Yu et al..
   Lets distributed operators teleoperate multiple whole-body humanoids in one physics environment and collects coordinated interaction demonstrations.
   Links: [Project](https://yerik-yu.github.io/MATE/) · [Paper](https://arxiv.org/abs/2609.26520)
+
+- ❌ 🤖 🧍 **[Beyond Retargeting: Low-Latency and Robust Humanoid Whole-Body Teleoperation with Learned Atomic Motion Primitives](https://arxiv.org/abs/2610.07891)** `arXiv 2026.10` `Unitree G1` `Teleoperation`
+  Xiayan Xu et al..
+  Maps raw human motion directly to robot joint commands through learned full-body atomic motion primitives, avoiding online kinematic retargeting latency.
+  Links: [Paper](https://arxiv.org/abs/2610.07891)
 
 - ❌ 🤖 🧍 **[DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy](https://arxiv.org/abs/2606.23431)** `arXiv 2026.06` `bimanual dexterous hands / humanoid-relevant manipulation` `Teleoperation`
   Haichao Liu et al..

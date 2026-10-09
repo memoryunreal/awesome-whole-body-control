@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (246 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (247 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -960,12 +960,17 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://www.science.org/doi/10.1126/scirobotics.adh3834) · [Code](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system) · [Paper](https://arxiv.org/abs/2203.06972)
 
 
-## Datasets and Benchmarks (38)
+## Datasets and Benchmarks (39)
 
 - ⭐ 🤖 🧍 **[HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution](https://arxiv.org/abs/2610.02089)** `arXiv 2026.10` `Unitree G1` `Dataset`
   Kyochul Jang et al..
   Benchmarks humanoid tool use across 18 tasks spanning tool selection, manipulation, locomotion, simulation, and real G1 execution.
   Links: [Project](https://snu-pi.github.io/HumanoidToolBench/) · [Code](https://github.com/SNU-PI/HumanoidToolBench) · [Paper](https://arxiv.org/abs/2610.02089) · [Dataset](https://huggingface.co/datasets/snupilab/humanoidtoolbench-teleop)
+
+- ⭐ 🧍 🧱 **[BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](https://arxiv.org/abs/2610.07594)** `arXiv 2026.10` `humanoid household manipulation benchmark` `Dataset`
+  Zexi Zhang et al..
+  Releases an open benchmark for learned and agent-developed humanoid household manipulation policies with tasks, examples, docs, scripts, and tests.
+  Links: [Project](https://github.com/swirl-uk/BiGym2) · [Code](https://github.com/swirl-uk/BiGym2) · [Paper](https://arxiv.org/abs/2610.07594)
 
 - ⭐ 🧍 🧱 **[Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement](https://arxiv.org/abs/2609.38216)** `arXiv 2026.09` `Unitree G1` `Dataset`
   Pavel Bushuyeu et al..

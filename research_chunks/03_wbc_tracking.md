@@ -2965,6 +2965,120 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Generates robot-space full-body co-speech motion from aligned audio and timed transcripts with a speech-grounded diffusion transformer.
   why_it_matters: Avoids a human-motion-then-retarget pipeline for social humanoid gestures by learning directly in the robot action space.
 
+- title: KungfuAthleteBot: learning high-dynamic humanoid motion from video with unified robust recovery
+  authors: Zhongxiang Lei; Lulu Cao; Xuyang Wang; Tianyi Qian; Jinyan Liu; Xuesong Li
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.03388
+  paper_url: https://arxiv.org/abs/2610.03388
+  project_url: ""
+  code_url: ""
+  dataset_url: KungfuAthlete dataset announced in paper
+  category: Motion-Imitation
+  task_tags: [video-to-humanoid, athletic-motion, robust-recovery, policy-in-the-loop, Unitree-G1]
+  robot_platform: Unitree G1 / humanoid athletic motion
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Converts high-dynamic martial-arts video into humanoid-executable references with physics-guided correction, robust recovery learning, and rollout-based self-improvement.
+  why_it_matters: Targets the failure modes that make athletic video imitation brittle: inconsistent trajectories, missing force information, and poor recovery after failed landings.
+
+- title: Continual Humanoid Motion Learning
+  authors: Zhewen He; Hao Huang; Geeta Chandra Raju Bethala; Chong Yu; Tao Chen; Anthony Tzes; Yi Fang
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.04231
+  paper_url: https://arxiv.org/abs/2610.04231
+  project_url: ""
+  code_url: https://anonymous.4open.science/r/continual-humanoid-learning-35D3
+  dataset_url: ""
+  category: Motion-Imitation
+  task_tags: [continual-learning, progressive-neural-networks, LoRA, motion-similarity, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🧩 Partial Code
+  one_line: Uses similarity-guided LoRA progressive networks to add humanoid motion skills sequentially while preventing catastrophic forgetting.
+  why_it_matters: Makes a motion tracker extensible after deployment instead of forcing full offline retraining whenever a new skill category is added.
+
+- title: BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking
+  authors: Sudarshan Harithas; Chen Yu; Juan Borbon; Shubhankar Mondal; Winston Zha; Srinath Sridhar; Dingqi Zhang; Jiuguang Wang
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.07052
+  paper_url: https://arxiv.org/abs/2610.07052
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Motion-Imitation
+  task_tags: [reference-adaptation, force-aware-tracking, terrain-aware-tracking, whole-body-motion]
+  robot_platform: humanoid motion tracking
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adapts whole-body reference motions online so humanoid trackers account for terrain changes and external forces rather than blindly following nominal clips.
+  why_it_matters: Improves the interface between motion-generation pipelines and real-world humanoid execution under contact and terrain disturbances.
+
+- title: MimicX: Policy-in-the-Loop Supervision Refinement for Video-Driven Humanoid Motion Tracking
+  authors: Shuaijun Liu; Chenglong Zhang; Xuhao Liu; Feiyang You; Yifan Liao; Shuyang Hao; Chaozhe Zhang; Chengyu Wu; Zhen Sun; Ningxin Su
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.09055
+  paper_url: https://arxiv.org/abs/2610.09055
+  project_url: https://nebulis-lab.com/MimicX/
+  code_url: ""
+  dataset_url: ""
+  category: Motion-Imitation
+  task_tags: [video-driven-tracking, policy-in-the-loop, supervision-refinement, rollout-verification]
+  robot_platform: humanoid video-motion tracking
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses rollout failures to refine video-derived humanoid tracking objectives and reset curricula, selecting improvements through execution-priority guards.
+  why_it_matters: Treats failed physics execution as supervision for repairing video-to-humanoid motion pipelines instead of discarding hard clips.
+
+- title: HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion
+  authors: Mike Zhang; Dongho Kang; Kevin Bergamin; Nicola Burger; Robin Deits; Jonathan Foster; Bilal Hammoud; Katie Hughes; Francesco Iacobelli; Twan Koolen; M. Eva Mungai; Zach Nobles; Shane Rozen-Levy; Jean Pierre Sleiman; Fangzhou Yu; Yunbo Zhang; Alfred Rizzi; Jessica Hodgins; Scott Kuindersma; Yeuhi Abe; Sylvain Bertrand; Farbod Farshidian
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.10489
+  paper_url: https://arxiv.org/abs/2610.10489
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Motion-Imitation
+  task_tags: [human-motion-priors, locomotion, biomimetic-control, teacher-student-distillation]
+  robot_platform: humanoid locomotion
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Distills human-motion-conditioned locomotion into a steerable prior, then fine-tunes it for broader command coverage and robustness.
+  why_it_matters: Balances natural humanlike gait with command tracking, addressing the common tradeoff between biomimetic motion and deployable locomotion robustness.
+
+- title: DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors
+  authors: Puying Shen; Wenhao Cui; Huaxing Huang; Bangyu Qin; Shengtao Li; Ziyang Dong; Guoteng Zhang
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.11505
+  paper_url: https://arxiv.org/abs/2610.11505
+  project_url: ""
+  code_url: ""
+  dataset_url: ""
+  category: Motion-Imitation
+  task_tags: [humanoid-locomotion, denoised-belief-learning, adversarial-motion-prior, sim2real]
+  robot_platform: humanoid locomotion
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns robust humanoid locomotion without exteroceptive perception by denoising recurrent belief states and shaping behavior with adversarial motion priors.
+  why_it_matters: Adds another proprioceptive-only route for naturalistic terrain traversal when depth or map inputs are unavailable or unreliable.
+
 ---
 
 ## Notes on Verification
