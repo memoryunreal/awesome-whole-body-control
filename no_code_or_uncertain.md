@@ -1,8 +1,8 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (286 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (287 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
-## Human-Object Interaction Motion Generation (25)
+## Human-Object Interaction Motion Generation (26)
 
 - ⏳ 🤖 🧍 **[HIGenNTO: Scalable Humanoid Interaction Generation via Noise-Space Trajectory Optimization](https://arxiv.org/abs/2609.22611)** `arXiv 2026.09` `Unitree G1 / humanoid interaction scenes` `HOI-Motion-Gen`
   Lalit Jayanti et al..
@@ -23,6 +23,11 @@ Papers where official code could not be verified (286 entries). Status is one of
   Zeyu Han et al..
   Uses a flow-matching planner and action generator to turn free-form language plus sparse object goals into closed-loop contact-rich whole-body object interactions.
   Links: [Project](https://neu-vi.github.io/LYRIC/) · [Paper](https://arxiv.org/abs/2609.19688)
+
+- ⏳ **[MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances](https://arxiv.org/abs/2610.12416)** `arXiv 2026.10` `scene-aware human-object interaction generation` `HOI-Motion-Gen`
+  Mingyuan Lei et al..
+  Factorizes scene-aware HOI generation through an affordance interface: first predict feasible interaction locations and modes, then synthesize affordance-conditioned HOI motion.
+  Links: [Project](https://leimingyuan.github.io/MAMHOI-project-page/) · [Code](https://github.com/LeiMingyuan/MAMHOI) · [Paper](https://arxiv.org/abs/2610.12416)
 
 - ⏳ **[PAMI: Part Anchored Motion for Text to Human-Object Interaction Generation](https://arxiv.org/abs/2609.38466)** `arXiv 2026.09` `human-object interaction generation` `HOI-Motion-Gen`
   Chuqiao Li et al..

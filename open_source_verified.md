@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (247 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (248 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -168,7 +168,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (59)
+## Whole-Body Motion Tracking and Imitation (60)
 
 - ⭐ 🤖 🧍 **[Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions](https://arxiv.org/abs/2608.26505)** `arXiv 2026.08` `Poppy Humanoid` `WBC`
   Xulin Chen et al..
@@ -194,6 +194,11 @@ This is the canonical list of papers with **verified official open-source code**
   Zuxing Lu et al..
   Open IsaacLab-based WBC framework unifying joint, root, and end-effector reference modalities for humanoid motion mimicking.
   Links: [Project](https://github.com/Renforce-Dynamics/MultiModalWBC) · [Code](https://github.com/Renforce-Dynamics/MultiModalWBC) · [Paper](https://arxiv.org/abs/2606.04829)
+
+- ⭐ 🤖 🧍 **[MimicX: Policy-in-the-Loop Supervision Refinement for Video-Driven Humanoid Motion Tracking](https://arxiv.org/abs/2610.09055)** `arXiv 2026.10` `humanoid video-motion tracking` `Motion-Imitation`
+  Shuaijun Liu et al..
+  Uses rollout failures to refine video-derived humanoid tracking objectives and reset curricula, selecting improvements through execution-priority guards.
+  Links: [Project](https://nebulis-lab.com/MimicX/) · [Code](https://github.com/NEBULIS-Lab/MimicX) · [Paper](https://arxiv.org/abs/2610.09055)
 
 - ⭐ 🤖 🧍 **[MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation](https://arxiv.org/abs/2602.08594)** `arXiv 2026.02` `humanoid` `WBC-Tracking`
   BAAI Humanoid Team.

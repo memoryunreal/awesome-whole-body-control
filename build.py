@@ -467,7 +467,7 @@ def build_readme():
         out.append("")
         out.append(f"_Latest digest: **{digest['date']}** — **{digest['new']} new**, **{digest['updated']} updated**._")
         out.append("")
-        out.append("### Added by Section")
+        out.append("### Added by Section" if digest["new"] else "### Updated by Section")
         out.append("")
         for chunk, count, entries in digest["chunks"]:
             label = chunk.replace("research_chunks/", "").replace(".md", "")
@@ -475,7 +475,7 @@ def build_readme():
             entry_label = "entry" if count == 1 else "entries"
             out.append(f"- `{label}`: {count} {entry_label} — {', '.join(names)}.")
         out.append("")
-        out.append("### New Entries")
+        out.append("### New Entries" if digest["new"] else "### Updated Entries")
         out.append("")
         for cid, cname in cat_order:
             recs = [r for r in updates if r["_cat"] == cid]

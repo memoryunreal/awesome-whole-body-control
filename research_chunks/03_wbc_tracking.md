@@ -3029,7 +3029,7 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   arxiv_id: 2610.09055
   paper_url: https://arxiv.org/abs/2610.09055
   project_url: https://nebulis-lab.com/MimicX/
-  code_url: ""
+  code_url: https://github.com/NEBULIS-Lab/MimicX
   dataset_url: ""
   category: Motion-Imitation
   task_tags: [video-driven-tracking, policy-in-the-loop, supervision-refinement, rollout-verification]
@@ -3037,7 +3037,7 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   uses_real_robot: true
   uses_humanoid: true
   uses_simulation: true
-  code_status: 🌐 Project Page
+  code_status: ⭐ Code
   one_line: Uses rollout failures to refine video-derived humanoid tracking objectives and reset curricula, selecting improvements through execution-priority guards.
   why_it_matters: Treats failed physics execution as supervision for repairing video-to-humanoid motion pipelines instead of discarding hard clips.
 

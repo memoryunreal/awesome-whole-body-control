@@ -33,10 +33,10 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 247 |
+| ⭐ Code | 248 |
 | ❌ No Code | 244 |
-| 🌐 Project Page | 180 |
-| ⏳ Code Coming Soon | 42 |
+| 🌐 Project Page | 178 |
+| ⏳ Code Coming Soon | 43 |
 | 📦 Dataset | 17 |
 | 🧩 Partial Code | 12 |
 | 🔁 Unofficial Code | 1 |
@@ -101,6 +101,19 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-10-16 — 0 new, 2 updated
+- Window: 2026-10-09T12:02Z → 2026-10-16T12:05Z.
+- Sources searched: pulled `origin/main`; attempted `submittedDate` arXiv API sweeps for cs.RO, cs.CV, cs.LG, and cs.GR (the API returned HTTP 429); attempted the October 2026 category listings for all four categories (each returned HTTP 404); checked every locally tracked 2610.x candidate against `papers.csv` and `research_chunks/*.md`; fetched the reachable project pages and GitHub API metadata/content for the recently added papers.
+- Counts: 0 new papers added; 2 existing records received verified code-status updates; no arXiv revision metadata could be established because the current date's category/API source was unavailable.
+- Updated entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: MAMHOI (2610.12416).
+    - Status: now linked to the official `LeiMingyuan/MAMHOI` repository, which currently contains only a README stating that code is coming soon; it remains marked ⏳ Code Coming Soon.
+  - `03_wbc_tracking.md` — 1 entry: MimicX (2610.09055).
+    - Status: now marked ⭐ Code with https://github.com/NEBULIS-Lab/MimicX; GitHub confirms a non-archived Apache-2.0 repository pushed on 2026-10-14, with package source, dependency documentation, scripts, tests, CI, and reproduction/policy documentation.
+- Verified code repos: https://github.com/NEBULIS-Lab/MimicX.
+- Unresolved code-status URLs: https://github.com/LeiMingyuan/MAMHOI (official repository reachable, but only a README and no implementation); https://anonymous.4open.science/r/continual-humanoid-learning-35D3 (reachable anonymous mirror, retained as 🧩 Partial Code); https://hsb0508.github.io/workhorse/ (still HTTP 404). Project pages for CoDance, Dataset-Free Compliant Humanoid Loco-Manipulation, InterMimicGen, Humanoid Horizon, and Precise SE(3) End-Effector Tracking were reachable but did not expose an official implementation repository during inspection.
+- Inspected but excluded: all arXiv records in the unavailable date window (no verifiable category/API record); generic GitHub/template links present on some project pages; and the README-only MAMHOI repository as a full-code release.
 
 ### 2026-10-09 — 28 new, 0 updated
 - Window: 2026-10-02T12:00Z → 2026-10-09T12:00Z, aligned to the prior automation timestamp and current run date.

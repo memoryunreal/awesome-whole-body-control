@@ -1806,7 +1806,7 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   arxiv_id: 2610.12416
   paper_url: https://arxiv.org/abs/2610.12416
   project_url: https://leimingyuan.github.io/MAMHOI-project-page/
-  code_url: ""
+  code_url: https://github.com/LeiMingyuan/MAMHOI
   dataset_url: ""
   category: HOI-Motion-Gen
   task_tags: [scene-aware-HOI, affordance-conditioned-motion, human-object-scene, motion-synthesis]
@@ -1814,7 +1814,7 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   uses_real_robot: false
   uses_humanoid: false
   uses_simulation: false
-  code_status: 🌐 Project Page
+  code_status: ⏳ Code Coming Soon
   one_line: Factorizes scene-aware HOI generation through an affordance interface: first predict feasible interaction locations and modes, then synthesize affordance-conditioned HOI motion.
   why_it_matters: Connects scene understanding and contact-rich HOI motion synthesis without requiring scarce paired human-object-scene supervision.
 
