@@ -1,0 +1,55 @@
+{
+  "seeds": [
+    {
+      "id": "arxiv:2510.21571",
+      "name": "VITRA",
+      "title": "Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos",
+      "arxiv_id": "2510.21571",
+      "paper_url": "https://arxiv.org/abs/2510.21571",
+      "project_url": "https://microsoft.github.io/VITRA/",
+      "aliases": ["VITRA", "Real-Life Human Activity Videos"]
+    },
+    {
+      "id": "arxiv:2602.16710",
+      "name": "EgoScale",
+      "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+      "arxiv_id": "2602.16710",
+      "paper_url": "https://arxiv.org/abs/2602.16710",
+      "project_url": "https://research.nvidia.com/labs/gear/egoscale/",
+      "aliases": ["EgoScale", "Scaling Dexterous Manipulation with Diverse Egocentric Human Data"]
+    },
+    {
+      "id": "arxiv:2410.24221",
+      "name": "EgoMimic",
+      "title": "EgoMimic: Scaling Imitation Learning via Egocentric Video",
+      "arxiv_id": "2410.24221",
+      "paper_url": "https://arxiv.org/abs/2410.24221",
+      "project_url": "https://egomimic.github.io/",
+      "aliases": ["EgoMimic", "Scaling Imitation Learning via Egocentric Video"]
+    }
+  ],
+  "scope": {
+    "description": "沿用 HOI、人形机器人全身控制、loco-manipulation、重定向、遥操作和 VLA 范围；重点关注第一视角人类视频如何用于机器人学习、动作监督、跨本体对齐和真机操作。仅引用种子论文不等于目标论文。",
+    "positive_terms": ["egocentric", "human video", "human demonstration", "robot learning", "imitation learning", "vision-language-action", "VLA", "robotization", "robot-aligned", "humanoid", "whole-body", "loco-manipulation", "human-object interaction", "retargeting", "teleoperation", "dexterous manipulation", "cross-embodiment"],
+    "priority_terms": ["egocentric", "human video", "human demonstration", "cross-embodiment"],
+    "negative_terms": ["medical imaging", "clinical trial", "autonomous driving", "pedestrian detection", "sentiment analysis"],
+    "target_threshold": 45,
+    "review_threshold": 15
+  },
+  "discovery": {
+    "semantic_scholar": true,
+    "limit_per_seed": 50,
+    "max_papers_per_run": 20,
+    "imap_host": "imap.gmail.com",
+    "imap_mailbox": "INBOX",
+    "lookback_days": 14
+  },
+  "schedule": {"timezone": "Asia/Shanghai", "hour": 8, "minute": 0},
+  "llm": {"model": "gpt-4.1", "base_url": "https://api.openai.com/v1"},
+  "sync_library": true,
+  "publication": {
+    "cadence": "weekly",
+    "repository_url": "https://github.com/memoryunreal/awesome-whole-body-control",
+    "site_url": "https://memoryunreal.github.io/awesome-whole-body-control/"
+  }
+}

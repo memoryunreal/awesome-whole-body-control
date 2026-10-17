@@ -7,6 +7,7 @@
 Inspired by [YanjieZe/awesome-humanoid-robot-learning](https://github.com/YanjieZe/awesome-humanoid-robot-learning) with extended tagging, code-status verification, and richer per-category summaries.
 
 ## Table of Contents
+- [Paper Watch — Daily Citation Intelligence](#paper-watch--daily-citation-intelligence)
 - [Legend](#legend)
 - [Research Landscape Summary](#research-landscape-summary)
 - [Last Week Updates](#last-week-updates)
@@ -21,6 +22,21 @@ Inspired by [YanjieZe/awesome-humanoid-robot-learning](https://github.com/Yanjie
 - [Evaluation Metrics and Contact Modeling](#evaluation-metrics-and-contact-modeling)
 - [Sim-to-Real and Deployment Systems](#sim-to-real-and-deployment-systems)
 - [Related Character Animation and Physics-Based Motion Generation](#related-character-animation-and-physics-based-motion-generation)
+
+## Paper Watch — Daily Citation Intelligence
+
+**[Open the public research workspace](https://memoryunreal.github.io/awesome-whole-body-control/)** — automatically rebuilt when the weekly paper list is pushed to `main`.
+
+This list now includes a local research workspace for **Gmail / Google Scholar alerts → relevance screening → evidence-backed deep reports → verified citation networks**. Initial tracked papers: **VITRA, EgoScale, EgoMimic**. The original curated list remains the source of the paper library.
+
+```bash
+python3 -m paper_watch init
+python3 -m paper_watch serve
+```
+
+Open **http://127.0.0.1:8765**. Configure Gmail and the report model using `.env.example`; run `python3 -m paper_watch run --imap` for the daily pipeline. No credentials are needed to browse the existing library.
+
+See [setup, scheduling, and data contracts](docs/paper-watch.md). Scholar sends alerts on its own schedule; Paper Watch processes received mail at the configured daily time. Reports require retrieved full text and validated evidence. Missing credentials or full text remain visible as pending work.
 
 ## Legend
 - ⭐ **Code**: official open-source implementation verified

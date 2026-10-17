@@ -4,3 +4,10 @@ __pycache__/
 .vscode/
 .idea/
 .claude/
+.env
+.env.*
+!.env.example
+.paper-watch/
+.venv/
+*.eml
+_site/

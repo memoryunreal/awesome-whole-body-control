@@ -1,0 +1,2 @@
+# Optional PDF fallback for papers without usable HTML. Core/UI use stdlib.
+pypdf>=5,<7

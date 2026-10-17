@@ -1,0 +1,73 @@
+name: Paper Watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    paths: ['paper_watch/**', 'web/**', 'tests/**', 'config/**', '.github/workflows/paper-watch.yml']
+  pull_request:
+    paths: ['paper_watch/**', 'web/**', 'tests/**', 'config/**', '.github/workflows/paper-watch.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: paper-watch-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m unittest discover -s tests -v
+      - run: node --check web/app.js
+      - run: python -m paper_watch init
+
+  daily:
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && vars.PAPER_WATCH_ENABLED == 'true'
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-watch.txt
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            .paper-watch/state.json
+            .paper-watch/reports
+          key: paper-watch-state-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: paper-watch-state-${{ github.ref_name }}-
+      - run: python -m paper_watch run --imap
+        env:
+          IMAP_HOST: imap.gmail.com
+          IMAP_USER: ${{ secrets.IMAP_USER }}
+          IMAP_PASSWORD: ${{ secrets.IMAP_PASSWORD }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1' }}
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            .paper-watch/state.json
+            .paper-watch/reports
+          key: paper-watch-state-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: paper-watch-site
+          path: .paper-watch/site
+          include-hidden-files: true
+          retention-days: 30
