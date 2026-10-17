@@ -337,7 +337,7 @@ function graphPage() {
   let activeEdges = edges.filter(e => !state.graph.seed || e.source === state.graph.seed || e.target === state.graph.seed);
   if (state.graph.status) activeEdges = activeEdges.filter(e => [byId(e.source), byId(e.target)].some(p => p && !p.is_seed && p.status === state.graph.status));
   const activeIds = new Set([...seedIds, ...activeEdges.flatMap(e => [e.source, e.target])]);
-  if (!state.graph.seed) reports().filter(p => p.report.curated).forEach(p => activeIds.add(p.id));
+  if (!state.graph.seed) reports().filter(p => p.report.curated && (!state.graph.status || p.status === state.graph.status)).forEach(p => activeIds.add(p.id));
   const visibleNodes = [...activeIds].map(byId).filter(Boolean);
   const candidatesForGraph = visibleNodes.filter(p => !seedIds.has(p.id));
   const canvas = svgNode("svg", { class: "graph-svg", role: "group", "aria-label": "论文引用网络。方向为引用论文指向被引用论文。使用按钮缩放，拖动空白区域平移。", viewBox: "0 0 1000 610" });
