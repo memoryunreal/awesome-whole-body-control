@@ -257,7 +257,9 @@ def public_state(state, config):
         row["screening"] = {k: copy.deepcopy(paper.get("screening", {})[k])
                             for k in ("decision", "score", "reason", "evidence", "method") if k in paper.get("screening", {})}
         row["report"] = {k: copy.deepcopy(paper.get("report", {})[k])
-                         for k in ("status", "markdown", "evidence_level", "reason", "generated_at", "stale") if k in paper.get("report", {})}
+                         for k in ("status", "markdown", "evidence_level", "reason", "generated_at", "stale",
+                                   "curated", "organization", "summary", "selection_reason", "priority",
+                                   "source_version", "source_urls", "sha256") if k in paper.get("report", {})}
         result["papers"].append(row)
     for run in state["runs"][-30:]:
         public_run = {k: copy.deepcopy(run[k]) for k in ("id", "started_at", "finished_at", "status", "discovered", "added", "screened", "reports_ready", "discovery_attempted") if k in run}

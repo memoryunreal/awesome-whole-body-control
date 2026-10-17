@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "reports": [
+    {
+      "arxiv_id": "2410.24221",
+      "title": "EgoMimic: Scaling Imitation Learning via Egocentric Video",
+      "report_file": "egomimic.md",
+      "organization": "Georgia Tech · Stanford",
+      "priority": 1,
+      "summary": "从采集设备、坐标对齐与共享策略出发，解释人类第一视角示范怎样帮助双臂机器人，并拆开架构改进与人类数据各自的收益。",
+      "selection_reason": "作为第一视角人类数据到机器人动作学习的起点，实验能区分人类数据与模型架构的贡献。",
+      "project_url": "https://egomimic.github.io/",
+      "id": "arxiv:2410.24221",
+      "paper_url": "https://arxiv.org/abs/2410.24221",
+      "sha256": "c19b413c4f8e817c0a8f4d086f730f248a2ba97ce09033584f91cc7df7013d14",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-17T14:08:38+00:00",
+        "source_version": "arXiv:2410.24221v1 · 2024-10-31",
+        "sources": [
+          "https://arxiv.org/html/2410.24221v1",
+          "https://egomimic.github.io/",
+          "https://github.com/SimarKareer/EgoMimic/tree/6d63e9a3cd1dcc1d24860a11d7d9c5b2d5cba645"
+        ]
+      }
+    },
+    {
+      "arxiv_id": "2510.21571",
+      "title": "Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos",
+      "report_file": "vitra.md",
+      "organization": "Microsoft Research Asia · 清华大学",
+      "priority": 2,
+      "summary": "拆解生活视频的几何恢复、动作切片与语言标注，说明 VITRA 如何做动作预训练，以及人手预测与真实机器人实验的区别。",
+      "selection_reason": "对应低成本扩充人类数据的核心难题，提供可检查的数据流水线与机器人迁移实验。",
+      "project_url": "https://microsoft.github.io/VITRA/",
+      "citations": [
+        {
+          "target": "arxiv:2410.24221",
+          "evidence_url": "https://arxiv.org/html/2510.21571v1#bib.bib43",
+          "evidence": "[43] EgoMimic: Scaling imitation learning via egocentric video. ICRA, 2025."
+        }
+      ],
+      "id": "arxiv:2510.21571",
+      "paper_url": "https://arxiv.org/abs/2510.21571",
+      "sha256": "ebd28795e5e0027f237151a2849388f1c3d3379f925f3ce2e2c0de8e9b4b3b8c",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-17T14:08:38+00:00",
+        "source_version": "arXiv:2510.21571v1 · 2025-10-24",
+        "sources": [
+          "https://arxiv.org/html/2510.21571v1",
+          "https://microsoft.github.io/VITRA/",
+          "https://github.com/microsoft/VITRA/blob/b35517202b39d32a753fdd42014b2cc3c41fab58/readme.md"
+        ]
+      }
+    },
+    {
+      "arxiv_id": "2602.16710",
+      "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+      "report_file": "egoscale.md",
+      "organization": "NVIDIA GEAR · UC Berkeley · University of Maryland",
+      "priority": 3,
+      "summary": "解释 20,854 小时人类数据、对齐中间训练与灵巧手表示，核对数据规模趋势、单示范适配和 G1 迁移的实际边界。",
+      "selection_reason": "直接研究人类动作数据的规模收益，并把预训练、人机对齐和任务后训练分开评估。",
+      "project_url": "https://research.nvidia.com/labs/gear/egoscale/",
+      "citations": [
+        {
+          "target": "arxiv:2410.24221",
+          "evidence_url": "https://arxiv.org/html/2602.16710v1#bib.bib3",
+          "evidence": "[12] EgoMimic: scaling imitation learning via egocentric video. 2410.24221 (2024)."
+        }
+      ],
+      "id": "arxiv:2602.16710",
+      "paper_url": "https://arxiv.org/abs/2602.16710",
+      "sha256": "f8cf18b179a18b51b13f8f4432ac61b67d49425659ab8276ee301f5885d58f59",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-17T14:08:38+00:00",
+        "source_version": "arXiv:2602.16710v1 · 2026-02-18",
+        "sources": [
+          "https://arxiv.org/html/2602.16710v1",
+          "https://research.nvidia.com/labs/gear/egoscale/"
+        ]
+      }
+    },
+    {
+      "arxiv_id": "2606.05160",
+      "title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors",
+      "report_file": "grail.md",
+      "organization": "NVIDIA · UCLA",
+      "priority": 4,
+      "summary": "从已知 3D 场景、视频先验和接触重建讲到 SONIC 适配，区分生成质量、仿真跟踪和 G1 真机成功率。",
+      "selection_reason": "把数据生成连接到人形全身操作和物理执行，与真实人类视频路线形成互补。",
+      "project_url": "https://research.nvidia.com/labs/dair/grail/",
+      "id": "arxiv:2606.05160",
+      "paper_url": "https://arxiv.org/abs/2606.05160",
+      "sha256": "2509c55ac50c2b088819bfb6dd7c471c17b37dfdfe26d9cf388e55c0b16fc7bc",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-17T14:08:38+00:00",
+        "source_version": "arXiv:2606.05160v1 · 2026-06-03",
+        "sources": [
+          "https://arxiv.org/html/2606.05160v1",
+          "https://research.nvidia.com/labs/dair/grail/",
+          "https://github.com/NVlabs/GRAIL",
+          "https://nvlabs.github.io/GRAIL/"
+        ]
+      }
+    }
+  ]
+}

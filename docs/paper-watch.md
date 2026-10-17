@@ -80,7 +80,13 @@ python3 -m paper_watch decide arxiv:2602.16710 target --reason '与当前跨本�
 
 缺少 API key、只有摘要、全文不可访问、证据校验失败时显示 `blocked` / `failed`，不生成假报告。重跑会重试这些 target；已有有效报告不重复调用模型。PDF/HTML 提取范围、截断情况和未报告字段显示在报告中。
 
-箭头方向是 **引用方 → 被引用方**。只有可核验的 Semantic Scholar citing-paper 数据或明确的 Scholar citation alert 创建 `cites` 边；关键词命中和普通提醒不创建引用边。所有状态的候选可保留已核验关系，图谱中的边不代表推荐。Semantic Scholar 是补充来源，索引有延迟、结果受时间窗口和上限约束；采集失败和截断不会被描述为“没有新论文”。
+箭头方向是 **引用方 → 被引用方**。只有可核验的 Semantic Scholar citing-paper 数据、明确的 Scholar citation alert 或逐条核对的论文参考文献创建 `cites` 边；关键词命中和普通提醒不创建引用边。所有状态的候选可保留已核验关系，图谱中的边不代表推荐。Semantic Scholar 是补充来源，索引有延迟、结果受时间窗口和上限约束；采集失败和截断不会被描述为“没有新论文”。
+
+### 精选论文讲解
+
+`reports/curated/` 保存 EgoMimic、VITRA、EgoScale、GRAIL 的 AI 辅助精读，重点比较方法、指标定义、基线、消融、复现条件和本组研究价值。各报告明确区分原文结果与分析意见，附论文版本和官方来源；未运行复现实验。
+
+`index.json` 记录机构、入选理由、来源核查日期、全文 SHA-256 和已核对的引用。修改正文后须重新检查受影响的事实，并更新清单中的哈希。`python3 -m paper_watch.publish` 在离线构建时载入这些报告，哈希不符或尚未核查时停止发布，不需要邮箱或模型 API。每周清单刷新会保留这些报告；公开站点的“深读报告”支持目录、实验表格和 Markdown 导出。
 
 只有通过全文报告校验的 target 自动写入 `research_chunks/09_watch.md`，再运行 `build.py` 更新 README、CSV 和分类清单。不修改人工维护的原有八个 chunk；不自动声称代码开源，也不自动 commit 或 push。
 

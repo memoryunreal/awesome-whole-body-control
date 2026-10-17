@@ -7,6 +7,7 @@ on:
     paths:
       - 'papers.csv'
       - 'research_chunks/**'
+      - 'reports/curated/**'
       - 'search_log.md'
       - 'data/paper-watch.json'
       - 'web/**'

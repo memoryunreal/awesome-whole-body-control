@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 from .pipeline import build_site
+from .curated import apply_curated_reports
 from .store import ROOT, atomic_json, bootstrap, load_config, merge_paper, now, public_state
 
 
@@ -78,6 +79,8 @@ def publish(*, root=ROOT, snapshot=None, output=None, write_snapshot=False):
         raise ValueError("Publication must not overwrite the private local state")
     config = load_config(root / "config/paper-watch.json")
     state = prepare_snapshot(snapshot, root / "papers.csv", config)
+    apply_curated_reports(state, root)
+    state = public_state(state, config)
     build_site(SnapshotStore(state), config, output)
     (output / ".nojekyll").touch()
     if write_snapshot:

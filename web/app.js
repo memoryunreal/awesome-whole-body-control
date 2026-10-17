@@ -111,7 +111,7 @@ function papers() { return Array.isArray(state.data.papers) ? state.data.papers 
 function regularPapers() { return papers().filter(p => !p.is_seed); }
 function candidates() { return regularPapers().filter(p => p.status && p.status !== "library"); }
 function isReportReady(paper) { return paper.report?.status === "ready" && !paper.report.stale && Boolean(str(paper.report.markdown).trim()); }
-function reports() { return papers().filter(isReportReady); }
+function reports() { return papers().filter(isReportReady).sort((a, b) => (a.report.priority ?? 100) - (b.report.priority ?? 100)); }
 function reportPill(paper) { return paper.report?.stale ? pill("blocked", "报告需重新生成") : paper.report?.status ? pill(paper.report.status, paper.report.status === "ready" ? "深读报告" : labels[paper.report.status]) : null; }
 function seeds() {
   const found = papers().filter(p => p.is_seed);
@@ -337,6 +337,7 @@ function graphPage() {
   let activeEdges = edges.filter(e => !state.graph.seed || e.source === state.graph.seed || e.target === state.graph.seed);
   if (state.graph.status) activeEdges = activeEdges.filter(e => [byId(e.source), byId(e.target)].some(p => p && !p.is_seed && p.status === state.graph.status));
   const activeIds = new Set([...seedIds, ...activeEdges.flatMap(e => [e.source, e.target])]);
+  if (!state.graph.seed) reports().filter(p => p.report.curated).forEach(p => activeIds.add(p.id));
   const visibleNodes = [...activeIds].map(byId).filter(Boolean);
   const candidatesForGraph = visibleNodes.filter(p => !seedIds.has(p.id));
   const canvas = svgNode("svg", { class: "graph-svg", role: "group", "aria-label": "论文引用网络。方向为引用论文指向被引用论文。使用按钮缩放，拖动空白区域平移。", viewBox: "0 0 1000 610" });
@@ -420,7 +421,7 @@ function graphPage() {
 
 function reportsPage() {
   const ready = reports(), waiting = papers().filter(p => p.report && (p.report.stale || ["blocked", "failed"].includes(p.report.status)));
-  const cards = ready.map(p => node("article", { class: "panel report-card" }, node("div", { class: "report-mark" }, icon("document", 16), "DEEP RESEARCH REPORT"), routeLink(p.title, `report/${encodeURIComponent(p.id)}`, { class: "paper-title" }), node("p", { class: "paper-summary" }, p.summary || p.abstract || "基于论文原文的结构化研究分析。"), node("div", { class: "tags" }, pill("ready", "原文深读"), node("span", { class: "pill" }, p.report.evidence_level || "证据等级未标注")), node("div", { class: "report-card-footer" }, dateTime(p.report.generated_at), smallLink("开始阅读", `report/${encodeURIComponent(p.id)}`))));
+  const cards = ready.map(p => node("article", { class: "panel report-card" }, node("div", { class: "report-mark" }, icon("document", 16), p.report.curated ? "精选精读 · 方法与实验拆解" : "DEEP RESEARCH REPORT"), routeLink(p.title, `report/${encodeURIComponent(p.id)}`, { class: "paper-title" }), p.report.organization ? node("p", { class: "small muted" }, p.report.organization) : null, node("p", { class: "paper-summary" }, p.report.summary || p.summary || p.abstract || "基于论文原文的结构化研究分析。"), node("div", { class: "tags" }, pill("ready", "原文深读"), node("span", { class: "pill" }, p.report.evidence_level || "证据等级未标注")), node("div", { class: "report-card-footer" }, dateTime(p.report.generated_at), smallLink("开始阅读", `report/${encodeURIComponent(p.id)}`))));
   return [pageHead("reports", runButton()), node("div", { class: "result-bar" }, node("span", {}, `${count(ready.length)} 篇已完成报告`), node("span", {}, "仅展示已完成且包含正文的报告")), cards.length ? node("div", { class: "report-grid" }, cards) : node("section", { class: "panel" }, empty("让深读建立在原文之上", publicLibrary() ? "当前快照尚无已完成的深读报告。后续报告会随站点更新发布，读者无需配置模型密钥。" : "确认目标论文后，系统会获取原文并生成有依据的分析。缺少原文或模型密钥时，任务会保留为等待状态。", "document", false, actionLink(publicLibrary() ? "浏览论文库" : "查看工作流配置", publicLibrary() ? "papers" : "subscriptions"))),
     waiting.length ? node("section", { class: "panel panel-pad", style: "margin-top:22px" }, sectionHead("等待条件或需要重试", node("span", { class: "small muted" }, `${waiting.length} 篇`)), waiting.map(p => node("article", { class: "paper-row" }, node("div", { class: "paper-row-top" }, routeLink(p.title, `paper/${encodeURIComponent(p.id)}`, { class: "paper-title" }), reportPill(p)), node("p", { class: "paper-summary" }, p.report.stale ? "论文信息或分析配置已有更新，这篇报告需要重新生成。" : p.report.reason || "等待原文或分析模型。")))) : null];
 }
@@ -442,18 +443,36 @@ function markdown(markdownText) {
   const body = node("article", { class: "report-markdown" }), headings = [];
   const lines = str(markdownText).replace(/\r/g, "").split("\n"); let paragraph = [], list = null, fenced = false, code = [];
   function flush() { if (paragraph.length) { body.append(node("p", {}, inlineMarkdown(paragraph.join("\n")))); paragraph = []; } list = null; }
-  lines.forEach(line => {
-    if (/^\s*```/.test(line)) { flush(); if (fenced) { body.append(node("pre", {}, node("code", {}, code.join("\n")))); code = []; } fenced = !fenced; return; }
-    if (fenced) { code.push(line); return; }
+  const cells = line => line.trim().replace(/^\|/, "").replace(/\|$/, "").split(/(?<!\\)\|/).map(cell => cell.trim().replace(/\\\|/g, "|"));
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    if (/^\s*```/.test(line)) { flush(); if (fenced) { body.append(node("pre", {}, node("code", {}, code.join("\n")))); code = []; } fenced = !fenced; continue; }
+    if (fenced) { code.push(line); continue; }
+    if (line.includes("|") && index + 1 < lines.length) {
+      const separators = cells(lines[index + 1]);
+      const headers = cells(line);
+      if (headers.length === separators.length && separators.every(cell => /^:?-{3,}:?$/.test(cell))) {
+        flush();
+        const table = node("table", { class: "report-table" }, node("thead", {}, node("tr", {}, headers.map(cell => node("th", { scope: "col" }, inlineMarkdown(cell))))));
+        const rows = node("tbody");
+        index += 1;
+        while (index + 1 < lines.length && lines[index + 1].trim() && lines[index + 1].includes("|")) {
+          const values = cells(lines[++index]);
+          rows.append(node("tr", {}, headers.map((_, column) => node("td", {}, inlineMarkdown(values[column] || "")))));
+        }
+        table.append(rows); body.append(node("div", { class: "report-table-scroll", tabindex: 0, "aria-label": "实验与证据表格" }, table));
+        continue;
+      }
+    }
     const heading = line.match(/^(#{1,4})\s+(.+)$/);
-    if (heading) { flush(); const id = `section-${headings.length}`; headings.push({ id, title: heading[2], level: heading[1].length }); body.append(node(`h${heading[1].length}`, { id }, inlineMarkdown(heading[2]))); return; }
-    if (/^\s*([-*_])\1\1+\s*$/.test(line)) { flush(); body.append(node("hr")); return; }
-    if (/^>\s?/.test(line)) { flush(); body.append(node("blockquote", {}, inlineMarkdown(line.replace(/^>\s?/, "")))); return; }
+    if (heading) { flush(); const id = `section-${headings.length}`; headings.push({ id, title: heading[2], level: heading[1].length }); body.append(node(`h${heading[1].length}`, { id }, inlineMarkdown(heading[2]))); continue; }
+    if (/^\s*([-*_])\1\1+\s*$/.test(line)) { flush(); body.append(node("hr")); continue; }
+    if (/^>\s?/.test(line)) { flush(); body.append(node("blockquote", {}, inlineMarkdown(line.replace(/^>\s?/, "")))); continue; }
     const item = line.match(/^\s*(?:([-*+])|(\d+)\.)\s+(.+)$/);
-    if (item) { if (paragraph.length) flush(); const type = item[2] ? "OL" : "UL"; if (!list || list.tagName !== type) { list = node(type.toLowerCase()); body.append(list); } list.append(node("li", {}, inlineMarkdown(item[3]))); return; }
-    if (!line.trim()) { flush(); return; }
+    if (item) { if (paragraph.length) flush(); const type = item[2] ? "OL" : "UL"; if (!list || list.tagName !== type) { list = node(type.toLowerCase()); body.append(list); } list.append(node("li", {}, inlineMarkdown(item[3]))); continue; }
+    if (!line.trim()) { flush(); continue; }
     if (list) list = null; paragraph.push(line);
-  });
+  }
   flush(); if (code.length) body.append(node("pre", {}, code.join("\n")));
   return { body, headings };
 }
@@ -465,7 +484,12 @@ function reportPage(id) {
   const paper = byId(id);
   if (!paper || !isReportReady(paper)) return [pageHead("reports"), node("section", { class: "panel" }, empty(paper?.report?.stale ? "这篇报告需要重新生成" : "这篇报告尚未准备好", paper?.report?.stale ? "论文信息或分析配置已有更新。重新生成完成前，旧报告不会计入当前深读报告。" : paper?.report?.reason || "报告可能仍在等待原文、模型配置或处理完成。", "document", false, actionLink("返回报告库", "reports")))];
   const rendered = markdown(paper.report.markdown);
-  const side = node("aside", { class: "stack report-toc" }, node("section", { class: "panel panel-pad" }, sectionHead("报告信息", null, "document"), pill("ready", "原文深读已完成"), node("div", { class: "detail-label" }, "生成时间"), node("p", { class: "small muted" }, dateTime(paper.report.generated_at)), node("div", { class: "detail-label" }, "证据等级"), node("p", { class: "small muted" }, paper.report.evidence_level || "报告未提供"), node("div", { class: "detail-links" }, actionLink("论文详情", `paper/${encodeURIComponent(id)}`), link(["论文原文", icon("external", 12)], paper.paper_url, { class: "button small-button" }))), rendered.headings.length ? node("section", { class: "panel panel-pad" }, sectionHead("阅读目录"), rendered.headings.map(h => node("a", { href: `#${h.id}`, onclick: e => { e.preventDefault(); document.getElementById(h.id)?.scrollIntoView({ behavior: "smooth", block: "start" }); } }, h.title))) : null);
+  const reportMetadata = paper.report.curated ? [
+    node("div", { class: "detail-label" }, "研究团队"), node("p", { class: "small muted" }, paper.report.organization),
+    node("div", { class: "detail-label" }, "核读版本"), node("p", { class: "small muted" }, paper.report.source_version),
+    node("div", { class: "detail-label" }, "入选理由"), node("p", { class: "small muted" }, paper.report.selection_reason),
+  ] : [];
+  const side = node("aside", { class: "stack report-toc" }, node("section", { class: "panel panel-pad" }, sectionHead("报告信息", null, "document"), pill("ready", "原文深读已完成"), node("div", { class: "detail-label" }, paper.report.curated ? "核查时间" : "生成时间"), node("p", { class: "small muted" }, dateTime(paper.report.generated_at)), node("div", { class: "detail-label" }, "证据等级"), node("p", { class: "small muted" }, paper.report.evidence_level || "报告未提供"), reportMetadata, node("div", { class: "detail-links" }, actionLink("论文详情", `paper/${encodeURIComponent(id)}`), link(["论文原文", icon("external", 12)], paper.paper_url, { class: "button small-button" }))), rendered.headings.length ? node("section", { class: "panel panel-pad" }, sectionHead("阅读目录"), rendered.headings.map(h => node("a", { href: `#${h.id}`, onclick: e => { e.preventDefault(); document.getElementById(h.id)?.scrollIntoView({ behavior: "smooth", block: "start" }); } }, h.title))) : null);
   return [pageHead("reports", [smallLink("所有报告", "reports"), button([icon("download", 14), "导出 Markdown"], () => downloadReport(paper))], "深读报告", paper.title), node("div", { class: "report-reader" }, node("section", { class: "panel report-article" }, rendered.body), side)];
 }
 
