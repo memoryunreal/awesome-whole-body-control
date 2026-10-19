@@ -7,14 +7,16 @@ const state = {
   mode: "loading", loadError: "", busy: false, poll: null, toastTimer: null,
   filters: { papers: { query: "", status: "", category: "", page: 1 }, intake: { query: "", status: "", page: 1 } },
   graph: { seed: "", status: "", selection: "", view: { x: 0, y: 0, w: 1000, h: 610 } },
+  focus: null, focusError: "", focusFilters: { deep: true, group: "", query: "" },
 };
 const labels = { library: "已有文献", pending: "待筛选", target: "目标论文", review: "待复核", excluded: "已排除", ready: "已生成", blocked: "等待条件", failed: "生成失败", running: "运行中", completed: "已完成", seed: "种子论文" };
 const navItems = [
-  ["overview", "研究概览", "grid"], ["intake", "论文收件箱", "inbox"], ["papers", "论文库", "book"],
+  ["overview", "研究概览", "grid"], ["focus", "移动操作精选", "branch"], ["intake", "论文收件箱", "inbox"], ["papers", "论文库", "book"],
   ["graph", "引用网络", "network"], ["reports", "深读报告", "document"], ["subscriptions", "订阅与设置", "sliders"],
 ];
 const pageMeta = {
   overview: ["RESEARCH OVERVIEW", "研究概览", "从新的研究线索，到值得深入的下一篇论文。"],
+  focus: ["HUMANOID LOCO-MANIPULATION", "人形全身移动操作精选", "从全库收敛到约 5% 的相关工作，再精读其中约 20%。"],
   intake: ["RESEARCH INTAKE", "论文收件箱", "汇集引用提醒与手动添加的论文，保留每一次筛选的依据。"],
   papers: ["PAPER LIBRARY", "论文库", "在已有文献与新收录的研究之间，找到你需要的知识。"],
   graph: ["CITATION NETWORK", "引用网络", "围绕种子论文追踪研究的延伸，每条引用都保留来源证据。"],
@@ -187,6 +189,8 @@ async function loadData(initial = false) {
       state.busy = false;
     }
   }
+  try { state.focus = await fetchJSON("./focus.json"); state.focusError = ""; }
+  catch { state.focus = null; state.focusError = "精选清单暂时无法读取，请稍后重新加载。"; }
   state.loaded = true;
   render();
   if (state.busy) schedulePoll(); else clearTimeout(state.poll);
@@ -228,7 +232,7 @@ function pageHead(name, actions = null, customTitle = null, description = null) 
   return node("header", { class: "page-head" }, node("div", {}, node("div", { class: "eyebrow" }, meta[0]), node("h1", {}, customTitle || meta[1]), node("p", { class: "page-description" }, description || meta[2])), actions ? node("div", { class: "head-actions" }, actions) : null);
 }
 function metric(label, number, detail, symbol, detailGreen = false) { return node("div", { class: "metric" }, node("div", { class: "metric-top" }, node("span", { class: "metric-label" }, label), node("div", { class: "metric-icon" }, icon(symbol, 15))), node("div", { class: "metric-number" }, count(number)), node("div", { class: "metric-bottom" }, detailGreen ? icon("check", 11) : null, node("span", { class: detailGreen ? "green" : "" }, detail))); }
-function paperTags(paper) { return node("div", { class: "tags" }, pill(paperStatus(paper)), reportPill(paper), (paper.seed_ids || []).map(id => { const seed = seeds().find(s => s.id === id); return seed ? pill("seed", seedName(seed)) : null; })); }
+function paperTags(paper) { return node("div", { class: "tags" }, focusEntries().some(e => e.paper.id === paper.id) ? routeLink("移动操作精选", "focus", { class: "pill focus-tag" }) : null, pill(paperStatus(paper)), reportPill(paper), (paper.seed_ids || []).map(id => { const seed = seeds().find(s => s.id === id); return seed ? pill("seed", seedName(seed)) : null; })); }
 function paperRow(paper) {
   return node("article", { class: "paper-row" }, node("div", { class: "paper-row-top" }, routeLink(paper.title || "未命名论文", `paper/${encodeURIComponent(paper.id)}`, { class: "paper-title" }), paper.year ? node("span", { class: "pill" }, paper.year) : null),
     node("div", { class: "paper-meta" }, shorten(paper.authors, 92) || "作者待补充", paper.category ? ` · ${paper.category}` : ""),
@@ -250,7 +254,41 @@ function overviewPage() {
     state.busy ? notice("正在获取与处理论文，页面会自动更新。") : !ready.length ? notice(publicLibrary() ? "当前快照尚无已完成的深读报告；后续完成的报告会随站点更新发布。浏览论文与引用网络无需配置密钥。" : "深读需要可获取的论文原文与模型密钥。条件不足时会保留等待状态。") : null);
   const library = [...all].slice(0, 3);
   const libraryPanel = node("section", { class: "panel panel-pad" }, sectionHead("已有论文库", smallLink(`浏览 ${count(all.length)} 篇文献`, "papers"), "book"), library.length ? library.map(paperRow) : empty("论文库尚为空", "导入已有文献后，可在这里统一检索和阅读。", "book", true));
-  return [pageHead("overview", [runButton(), publicLibrary() ? actionLink("浏览论文库", "papers", true, "book") : actionLink("添加论文", "intake", true, "plus")]), metrics, node("div", { class: "overview-grid" }, node("div", { class: "stack" }, workflow, recent, libraryPanel), node("div", { class: "stack" }, seedPanel, statusPanel, latestRunErrors()))];
+  return [pageHead("overview", [runButton(), publicLibrary() ? actionLink("浏览论文库", "papers", true, "book") : actionLink("添加论文", "intake", true, "plus")]), focusOverview(), metrics, node("div", { class: "overview-grid" }, node("div", { class: "stack" }, workflow, recent, libraryPanel), node("div", { class: "stack" }, seedPanel, statusPanel, latestRunErrors()))];
+}
+
+function focusEntries() {
+  return (state.focus?.entries || []).map(entry => {
+    const paper = byId(entry.paper_id) || papers().find(p => p.arxiv_id === entry.arxiv_id || str(p.paper_url).endsWith(`/abs/${entry.arxiv_id}`));
+    return paper ? { ...entry, paper } : null;
+  }).filter(Boolean).sort((a, b) => a.rank - b.rank);
+}
+function focusOverview() {
+  if (!state.focus) return null;
+  const entries = focusEntries(), deep = entries.filter(e => e.deep_read);
+  return node("section", { class: "panel focus-overview" }, node("div", {}, node("div", { class: "eyebrow" }, "YOUR RESEARCH SHORTLIST"), node("h2", {}, "少读一些，读得更相关。"), node("p", {}, `${entries.length} 篇人形全身移动操作精选 · ${deep.filter(e => isReportReady(e.paper)).length}/${deep.length} 篇精读已就绪`)), actionLink("进入移动操作精选", "focus", true, "arrow"));
+}
+function focusPage() {
+  if (!state.focus) return [pageHead("focus"), node("section", { class: "panel panel-pad" }, notice(state.focusError || "精选清单尚未发布。", "warning"))];
+  const catalog = state.focus, entries = focusEntries(), deep = entries.filter(e => e.deep_read), ready = deep.filter(e => isReportReady(e.paper));
+  const share = papers().length ? (100 * entries.length / papers().length).toFixed(2) : "0";
+  const readingShare = entries.length ? (100 * deep.length / entries.length).toFixed(1) : "0";
+  const filters = state.focusFilters, groupName = id => catalog.groups.find(group => group.id === id)?.name || id;
+  const change = patch => { Object.assign(filters, patch); render(); };
+  const metrics = node("div", { class: "metrics focus-metrics" }, metric("完整论文库", papers().length, "按去重后的公开论文计数", "book"), metric("相关精选", entries.length, `占当前全库 ${share}% · 目标约 5%`, "branch"), metric("精读已更新", ready.length, `计划 ${deep.length} 篇 · 占精选 ${readingShare}%`, "document", ready.length === deep.length));
+  const intro = node("section", { class: "panel panel-pad focus-intro" }, node("h2", {}, "先理解控制接口，再看视觉自主与数据。"), node("p", { class: "small muted" }, catalog.description), node("div", { class: "focus-path" }, ["HOMIE · 控制与示教", "FALCON / ULC · 外力与协调", "VIRAL / WholeBodyVLA · 视觉闭环", "GRAIL / OpenHLM · 数据与系统"].map(text => node("span", {}, text))), node("p", { class: "small muted" }, `核查更新：${catalog.reviewed_on}。先读提要与证据，再按课题需要阅读原文；精读为 AI 辅助原文分析，未执行复现实验。`));
+  const search = node("input", { type: "search", class: "focus-search", placeholder: "在精选中搜索，按回车确认", "aria-label": "搜索移动操作精选", value: filters.query, oninput: event => { filters.query = event.target.value; }, onkeydown: event => { if (event.key === "Enter") { event.preventDefault(); render(); } }, onsearch: event => change({ query: event.target.value }) });
+  const select = node("select", { class: "select", "aria-label": "按精选主题筛选", onchange: event => change({ group: event.target.value }) }, node("option", { value: "" }, "全部主题"), catalog.groups.map(group => node("option", { value: group.id }, group.name)));
+  select.value = filters.group;
+  const tools = node("div", { class: "toolbar focus-toolbar" }, node("div", { class: "focus-tabs", role: "group", "aria-label": "选择阅读范围" }, button(`精读路线 ${deep.length}`, () => change({ deep: true }), { class: `button${filters.deep ? " primary" : ""}`, "aria-pressed": String(filters.deep) }), button(`精选清单 ${entries.length}`, () => change({ deep: false }), { class: `button${!filters.deep ? " primary" : ""}`, "aria-pressed": String(!filters.deep) })), select, node("label", { class: "search-field" }, icon("search", 15), search), filters.query || filters.group ? button("清除筛选", () => change({ query: "", group: "" }), { class: "button small-button" }) : null);
+  const visible = entries.filter(e => (!filters.deep || e.deep_read) && (!filters.group || e.group === filters.group) && `${e.short_name} ${e.verified_title} ${e.reason} ${e.paper.report?.organization || ""}`.toLowerCase().includes(filters.query.trim().toLowerCase()));
+  const cards = visible.map(entry => {
+    const paper = entry.paper, reportReady = entry.deep_read && isReportReady(paper);
+    return node("article", { class: `panel panel-pad focus-card${entry.deep_read ? " focus-deep" : ""}` }, node("div", { class: "focus-card-top" }, node("span", { class: "focus-rank" }, String(entry.rank).padStart(2, "0")), node("span", { class: "pill" }, groupName(entry.group)), node("span", { class: "pill" }, entry.tier === "支撑" ? "支撑工作" : "任务主线")), node("h2", {}, entry.short_name), node("p", { class: "small muted focus-title" }, entry.verified_title), node("p", { class: "paper-summary" }, entry.reason), entry.deep_read ? node("p", { class: "small muted" }, entry.reading_question || paper.report?.summary || "方法、实验与部署假设的结构化精读。") : null, node("div", { class: "focus-evidence" }, entry.deep_read ? reportReady ? "全文精读已更新" : "精读待完成" : "已核查摘要与身份 · 尚未精读", entry.evidence_note ? ` · ${entry.evidence_note}` : ""), node("div", { class: "detail-links" }, reportReady ? actionLink("阅读精读", `report/${encodeURIComponent(paper.id)}`, true, "document") : null, actionLink("论文详情", `paper/${encodeURIComponent(paper.id)}`), link(["原文", icon("external", 12)], entry.source_url, { class: "button small-button" })));
+  });
+  const criteria = node("details", { class: "panel panel-pad focus-criteria" }, node("summary", {}, "筛选口径与每周维护"), node("ul", {}, catalog.selection_rules.map(rule => node("li", {}, rule))), node("p", { class: "small muted" }, catalog.maintenance), node("h3", { class: "detail-label" }, "本轮未纳入的相关条目"), catalog.not_selected.map(item => node("p", { class: "small muted" }, node("strong", {}, `${item.name}：`), item.reason, item.source_url ? link(" 查看依据", item.source_url) : null)));
+  const missing = catalog.entries.length - entries.length;
+  return [pageHead("focus", actionLink("查看完整论文库", "papers", false, "book")), metrics, intro, tools, node("div", { class: "result-bar" }, node("span", {}, `${filters.deep ? "精读" : "精选"} · 显示 ${visible.length} 篇`), node("span", {}, "顺序体现阅读路径，非论文质量评分")), missing ? notice(`当前快照缺少 ${missing} 篇清单论文，等待文献同步。`, "warning") : null, cards.length ? node("div", { class: "report-grid focus-grid" }, cards) : node("section", { class: "panel panel-pad" }, empty("没有匹配的精选论文", "尝试清除主题或搜索条件。", "search", true)), criteria];
 }
 
 function latestRunErrors() {
@@ -422,7 +460,7 @@ function graphPage() {
 function reportsPage() {
   const ready = reports(), waiting = papers().filter(p => p.report && (p.report.stale || ["blocked", "failed"].includes(p.report.status)));
   const cards = ready.map(p => node("article", { class: "panel report-card" }, node("div", { class: "report-mark" }, icon("document", 16), p.report.curated ? "精选精读 · 方法与实验拆解" : "DEEP RESEARCH REPORT"), routeLink(p.title, `report/${encodeURIComponent(p.id)}`, { class: "paper-title" }), p.report.organization ? node("p", { class: "small muted" }, p.report.organization) : null, node("p", { class: "paper-summary" }, p.report.summary || p.summary || p.abstract || "基于论文原文的结构化研究分析。"), node("div", { class: "tags" }, pill("ready", "原文深读"), node("span", { class: "pill" }, p.report.evidence_level || "证据等级未标注")), node("div", { class: "report-card-footer" }, dateTime(p.report.generated_at), smallLink("开始阅读", `report/${encodeURIComponent(p.id)}`))));
-  return [pageHead("reports", runButton()), node("div", { class: "result-bar" }, node("span", {}, `${count(ready.length)} 篇已完成报告`), node("span", {}, "仅展示已完成且包含正文的报告")), cards.length ? node("div", { class: "report-grid" }, cards) : node("section", { class: "panel" }, empty("让深读建立在原文之上", publicLibrary() ? "当前快照尚无已完成的深读报告。后续报告会随站点更新发布，读者无需配置模型密钥。" : "确认目标论文后，系统会获取原文并生成有依据的分析。缺少原文或模型密钥时，任务会保留为等待状态。", "document", false, actionLink(publicLibrary() ? "浏览论文库" : "查看工作流配置", publicLibrary() ? "papers" : "subscriptions"))),
+  return [pageHead("reports", [actionLink("移动操作精读路线", "focus", false, "branch"), runButton()]), node("div", { class: "result-bar" }, node("span", {}, `${count(ready.length)} 篇已完成报告`), node("span", {}, "仅展示已完成且包含正文的报告")), cards.length ? node("div", { class: "report-grid" }, cards) : node("section", { class: "panel" }, empty("让深读建立在原文之上", publicLibrary() ? "当前快照尚无已完成的深读报告。后续报告会随站点更新发布，读者无需配置模型密钥。" : "确认目标论文后，系统会获取原文并生成有依据的分析。缺少原文或模型密钥时，任务会保留为等待状态。", "document", false, actionLink(publicLibrary() ? "浏览论文库" : "查看工作流配置", publicLibrary() ? "papers" : "subscriptions"))),
     waiting.length ? node("section", { class: "panel panel-pad", style: "margin-top:22px" }, sectionHead("等待条件或需要重试", node("span", { class: "small muted" }, `${waiting.length} 篇`)), waiting.map(p => node("article", { class: "paper-row" }, node("div", { class: "paper-row-top" }, routeLink(p.title, `paper/${encodeURIComponent(p.id)}`, { class: "paper-title" }), reportPill(p)), node("p", { class: "paper-summary" }, p.report.stale ? "论文信息或分析配置已有更新，这篇报告需要重新生成。" : p.report.reason || "等待原文或分析模型。")))) : null];
 }
 
@@ -555,7 +593,7 @@ function render() {
   if (!state.loaded) content = [pageHead("overview"), node("section", { class: "panel" }, empty("正在连接研究数据", "读取论文库、引用关系与最近运行状态。", "refresh"))];
   else if (state.mode === "error") content = [pageHead("overview"), node("section", { class: "panel" }, empty("研究数据暂时不可用", "请启动本地服务，或先构建带有 data/state.json 的静态站点。", "inbox", false, button("重新加载", () => loadData())))];
   else {
-    const views = { overview: overviewPage, intake: intakePage, papers: libraryPage, graph: graphPage, reports: reportsPage, subscriptions: settingsPage };
+    const views = { overview: overviewPage, focus: focusPage, intake: intakePage, papers: libraryPage, graph: graphPage, reports: reportsPage, subscriptions: settingsPage };
     content = current.name === "paper" ? paperDetailPage(current.id) : current.name === "report" ? reportPage(current.id) : views[current.name]();
   }
   app.replaceChildren(shell(content, current.name));

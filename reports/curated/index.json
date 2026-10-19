@@ -6,7 +6,7 @@
       "title": "EgoMimic: Scaling Imitation Learning via Egocentric Video",
       "report_file": "egomimic.md",
       "organization": "Georgia Tech · Stanford",
-      "priority": 1,
+      "priority": 101,
       "summary": "从采集设备、坐标对齐与共享策略出发，解释人类第一视角示范怎样帮助双臂机器人，并拆开架构改进与人类数据各自的收益。",
       "selection_reason": "作为第一视角人类数据到机器人动作学习的起点，实验能区分人类数据与模型架构的贡献。",
       "project_url": "https://egomimic.github.io/",
@@ -29,7 +29,7 @@
       "title": "Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos",
       "report_file": "vitra.md",
       "organization": "Microsoft Research Asia · 清华大学",
-      "priority": 2,
+      "priority": 102,
       "summary": "拆解生活视频的几何恢复、动作切片与语言标注，说明 VITRA 如何做动作预训练，以及人手预测与真实机器人实验的区别。",
       "selection_reason": "对应低成本扩充人类数据的核心难题，提供可检查的数据流水线与机器人迁移实验。",
       "project_url": "https://microsoft.github.io/VITRA/",
@@ -59,7 +59,7 @@
       "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
       "report_file": "egoscale.md",
       "organization": "NVIDIA GEAR · UC Berkeley · University of Maryland",
-      "priority": 3,
+      "priority": 103,
       "summary": "解释 20,854 小时人类数据、对齐中间训练与灵巧手表示，核对数据规模趋势、单示范适配和 G1 迁移的实际边界。",
       "selection_reason": "直接研究人类动作数据的规模收益，并把预训练、人机对齐和任务后训练分开评估。",
       "project_url": "https://research.nvidia.com/labs/gear/egoscale/",
@@ -88,16 +88,16 @@
       "title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors",
       "report_file": "grail.md",
       "organization": "NVIDIA · UCLA",
-      "priority": 4,
-      "summary": "从已知 3D 场景、视频先验和接触重建讲到 SONIC 适配，区分生成质量、仿真跟踪和 G1 真机成功率。",
+      "priority": 7,
+      "summary": "在全身移动操作主线中重新定位生成数据、接触重建与 G1 执行，新增与控制器、视觉策略和异构数据的对照阅读建议。",
       "selection_reason": "把数据生成连接到人形全身操作和物理执行，与真实人类视频路线形成互补。",
       "project_url": "https://research.nvidia.com/labs/dair/grail/",
       "id": "arxiv:2606.05160",
       "paper_url": "https://arxiv.org/abs/2606.05160",
-      "sha256": "2509c55ac50c2b088819bfb6dd7c471c17b37dfdfe26d9cf388e55c0b16fc7bc",
+      "sha256": "5900800b20415dd3d212364cd8729059a11fba1c68f7089d9dc4f3cbae76dba5",
       "review": {
         "status": "source_checked",
-        "checked_at": "2026-10-17T14:08:38+00:00",
+        "checked_at": "2026-10-19T02:51:49+00:00",
         "source_version": "arXiv:2606.05160v1 · 2026-06-03",
         "sources": [
           "https://arxiv.org/html/2606.05160v1",
@@ -106,6 +106,254 @@
           "https://nvlabs.github.io/GRAIL/"
         ]
       }
+    },
+    {
+      "id": "arxiv:2502.13013",
+      "arxiv_id": "2502.13013",
+      "title": "HOMIE: Humanoid Loco-Manipulation with Isomorphic Exoskeleton Cockpit",
+      "report_file": "homie.md",
+      "organization": "上海人工智能实验室 · 香港中文大学",
+      "priority": 1,
+      "summary": "稳定全身控制与低成本示教接口；区分遥操作和自主策略。",
+      "selection_reason": "遥操作与步态/高度协同，作为全身示教起点",
+      "project_url": "https://homietele.github.io/",
+      "paper_url": "https://arxiv.org/abs/2502.13013",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-19T02:51:49+00:00",
+        "source_version": "arXiv:2502.13013v2",
+        "sources": [
+          "https://arxiv.org/html/2502.13013v2",
+          "https://homietele.github.io/"
+        ]
+      },
+      "sha256": "0323f17975e9156940d7c57a7a9a4c5357d33b4f1a9b6a419fb471ae278f56ed",
+      "citations": []
+    },
+    {
+      "id": "arxiv:2505.06776",
+      "arxiv_id": "2505.06776",
+      "title": "FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation",
+      "report_file": "falcon.md",
+      "organization": "CMU LeCAR · 合作团队",
+      "priority": 2,
+      "summary": "联合训练上下肢策略与扭矩可行的力课程，解释带载精度和平衡。",
+      "selection_reason": "重点处理手端外力与上下肢耦合，适合搬运、拉车和开门",
+      "project_url": "https://lecar-lab.github.io/falcon-humanoid/",
+      "paper_url": "https://arxiv.org/abs/2505.06776",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-19T02:51:49+00:00",
+        "source_version": "arXiv:2505.06776v2",
+        "sources": [
+          "https://arxiv.org/html/2505.06776v2",
+          "https://lecar-lab.github.io/falcon-humanoid/"
+        ]
+      },
+      "sha256": "6b9f842e32514991cf7c828238c8dbf998fae5ac0f7f2f1bd6259b57ce63ca98",
+      "citations": [
+        {
+          "target": "arxiv:2502.13013",
+          "evidence_url": "https://arxiv.org/html/2505.06776v2#bib.bib1",
+          "evidence": "HOMIE: 原文参考文献 bib.bib1 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2410.21229",
+          "evidence_url": "https://arxiv.org/html/2505.06776v2#bib.bib33",
+          "evidence": "HOVER: 原文参考文献 bib.bib33 明确列出该工作。"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2507.06905",
+      "arxiv_id": "2507.06905",
+      "title": "ULC: A Unified and Fine-Grained Controller for Humanoid Loco-Manipulation",
+      "report_file": "ulc.md",
+      "organization": "哈尔滨工业大学 · 西湖大学",
+      "priority": 3,
+      "summary": "统一策略怎样协调移动、躯干与双臂，重点检查残差、课程和命令工作空间。",
+      "selection_reason": "单策略统一根速度、高度、躯干与双臂，比较统一和解耦控制",
+      "project_url": "https://hellod035.github.io/ULC/",
+      "paper_url": "https://arxiv.org/abs/2507.06905",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-19T02:51:49+00:00",
+        "source_version": "arXiv:2507.06905v2",
+        "sources": [
+          "https://arxiv.org/html/2507.06905v2",
+          "https://hellod035.github.io/ULC/"
+        ]
+      },
+      "sha256": "fb0a40035cede84693211bd71d7fe58f4c5e857bc31a17fc2034cff32fd40d2d",
+      "citations": [
+        {
+          "target": "arxiv:2502.13013",
+          "evidence_url": "https://arxiv.org/html/2507.06905v2#bib.bib4",
+          "evidence": "HOMIE: 原文参考文献 bib.bib4 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2410.21229",
+          "evidence_url": "https://arxiv.org/html/2507.06905v2#bib.bib11",
+          "evidence": "HOVER: 原文参考文献 bib.bib11 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2505.06776",
+          "evidence_url": "https://arxiv.org/html/2507.06905v2#bib.bib22",
+          "evidence": "FALCON: 原文参考文献 bib.bib22 明确列出该工作。"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2506.09366",
+      "arxiv_id": "2506.09366",
+      "title": "SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation via Skill Blending",
+      "report_file": "skillblender.md",
+      "organization": "USC · Stanford · UC Berkeley · 北京大学",
+      "priority": 4,
+      "summary": "解释逐关节技能混合、奖励复用与探索；明确复杂高层任务的仿真验证边界。",
+      "selection_reason": "以技能组合学习全身任务；高层复杂任务的仿真边界需区分",
+      "project_url": "https://physical-superintelligence-lab.github.io/SkillBlender-web/",
+      "paper_url": "https://arxiv.org/abs/2506.09366",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-19T02:51:49+00:00",
+        "source_version": "arXiv:2506.09366v1",
+        "sources": [
+          "https://arxiv.org/html/2506.09366v1",
+          "https://physical-superintelligence-lab.github.io/SkillBlender-web/",
+          "https://github.com/Humanoid-SkillBlender/SkillBlender"
+        ]
+      },
+      "sha256": "07c37b2180854eef0b40d6a963f338238edceb9a5fadd2e5543dfbe2129953c1",
+      "citations": [
+        {
+          "target": "arxiv:2502.13013",
+          "evidence_url": "https://arxiv.org/html/2506.09366v1#bib.bib3",
+          "evidence": "HOMIE: 原文参考文献 bib.bib3 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2410.21229",
+          "evidence_url": "https://arxiv.org/html/2506.09366v1#bib.bib16",
+          "evidence": "HOVER: 原文参考文献 bib.bib16 明确列出该工作。"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2511.15200",
+      "arxiv_id": "2511.15200",
+      "title": "VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation",
+      "report_file": "viral.md",
+      "organization": "NVIDIA GEAR · CMU · UC Berkeley · CUHK",
+      "priority": 5,
+      "summary": "从特权教师到 RGB 学生，拆解参考初始化、DAgger、视觉随机化与真机结果。",
+      "selection_reason": "从特权教师蒸馏到视觉闭环，检验自主操作的 sim-to-real",
+      "project_url": "https://viral-humanoid.github.io/",
+      "paper_url": "https://arxiv.org/abs/2511.15200",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-19T02:51:49+00:00",
+        "source_version": "arXiv:2511.15200v2",
+        "sources": [
+          "https://arxiv.org/html/2511.15200v2",
+          "https://viral-humanoid.github.io/"
+        ]
+      },
+      "sha256": "6da443107023ec453d3db82ba551aed664722f56f87b5bec5a7c220f058b8d8f",
+      "citations": [
+        {
+          "target": "arxiv:2502.13013",
+          "evidence_url": "https://arxiv.org/html/2511.15200v2#bib.bib15",
+          "evidence": "HOMIE: 原文参考文献 bib.bib15 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2410.21229",
+          "evidence_url": "https://arxiv.org/html/2511.15200v2#bib.bib64",
+          "evidence": "HOVER: 原文参考文献 bib.bib64 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2511.07820",
+          "evidence_url": "https://arxiv.org/html/2511.15200v2#bib.bib50",
+          "evidence": "SONIC: 原文参考文献 bib.bib50 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2505.06776",
+          "evidence_url": "https://arxiv.org/html/2511.15200v2#bib.bib60",
+          "evidence": "FALCON: 原文参考文献 bib.bib60 明确列出该工作。"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2512.11047",
+      "arxiv_id": "2512.11047",
+      "title": "WholeBodyVLA: Towards Unified Latent VLA for Whole-Body Loco-Manipulation Control",
+      "report_file": "wholebodyvla.md",
+      "organization": "复旦大学 · HKU OpenDriveLab · AgiBot · SII",
+      "priority": 6,
+      "summary": "联合潜在动作学习与离散移动控制，核查子目标平均分和完整任务成功率的区别。",
+      "selection_reason": "视觉语言动作与移动操作底层控制器的接口设计",
+      "project_url": "https://opendrivelab.com/WholeBodyVLA/",
+      "paper_url": "https://arxiv.org/abs/2512.11047",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-19T02:51:49+00:00",
+        "source_version": "arXiv:2512.11047v2",
+        "sources": [
+          "https://arxiv.org/html/2512.11047v2",
+          "https://opendrivelab.com/WholeBodyVLA/"
+        ]
+      },
+      "sha256": "3072ded1e844d650c6870342b4b4fedace81fdc2cb22ffcef7bbfed0045efbde",
+      "citations": [
+        {
+          "target": "arxiv:2502.13013",
+          "evidence_url": "https://arxiv.org/html/2512.11047v2#bib.bib14",
+          "evidence": "HOMIE: 原文参考文献 bib.bib14 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2507.06905",
+          "evidence_url": "https://arxiv.org/html/2512.11047v2#bib.bib20",
+          "evidence": "ULC: 原文参考文献 bib.bib20 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2505.06776",
+          "evidence_url": "https://arxiv.org/html/2512.11047v2#bib.bib15",
+          "evidence": "FALCON: 原文参考文献 bib.bib15 明确列出该工作。"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2606.22174",
+      "arxiv_id": "2606.22174",
+      "title": "OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation",
+      "report_file": "openhlm.md",
+      "organization": "清华大学 · 上海期智研究院 · Spirit AI",
+      "priority": 8,
+      "summary": "按示教接口、VLA 适配与异构数据梳理实验；区分任务进度和二元成功率。",
+      "selection_reason": "全身遥操作、VLA 适配与异构数据的受控比较",
+      "project_url": "https://openhlm-project.github.io/",
+      "paper_url": "https://arxiv.org/abs/2606.22174",
+      "review": {
+        "status": "source_checked",
+        "checked_at": "2026-10-19T02:51:49+00:00",
+        "source_version": "arXiv:2606.22174v1",
+        "sources": [
+          "https://arxiv.org/html/2606.22174v1",
+          "https://openhlm-project.github.io/"
+        ]
+      },
+      "sha256": "773e7ac45b1039ebcfa7c7d893f3c30c0fc15d1e5249ccf37931c132109bcc47",
+      "citations": [
+        {
+          "target": "arxiv:2502.13013",
+          "evidence_url": "https://arxiv.org/html/2606.22174v1#bib.bib2",
+          "evidence": "HOMIE: 原文参考文献 bib.bib2 明确列出该工作。"
+        },
+        {
+          "target": "arxiv:2511.07820",
+          "evidence_url": "https://arxiv.org/html/2606.22174v1#bib.bib11",
+          "evidence": "SONIC: 原文参考文献 bib.bib11 明确列出该工作。"
+        }
+      ]
     }
   ]
 }

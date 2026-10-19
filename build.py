@@ -433,6 +433,7 @@ def build_readme():
     out.extend([
         "## Paper Watch — Daily Citation Intelligence", "",
         "**[Open the public research workspace](https://memoryunreal.github.io/awesome-whole-body-control/)** — automatically rebuilt when the weekly paper list is pushed to `main`.", "",
+        "**[Humanoid loco-manipulation shortlist](https://memoryunreal.github.io/awesome-whole-body-control/#/focus)** — 39 source-checked selections (~5% of 781 papers), with 8 deep dives (~20% of the subset). Start with HOMIE → FALCON → ULC → SkillBlender → VIRAL → WholeBodyVLA → GRAIL → OpenHLM. See [selection rationale and maintenance](docs/humanoid-loco-manipulation.md).", "",
         "**[Read the curated deep dives](https://memoryunreal.github.io/awesome-whole-body-control/#/reports)**: EgoMimic (Georgia Tech / Stanford), VITRA (Microsoft Research Asia / Tsinghua), EgoScale (NVIDIA / Berkeley / Maryland), and GRAIL (NVIDIA / UCLA). Each AI-assisted explanation checks methods, experimental metrics, ablations, limitations, and practical relevance against the paper and official sources. These reports are source-checked analyses, not reproduced experiments.", "",
         "This list now includes a local research workspace for **Gmail / Google Scholar alerts → relevance screening → evidence-backed deep reports → verified citation networks**. Initial tracked papers: **VITRA, EgoScale, EgoMimic**. The original curated list remains the source of the paper library.", "",
         "```bash", "python3 -m paper_watch init", "python3 -m paper_watch serve", "```", "",
