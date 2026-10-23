@@ -1602,6 +1602,46 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
 
 ---
 
+## Weekly additions — 2026-10-23
+
+- title: Fast Motion Retargeting Pipeline for Scalable Humanoid Robot Learning
+  authors: Zhe Li et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.28470
+  paper_url: https://arxiv.org/abs/2610.28470
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Retargeting
+  task_tags: [motion-retargeting, scalable-data, humanoid]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Proposes a fast retargeting pipeline intended to scale humanoid learning data generation.
+  why_it_matters: Directly addresses retargeting throughput, a recurring bottleneck for motion-prior and imitation pipelines.
+
+- title: SMR: Learning Streaming Motion Retargeting for Humanoids from Human Semantic
+  authors: Shijie Zhang et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.29169
+  paper_url: https://arxiv.org/abs/2610.29169
+  project_url: https://logosroboticsgroup.github.io/SMR/
+  code_url: ""
+  dataset_url: null
+  category: Retargeting
+  task_tags: [streaming, retargeting, semantic-motion, humanoid]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns streaming human-to-humanoid motion retargeting from semantic human-motion representations.
+  why_it_matters: Moves retargeting toward causal, online operation suitable for interactive robot control.
+
 ## Notes
 - Verification: code links above were checked through paper pages or GitHub URLs surfaced via search; for systems labeled "announced" / "pending" the project pages indicate code release in progress.
 - Coverage spans (a) classical/learning retargeting (PHC, Mink, GMR, OmniRetarget, IKMR, DexMachina), (b) VR teleop (Open-TeleVision, OmniH2O, OpenWBT, CLONE, HOMIE, Bunny-VisionPro), (c) wearable/exoskeleton teleop (HOMIE, AirExo, NuExo, GELLO, BiDex, DEXOP, ACE, ACE-F, DexUMI), (d) robot-free / in-the-wild capture (UMI, DexCap, ARCap, EgoMimic, EgoZero, EgoMI, AirExo, HumanoidExo), and (e) data-generation / scaling (DexMimicGen, H-RDT, MotionTrans, PH2D).

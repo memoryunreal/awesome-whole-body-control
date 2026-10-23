@@ -2666,3 +2666,176 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Composes scene-interaction and dexterous object-manipulation skills under a unified policy with goal-conditioned and cross-task curricula.
   why_it_matters: Connects physics-based human-environment interaction with longer-horizon object tasks, a useful bridge between character control and humanoid WBC.
+
+## Weekly additions — 2026-10-23
+
+- title: DiPLO: Self-distilled Diffusion Planning for Loco-manipulation
+  authors: Shafeef Omar et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.24847
+  paper_url: https://arxiv.org/abs/2610.24847
+  project_url: https://atarilab.github.io/diplo-website/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [diffusion-planning, self-distillation, RL, G1, sim-to-real]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Self-distills and RL-finetunes a diffusion planner against a frozen whole-body tracker for goal-conditioned loco-manipulation.
+  why_it_matters: Demonstrates repeated G1 pick-carry-place execution without real-world fine-tuning.
+
+- title: Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation
+  authors: Yutang Lin et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.24675
+  paper_url: https://arxiv.org/abs/2610.24675
+  project_url: https://fiberaa.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [latent-planning, behavior-foundation-model, flow, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Projects skill policies into a frozen behavioral-foundation-model latent space and trains a unified perceptive flow planner.
+  why_it_matters: Offers a shared executable planning representation for heterogeneous contact and manipulation skills.
+
+- title: Humanoid SRL: Augmenting Humanoids with Supernumerary Limbs for Coordinated Loco-Manipulation
+  authors: Fukang Liu et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.25628
+  paper_url: https://arxiv.org/abs/2610.25628
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [supernumerary-limb, contact-rich, trajectory-optimization, RL, hardware]
+  robot_platform: augmented humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Coordinates an added robotic arm with humanoid whole-body control for contact-rich tri-arm loco-manipulation.
+  why_it_matters: Tests how extending humanoid morphology expands feasible manipulation and support behaviors.
+
+- title: HAF-VLA: Hierarchical Action Flow Framework for Humanoid Vision-Language-Action Control
+  authors: Langzhe Gu et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.26584
+  paper_url: https://arxiv.org/abs/2610.26584
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [VLA, hierarchical-actions, flow-matching, real-robot, whole-body]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Progressively generates locomotion, head, waist, and full-body manipulation commands from a pretrained flow-matching VLA.
+  why_it_matters: Explicitly stages whole-body action generation to adapt mobile-manipulation VLAs to humanoids.
+
+- title: Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience
+  authors: Tianqi Liu et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.26855
+  paper_url: https://arxiv.org/abs/2610.26855
+  project_url: https://ropedia.github.io/ropedia-w0/
+  code_url: https://github.com/Ropedia/ropedia-w0
+  dataset_url: Xp-Data and Xp-Teleop
+  category: Loco-Manipulation
+  task_tags: [world-model, cross-embodiment, human-data, teleoperation, code]
+  robot_platform: multiple humanoid and robot embodiments
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Scales an egocentric loco-manipulation world model across human and robot data with unified kinematic representations.
+  why_it_matters: Ships code and a large cross-embodiment data/benchmark suite for human-experience pretraining.
+
+- title: LocoPilot: Single-Operator Bilateral Teleoperation for Loco-Manipulation Policy Learning
+  authors: Zhenyu Li et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.27998
+  paper_url: https://arxiv.org/abs/2610.27998
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [teleoperation, bilateral, data-collection, policy-learning]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Presents single-operator bilateral teleoperation for collecting humanoid loco-manipulation policy data.
+  why_it_matters: Targets a practical data-collection bottleneck for whole-body mobile manipulation.
+
+- title: SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation
+  authors: Zeyu Zhang et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.30044
+  paper_url: https://arxiv.org/abs/2610.30044
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [sparse-pose, motion-prior, VLA, whole-body-control]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses sparse task-critical poses plus a learned motion prior as the interface between VLA intent and whole-body control.
+  why_it_matters: Separates spatial task specification from coordinated motion realization in a compact control interface.
+
+- title: LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation
+  authors: Dewei Wang et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.30876
+  paper_url: https://arxiv.org/abs/2610.30876
+  project_url: ""
+  code_url: ""
+  dataset_url: LocoManiLab
+  category: Loco-Manipulation
+  task_tags: [benchmark, teleoperation, deployment, policies, controllers]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Benchmarks data generation, policies, controllers, robustness, and sim-to-real transfer across 234 household loco-manipulation tasks.
+  why_it_matters: Supplies a unified evaluation surface for comparing otherwise incompatible humanoid loco-manipulation systems.
+
+- title: Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation
+  authors: Chenyuan Chen et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.31166
+  paper_url: https://arxiv.org/abs/2610.31166
+  project_url: https://memory-before-goal.github.io
+  code_url: ""
+  dataset_url: HuMeGo
+  category: Loco-Manipulation
+  task_tags: [VLA, memory, object-events, G1, benchmark]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Maintains an object-guided history of salient events for a whole-body VLA and introduces the HuMeGo benchmark.
+  why_it_matters: Shows that preserving the right visual history materially improves long-horizon real G1 task success.

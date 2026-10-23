@@ -1820,6 +1820,98 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
 
 ---
 
+## Weekly additions — 2026-10-23
+
+- title: ULIFLOW: Unified Latent Human-Object Interaction Flow
+  authors: Wenqi Cai et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.24286
+  paper_url: https://arxiv.org/abs/2610.24286
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [text-conditioned, full-body, human-object, flow-matching, long-horizon]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Models body-surface-marker/object relations jointly with human and object dynamics for variable-length text-conditioned 3D HOI synthesis.
+  why_it_matters: Makes interaction geometry an explicit generative stream instead of recovering it only with contact regularizers.
+
+- title: MOMO: Human Motion from Moving Sounds
+  authors: Deli Cai et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.24522
+  paper_url: https://arxiv.org/abs/2610.24522
+  project_url: ""
+  code_url: ""
+  dataset_url: DySAM and DySAL
+  category: HOI-Motion-Gen
+  task_tags: [audio-conditioned, motion-generation, spatial-audio, dataset, diffusion]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: 📦 Dataset
+  one_line: Introduces binaural spatial-audio/motion datasets and a diffusion model that generates human motion from moving sound sources.
+  why_it_matters: Broadens controllable human-motion synthesis with dynamic spatial auditory interaction cues.
+
+- title: BUMP: Body-driven Unified Multi-object Physics for HOI Synthesis
+  authors: Wonjung Woo et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.27066
+  paper_url: https://arxiv.org/abs/2610.27066
+  project_url: https://wonjungwoo.github.io/BUMP/
+  code_url: ""
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [text-conditioned, multi-object, physics, full-body, interaction-editing]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Generates intentional full-body and driver-object trajectories, then simulates responder-object dynamics for multi-object HOI.
+  why_it_matters: Separates semantic human intent from downstream physical consequences in multi-object interaction synthesis.
+
+- title: World2HOSI: A Multi-Expert Harness for Long-Horizon Human-Object-Scene Interaction Generation
+  authors: Jiushu Li et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.27725
+  paper_url: https://arxiv.org/abs/2610.27725
+  project_url: https://nintreesssss.github.io/World2HOSI
+  code_url: ""
+  dataset_url: null
+  category: Object-Aware-Motion
+  task_tags: [long-horizon, human-object-scene, 3DGS, physics, orchestration]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Orchestrates specialist HOI/HSI generators against a persistent 3D scene state to synthesize continuous long-horizon interactions.
+  why_it_matters: Targets compound object-and-scene interaction sequences that single HOI generators do not cover.
+
+- title: EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation
+  authors: Siyu Chen et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.27242
+  paper_url: https://arxiv.org/abs/2610.27242
+  project_url: https://embodyhoi.github.io/
+  code_url: ""
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [hand-object, humanoid, retargeting, diffusion, inverse-kinematics]
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Applies differentiable embodiment-aware IK guidance during HOI diffusion sampling for G1 and H1-2 transfer.
+  why_it_matters: Moves robot reachability constraints inside HOI generation rather than relying on failure-prone post-hoc retargeting.
+
 ## Summary
 
 Total papers: 61. Verified (⭐ Code) repos: ~37. Project pages with no released code (🌐): ~10. Dataset-only releases (📦): 2. Coming soon (⏳): 1. No code found (❌): ~11.

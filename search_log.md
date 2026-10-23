@@ -5,24 +5,24 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 100 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 166 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 144 | Whole-body control and loco-manipulation |
+| `02_hoi_motion.md` | 105 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 175 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 153 | Whole-body control and loco-manipulation |
 | `05_foundation.md` | 78 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 87 | Human-to-humanoid retargeting + teleop |
+| `06_retarget_teleop.md` | 89 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 106 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 743**
+**Total unique papers after deduplication: 768**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 61
-- Object-Aware Human Motion Synthesis: 26
-- Whole-Body Motion Tracking and Imitation: 211
-- Whole-Body Control and Loco-Manipulation: 138
+- Human-Object Interaction Motion Generation: 65
+- Object-Aware Human Motion Synthesis: 27
+- Whole-Body Motion Tracking and Imitation: 220
+- Whole-Body Control and Loco-Manipulation: 147
 - Humanoid Foundation Models and Generalist Policies: 92
-- Human-to-Humanoid Retargeting: 27
+- Human-to-Humanoid Retargeting: 29
 - Teleoperation and Demonstration Collection: 45
 - Datasets and Benchmarks: 75
 - Evaluation Metrics and Contact Modeling: 14
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ⭐ Code | 248 |
-| ❌ No Code | 244 |
-| 🌐 Project Page | 178 |
+| ❌ No Code | 253 |
+| ⭐ Code | 249 |
+| 🌐 Project Page | 192 |
 | ⏳ Code Coming Soon | 43 |
-| 📦 Dataset | 17 |
+| 📦 Dataset | 18 |
 | 🧩 Partial Code | 12 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,19 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-10-23 — 25 new, 0 updated
+- Window: 2026-10-16T12:05Z → 2026-10-23T12:00Z.
+- Sources searched: pulled `origin/main`; queried arXiv's submitted-date API across cs.RO, cs.CV, cs.LG, and cs.GR; screened cross-listed results by title and abstract; deduplicated every retained ID against `papers.csv` and `research_chunks/*.md`; checked arXiv comments/project links and GitHub API repository metadata/content where an official code link was supplied.
+- Counts: 2,564 category records returned (421 cs.RO, 805 cs.CV, 1,301 cs.LG, 37 cs.GR) before cross-list deduplication; 25 new in-scope records added; 0 existing records received a verified revision or code-status change.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 5 entries: ULIFLOW: Unified Latent Human-Object Interaction Flow (2610.24286), MOMO: Human Motion from Moving Sounds (2610.24522), BUMP: Body-driven Unified Multi-object Physics for HOI Synthesis (2610.27066), World2HOSI: A Multi-Expert Harness for Long-Horizon Human-Object-Scene Interaction Generation (2610.27725), EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation (2610.27242).
+  - `03_wbc_tracking.md` — 9 entries: BeJEPA: A Goal-Conditioned Humanoid Behavior World Model via Unsupervised RL (2610.23127), SWAP: Test-Time Steerable Humanoid Whole-Body Collision Avoidance (2610.25711), OmniInteract: Towards Unified Whole-Body Interaction Control for Dual Humanoids (2610.26043), SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model (2610.28480), Watch Your Step: Anticipated Perception for Humanoid Locomotion (2610.29612), HuMiT: Low-Latency Whole-Body Humanoid Teleoperation via Compact Reference Tracking (2610.29903), Test-Time Motion Steering for Perceptive Humanoid Fall Recovery (2610.30061), Robot Motion Transition with Human Motion Prior (2610.30817), Humanoid Mobility via Attention-based Contacts (2610.31608).
+  - `04_loco_manip.md` — 9 entries: DiPLO: Self-distilled Diffusion Planning for Loco-manipulation (2610.24847), Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation (2610.24675), Humanoid SRL: Augmenting Humanoids with Supernumerary Limbs for Coordinated Loco-Manipulation (2610.25628), HAF-VLA: Hierarchical Action Flow Framework for Humanoid Vision-Language-Action Control (2610.26584), Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience (2610.26855), LocoPilot: Single-Operator Bilateral Teleoperation for Loco-Manipulation Policy Learning (2610.27998), SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation (2610.30044), LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation (2610.30876), Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation (2610.31166).
+  - `06_retarget_teleop.md` — 2 entries: Fast Motion Retargeting Pipeline for Scalable Humanoid Robot Learning (2610.28470), SMR: Learning Streaming Motion Retargeting for Humanoids from Human Semantic (2610.29169).
+- Verified code repos: https://github.com/Ropedia/ropedia-w0 — official non-archived Apache-2.0 repository linked by the paper; GitHub API confirmed source package, examples, scripts, tools, inference entry point, requirements, and assets.
+- Unresolved code-status URLs: https://supermimic.github.io/, https://memory-before-goal.github.io, https://leggedrobotics.github.io/watch-your-step, https://iscoyizj.github.io/SWAP-steerable-humanoid-oa-website/, https://calvinyhli.github.io/omniinteract.github.io/, https://childtoy.github.io/STAMP-project, https://atarilab.github.io/diplo-website/, https://fiberaa.github.io/, https://wonjungwoo.github.io/BUMP/, https://nintreesssss.github.io/World2HOSI, https://embodyhoi.github.io/, https://logosroboticsgroup.github.io/SMR/ — reachable project pages or paper-linked URLs with no official implementation repository verified during this run.
+- Inspected but excluded: PiHand (2610.31299), DONIC (2610.29997), and EmbodyHOI-adjacent hand-only dexterous papers where the contribution did not cover full-body HOI synthesis or humanoid WBC; aerial and quadruped loco-manipulation; navigation-only biped papers; generic VLA/world-model/manipulation papers without humanoid whole-body grounding; exoskeleton assistance; and human-motion/HOI detection or reconstruction without generation/control scope.
 
 ### 2026-10-16 — 0 new, 2 updated
 - Window: 2026-10-09T12:02Z → 2026-10-16T12:05Z.

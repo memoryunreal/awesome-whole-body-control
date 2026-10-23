@@ -3083,6 +3083,179 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
 
 ## Notes on Verification
 
+## Weekly additions — 2026-10-23
+
+- title: BeJEPA: A Goal-Conditioned Humanoid Behavior World Model via Unsupervised RL
+  authors: Liyun Yan et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.23127
+  paper_url: https://arxiv.org/abs/2610.23127
+  project_url: https://ylyem9x.github.io/BeJEPA-project
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [world-model, unsupervised-RL, global-pose, recovery, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns a JEPA behavior world model that couples global body pose, goal attainment, and motion-prior control.
+  why_it_matters: Addresses world-frame recovery and heading goals that root-frame tracking policies commonly lose after disturbance.
+
+- title: SWAP: Test-Time Steerable Humanoid Whole-Body Collision Avoidance
+  authors: Zeji Yi et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.25711
+  paper_url: https://arxiv.org/abs/2610.25711
+  project_url: https://iscoyizj.github.io/SWAP-steerable-humanoid-oa-website/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [collision-avoidance, diffusion, perception, test-time-steering, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses a perceptive diffusion proposal policy plus an RL tracker for collision-aware, steerable whole-body motion.
+  why_it_matters: Separates multimodal obstacle-avoidance planning from stabilizing low-level control and validates on G1.
+
+- title: OmniInteract: Towards Unified Whole-Body Interaction Control for Dual Humanoids
+  authors: Yinghao Li et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.26043
+  paper_url: https://arxiv.org/abs/2610.26043
+  project_url: https://calvinyhli.github.io/omniinteract.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [dual-humanoid, contact, retargeting, flow-policy, real-robot]
+  robot_platform: humanoid robots
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Combines surface-contact-aware dual-human retargeting with a residual flow policy for scalable paired-humanoid skills.
+  why_it_matters: Directly targets coordinated physical interaction and contact recovery between two humanoids.
+
+- title: SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model
+  authors: Qiayuan Liao et al.
+  year: 2026
+  venue: CoRL 2026
+  arxiv_id: 2610.28480
+  paper_url: https://arxiv.org/abs/2610.28480
+  project_url: https://supermimic.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [differentiable-world-model, motion-tracking, G1, sim-to-real]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains a general humanoid motion tracker through a differentiable world model and transfers it zero-shot to G1.
+  why_it_matters: Reports large compute-efficiency gains for whole-body tracking while retaining hardware transfer.
+
+- title: Watch Your Step: Anticipated Perception for Humanoid Locomotion
+  authors: Matthias Heyrman et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.29612
+  paper_url: https://arxiv.org/abs/2610.29612
+  project_url: https://leggedrobotics.github.io/watch-your-step
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [perceptive-locomotion, footholds, terrain, G1, sim-to-real]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Predicts future footholds and supplies terrain patches around them rather than a dense elevation map to the policy.
+  why_it_matters: Provides a lightweight perception interface that improves terrain generalization and transfers zero-shot to G1.
+
+- title: HuMiT: Low-Latency Whole-Body Humanoid Teleoperation via Compact Reference Tracking
+  authors: Xiaohu Zhang et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.29903
+  paper_url: https://arxiv.org/abs/2610.29903
+  project_url: https://xiaohu-art.github.io/Track/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [teleoperation, compact-reference, motion-tracking, low-latency]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Replaces dense, future-conditioned tracking targets with compact references for real-time whole-body teleoperation.
+  why_it_matters: Reduces upstream retargeting burden while preserving a controllable motion-tracking interface.
+
+- title: Test-Time Motion Steering for Perceptive Humanoid Fall Recovery
+  authors: Yifan Xu et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.30061
+  paper_url: https://arxiv.org/abs/2610.30061
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [fall-recovery, test-time-steering, perception, motion-prior]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Steers a perceptive recovery motion prior at inference time toward scene- and task-specific stand-up trajectories.
+  why_it_matters: Treats recovery as a controllable multi-solution behavior instead of a single fixed stabilization routine.
+
+- title: Robot Motion Transition with Human Motion Prior
+  authors: Taehyun Byun et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.30817
+  paper_url: https://arxiv.org/abs/2610.30817
+  project_url: https://childtoy.github.io/STAMP-project
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [motion-transition, retargeting, motion-prior, G1, K1]
+  robot_platform: Unitree G1 and ROBOTIS K1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Aligns motion boundaries in human space, generates an inbetweening transition, and retargets it to robot trackers.
+  why_it_matters: Enables long-horizon composition of independently obtained humanoid motions on hardware.
+
+- title: Humanoid Mobility via Attention-based Contacts
+  authors: Junzhe He et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.31608
+  paper_url: https://arxiv.org/abs/2610.31608
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [locomotion, contacts, attention, RL, motion-prior]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses a self-supervised attention contact planner and contact-conditioned tracker to combine motion priors with adaptive locomotion.
+  why_it_matters: Makes contact a learned bridge between onboard perception and coordinated whole-body control.
+
 GitHub repos verified to exist (HTTP 200) at time of writing:
 ASAP, human2humanoid (H2O+OmniH2O), PHC, PULSE, ProtoMotions, TWIST, GMR, PBHC (KungfuBot), metamotivo (FB-CPR/Meta Motivo), MoCapAct, DeepMimic, MimicKit, TWIST2, GMT, gentle-humanoid, expressive-humanoid (ExBody), NVlabs/HOVER, NVlabs/CALM, NVlabs/GR00T-WholeBodyControl (SONIC), wyhuai/SkillMimic, wyhuai/SkillMimic-V2, ZhengyiLuo/UHC, Tencent-RoboticsX/NCP, heyuanYao-PKU/MoConVQ, MarkFzp/humanplus, BeingBeyond/Jaeger, LeCAR-Lab/BFM-Zero, LeCAR-Lab/FALCON, Evm7/I-CTRL, GalaxyGeneralRobotics/OpenTrack (Any2Track), HybridRobotics/whole_body_tracking (BeyondMimic), yinkangning0124/Humanoid-UniTracker, BAAI-Humanoid/MOSAIC, LeCAR-Lab/HumanoidVerse, visualmimic/VisualMimic, OpenDriveLab/WholebodyVLA, zixuan417/humanoid-general-motion-tracking (GMT), garrettkatz/poppy-muffin, andireposit/Stand-Up-Motion-on-Compliant-Surface-for-Humanoid, meetpal644/Sit-to-Stand-Motion-Synthesis-For-Humanoids.
 
