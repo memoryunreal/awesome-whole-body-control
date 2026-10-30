@@ -3256,6 +3256,141 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Uses a self-supervised attention contact planner and contact-conditioned tracker to combine motion priors with adaptive locomotion.
   why_it_matters: Makes contact a learned bridge between onboard perception and coordinated whole-body control.
 
+## Weekly additions — 2026-10-30
+
+- title: ViT-H: Generative Video-To-Humanoid Control with Motion Tracking Feedback
+  authors: Zimo He et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.32966
+  paper_url: https://arxiv.org/abs/2610.32966
+  project_url: https://awfuact.github.io/vit-h/
+  code_url: https://github.com/mileret/ViT-H-release
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [video-to-humanoid, diffusion, motion-tracking-feedback, DPO, G1, teleoperation]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🧩 Partial Code
+  one_line: Generates executable humanoid motion directly from monocular video and post-trains the generator from downstream tracker feedback.
+  why_it_matters: Couples reference-motion generation to physical executability and reports sub-400 ms video teleoperation on G1.
+
+- title: FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion
+  authors: Adrian B. Ghansah et al.
+  year: 2026
+  venue: Humanoids 2026
+  arxiv_id: 2610.37974
+  paper_url: https://arxiv.org/abs/2610.37974
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [locomotion, reduced-order-model, reference-generation, whole-body-tracking, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains a reduced-order reference generator and a full-order tracker to produce agile command-conditioned G1 locomotion.
+  why_it_matters: Uses a feasible low-dimensional reference interface to obtain one controller spanning walking, hopping, and continuous command transitions.
+
+- title: Whole-Body Humanoid Control via Stochastic Motion Tokenization
+  authors: Michael Drolet et al.
+  year: 2026
+  venue: Humanoids 2026
+  arxiv_id: 2610.36452
+  paper_url: https://arxiv.org/abs/2610.36452
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [motion-tokenization, discrete-motion, tracking, text-conditioned, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns stochastic discrete motion tokens that condition a whole-body tracker from behavior labels or text commands.
+  why_it_matters: Presents a compact high-level interface for long, compositional real-robot motion execution.
+
+- title: HumanoidNDM: Closing the Training-Deployment Gap of Motion Tracking via Humanoid Neural Dynamics Model
+  authors: Chao Chen et al.
+  year: 2026
+  venue: CoRL 2026
+  arxiv_id: 2610.34126
+  paper_url: https://arxiv.org/abs/2610.34126
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [online-finetuning, neural-dynamics, sim-to-real, motion-tracking, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Fine-tunes a humanoid tracker using gradients through a real-world-trained proprioceptive neural dynamics model.
+  why_it_matters: Targets the deployment gap with MoCap-free online adaptation to real disturbances.
+
+- title: SONIC-K1: Porting a Universal Humanoid Motion Tracker to a Small Humanoid on a Single GPU
+  authors: Kyrylo Kolesnichenko; Jong-Hoon Kim
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.39327
+  paper_url: https://arxiv.org/abs/2610.39327
+  project_url: https://kyry.me/sonic-k1
+  code_url: https://github.com/Kyk0/sonic-k1
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [motion-tracking, SONIC, small-humanoid, open-weights, K1]
+  robot_platform: Booster K1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Ports a universal whole-body tracker to Booster K1 with open policy weights, training and evaluation tools.
+  why_it_matters: Makes a modern humanoid tracker reproducible on a smaller platform and a modest single-GPU budget.
+
+- title: METATRON: A Promptable Whole-Body Execution Layer for Humanoids
+  authors: Chen Tessler et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.38027
+  paper_url: https://arxiv.org/abs/2610.38027
+  project_url: https://research.nvidia.com/labs/par/projects/metatron/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [promptable-control, generative-policy, skill-layer, whole-body, humanoid]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Combines a generative base policy with programmable partial-body prompts for reusable whole-body execution.
+  why_it_matters: Offers a practical prompt interface between task-level programs and balanced humanoid behavior.
+
+- title: GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers
+  authors: Liang Li et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.36507
+  paper_url: https://arxiv.org/abs/2610.36507
+  project_url: https://graft-humanoid.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [terrain-adaptation, foundation-tracker, residual-control, depth, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Adds a lightweight terrain-conditioned residual adapter to frozen whole-body foundation trackers.
+  why_it_matters: Retains an existing motion interface while adapting execution over stairs, gaps, and platforms from onboard depth.
+
 GitHub repos verified to exist (HTTP 200) at time of writing:
 ASAP, human2humanoid (H2O+OmniH2O), PHC, PULSE, ProtoMotions, TWIST, GMR, PBHC (KungfuBot), metamotivo (FB-CPR/Meta Motivo), MoCapAct, DeepMimic, MimicKit, TWIST2, GMT, gentle-humanoid, expressive-humanoid (ExBody), NVlabs/HOVER, NVlabs/CALM, NVlabs/GR00T-WholeBodyControl (SONIC), wyhuai/SkillMimic, wyhuai/SkillMimic-V2, ZhengyiLuo/UHC, Tencent-RoboticsX/NCP, heyuanYao-PKU/MoConVQ, MarkFzp/humanplus, BeingBeyond/Jaeger, LeCAR-Lab/BFM-Zero, LeCAR-Lab/FALCON, Evm7/I-CTRL, GalaxyGeneralRobotics/OpenTrack (Any2Track), HybridRobotics/whole_body_tracking (BeyondMimic), yinkangning0124/Humanoid-UniTracker, BAAI-Humanoid/MOSAIC, LeCAR-Lab/HumanoidVerse, visualmimic/VisualMimic, OpenDriveLab/WholebodyVLA, zixuan417/humanoid-general-motion-tracking (GMT), garrettkatz/poppy-muffin, andireposit/Stand-Up-Motion-on-Compliant-Surface-for-Humanoid, meetpal644/Sit-to-Stand-Motion-Synthesis-For-Humanoids.
 

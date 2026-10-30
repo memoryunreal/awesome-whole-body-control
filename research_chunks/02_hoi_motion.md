@@ -1912,6 +1912,26 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Applies differentiable embodiment-aware IK guidance during HOI diffusion sampling for G1 and H1-2 transfer.
   why_it_matters: Moves robot reachability constraints inside HOI generation rather than relying on failure-prone post-hoc retargeting.
 
+## Weekly additions — 2026-10-30
+
+- title: UniffordInteractor: Reasoning the Unified Affordance for Human and Multi-Object Interaction
+  authors: Chen Su et al.
+  year: 2026
+  venue: SIGGRAPH Asia 2026 (TOG)
+  arxiv_id: 2610.39745
+  paper_url: https://arxiv.org/abs/2610.39745
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [multi-object, affordance, long-horizon, human-object-interaction, autoregressive]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Reasons over unified human-object and object-object affordances, then autoregressively generates long-horizon body, hand, and object interactions.
+  why_it_matters: Extends HOI generation beyond a single manipulated object by making multi-entity affordance an explicit conditioning signal.
+
 ## Summary
 
 Total papers: 61. Verified (⭐ Code) repos: ~37. Project pages with no released code (🌐): ~10. Dataset-only releases (📦): 2. Coming soon (⏳): 1. No code found (❌): ~11.

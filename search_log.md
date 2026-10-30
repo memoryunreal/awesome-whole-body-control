@@ -5,24 +5,24 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 105 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 175 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 153 | Whole-body control and loco-manipulation |
+| `02_hoi_motion.md` | 106 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 182 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 157 | Whole-body control and loco-manipulation |
 | `05_foundation.md` | 78 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 89 | Human-to-humanoid retargeting + teleop |
+| `06_retarget_teleop.md` | 91 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 106 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 768**
+**Total unique papers after deduplication: 782**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 65
+- Human-Object Interaction Motion Generation: 66
 - Object-Aware Human Motion Synthesis: 27
-- Whole-Body Motion Tracking and Imitation: 220
-- Whole-Body Control and Loco-Manipulation: 147
+- Whole-Body Motion Tracking and Imitation: 227
+- Whole-Body Control and Loco-Manipulation: 151
 - Humanoid Foundation Models and Generalist Policies: 92
-- Human-to-Humanoid Retargeting: 29
+- Human-to-Humanoid Retargeting: 31
 - Teleoperation and Demonstration Collection: 45
 - Datasets and Benchmarks: 75
 - Evaluation Metrics and Contact Modeling: 14
@@ -33,12 +33,12 @@
 
 | Status | Count |
 |---|---|
-| ❌ No Code | 253 |
-| ⭐ Code | 249 |
-| 🌐 Project Page | 192 |
+| ❌ No Code | 261 |
+| ⭐ Code | 250 |
+| 🌐 Project Page | 196 |
 | ⏳ Code Coming Soon | 43 |
 | 📦 Dataset | 18 |
-| 🧩 Partial Code | 12 |
+| 🧩 Partial Code | 13 |
 | 🔁 Unofficial Code | 1 |
 
 ## Search Queries Used (representative)
@@ -101,6 +101,19 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-10-30 — 14 new, 0 updated
+- Window: 2026-10-23T12:00Z → 2026-10-30T12:00Z.
+- Sources searched: pulled `origin/main`; queried arXiv's submitted-date API across cs.RO, cs.CV, cs.LG, and cs.GR; screened titles and abstracts for HOI generation, humanoid whole-body tracking/control, loco-manipulation, and contact-aware transfer; deduplicated retained IDs against `papers.csv` and `research_chunks/*.md`; checked arXiv comments plus reachable project and GitHub pages.
+- Counts: 2,134 category records returned (372 cs.RO, 679 cs.CV, 1,053 cs.LG, 30 cs.GR) before cross-list deduplication; 14 new in-scope records added; 0 existing records received a verified revision or code-status change.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: UniffordInteractor: Reasoning the Unified Affordance for Human and Multi-Object Interaction (2610.39745).
+  - `03_wbc_tracking.md` — 7 entries: ViT-H: Generative Video-To-Humanoid Control with Motion Tracking Feedback (2610.32966), FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion (2610.37974), Whole-Body Humanoid Control via Stochastic Motion Tokenization (2610.36452), HumanoidNDM: Closing the Training-Deployment Gap of Motion Tracking via Humanoid Neural Dynamics Model (2610.34126), SONIC-K1: Porting a Universal Humanoid Motion Tracker to a Small Humanoid on a Single GPU (2610.39327), METATRON: A Promptable Whole-Body Execution Layer for Humanoids (2610.38027), GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers (2610.36507).
+  - `04_loco_manip.md` — 4 entries: Learning Force-Reactive Humanoid Loco-Manipulation (2610.35862), Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data (2610.35075), ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation (2610.34370), HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience (2610.34186).
+  - `06_retarget_teleop.md` — 2 entries: TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation (2610.40349), Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment (2610.39582).
+- Verified code repos: https://github.com/Kyk0/sonic-k1 (official, non-archived repository with policy/training/evaluation sources, documentation, and environment tooling); https://github.com/Janebek/AdaDexTrack was also checked as an official full-code repository but its paper was not added because it is hand-only tracking rather than humanoid whole-body control.
+- Unresolved code-status URLs: https://awfuact.github.io/vit-h/ (the linked `mileret/ViT-H-release` repository contains a README/assets release only, so ViT-H remains 🧩 Partial Code); https://louis-leee.github.io/FLoRe/, https://research.nvidia.com/labs/par/projects/metatron/, https://graft-humanoid.github.io/, and https://young-bit.github.io/zero-hlm/ (reachable project pages; no full official implementation verified; Zero-HLM's linked repository is a site/template repository).
+- Inspected but excluded: generic human-motion generation without HOI or robot-control grounding (ETA-Motion, StepControl, TopX); medical and perception-only whole-body matches; quadruped-only loco-manipulation; navigation-only biped work; dexterous-hand-only systems (AcrossDEX, AdaDexTrack, Catch It All!, CARD); and broad robotics/VLA/world-model papers without a concrete humanoid whole-body-control or HOI-generation contribution.
 
 ### 2026-10-23 — 25 new, 0 updated
 - Window: 2026-10-16T12:05Z → 2026-10-23T12:00Z.

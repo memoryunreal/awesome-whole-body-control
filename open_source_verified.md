@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (249 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (250 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -168,7 +168,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (60)
+## Whole-Body Motion Tracking and Imitation (61)
 
 - ⭐ 🤖 🧍 **[Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions](https://arxiv.org/abs/2608.26505)** `arXiv 2026.08` `Poppy Humanoid` `WBC`
   Xulin Chen et al..
@@ -219,6 +219,11 @@ This is the canonical list of papers with **verified official open-source code**
   Utsav Panchal et al..
   Introduces DeCap, a constrained RL policy that separates upper- and lower-body smoothness limits instead of hiding smoothness inside reward weights.
   Links: [Project](https://panchalutsav.github.io/decap/) · [Code](https://github.com/panchalutsav/decap) · [Paper](https://arxiv.org/abs/2609.24552)
+
+- ⭐ 🤖 🧍 **[SONIC-K1: Porting a Universal Humanoid Motion Tracker to a Small Humanoid on a Single GPU](https://arxiv.org/abs/2610.39327)** `arXiv 2026.10` `Booster K1` `Motion-Imitation`
+  Kyrylo Kolesnichenko et al..
+  Ports a universal whole-body tracker to Booster K1 with open policy weights, training and evaluation tools.
+  Links: [Project](https://kyry.me/sonic-k1) · [Code](https://github.com/Kyk0/sonic-k1) · [Paper](https://arxiv.org/abs/2610.39327)
 
 - ⭐ 🤖 🧍 **[TEXEDO: Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation](https://arxiv.org/abs/2606.22998)** `arXiv 2026.06` `Unitree G1` `Motion-Imitation`
   Jianuo Cao et al..

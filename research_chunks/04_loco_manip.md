@@ -2667,6 +2667,84 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   one_line: Composes scene-interaction and dexterous object-manipulation skills under a unified policy with goal-conditioned and cross-task curricula.
   why_it_matters: Connects physics-based human-environment interaction with longer-horizon object tasks, a useful bridge between character control and humanoid WBC.
 
+## Weekly additions — 2026-10-30
+
+- title: Learning Force-Reactive Humanoid Loco-Manipulation
+  authors: Sihang Li et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.35862
+  paper_url: https://arxiv.org/abs/2610.35862
+  project_url: https://louis-leee.github.io/FLoRe/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [force-control, diffusion-policy, compliance, whole-body-control, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns vision-and-wrench-conditioned loco-manipulation actions and hand force commands, executed by a compliant whole-body controller.
+  why_it_matters: Treats contact force as a first-class command alongside motion for hardware humanoid interaction.
+
+- title: Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data
+  authors: Dianyi Yang et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.35075
+  paper_url: https://arxiv.org/abs/2610.35075
+  project_url: https://young-bit.github.io/zero-hlm/
+  code_url: https://github.com/YOUNG-bit/zero-hlm
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [real-to-sim-to-real, Gaussian-splatting, simulation-data, VLA, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Builds physics-ready scenes and validated whole-body demonstrations from smartphone captures and simulated source motions.
+  why_it_matters: Demonstrates zero-shot G1 loco-manipulation with no task-specific real-robot demonstration collection.
+
+- title: ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation
+  authors: Nuo Chen et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.34370
+  paper_url: https://arxiv.org/abs/2610.34370
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [agentic-control, long-horizon, skill-orchestration, legged, real-robot]
+  robot_platform: legged robots
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Interleaves reasoning, observation, and tool-based locomotion/manipulation execution for long-horizon legged tasks.
+  why_it_matters: Makes locomotion an explicit skill domain in an agentic robot-control harness.
+
+- title: HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience
+  authors: Yang Liu et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.34186
+  paper_url: https://arxiv.org/abs/2610.34186
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [VLA, egocentric-data, human-data, motion-tokens, whole-body, G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Pre-trains humanoid VLAs on egocentric human and robot data to produce motion tokens and hand-control signals.
+  why_it_matters: Scales whole-body VLA training with human experience while addressing visual and proprioceptive embodiment gaps.
+
 ## Weekly additions — 2026-10-23
 
 - title: DiPLO: Self-distilled Diffusion Planning for Loco-manipulation

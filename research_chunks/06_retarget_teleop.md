@@ -1602,6 +1602,46 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
 
 ---
 
+## Weekly additions — 2026-10-30
+
+- title: TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation
+  authors: Haozhe Zhang et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.40349
+  paper_url: https://arxiv.org/abs/2610.40349
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Retargeting
+  task_tags: [tactile-retargeting, human-to-robot, dexterous-manipulation, VLA, cross-embodiment]
+  robot_platform: dexterous robot hands
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Uses tactile-conditioned retargeting to preserve fingertip contact patches while converting wearable human demonstrations to robot data.
+  why_it_matters: Adds contact sensing to cross-embodiment transfer without requiring object meshes, object poses, or simulation.
+
+- title: Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment
+  authors: Xinyuan He et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.39582
+  paper_url: https://arxiv.org/abs/2610.39582
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Retargeting
+  task_tags: [tactile-retargeting, contact-wrench, dexterous-manipulation, force-transfer]
+  robot_platform: dexterous robot hand
+  uses_real_robot: true
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Aligns human and robot hand kinematics and contact-wrench support profiles to generate replayable contact-aware trajectories.
+  why_it_matters: Transfers physical interaction intent rather than only joint geometry, with real-hardware pouring validation.
+
 ## Weekly additions — 2026-10-23
 
 - title: Fast Motion Retargeting Pipeline for Scalable Humanoid Robot Learning
