@@ -1389,6 +1389,63 @@ Code-status legend:
   one_line: Predicts shared body and hand motion latents from human data, then executes them through pretrained humanoid body and hand controllers.
   why_it_matters: Reframes generalist humanoid policy learning around transferable motion latents instead of sparse robot joint-command demonstrations.
 
+- title: HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness
+  authors: Qingzhou Lu et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.08039
+  paper_url: https://arxiv.org/abs/2611.08039
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Foundation
+  task_tags: [VLM, task-space-harness, whole-body-control, generalization, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Exposes pelvis, torso, hands, walking, and gaze through a measured task-space harness that a fine-tuned VLM can operate.
+  why_it_matters: Shows task transfer from five base skills to SIMPLE and HumanoidArena, with a real G1 box-carrying demonstration.
+
+- title: Perceptive Humanoid Motion from Simulation
+  authors: Siyuan Hu et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.06908
+  paper_url: https://arxiv.org/abs/2611.06908
+  project_url: https://apple-aiml-research.github.io/ml-halo/
+  code_url: https://github.com/apple-aiml-research/ml-halo
+  dataset_url: null
+  category: Foundation
+  task_tags: [vision-language-motion, procedural-homes, sim-to-real, long-horizon, HALO]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Scales vision-language-motion supervision through a thousand procedural homes and orchestrates resulting physical skills.
+  why_it_matters: Official code accompanies a sim-trained system reporting 91% zero-shot real-world success across six unmapped environments.
+
+- title: Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos
+  authors: Wendong Bu et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.41877
+  paper_url: https://arxiv.org/abs/2610.41877
+  project_url: https://movens-zero.github.io/
+  code_url: https://github.com/wendell0218/Movens-Zero
+  dataset_url: https://huggingface.co/datasets/wendell0218/OmniHM-5M
+  category: Foundation
+  task_tags: [motion-foundation-model, human-video, multimodal, flow-matching, closed-loop]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Builds Movens-5M from Internet video and trains a multimodal motion model for real-time closed-loop execution.
+  why_it_matters: Releases the model and large execution-verified human/humanoid motion data needed to study scale effects in motion foundation models.
+
 ---
 
 ## Quick stats

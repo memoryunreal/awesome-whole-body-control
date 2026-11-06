@@ -3395,3 +3395,98 @@ GitHub repos verified to exist (HTTP 200) at time of writing:
 ASAP, human2humanoid (H2O+OmniH2O), PHC, PULSE, ProtoMotions, TWIST, GMR, PBHC (KungfuBot), metamotivo (FB-CPR/Meta Motivo), MoCapAct, DeepMimic, MimicKit, TWIST2, GMT, gentle-humanoid, expressive-humanoid (ExBody), NVlabs/HOVER, NVlabs/CALM, NVlabs/GR00T-WholeBodyControl (SONIC), wyhuai/SkillMimic, wyhuai/SkillMimic-V2, ZhengyiLuo/UHC, Tencent-RoboticsX/NCP, heyuanYao-PKU/MoConVQ, MarkFzp/humanplus, BeingBeyond/Jaeger, LeCAR-Lab/BFM-Zero, LeCAR-Lab/FALCON, Evm7/I-CTRL, GalaxyGeneralRobotics/OpenTrack (Any2Track), HybridRobotics/whole_body_tracking (BeyondMimic), yinkangning0124/Humanoid-UniTracker, BAAI-Humanoid/MOSAIC, LeCAR-Lab/HumanoidVerse, visualmimic/VisualMimic, OpenDriveLab/WholebodyVLA, zixuan417/humanoid-general-motion-tracking (GMT), garrettkatz/poppy-muffin, andireposit/Stand-Up-Motion-on-Compliant-Surface-for-Humanoid, meetpal644/Sit-to-Stand-Motion-Synthesis-For-Humanoids.
 
 ExBody2, ResMimic, OmniRetarget, HugWBC, MaskedMimic (NVIDIA), and several 2026 arXiv papers (CLOT, MOSAIC, Robust-Generalized-Tracking, Iterative-Closed-Loop, Perceptive-Parkour, Deep-Parkour, PhysiFlow) currently have project pages or paper-only releases. MaskedMimic's official code now ships inside NVlabs/ProtoMotions.
+
+- title: STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion
+  authors: Youhao Lyu et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.08097
+  paper_url: https://arxiv.org/abs/2611.08097
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Perceptive-Locomotion
+  task_tags: [depth, proprioception, predictive-representation, terrain, Noetix-E1]
+  robot_platform: Noetix E1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns a compact depth-proprioceptive control state with masked cross-modal and action-conditioned predictive objectives.
+  why_it_matters: Demonstrates 98/100 onboard-sensing hardware successes across stairs, gaps, platforms, and stepping stones.
+
+- title: Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour
+  authors: Chenghao Sun et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.08056
+  paper_url: https://arxiv.org/abs/2611.08056
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [parkour, terrain-indexed-motion-prior, contact-adaptation, depth, Noetix-E1]
+  robot_platform: Noetix E1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Progressively imitates human traversal, then relaxes its motion prior to adapt hand-knee contacts to terrain geometry.
+  why_it_matters: Separates demonstration-driven skill acquisition from robot-specific support adaptation for demanding perceptive parkour.
+
+- title: Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors
+  authors: Haoyu Shao et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.06564
+  paper_url: https://arxiv.org/abs/2611.06564
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [soccer, latent-motion-prior, hierarchical-RL, agility, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Distills a human soccer motion prior into a unified skill-conditioned policy for dribbling, trapping, and kicking.
+  why_it_matters: Shows a single real G1 policy switching fluidly among impact-rich soccer skills while retaining human-like movement.
+
+- title: DiffWBC: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control
+  authors: Yifei Huang et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.41354
+  paper_url: https://arxiv.org/abs/2610.41354
+  project_url: https://diffwbc.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [diffusion, motion-tracking, test-time-steering, failure-discovery, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses a one-step diffusion controller for general tracking, gradient-based online steering, and simulation-free failure discovery.
+  why_it_matters: A practical generative tracker that steers around constraints and detects likely physical failures before hardware trials.
+
+- title: ROOF: Learning Humanoid Fall Recovery under Overhead Constraints
+  authors: Yidan Lu et al.
+  year: 2026
+  venue: arXiv 2026.10
+  arxiv_id: 2610.42097
+  paper_url: https://arxiv.org/abs/2610.42097
+  project_url: https://lu-yidan.github.io/ROOF/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [fall-recovery, obstacle-clearance, motion-prior, contact, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns to create overhead clearance and establish support before standing from obstructed fallen poses.
+  why_it_matters: Extends fall recovery to cluttered, under-furniture settings demonstrated across seven real G1 obstacle scenes.

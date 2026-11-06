@@ -1682,6 +1682,44 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Learns streaming human-to-humanoid motion retargeting from semantic human-motion representations.
   why_it_matters: Moves retargeting toward causal, online operation suitable for interactive robot control.
 
+- title: GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting
+  authors: Yang Liu et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.05754
+  paper_url: https://arxiv.org/abs/2611.05754
+  project_url: ""
+  code_url: ""
+  dataset_url: OakInk2 demonstrations
+  category: Retargeting
+  task_tags: [physics-based-retargeting, contact-rich, sampling, MPC, humanoid]
+  robot_platform: dexterous hands and humanoids
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Combines sampling and archived-rollout gradient recovery to refine contact-rich demonstrations without a differentiable simulator.
+  why_it_matters: Scales a shared retargeting objective to bimanual OakInk2 and real whole-body humanoid motion.
+
+- title: ReContact: Reconstruct and Retarget Human Contacts from Video for Contact-Rich Humanoid Manipulation
+  authors: Zhongkai Gu; Yang Liu; Wei Zhu; Mitsuhiro Hayashibe
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.02968
+  paper_url: https://arxiv.org/abs/2611.02968
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Retargeting
+  task_tags: [contact-reconstruction, video, human-to-humanoid, object-manipulation, contact-transition]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Reconstructs human contact transitions from video and retargets them to humanoid manipulation trajectories.
+  why_it_matters: Focuses on whole-body support redistribution, a capability missed by hand-only transfer pipelines.
+
 ## Notes
 - Verification: code links above were checked through paper pages or GitHub URLs surfaced via search; for systems labeled "announced" / "pending" the project pages indicate code release in progress.
 - Coverage spans (a) classical/learning retargeting (PHC, Mink, GMR, OmniRetarget, IKMR, DexMachina), (b) VR teleop (Open-TeleVision, OmniH2O, OpenWBT, CLONE, HOMIE, Bunny-VisionPro), (c) wearable/exoskeleton teleop (HOMIE, AirExo, NuExo, GELLO, BiDex, DEXOP, ACE, ACE-F, DexUMI), (d) robot-free / in-the-wild capture (UMI, DexCap, ARCap, EgoMimic, EgoZero, EgoMI, AirExo, HumanoidExo), and (e) data-generation / scaling (DexMimicGen, H-RDT, MotionTrans, PH2D).

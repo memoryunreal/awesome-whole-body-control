@@ -2917,3 +2917,117 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: 🌐 Project Page
   one_line: Maintains an object-guided history of salient events for a whole-body VLA and introduces the HuMeGo benchmark.
   why_it_matters: Shows that preserving the right visual history materially improves long-horizon real G1 task success.
+
+- title: Social Humanoid: Socially Responsive Human-Humanoid Interaction
+  authors: Vongani H. Maluleke et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.08407
+  paper_url: https://arxiv.org/abs/2611.08407
+  project_url: https://von31.github.io/social-humanoid/
+  code_url: ""
+  dataset_url: Human-Humanoid Interaction benchmark (260 hours)
+  category: Loco-Manipulation
+  task_tags: [human-humanoid-interaction, social-motion, adaptive-retargeting, whole-body, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Generates and tracks socially responsive whole-body motion conditioned on a partner's motion, including occluded-partner anticipation.
+  why_it_matters: Introduces a large human-humanoid interaction benchmark and real-robot partnered behaviors with contact-aware retargeting.
+
+- title: AffectiveVLA: Safe and Intent-Aware VLA Control for Human-Humanoid Social Interaction
+  authors: Nikita Kuzmin et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.07712
+  paper_url: https://arxiv.org/abs/2611.07712
+  project_url: ""
+  code_url: ""
+  dataset_url: 1300 multimodal VR-teleoperation episodes
+  category: Loco-Manipulation
+  task_tags: [social-interaction, VLA, intent-gating, compliance, safety, Unitree-G1]
+  robot_platform: Unitree G1 with dexterous hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Gates a whole-body social-interaction VLA by RGB intent recognition and interaction-specific arm compliance.
+  why_it_matters: Couples low-latency intent uncertainty and a latched safe-stop mechanism with hardware-tested physical social contact.
+
+- title: HLO-AMP: Hierarchical Loco-Manipulation from Object-Aware Motion Priors
+  authors: Jean-Pierre Sleiman et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.05113
+  paper_url: https://arxiv.org/abs/2611.05113
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [hierarchical-control, object-aware-motion-prior, bimanual, payload, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains the low-level tracker with the manipulated object physically present, then constrains a high-level policy to its empirical command envelope.
+  why_it_matters: Addresses payload-induced whole-body contacts directly instead of approximating them as end-effector disturbances.
+
+- title: Coordinating Humanoid Loco-Manipulation through Action-Conditioned Latent Foresight
+  authors: Ju Dong et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.04839
+  paper_url: https://arxiv.org/abs/2611.04839
+  project_url: https://ju6276.github.io/Action-Grounded-Foresight/
+  code_url: ""
+  dataset_url: https://huggingface.co/datasets/ju6276/Action-Conditioned-Latent-Foresight
+  category: Loco-Manipulation
+  task_tags: [latent-foresight, world-model, action-conditioned, whole-body, humanoid]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 📦 Dataset
+  one_line: Learns action-conditioned latent foresight to coordinate high-level decisions with whole-body execution.
+  why_it_matters: Makes a released foresight dataset available for evaluating predictive interfaces in long-horizon loco-manipulation.
+
+- title: ReGATE: Recurrent Gated Visual Fusion for Reactive Humanoid-Object Interaction
+  authors: Hao Zhu; Jorge Peña-Queralta
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.02871
+  paper_url: https://arxiv.org/abs/2611.02871
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [egocentric-depth, recurrent-fusion, reactive-control, humanoid-object-interaction]
+  robot_platform: humanoid robot
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Fuses egocentric depth, proprioception, and user commands recurrently for reactive object acquisition, transport, and release.
+  why_it_matters: Targets the perception-to-whole-body gap in partially observed humanoid-object interaction.
+
+- title: HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception
+  authors: Xuanbin Peng et al.
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.01659
+  paper_url: https://arxiv.org/abs/2611.01659
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [active-perception, affordance, whole-body-grasping, point-cloud, simulation-to-real]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Combines belief-driven viewpoint selection, point-cloud affordance proposals, and whole-body alignment for grasping.
+  why_it_matters: Filters kinematically plausible but dynamically unstable grasps with controller-in-the-loop simulation before real-hardware deployment.

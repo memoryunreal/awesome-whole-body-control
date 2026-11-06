@@ -6,23 +6,23 @@
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
 | `02_hoi_motion.md` | 106 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 182 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 157 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 78 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 91 | Human-to-humanoid retargeting + teleop |
+| `03_wbc_tracking.md` | 187 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 163 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 81 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 93 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 106 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 782**
+**Total unique papers after deduplication: 798**
 
 ## Per-Category Counts
 
 - Human-Object Interaction Motion Generation: 66
 - Object-Aware Human Motion Synthesis: 27
-- Whole-Body Motion Tracking and Imitation: 227
-- Whole-Body Control and Loco-Manipulation: 151
-- Humanoid Foundation Models and Generalist Policies: 92
-- Human-to-Humanoid Retargeting: 31
+- Whole-Body Motion Tracking and Imitation: 232
+- Whole-Body Control and Loco-Manipulation: 157
+- Humanoid Foundation Models and Generalist Policies: 95
+- Human-to-Humanoid Retargeting: 33
 - Teleoperation and Demonstration Collection: 45
 - Datasets and Benchmarks: 75
 - Evaluation Metrics and Contact Modeling: 14
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ❌ No Code | 261 |
-| ⭐ Code | 250 |
-| 🌐 Project Page | 196 |
+| ❌ No Code | 271 |
+| ⭐ Code | 252 |
+| 🌐 Project Page | 199 |
 | ⏳ Code Coming Soon | 43 |
-| 📦 Dataset | 18 |
+| 📦 Dataset | 19 |
 | 🧩 Partial Code | 13 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,19 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-11-06 — 16 new, 0 updated
+- Window: 2026-10-30T00:00Z → 2026-11-06T23:59Z.
+- Sources searched: pulled `origin/main`; queried arXiv's submitted-date API across cs.RO, cs.CV, cs.LG, and cs.GR; screened titles and abstracts for HOI generation, humanoid whole-body tracking/control, loco-manipulation, contact-aware transfer, and humanoid foundation policies; deduplicated retained IDs against `papers.csv` and `research_chunks/*.md`; inspected arXiv-linked project pages and verified candidate GitHub remotes.
+- Counts: 2,638 category records returned (422 cs.RO, 836 cs.CV, 1,342 cs.LG, 38 cs.GR) before cross-list deduplication; 16 new in-scope records added; 0 existing records received a verified revision or code-status change.
+- New entries by source chunk:
+  - `03_wbc_tracking.md` — 5 entries: STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion (2611.08097), Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour (2611.08056), Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors (2611.06564), DiffWBC: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control (2610.41354), ROOF: Learning Humanoid Fall Recovery under Overhead Constraints (2610.42097).
+  - `04_loco_manip.md` — 6 entries: Social Humanoid: Socially Responsive Human-Humanoid Interaction (2611.08407), AffectiveVLA: Safe and Intent-Aware VLA Control for Human-Humanoid Social Interaction (2611.07712), HLO-AMP: Hierarchical Loco-Manipulation from Object-Aware Motion Priors (2611.05113), Coordinating Humanoid Loco-Manipulation through Action-Conditioned Latent Foresight (2611.04839), ReGATE: Recurrent Gated Visual Fusion for Reactive Humanoid-Object Interaction (2611.02871), HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception (2611.01659).
+  - `05_foundation.md` — 3 entries: HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness (2611.08039), Perceptive Humanoid Motion from Simulation (2611.06908), Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos (2610.41877).
+  - `06_retarget_teleop.md` — 2 entries: GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting (2611.05754), ReContact: Reconstruct and Retarget Human Contacts from Video for Contact-Rich Humanoid Manipulation (2611.02968).
+- Verified code repos: https://github.com/apple-aiml-research/ml-halo (official HALO implementation; reachable remote); https://github.com/wendell0218/Movens-Zero (official Movens-Zero implementation; reachable remote); https://github.com/robotmabel/open_mabel was verified as an official remote while screening MABEL, but that platform paper was excluded as a weaker mobile-bimanual fit.
+- Unresolved code-status URLs: https://von31.github.io/social-humanoid/, https://diffwbc.github.io/, https://lu-yidan.github.io/ROOF/, https://ju6276.github.io/Action-Grounded-Foresight/, and https://mapo-corl2026.github.io/MAPO/ were reachable project pages but did not expose an official method repository during inspection. Paper-only entries retained in this run have no official project/code URL in their arXiv abstract.
+- Inspected but excluded: MAPO (2611.02613), CRISP (2611.07268), H2MARL (2611.06523), PhySA (2611.07679), and Nabla Mimic (2610.41654) as methodologically relevant but weaker deployment/whole-body fit than the retained set; generic dexterous-hand, mobile-manipulation, exoskeleton, ROV teleoperation, and non-humanoid human-motion papers were also excluded.
 
 ### 2026-10-30 — 14 new, 0 updated
 - Window: 2026-10-23T12:00Z → 2026-10-30T12:00Z.

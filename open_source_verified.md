@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (250 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (252 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -662,7 +662,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://humanoid-bench.github.io/) · [Code](https://github.com/carlosferrazza/humanoid-bench) · [Paper](https://arxiv.org/abs/2403.10506)
 
 
-## Humanoid Foundation Models and Generalist Policies (38)
+## Humanoid Foundation Models and Generalist Policies (40)
 
 - ⭐ 🤖 🧍 **[AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization](https://arxiv.org/abs/2608.29242)** `arXiv 2026.08` `RoboCasa GR1 / IRON humanoid robot` `Foundation`
   Cheng Chen et al..
@@ -679,6 +679,11 @@ This is the canonical list of papers with **verified official open-source code**
   Generalist humanoid control stack that places an omni-modal motion-generation brain above a reactive tracking controller.
   Links: [Project](https://tsinghua-mars-lab.github.io/OMG/) · [Code](https://github.com/Tsinghua-MARS-Lab/OMG) · [Paper](https://arxiv.org/abs/2606.10340)
 
+- ⭐ 🤖 🧍 **[Perceptive Humanoid Motion from Simulation](https://arxiv.org/abs/2611.06908)** `arXiv 2026.11` `humanoid robot` `Foundation`
+  Siyuan Hu et al..
+  Scales vision-language-motion supervision through a thousand procedural homes and orchestrates resulting physical skills.
+  Links: [Project](https://apple-aiml-research.github.io/ml-halo/) · [Code](https://github.com/apple-aiml-research/ml-halo) · [Paper](https://arxiv.org/abs/2611.06908)
+
 - ⭐ 🧱 **[Cosmos Policy — Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2601.16163)** `arXiv (Jan 2026)` `LIBERO, RoboCasa simulators` `Generalist-Policy`
   NVIDIA Research.
   Links: [Code](https://github.com/nv-tlabs/cosmos-policy) · [Paper](https://arxiv.org/abs/2601.16163)
@@ -691,6 +696,11 @@ This is the canonical list of papers with **verified official open-source code**
   Nonghai Zhang et al..
   Adapts VLA-style autoregressive modeling to humanoid motion with separate low-frequency pose and high-frequency velocity streams.
   Links: [Project](https://aigeeksgroup.github.io/MotionVLA) · [Code](https://github.com/AIGeeksGroup/MotionVLA) · [Paper](https://arxiv.org/abs/2606.15142)
+
+- ⭐ 🧍 🧱 **[Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos](https://arxiv.org/abs/2610.41877)** `arXiv 2026.10` `humanoid robot` `Foundation`
+  Wendong Bu et al..
+  Builds Movens-5M from Internet video and trains a multimodal motion model for real-time closed-loop execution.
+  Links: [Project](https://movens-zero.github.io/) · [Code](https://github.com/wendell0218/Movens-Zero) · [Paper](https://arxiv.org/abs/2610.41877) · [Dataset](https://huggingface.co/datasets/wendell0218/OmniHM-5M)
 
 - ⭐ 🤖 🧍 **[AgiBot World Colosseo + GO-1 — Large-scale Manipulation Platform](https://arxiv.org/abs/2503.06669)** `IROS 2025 / IEEE T-RO 2026` `AgiBot mobile humanoid (whole-body, dexterous hands, tactile)` `Foundation / Dataset`
   AgiBot Team / OpenDriveLab.
