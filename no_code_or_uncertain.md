@@ -1,6 +1,6 @@
 # Papers with No Code or Uncertain Status
 
-Papers where official code could not be verified (314 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
+Papers where official code could not be verified (318 entries). Status is one of: ❌ No Code Found · ⏳ Code Coming Soon · ❓ Uncertain.
 
 ## Human-Object Interaction Motion Generation (28)
 
@@ -194,7 +194,7 @@ Papers where official code could not be verified (314 entries). Status is one of
   Links: [Paper](https://dl.acm.org/doi/10.1145/3450626.3459830)
 
 
-## Whole-Body Motion Tracking and Imitation (103)
+## Whole-Body Motion Tracking and Imitation (106)
 
 - ⏳ 🤖 🧍 **[ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control](https://arxiv.org/abs/2609.00677)** `arXiv 2026.09` `Unitree G1` `WBC`
   Yan Wu et al..
@@ -350,6 +350,11 @@ Papers where official code could not be verified (314 entries). Status is one of
   Mike Zhang et al..
   Distills human-motion-conditioned locomotion into a steerable prior, then fine-tunes it for broader command coverage and robustness.
   Links: [Paper](https://arxiv.org/abs/2610.10489)
+
+- ❌ 🤖 🧍 **[ILA: A Transferable Interface-Level Adapter for Compliant Humanoid Motion Tracking](https://arxiv.org/abs/2611.14985)** `arXiv 2026.11` `humanoid robot` `Motion-Imitation`
+  ZhuoChang Cai et al..
+  Adapts a tracker reference from observation history so existing humanoid policies can yield safely to physical guidance without force sensors.
+  Links: [Paper](https://arxiv.org/abs/2611.14985)
 
 - ❌ 🤖 🧍 **[Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control](https://arxiv.org/abs/2602.21599)** `arXiv 2026.02` `humanoid (sim/real)` `WBC-Tracking`
   arXiv 2026.02.
@@ -529,6 +534,11 @@ Papers where official code could not be verified (314 entries). Status is one of
   End-to-end humanoid locomotion from raw pixels.
   Links: [Paper](https://arxiv.org/abs/2602.06382)
 
+- ❌ 🧍 🧱 **[PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control](https://arxiv.org/abs/2611.16188)** `arXiv 2026.11` `Unitree G1` `Motion-Imitation`
+  Shangchao Hu et al..
+  Adds small routed experts to a frozen mixture-of-experts tracker to learn new whole-body skills without erasing base motions.
+  Links: [Paper](https://arxiv.org/abs/2611.16188)
+
 - ❌ 🧍 🧱 **[PFM-HR: Pose Flow Matching for Humanoid Robots](https://arxiv.org/abs/2608.03227)** `arXiv 2026.08` `humanoid tracking benchmarks` `WBC`
   Yukang Gao et al..
   Trains a reusable flow-matching pose prior from unordered pose data and uses a Pose Geometry Score to reward structured pose transitions during tracking.
@@ -553,6 +563,11 @@ Papers where official code could not be verified (314 entries). Status is one of
   Yunsoo Seo et al..
   Uses a pretrained RL policy as a dynamically feasible sampling prior for high-rate MPPI whole-body control on a 29-DoF G1 model.
   Links: [Paper](https://arxiv.org/abs/2606.25123)
+
+- ❌ 🧍 🧱 **[STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards](https://arxiv.org/abs/2611.08857)** `arXiv 2026.11` `Unitree G1 and Booster T1` `Perceptive-Locomotion`
+  Nico Bohlinger et al..
+  Replaces unobservable base-velocity rewards with commanded acceleration tracking to learn humanoid walking from onboard IMU signals.
+  Links: [Paper](https://arxiv.org/abs/2611.08857)
 
 - ❌ 🧍 🧱 **[Test-Time Motion Steering for Perceptive Humanoid Fall Recovery](https://arxiv.org/abs/2610.30061)** `arXiv 2026.10` `humanoid robot` `Motion-Imitation`
   Yifan Xu et al..
@@ -1137,7 +1152,7 @@ Papers where official code could not be verified (314 entries). Status is one of
   Links: [Paper](https://arxiv.org/abs/2410.03311)
 
 
-## Human-to-Humanoid Retargeting (19)
+## Human-to-Humanoid Retargeting (20)
 
 - ⏳ 🤖 🧍 **[C2Dex: Contact-Consistent Reconstruction and Retargeting for Dexterous Manipulation from Monocular Video](https://arxiv.org/abs/2608.07045)** `arXiv 2026.08 (v2 Sep 2026)` `Inspire dexterous hand / humanoid-relevant dexterous hands` `Retargeting`
   Jie Ren et al..
@@ -1153,6 +1168,11 @@ Papers where official code could not be verified (314 entries). Status is one of
   Tara Sadjadpour et al..
   Retargets reconstructed human hand-object interactions across robot hand morphologies, refines them with residual RL, and distills zero-shot visuomotor policies.
   Links: [Project](https://morphometricimitation.github.io/) · [Code](https://github.com/tsadja/morphometric) · [Paper](https://arxiv.org/abs/2609.28660)
+
+- ❌ 🤖 🧍 **[From a Single RGB Image to Robot Execution: Metric Scene Alignment and Contact-Guided Retargeting](https://arxiv.org/abs/2611.14981)** `arXiv 2026.11` `Unitree G1` `Retargeting`
+  Zhenxuan Ding et al..
+  Reconstructs a metric scene from one RGB image, aligns generated human interaction motion, then corrects robot support errors after retargeting.
+  Links: [Paper](https://arxiv.org/abs/2611.14981)
 
 - ❌ 🤖 🧍 **[From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids](https://arxiv.org/abs/2610.08381)** `arXiv 2026.10` `mobile-base humanoids` `Retargeting`
   Jiyeon Koo et al..

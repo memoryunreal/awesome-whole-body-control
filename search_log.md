@@ -5,24 +5,24 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 106 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 187 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 163 | Whole-body control and loco-manipulation |
+| `02_hoi_motion.md` | 107 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 192 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 166 | Whole-body control and loco-manipulation |
 | `05_foundation.md` | 81 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 93 | Human-to-humanoid retargeting + teleop |
+| `06_retarget_teleop.md` | 94 | Human-to-humanoid retargeting + teleop |
 | `07_data_bench_s2r.md` | 106 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 798**
+**Total unique papers after deduplication: 808**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 66
+- Human-Object Interaction Motion Generation: 67
 - Object-Aware Human Motion Synthesis: 27
-- Whole-Body Motion Tracking and Imitation: 232
-- Whole-Body Control and Loco-Manipulation: 157
+- Whole-Body Motion Tracking and Imitation: 237
+- Whole-Body Control and Loco-Manipulation: 160
 - Humanoid Foundation Models and Generalist Policies: 95
-- Human-to-Humanoid Retargeting: 33
+- Human-to-Humanoid Retargeting: 34
 - Teleoperation and Demonstration Collection: 45
 - Datasets and Benchmarks: 75
 - Evaluation Metrics and Contact Modeling: 14
@@ -33,9 +33,9 @@
 
 | Status | Count |
 |---|---|
-| ❌ No Code | 271 |
-| ⭐ Code | 252 |
-| 🌐 Project Page | 199 |
+| ❌ No Code | 275 |
+| ⭐ Code | 255 |
+| 🌐 Project Page | 202 |
 | ⏳ Code Coming Soon | 43 |
 | 📦 Dataset | 19 |
 | 🧩 Partial Code | 13 |
@@ -101,6 +101,19 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-11-13 — 10 new, 0 updated
+- Window: 2026-11-06T00:00Z → 2026-11-13T23:59Z.
+- Sources searched: pulled `origin/main`; queried arXiv's submitted-date API across cs.RO, cs.CV, cs.LG, and cs.GR; screened titles and abstracts for HOI generation, humanoid whole-body tracking/control, loco-manipulation, contact-aware retargeting, and humanoid foundation-policy work; deduplicated retained IDs against `papers.csv` and `research_chunks/*.md`; inspected project pages and checked official GitHub remotes and root trees.
+- Counts: 2,316 category records returned (383 cs.RO, 716 cs.CV, 1,189 cs.LG, 28 cs.GR) before cross-list deduplication; 10 new in-scope records added; 0 existing records received a verified revision or code-status change.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: InfCoiL: Coordinated Planner-Controller Learning for Closed-Loop Physics-Based Human-Object Interaction (2611.11517).
+  - `03_wbc_tracking.md` — 5 entries: BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU (2611.16422), PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control (2611.16188), ILA: A Transferable Interface-Level Adapter for Compliant Humanoid Motion Tracking (2611.14985), RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control (2611.14049), STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards (2611.08857).
+  - `04_loco_manip.md` — 3 entries: FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation (2611.17142), LHNav: Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data (2611.12136), Kimodo-Policy: Learning Kinematic Action Models for Humanoid Loco-Manipulation (2611.11554).
+  - `06_retarget_teleop.md` — 1 entry: From a Single RGB Image to Robot Execution: Metric Scene Alignment and Contact-Guided Retargeting (2611.14981).
+- Verified code repos: https://github.com/bb0928/FORGE (official non-archived repository with simulator, policy, training, and scripts); https://github.com/fuyichen0725/blinkmimic (official non-archived MIT repository with source, scripts, tools, and documentation); https://github.com/kimodo-policy/kimodo-policy (official non-archived MIT repository with training, evaluation, model, data, real-world, and test sources).
+- Unresolved code-status URLs: https://xiaopeng-whu.github.io/RedirectMimic/, https://robbyant-research.github.io/LHNav/, and https://infcoil.github.io/ were reachable project pages without a confirmed official method repository; the `robbyant-research/LHNav` GitHub link is a website/media tree only. PERA, ILA, STRIDE, and the single-RGB retargeting pipeline expose no official project/code URL in their arXiv abstracts.
+- Inspected but excluded: HALO (2611.16439) as mobile-manipulation rather than a humanoid whole-body system; MotionSkill (2611.16346) as generic bipedal transfer; HEIR (2611.17238), EgoX (2611.16728), and DexSeed (2611.14092) as broad or hand-focused manipulation; plus generic VLA, arm-only, quadruped, rehabilitation, medical, and non-humanoid human-motion matches.
 
 ### 2026-11-06 — 16 new, 0 updated
 - Window: 2026-10-30T00:00Z → 2026-11-06T23:59Z.

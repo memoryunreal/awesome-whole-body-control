@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (252 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (255 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -168,7 +168,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://jiahaoplus.github.io/SAGA/saga.html) · [Code](https://github.com/JiahaoPlus/SAGA) · [Paper](https://arxiv.org/abs/2112.10103)
 
 
-## Whole-Body Motion Tracking and Imitation (61)
+## Whole-Body Motion Tracking and Imitation (62)
 
 - ⭐ 🤖 🧍 **[Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions](https://arxiv.org/abs/2608.26505)** `arXiv 2026.08` `Poppy Humanoid` `WBC`
   Xulin Chen et al..
@@ -244,6 +244,11 @@ This is the canonical list of papers with **verified official open-source code**
   OpenDriveLab.
   Unified latent VLA architecture for whole-body humanoid loco-manipulation with tracking primitives.
   Links: [Project](https://github.com/OpenDriveLab/WholebodyVLA) · [Code](https://github.com/OpenDriveLab/WholebodyVLA) · [Paper](https://github.com/OpenDriveLab/WholebodyVLA)
+
+- ⭐ 🧍 🧱 **[BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU](https://arxiv.org/abs/2611.16422)** `arXiv 2026.11` `Unitree G1` `Motion-Imitation`
+  Fuyi Chen.
+  Speeds single-GPU humanoid motion-tracker training with scheduled steps, failure-directed resets, and captured GPU iterations.
+  Links: [Code](https://github.com/fuyichen0725/blinkmimic) · [Paper](https://arxiv.org/abs/2611.16422)
 
 - ⭐ **[ECO - Energy-Constrained Optimization with Reinforcement Learning for Humanoid Walking](https://arxiv.org/abs/2602.06445)** `arXiv 2026.02` `Locomotion`
   Energy-constrained RL for humanoid walking.
@@ -474,7 +479,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://xbpeng.github.io/projects/DeepMimic/index.html) · [Code](https://github.com/xbpeng/DeepMimic) · [Paper](https://arxiv.org/abs/1804.02717)
 
 
-## Whole-Body Control and Loco-Manipulation (37)
+## Whole-Body Control and Loco-Manipulation (39)
 
 - ⭐ 🤖 🧍 **[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.23680)** `arXiv 2026.06` `Unitree G1 + WUJI hand` `Loco-Manipulation`
   Sikai Li et al..
@@ -486,6 +491,11 @@ This is the canonical list of papers with **verified official open-source code**
   Captures tracker-free egocentric whole-body demonstrations and aligns them into robot action space for GR00T N1.7 and pi0.5 policy training.
   Links: [Project](https://dexroam.github.io/) · [Code](https://github.com/zhourui9813/DexRoam) · [Paper](https://arxiv.org/abs/2609.35761) · [Dataset](https://huggingface.co/datasets/zhourui9813/DexRoam_Realworld_Data)
 
+- ⭐ 🤖 🧍 **[FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.17142)** `arXiv 2026.11` `humanoid robot` `Loco-Manipulation`
+  Liangjun Xing et al..
+  Combines a locomotion prior with coarse-to-fine wrist and foot commands plus proprioceptive force estimation for contact-rich loco-manipulation.
+  Links: [Project](https://bb0928.github.io/forge/) · [Code](https://github.com/bb0928/FORGE) · [Paper](https://arxiv.org/abs/2611.17142)
+
 - ⭐ 🤖 🧍 **[GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors](https://arxiv.org/abs/2606.05160)** `arXiv 2026.06` `humanoid` `Loco-Manipulation`
   Tianyi Xie et al..
   Fully virtual generation pipeline composing 3D assets, simulator scenes, and video priors into robot-compatible loco-manipulation data.
@@ -495,6 +505,11 @@ This is the canonical list of papers with **verified official open-source code**
   Lizhi Yang et al..
   Distills complementary teachers into a task-space whole-body command interface for diverse humanoid loco-manipulation skills.
   Links: [Project](https://lzyang2000.github.io/HANDOFF/) · [Code](https://github.com/lzyang2000/HANDOFF) · [Paper](https://arxiv.org/abs/2606.06493)
+
+- ⭐ 🤖 🧍 **[Kimodo-Policy: Learning Kinematic Action Models for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.11554)** `arXiv 2026.11` `humanoid robot` `Loco-Manipulation`
+  Yunheng Wang et al..
+  Uses a pretrained motion generator with visual conditioning and root-body-hand coordination as the action backbone for humanoid loco-manipulation.
+  Links: [Project](https://kimodo-policy.github.io/) · [Code](https://github.com/kimodo-policy/kimodo-policy) · [Paper](https://arxiv.org/abs/2611.11554) · [Dataset](https://huggingface.co/datasets/YunhengWang/kimodo-policy)
 
 - ⭐ 🤖 🧍 **[LAC: Linear and Angular Compliance for Humanoid Whole-body Control](https://arxiv.org/abs/2608.25405)** `arXiv 2026.08` `Unitree G1` `Loco-Manipulation`
   Yang Liu et al..

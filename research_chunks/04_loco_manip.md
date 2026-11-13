@@ -3031,3 +3031,62 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ❌ No Code Found
   one_line: Combines belief-driven viewpoint selection, point-cloud affordance proposals, and whole-body alignment for grasping.
   why_it_matters: Filters kinematically plausible but dynamically unstable grasps with controller-in-the-loop simulation before real-hardware deployment.
+
+## Weekly additions — 2026-11-13
+
+- title: FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation
+  authors: Liangjun Xing; Ke Fan; Kailin Li; Bin Wang; Xiaojie Niu; Qingwei Ben; Jiafei Cao; Wei Yao; Yebin Liu; Jingbo Wang; Weinan Zhang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.17142
+  paper_url: https://arxiv.org/abs/2611.17142
+  project_url: https://bb0928.github.io/forge/
+  code_url: https://github.com/bb0928/FORGE
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [force-aware-control, teleoperation, contact-estimation, locomotion-prior, humanoid]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Combines a locomotion prior with coarse-to-fine wrist and foot commands plus proprioceptive force estimation for contact-rich loco-manipulation.
+  why_it_matters: The official repository includes policy, simulator, training, and deployment-support files for a practical sparse-command interface.
+
+- title: LHNav: Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data
+  authors: Xueyang Wang; Zehong Shen; Dingkun Wei; Huaijin Pi; Changpeng Wang; Xing Zhu; Hujun Bao; Yujun Shen; Xiaowei Zhou
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.12136
+  paper_url: https://arxiv.org/abs/2611.12136
+  project_url: https://robbyant-research.github.io/LHNav/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [long-horizon-navigation, VLA, whole-body-execution, physics-grounded-data, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Coordinates language planning, visual motion-token prediction, and whole-body execution at separate rates for multi-destination humanoid navigation.
+  why_it_matters: Demonstrates long-horizon real G1 navigation while grounding natural motion generation in collision-aware physical rollouts.
+
+- title: Kimodo-Policy: Learning Kinematic Action Models for Humanoid Loco-Manipulation
+  authors: Yunheng Wang; Jiaxi Zhang; Wei Lu; Yuetong Fang; Taowen Wang; Yixiao Feng; Shuning Zhang; Junzhe Xu; Yichi Wang; Zizhao Yuan; Kailun Huang; Lusong Li; Mingqian Zhou; Zecui Zeng; Renjing Xu
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.11554
+  paper_url: https://arxiv.org/abs/2611.11554
+  project_url: https://kimodo-policy.github.io/
+  code_url: https://github.com/kimodo-policy/kimodo-policy
+  dataset_url: https://huggingface.co/datasets/YunhengWang/kimodo-policy
+  category: Loco-Manipulation
+  task_tags: [kinematic-action-model, motion-prior, ControlNet, VLA, humanoid-loco-manipulation]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Uses a pretrained motion generator with visual conditioning and root-body-hand coordination as the action backbone for humanoid loco-manipulation.
+  why_it_matters: The MIT-licensed official release provides training, evaluation, model, data, real-world, and benchmark assets for reproducible action-model research.

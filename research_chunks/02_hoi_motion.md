@@ -1932,6 +1932,26 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Reasons over unified human-object and object-object affordances, then autoregressively generates long-horizon body, hand, and object interactions.
   why_it_matters: Extends HOI generation beyond a single manipulated object by making multi-entity affordance an explicit conditioning signal.
 
+## Weekly additions — 2026-11-13
+
+- title: InfCoiL: Coordinated Planner-Controller Learning for Closed-Loop Physics-Based Human-Object Interaction
+  authors: Yude Zou; Yifei Yao; Yiwei Hao; Hanqing Wang; Xing Gao
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.11517
+  paper_url: https://arxiv.org/abs/2611.11517
+  project_url: https://infcoil.github.io/
+  code_url: ""
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [physics-based, human-object-interaction, closed-loop, flow-matching, reinforcement-learning]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Co-trains a morphology-aware flow planner and physics controller in an autoregressive plan-and-execute loop for contact-rich HOI.
+  why_it_matters: Uses execution feedback to improve both planning and control rather than treating the motion generator as a frozen open-loop prior.
+
 ## Summary
 
 Total papers: 61. Verified (⭐ Code) repos: ~37. Project pages with no released code (🌐): ~10. Dataset-only releases (📦): 2. Coming soon (⏳): 1. No code found (❌): ~11.

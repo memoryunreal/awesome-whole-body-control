@@ -3490,3 +3490,100 @@ ExBody2, ResMimic, OmniRetarget, HugWBC, MaskedMimic (NVIDIA), and several 2026 
   code_status: 🌐 Project Page
   one_line: Learns to create overhead clearance and establish support before standing from obstructed fallen poses.
   why_it_matters: Extends fall recovery to cluttered, under-furniture settings demonstrated across seven real G1 obstacle scenes.
+
+## Weekly additions — 2026-11-13
+
+- title: BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU
+  authors: Fuyi Chen
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.16422
+  paper_url: https://arxiv.org/abs/2611.16422
+  project_url: ""
+  code_url: https://github.com/fuyichen0725/blinkmimic
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [motion-tracking, differentiable-world-model, fast-training, Unitree-G1, LAFAN1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Speeds single-GPU humanoid motion-tracker training with scheduled steps, failure-directed resets, and captured GPU iterations.
+  why_it_matters: Official source and scripts substantiate a reproducible recipe that trains a 40-clip G1 tracker in minutes.
+
+- title: PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control
+  authors: Shangchao Hu; Yadan Sun; Xibo Yu; Wei Huang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.16188
+  paper_url: https://arxiv.org/abs/2611.16188
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [continual-learning, mixture-of-experts, motion-imitation, Unitree-G1, skill-composition]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adds small routed experts to a frozen mixture-of-experts tracker to learn new whole-body skills without erasing base motions.
+  why_it_matters: Offers a parameter-efficient continual-learning path for extending pretrained humanoid motion libraries.
+
+- title: ILA: A Transferable Interface-Level Adapter for Compliant Humanoid Motion Tracking
+  authors: ZhuoChang Cai; Zihao Yan; Jinxuan Zhu; Yanjie Li; Hao Xiong
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.14985
+  paper_url: https://arxiv.org/abs/2611.14985
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [compliant-tracking, physical-human-robot-interaction, reference-adaptation, simulation-to-real]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adapts a tracker reference from observation history so existing humanoid policies can yield safely to physical guidance without force sensors.
+  why_it_matters: Makes compliance a reusable interface-level capability across pretrained trackers instead of a tracker-specific retraining objective.
+
+- title: RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control
+  authors: Zepeng Wang; Xiaochuan Shi
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.14049
+  paper_url: https://arxiv.org/abs/2611.14049
+  project_url: https://xiaopeng-whu.github.io/RedirectMimic/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [motion-editing, constraint-aware-control, whole-body-control, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Trains against locally edited targets while retaining the original reference interface to replace prohibited motions without disrupting the rest.
+  why_it_matters: Provides a direct mechanism for safety or application-specific local constraints in reusable whole-body motion interfaces.
+
+- title: STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards
+  authors: Nico Bohlinger; Jan Peters
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.08857
+  paper_url: https://arxiv.org/abs/2611.08857
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Perceptive-Locomotion
+  task_tags: [onboard-imu, reinforcement-learning, locomotion, Unitree-G1, Booster-T1]
+  robot_platform: Unitree G1 and Booster T1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Replaces unobservable base-velocity rewards with commanded acceleration tracking to learn humanoid walking from onboard IMU signals.
+  why_it_matters: Targets a practical reward interface for rapid locomotion learning without external motion capture.

@@ -1720,6 +1720,27 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Reconstructs human contact transitions from video and retargets them to humanoid manipulation trajectories.
   why_it_matters: Focuses on whole-body support redistribution, a capability missed by hand-only transfer pipelines.
 
+## Weekly additions — 2026-11-13
+
+- title: From a Single RGB Image to Robot Execution: Metric Scene Alignment and Contact-Guided Retargeting
+  authors: Zhenxuan Ding; Yu Huang; Xinmiao Wang; Chenghao Sun; Ziyang Dong; Wenhao Cui
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.14981
+  paper_url: https://arxiv.org/abs/2611.14981
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Retargeting
+  task_tags: [scene-reconstruction, contact-guided, humanoid, retargeting, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Reconstructs a metric scene from one RGB image, aligns generated human interaction motion, then corrects robot support errors after retargeting.
+  why_it_matters: Produces executable G1 motion references for new scenes without prebuilt 3D assets or scene-specific policy fine-tuning.
+
 ## Notes
 - Verification: code links above were checked through paper pages or GitHub URLs surfaced via search; for systems labeled "announced" / "pending" the project pages indicate code release in progress.
 - Coverage spans (a) classical/learning retargeting (PHC, Mink, GMR, OmniRetarget, IKMR, DexMachina), (b) VR teleop (Open-TeleVision, OmniH2O, OpenWBT, CLONE, HOMIE, Bunny-VisionPro), (c) wearable/exoskeleton teleop (HOMIE, AirExo, NuExo, GELLO, BiDex, DEXOP, ACE, ACE-F, DexUMI), (d) robot-free / in-the-wild capture (UMI, DexCap, ARCap, EgoMimic, EgoZero, EgoMI, AirExo, HumanoidExo), and (e) data-generation / scaling (DexMimicGen, H-RDT, MotionTrans, PH2D).
