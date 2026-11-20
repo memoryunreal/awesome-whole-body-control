@@ -1952,6 +1952,44 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Co-trains a morphology-aware flow planner and physics controller in an autoregressive plan-and-execute loop for contact-rich HOI.
   why_it_matters: Uses execution feedback to improve both planning and control rather than treating the motion generator as a frozen open-loop prior.
 
+## Weekly additions — 2026-11-20
+
+- title: CoRelate: Coordinated Human-Object Motion Synthesis through Interaction Relations
+  authors: Zhiwen Qiu; Daisy Lin; Diyu Zhou; Jialin Wu; Rosita Ji; Saleh Kalantari
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.25166
+  paper_url: https://arxiv.org/abs/2611.25166
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [human-object-motion, diffusion, contact, articulated-objects]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: false
+  code_status: ❌ No Code Found
+  one_line: Generates coordinated full-body human and object trajectories using explicit hand-part interaction relations and task feedback.
+  why_it_matters: Directly optimizes contact realization and object-goal completion rather than treating either as a by-product of motion generation.
+
+- title: Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback
+  authors: Yao Zhang; Zhuchenyang Liu; Yu Xiao
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.25005
+  paper_url: https://arxiv.org/abs/2611.25005
+  project_url: https://ryenhails.github.io/Inhabitant/
+  code_url: ""
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [human-scene-interaction, long-horizon, spatial-control, agent]
+  uses_real_robot: false
+  uses_humanoid: false
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses an agent to iteratively plan and revise whole-body human-scene interactions with spatial controls and execution feedback.
+  why_it_matters: Adds a household long-horizon interaction benchmark with explicit quantitative feedback for chained object goals.
+
 ## Summary
 
 Total papers: 61. Verified (⭐ Code) repos: ~37. Project pages with no released code (🌐): ~10. Dataset-only releases (📦): 2. Coming soon (⏳): 1. No code found (❌): ~11.

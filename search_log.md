@@ -5,26 +5,26 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 107 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 192 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 166 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 81 | Humanoid foundation models and generalist VLAs |
-| `06_retarget_teleop.md` | 94 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 106 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `02_hoi_motion.md` | 109 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 203 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 175 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 83 | Humanoid foundation models and generalist VLAs |
+| `06_retarget_teleop.md` | 95 | Human-to-humanoid retargeting + teleop |
+| `07_data_bench_s2r.md` | 107 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 808**
+**Total unique papers after deduplication: 834**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 67
+- Human-Object Interaction Motion Generation: 69
 - Object-Aware Human Motion Synthesis: 27
-- Whole-Body Motion Tracking and Imitation: 237
-- Whole-Body Control and Loco-Manipulation: 160
-- Humanoid Foundation Models and Generalist Policies: 95
-- Human-to-Humanoid Retargeting: 34
+- Whole-Body Motion Tracking and Imitation: 248
+- Whole-Body Control and Loco-Manipulation: 169
+- Humanoid Foundation Models and Generalist Policies: 97
+- Human-to-Humanoid Retargeting: 35
 - Teleoperation and Demonstration Collection: 45
-- Datasets and Benchmarks: 75
+- Datasets and Benchmarks: 76
 - Evaluation Metrics and Contact Modeling: 14
 - Sim-to-Real and Deployment Systems: 25
 - Related Character Animation and Physics-Based Motion Generation: 29
@@ -33,11 +33,11 @@
 
 | Status | Count |
 |---|---|
-| ❌ No Code | 275 |
-| ⭐ Code | 255 |
-| 🌐 Project Page | 202 |
-| ⏳ Code Coming Soon | 43 |
-| 📦 Dataset | 19 |
+| ❌ No Code | 286 |
+| ⭐ Code | 258 |
+| 🌐 Project Page | 212 |
+| ⏳ Code Coming Soon | 44 |
+| 📦 Dataset | 20 |
 | 🧩 Partial Code | 13 |
 | 🔁 Unofficial Code | 1 |
 
@@ -101,6 +101,21 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-11-20 — 26 new, 0 updated
+- Window: 2026-11-13T00:00Z → 2026-11-20T23:59Z.
+- Sources searched: pulled `origin/main`; queried arXiv's submitted-date API across cs.RO, cs.CV, cs.LG, and cs.GR; screened titles and abstracts for HOI generation, humanoid whole-body tracking/control, loco-manipulation, retargeting, and humanoid foundation-policy work; deduplicated retained IDs against `papers.csv` and `research_chunks/*.md`; inspected arXiv-linked project pages and GitHub repository metadata and root trees.
+- Counts: 2,643 category records returned (446 cs.RO, 1,001 cs.CV, 1,159 cs.LG, 37 cs.GR) before cross-list deduplication; 26 new in-scope records added; 0 existing records received a verified revision or code-status change.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 2 entries: CoRelate: Coordinated Human-Object Motion Synthesis through Interaction Relations (2611.25166), Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback (2611.25005).
+  - `03_wbc_tracking.md` — 11 entries: MixReact: Physics-Based Reactive Humanoid Control from Multimodal Cues via a Discrete-Continuous Mixture of Transformers (2611.26218), SemPhys: Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models (2611.24074), ReLoco: Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors (2611.23916), Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration (2611.22275), ALERT: Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline (2611.22258), Driving the Style: Velocity-Conditioned Whole-Body Control from Motion Demonstrations (2611.20888), QTOP: Scaling Humanoid Motion Tracking with Quantile Critics (2611.20791), XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute (2611.20452), MoViC: Real-Time Humanoid Whole-Body Control from Monocular Video Streams (2611.19998), ImpedanceMimic: Learned Impedance as Action Space for Force-Accurate Motion Imitation (2611.19153), Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints (2611.18003).
+  - `04_loco_manip.md` — 9 entries: PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation (2611.26596), Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning (2611.26054), WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation (2611.25251), Body Schema Policy: Body as the Vision-Action Interface for Efficient Robot Loco-Manipulation (2611.22713), Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment (2611.22445), Ego2Sim2Humanoid: Agentic Real-to-Sim for Learning Loco-Manipulation VLAs without Robot Demonstrations (2611.19196), Leaning Over to Reach Far-Away Objects (2611.19100), TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation (2611.18976), When Will You Hand It Over? A Hidden Start Delay Makes Self-Play Handover Robust to Unfamiliar Partners (2611.18491).
+  - `05_foundation.md` — 2 entries: Awaken-HI: Scaling Humanoid Intelligence with Whole-Body Human Experience (2611.26420), ECHO: In-Context Behavior Foundation Model for Humanoid Whole-Body Control (2611.25778).
+  - `06_retarget_teleop.md` — 1 entry: Fast and Accurate Body Estimation in Pixels, World Space and Scenes (2611.25801).
+  - `07_data_bench_s2r.md` — 1 entry: LocoMuJoCo: A Comprehensive Imitation Learning Benchmark for Whole-Body Control (2611.26293).
+- Verified code repos: https://github.com/noahcao/FAB (official active Apache-2.0 implementation with model, training, dataset, demo, and test code); https://github.com/robfiras/loco-mujoco (official active benchmark repository with package, examples, scripts, docs, and tests); https://github.com/mkhoshnam/Selfplay-PPO-handover (official active release with training/evaluation scripts, checkpoints, and task sources).
+- Unresolved code-status URLs: https://heaveho-humanoid.github.io/ and https://impedancemimic.github.io/ImpedanceMimic/ link GitHub repositories containing website/assets only; https://engineai-robotics.github.io/Awaken-HI and https://mwondering.github.io/echo-bfm/ similarly expose project-page repositories rather than a method implementation. https://binlee26.github.io/MixReact_Page/ announces a future code release. https://kl-research.github.io/pgx, https://qianzhong-chen.github.io/wevo.github.io/, https://ryenhails.github.io/Inhabitant/, https://movicproject.github.io/, https://robonana.github.io/ego2sim2humanoid/, https://h12leaner.github.io/, and http://humanoid-tma.github.io/ were reachable project pages without a verified implementation repository.
+- Inspected but excluded: Ego2X (2611.24138) and DexFormer 2.0 (2611.20273) as hand/arm-centric rather than humanoid whole-body work; WAM-Policy (2611.24011) as quadruped-only; HOForce (2611.23871) as interaction reconstruction rather than generation/control; generic mobile manipulation, VLA, arm-only, quadruped, exoskeleton, medical, and non-humanoid human-motion matches.
 
 ### 2026-11-13 — 10 new, 0 updated
 - Window: 2026-11-06T00:00Z → 2026-11-13T23:59Z.

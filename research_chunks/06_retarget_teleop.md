@@ -1741,6 +1741,27 @@ Curated list of papers covering retargeting pipelines (kinematic / dynamic / int
   one_line: Reconstructs a metric scene from one RGB image, aligns generated human interaction motion, then corrects robot support errors after retargeting.
   why_it_matters: Produces executable G1 motion references for new scenes without prebuilt 3D assets or scene-specific policy fine-tuning.
 
+## Weekly additions — 2026-11-20
+
+- title: Fast and Accurate Body Estimation in Pixels, World Space and Scenes
+  authors: Jinkun Cao
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.25801
+  paper_url: https://arxiv.org/abs/2611.25801
+  project_url: https://www.jinkuncao.com/FAB
+  code_url: https://github.com/noahcao/FAB
+  dataset_url: null
+  category: Retargeting
+  task_tags: [human-body-estimation, scene-contact, retargeting, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: ⭐ Code
+  one_line: Estimates human body and scene contacts in world space, then maps dense body estimates to G1 motion references.
+  why_it_matters: The official Apache-2.0 release includes model code, training, datasets, demos, and tests alongside a contact-aware retargeter.
+
 ## Notes
 - Verification: code links above were checked through paper pages or GitHub URLs surfaced via search; for systems labeled "announced" / "pending" the project pages indicate code release in progress.
 - Coverage spans (a) classical/learning retargeting (PHC, Mink, GMR, OmniRetarget, IKMR, DexMachina), (b) VR teleop (Open-TeleVision, OmniH2O, OpenWBT, CLONE, HOMIE, Bunny-VisionPro), (c) wearable/exoskeleton teleop (HOMIE, AirExo, NuExo, GELLO, BiDex, DEXOP, ACE, ACE-F, DexUMI), (d) robot-free / in-the-wild capture (UMI, DexCap, ARCap, EgoMimic, EgoZero, EgoMI, AirExo, HumanoidExo), and (e) data-generation / scaling (DexMimicGen, H-RDT, MotionTrans, PH2D).

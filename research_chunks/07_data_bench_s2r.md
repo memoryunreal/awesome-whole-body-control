@@ -1637,6 +1637,27 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
 ---
 
 ## Notes
+## Weekly additions — 2026-11-20
+
+- title: LocoMuJoCo: A Comprehensive Imitation Learning Benchmark for Whole-Body Control
+  authors: Firas Al-Hafez; Davide Tateo; Oleg Kaidanov; Aditya Bhatt; Artur Zelik; Zhengyi Luo; Jan Peters
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.26293
+  paper_url: https://arxiv.org/abs/2611.26293
+  project_url: https://github.com/robfiras/loco-mujoco
+  code_url: https://github.com/robfiras/loco-mujoco
+  dataset_url: null
+  category: Datasets-Benchmarks
+  task_tags: [benchmark, imitation-learning, whole-body-control, MuJoCo, MJX]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Unifies CPU MuJoCo, MJX, and MjWarp whole-body imitation-learning tasks across humanoid and other articulated embodiments.
+  why_it_matters: The active official repository includes the benchmark package, examples, scripts, documentation, and tests.
+
+## Notes
 
 - "code_status" values: open / partial / pending / n/a.
 - arxiv_id "2602.xxxxx", "2601.xxxxx", "2603.xxxxx" entries reflect very-recent (2026) preprints surfaced during search; treat IDs/dates with light caution.

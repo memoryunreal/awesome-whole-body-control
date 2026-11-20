@@ -3550,6 +3550,208 @@ ExBody2, ResMimic, OmniRetarget, HugWBC, MaskedMimic (NVIDIA), and several 2026 
   one_line: Adapts a tracker reference from observation history so existing humanoid policies can yield safely to physical guidance without force sensors.
   why_it_matters: Makes compliance a reusable interface-level capability across pretrained trackers instead of a tracker-specific retraining objective.
 
+## Weekly additions — 2026-11-20
+
+- title: MixReact: Physics-Based Reactive Humanoid Control from Multimodal Cues via a Discrete-Continuous Mixture of Transformers
+  authors: Bin Li; Xing Zhu; Jingya Wang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.26218
+  paper_url: https://arxiv.org/abs/2611.26218
+  project_url: https://binlee26.github.io/MixReact_Page/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [reactive-control, text-audio-video, physics-based, transformer]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Combines discrete-continuous state prediction with history-aware action control for reactive humanoid behavior from text, audio, and video.
+  why_it_matters: Targets physically executable multimodal reactions rather than a kinematic-only generation pipeline.
+
+- title: SemPhys: Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models
+  authors: Zejian Kang; Yeqiang Wang; Zekai Chen; Boyang Shen; Mingyu Ma; Bingqian Wu; Fan Zhou; Jianjie Zhang; Chentao Shen; Wentao Yang; Rui Qian; Xiangru Huang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.24074
+  paper_url: https://arxiv.org/abs/2611.24074
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [language-conditioned-motion, differentiable-world-model, semantic-alignment]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Trains language-conditioned humanoid motion generation from semantic feedback on physically executed simulated trajectories.
+  why_it_matters: Evaluates instruction fidelity after tracking dynamics, where semantically meaningful deviations actually occur.
+
+- title: ReLoco: Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors
+  authors: Lequn Fu; Yufeng Hu; Yijun Zhong; Jie Zhang; Xiao Li; Lingxiang Ji; Zhiyuan Xu; Jian Tang; Shiqi Li
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.23916
+  paper_url: https://arxiv.org/abs/2611.23916
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [locomotion, fall-recovery, motion-prior, humanoid]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Conditions adversarial motion priors on behavior to combine commanded locomotion and recovery from ground contact in one policy.
+  why_it_matters: Avoids a brittle handoff between upright locomotion and recovery controllers.
+
+- title: Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration
+  authors: Ting-Hsuan Chen; Siheng Zhao; Han Jiang; Qi Pan; Louison Lu; Jiaheng Luo; Henghui Bao; Yiyu Chen; Quan Nguyen; Yue Wang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.22275
+  paper_url: https://arxiv.org/abs/2611.22275
+  project_url: https://heaveho-humanoid.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [multi-humanoid, collaboration, decentralized-control, loco-manipulation]
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Adapts a humanoid foundation tracker for decentralized physically coupled team loco-manipulation with speech-based coordination.
+  why_it_matters: Demonstrates coordination from local observations across teams of up to ten humanoids.
+
+- title: ALERT: Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline
+  authors: Zhaoyang Li; Chiyu Zhang; Chengxin Xu; Peng Yang; Zhonghao Guo; Wanting Li; Ziyu Chen
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.22258
+  paper_url: https://arxiv.org/abs/2611.22258
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [human-avoidance, motion-tracking, safety, humanoid]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adds a lightweight human-aware avoidance layer to whole-body motion trackers without retraining the base tracker.
+  why_it_matters: Makes social-space avoidance a modular extension for reusable tracking policies.
+
+- title: Driving the Style: Velocity-Conditioned Whole-Body Control from Motion Demonstrations
+  authors: Murad Dawood; Oezge Drama Berkenkamp; Antonio Gonzales Marin; Nutan Chen
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.20888
+  paper_url: https://arxiv.org/abs/2611.20888
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [style-control, velocity-command, motion-demonstration, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Encodes demonstrated whole-body style in a velocity-commanded policy without requiring a reference trajectory at runtime.
+  why_it_matters: Reports robust real-G1 style control where reference-conditioned tracking policies fail on held-out slow walking.
+
+- title: QTOP: Scaling Humanoid Motion Tracking with Quantile Critics
+  authors: Markus Peschl; Dana Kianfar; Daniel Dijkman
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.20791
+  paper_url: https://arxiv.org/abs/2611.20791
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [motion-tracking, distributional-rl, quantile-critic, scaling]
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses a distributional advantage estimate conditioned on state-reference pairs to improve large-scale humanoid tracker training.
+  why_it_matters: Studies scaling laws for tracker compute and reports real-world tracking gains.
+
+- title: XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute
+  authors: Nico Bohlinger; Jan Peters
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.20452
+  paper_url: https://arxiv.org/abs/2611.20452
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [fast-training, motion-tracking, rough-terrain, world-model]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses analytic gradients through a learned robot world model to train tracking and terrain locomotion policies in under a minute.
+  why_it_matters: Pushes the fast-training line from a single tracker to both imitation and rough-terrain locomotion.
+
+- title: MoViC: Real-Time Humanoid Whole-Body Control from Monocular Video Streams
+  authors: Yimin Han; Jiahui Zhang; Wanyue Li; Zeren Luo; Yeke Chen; Liu Zhao; Peizhuo Li; Xiaoyu Ji; Shihao Dong; Xuechao Chen; Zhangguo Yu; Annan Tang; Peng Lu
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.19998
+  paper_url: https://arxiv.org/abs/2611.19998
+  project_url: https://movicproject.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [monocular-video, real-time, teleoperation, behavior-foundation-model]
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Couples monocular reconstruction, retargeting, and a behavior model for asynchronous device-free humanoid teleoperation.
+  why_it_matters: Demonstrates dynamic bimanual and single-arm tasks from live RGB without wearable tracking.
+
+- title: ImpedanceMimic: Learned Impedance as Action Space for Force-Accurate Motion Imitation
+  authors: Matthias Jammot; Pembe Gizem Özdil
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.19153
+  paper_url: https://arxiv.org/abs/2611.19153
+  project_url: https://impedancemimic.github.io/ImpedanceMimic/
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [impedance-control, force-accurate, motion-imitation, physics]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Learns impedance parameters as the action space to reproduce contact forces as well as demonstrated motion.
+  why_it_matters: Treats force fidelity as a first-class motion-imitation target instead of relying on fixed-gain PD tracking.
+
+- title: Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints
+  authors: Sol Choi; Mingon Kim; Seokin Seo; Jongeun Choi; Donghyeon Kim; Yisoo Lee
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.18003
+  paper_url: https://arxiv.org/abs/2611.18003
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [locomotion, cross-robot-transfer, virtual-joints, Unitree-G1]
+  robot_platform: Unitree G1 and two other humanoids
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Standardizes policy actions and observations in a body-aligned virtual-joint space before mapping to robot-native joints.
+  why_it_matters: Enables one locomotion recipe across distinct humanoid joint layouts and reduces real-G1 heading drift.
+
 - title: RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control
   authors: Zepeng Wang; Xiaochuan Shi
   year: 2026

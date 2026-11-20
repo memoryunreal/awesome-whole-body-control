@@ -3090,3 +3090,171 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
   code_status: ⭐ Code
   one_line: Uses a pretrained motion generator with visual conditioning and root-body-hand coordination as the action backbone for humanoid loco-manipulation.
   why_it_matters: The MIT-licensed official release provides training, evaluation, model, data, real-world, and benchmark assets for reproducible action-model research.
+
+## Weekly additions — 2026-11-20
+
+- title: PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation
+  authors: Kai Lu; Chenyang Ma; Ioannis Havoutis
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.26596
+  paper_url: https://arxiv.org/abs/2611.26596
+  project_url: https://kl-research.github.io/pgx
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [long-horizon, VLA, humanoid, physical-execution]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Decomposes long-horizon humanoid tasks into physically grounded execution primitives for VLA control.
+  why_it_matters: Addresses temporal and precision coupling that makes monolithic humanoid VLA policies brittle.
+
+- title: Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning
+  authors: Ganeshvar Soenessardien; Michael Przystupa; Kevin Sebastian Luck
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.26054
+  paper_url: https://arxiv.org/abs/2611.26054
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [skateboarding, object-mediated-locomotion, reinforcement-learning]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns reference-free humanoid skateboarding by shaping failure termination around coupled body-object dynamics.
+  why_it_matters: Expands whole-body locomotion beyond foot-ground contact to a passive externally coupled object.
+
+- title: WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation
+  authors: Qianzhong Chen; Muyuan Lin; Yuyin Sun; Mac Schwager; Cheng-Hao Kuo; Roberto Martín-Martín
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.25251
+  paper_url: https://arxiv.org/abs/2611.25251
+  project_url: https://qianzhong-chen.github.io/wevo.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [world-model, VLA, reinforcement-learning, loco-manipulation]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Post-trains whole-body humanoid VLA policies using an action-conditioned video world model.
+  why_it_matters: Uses predicted physical outcomes to improve VLA behavior without unsafe real-robot exploration.
+
+- title: Body Schema Policy: Body as the Vision-Action Interface for Efficient Robot Loco-Manipulation
+  authors: Lechen Zhang; Chenyuan Chen; Muxin Zhou; Zewen He; Yoshihiko Nakamura
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.22713
+  paper_url: https://arxiv.org/abs/2611.22713
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [body-schema, vision-action, efficient-policy, humanoid]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Uses a body-schema representation as a compact interface between vision and whole-body humanoid actions.
+  why_it_matters: Seeks efficient loco-manipulation without scaling parameters or task-specific fine-tuning.
+
+- title: Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment
+  authors: Koki Inami; Takashi Sato; Hiroyuki Oka; Shota Takizawa; Yuya Takahashi; Amon Suzuki; Hayato Ono; Kohtaro Ihara; Yuki Noka; Shohei Matsugu
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.22445
+  paper_url: https://arxiv.org/abs/2611.22445
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [running, autonomous-deployment, humanoid, real-world]
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Details an autonomous running stack that handles lane following, pacing, and hardware limits at a real humanoid race.
+  why_it_matters: Provides an end-to-end deployment case beyond controlled laboratory locomotion.
+
+- title: Ego2Sim2Humanoid: Agentic Real-to-Sim for Learning Loco-Manipulation VLAs without Robot Demonstrations
+  authors: Chen Liu; Nikolaus Correll
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.19196
+  paper_url: https://arxiv.org/abs/2611.19196
+  project_url: https://robonana.github.io/ego2sim2humanoid/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [egocentric-data, real-to-sim, VLA, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Converts egocentric RGB-D human recordings into physically verified robot demonstrations for humanoid VLA fine-tuning.
+  why_it_matters: Produces robot-view observations and executable labels without collecting teleoperated robot demonstrations.
+
+- title: Leaning Over to Reach Far-Away Objects
+  authors: Allen Devaraj; William Xie; Nikolaus Correll
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.19100
+  paper_url: https://arxiv.org/abs/2611.19100
+  project_url: https://h12leaner.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [whole-body-mpc, supported-reaching, contact-rich, Unitree-H1-2]
+  robot_platform: Unitree H1-2
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses real-time sampling MPC for braced whole-body reaching and recovery beyond a humanoid's normal standing workspace.
+  why_it_matters: Shows repeatable contact-required manipulation on hardware with a roughly 50-cm reach extension.
+
+- title: TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation
+  authors: Yiting Chen; Kelin Yu; Sarthak Kaingade; Bryan Trinh; Kaiyu Hang; Roberto Martin-martin; Nima Fazeli; X. Alice Wu
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.18976
+  paper_url: https://arxiv.org/abs/2611.18976
+  project_url: http://humanoid-tma.github.io
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [tactile-feedback, sim-to-real, forceful-manipulation, Unitree-G1, Revo2]
+  robot_platform: Unitree G1 with BrainCo Revo2 hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Adapts motor behavior online from tactile history for forceful multi-finger humanoid manipulation.
+  why_it_matters: Transfers a tactile-aware door-opening system zero-shot from simulation to a G1 with Revo2 hands.
+
+- title: When Will You Hand It Over? A Hidden Start Delay Makes Self-Play Handover Robust to Unfamiliar Partners
+  authors: Mohammad Khoshnazar; Mike Degany; Deyuan Qu; Qing Yang; Matyas Szanto
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.18491
+  paper_url: https://arxiv.org/abs/2611.18491
+  project_url: ""
+  code_url: https://github.com/mkhoshnam/Selfplay-PPO-handover
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [handover, self-play, domain-randomization, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Improves self-played humanoid parcel handover by randomizing an unobserved partner start delay.
+  why_it_matters: The official repository includes training, evaluation, checkpoints, and task assets for studying robustness to unseen partners.

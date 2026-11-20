@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (255 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (258 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -479,7 +479,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://xbpeng.github.io/projects/DeepMimic/index.html) · [Code](https://github.com/xbpeng/DeepMimic) · [Paper](https://arxiv.org/abs/1804.02717)
 
 
-## Whole-Body Control and Loco-Manipulation (39)
+## Whole-Body Control and Loco-Manipulation (40)
 
 - ⭐ 🤖 🧍 **[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](https://arxiv.org/abs/2606.23680)** `arXiv 2026.06` `Unitree G1 + WUJI hand` `Loco-Manipulation`
   Sikai Li et al..
@@ -555,6 +555,11 @@ This is the canonical list of papers with **verified official open-source code**
   Songlin Wei et al..
   Full-stack simulation environment and benchmark for policy learning and evaluation in humanoid loco-manipulation.
   Links: [Project](https://github.com/physical-superintelligence-lab/SIMPLE) · [Code](https://github.com/physical-superintelligence-lab/SIMPLE) · [Paper](https://arxiv.org/abs/2606.08278)
+
+- ⭐ 🧍 🧱 **[When Will You Hand It Over? A Hidden Start Delay Makes Self-Play Handover Robust to Unfamiliar Partners](https://arxiv.org/abs/2611.18491)** `arXiv 2026.11` `Unitree G1` `Loco-Manipulation`
+  Mohammad Khoshnazar et al..
+  Improves self-played humanoid parcel handover by randomizing an unobserved partner start delay.
+  Links: [Code](https://github.com/mkhoshnam/Selfplay-PPO-handover) · [Paper](https://arxiv.org/abs/2611.18491)
 
 - ⭐ 🤖 🧍 **[ALMI — Adversarial Locomotion and Motion Imitation for Humanoid Policy Learning](https://arxiv.org/abs/2504.14305)** `NeurIPS 2025` `Unitree H1-2` `WBC`
   Hong Zhang, et al..
@@ -851,7 +856,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://motion-gpt.github.io/) · [Code](https://github.com/OpenMotionLab/MotionGPT) · [Paper](https://arxiv.org/abs/2306.14795)
 
 
-## Human-to-Humanoid Retargeting (7)
+## Human-to-Humanoid Retargeting (8)
 
 - ⭐ 🤖 🧍 **[BeyondRetarget: Learning Executable Humanoid Motions Directly from Monocular Video](https://arxiv.org/abs/2609.29850)** `arXiv 2026.09` `Unitree G1 / R1 / H1, Fourier GR1/GR2, Atlas, Booster T1, Tienkung` `Retargeting`
   Tianyu Xiong et al..
@@ -872,6 +877,11 @@ This is the canonical list of papers with **verified official open-source code**
   Yangtao Chen et al..
   Uses generative video world models to synthesize egocentric human-object manipulation videos and converts them into robot-trainable supervision.
   Links: [Project](https://chenyt31.github.io/wh0.github.io/) · [Code](https://github.com/chenyt31/Wh0) · [Paper](https://arxiv.org/abs/2606.22136)
+
+- ⭐ 🧍 **[Fast and Accurate Body Estimation in Pixels, World Space and Scenes](https://arxiv.org/abs/2611.25801)** `arXiv 2026.11` `Unitree G1` `Retargeting`
+  Jinkun Cao.
+  Estimates human body and scene contacts in world space, then maps dense body estimates to G1 motion references.
+  Links: [Project](https://www.jinkuncao.com/FAB) · [Code](https://github.com/noahcao/FAB) · [Paper](https://arxiv.org/abs/2611.25801)
 
 - ⭐ 🤖 🧍 **[HumanoidVerse: A Versatile Multi-Simulator Humanoid Learning Framework](https://arxiv.org/abs/2508.16943)** `arXiv preprint` `Unitree G1/H1, multiple` `Retargeting`
   LeCAR Lab.
@@ -1000,7 +1010,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://www.science.org/doi/10.1126/scirobotics.adh3834) · [Code](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system) · [Paper](https://arxiv.org/abs/2203.06972)
 
 
-## Datasets and Benchmarks (39)
+## Datasets and Benchmarks (40)
 
 - ⭐ 🤖 🧍 **[HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution](https://arxiv.org/abs/2610.02089)** `arXiv 2026.10` `Unitree G1` `Dataset`
   Kyochul Jang et al..
@@ -1016,6 +1026,11 @@ This is the canonical list of papers with **verified official open-source code**
   Pavel Bushuyeu et al..
   Defines a 12-subtask Isaac Lab benchmark for positioning a ladder, climbing, replacing a light bulb, and disposing of the spent bulb.
   Links: [Project](https://fiatlux-bench.github.io/) · [Code](https://github.com/haw-ai-i/fiatlux) · [Paper](https://arxiv.org/abs/2609.38216) · [Dataset](https://huggingface.co/datasets/haw-ai-i/fiatlux-teleoperation)
+
+- ⭐ 🧍 🧱 **[LocoMuJoCo: A Comprehensive Imitation Learning Benchmark for Whole-Body Control](https://arxiv.org/abs/2611.26293)** `arXiv 2026.11` `Datasets-Benchmarks`
+  Firas Al-Hafez et al..
+  Unifies CPU MuJoCo, MJX, and MjWarp whole-body imitation-learning tasks across humanoid and other articulated embodiments.
+  Links: [Project](https://github.com/robfiras/loco-mujoco) · [Code](https://github.com/robfiras/loco-mujoco) · [Paper](https://arxiv.org/abs/2611.26293)
 
 - ⭐ 🤖 🧍 **[MuJoCo Playground](https://arxiv.org/abs/2502.08844)** `arXiv preprint` `Berkeley Humanoid, Unitree H1/G1, Booster T1, Spot, Go1, Barkour` `Benchmark`
   Kevin Zakka, Baruch Tabanpour, Qiayuan Liao, et al. (Google DeepMind).

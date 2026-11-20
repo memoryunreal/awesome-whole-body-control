@@ -1449,6 +1449,46 @@ Code-status legend:
 ---
 
 ## Quick stats
+## Weekly additions — 2026-11-20
+
+- title: Awaken-HI: Scaling Humanoid Intelligence with Whole-Body Human Experience
+  authors: EngineAI
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.26420
+  paper_url: https://arxiv.org/abs/2611.26420
+  project_url: https://engineai-robotics.github.io/Awaken-HI
+  code_url: ""
+  dataset_url: https://huggingface.co/datasets/EngineAI-Embodied/Awaken-Human
+  category: Humanoid-Foundation
+  task_tags: [whole-body-human-data, VLA, loco-manipulation, scaling]
+  robot_platform: EngineAI T800
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: false
+  code_status: 📦 Dataset
+  one_line: Pretrains a humanoid VLA on synchronized egocentric stereo video and whole-body human motion before robot adaptation.
+  why_it_matters: Releases Awaken-Human at roughly 50,000 hours and reports strong eight-task real-robot transfer.
+
+- title: ECHO: In-Context Behavior Foundation Model for Humanoid Whole-Body Control
+  authors: Xingyi Wang; Bin Li; Jiyuan Shi; Chenyun Zhang; Weiji Xie; Xiangyu Miao; Junsong Wu; Wei Song; Shiqiang Zhu; Chenjia Bai
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.25778
+  paper_url: https://arxiv.org/abs/2611.25778
+  project_url: https://mwondering.github.io/echo-bfm/
+  code_url: ""
+  dataset_url: null
+  category: Humanoid-Foundation
+  task_tags: [in-context-learning, behavior-foundation-model, whole-body-control]
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses in-context conditioning to make a humanoid behavior foundation model adapt execution to physical conditions.
+  why_it_matters: Separates broad motion capability from dynamics-aware precise behavior at inference time.
+
+## Quick stats
 - 43 papers covered.
 - 28 papers with ⭐ full code; 5 partial; 4 project-page only; 1 coming-soon; 5 closed.
 - Years: 2022 (1), 2023 (4), 2024 (10), 2025 (24), 2026 (2 — Cosmos Policy, ICLR/AAAI 2026 entries).
