@@ -6,6 +6,160 @@ Code-status legend: ⭐ Code | 🧩 Partial Code | 📦 Dataset | 🌐 Project P
 
 ---
 
+## Weekly additions — 2026-11-27
+
+- title: Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid
+  authors: Rikuto Hidaka; Tsung-Yuan Chen; Kento Kawaharazuka
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.33828
+  paper_url: https://arxiv.org/abs/2611.33828
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [heavy-object-transport, pivot-walking, reinforcement-learning, whole-body]
+  robot_platform: physical humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Learns a single policy that coordinates stepping, balance, and object manipulation to pivot-walk a heavy box.
+  why_it_matters: Demonstrates sustained hardware transport without direct object-state sensing rather than staged manipulation and walking.
+
+- title: EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances
+  authors: Yiming Zeng; Jiangyuxuan Dai; Yuheng Na; Tan Zhu Xuan; Zihan Lin; Xinfang Qi; Shijian Zhang; Chengqi Shi; Yihan Kuang; Zhide Zhong; Junjie He; Junfeng Li; Zimu Han; Naipeng Li; Haoang Li
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.32260
+  paper_url: https://arxiv.org/abs/2611.32260
+  project_url: https://egoloaf.github.io/
+  code_url: https://github.com/EgoLoAF/EgoLoAF-Official
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [egocentric-demonstrations, hand-object-affordance, VLA, humanoid-data]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Converts egocentric video into humanoid actions and explicit hand-object affordances for VLA post-training without robot teleoperation data.
+  why_it_matters: Releases a large converted demonstration corpus and reports near-teleoperation performance from human-video data alone.
+
+- title: Ada-BFM: Adapting Behavior Foundation Models for Humanoid Scene Interaction
+  authors: Furui Xu; Weishuai Zeng; Zirui Wang; Kangning Yin; Jiacheng Bao; Huayi Wang; Yingying Qin; Yufei Xue; Yang Tang; Zenghao Tang; Kailin Li; Jingbo Wang; Weinan Zhang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.31863
+  paper_url: https://arxiv.org/abs/2611.31863
+  project_url: https://ada-bfm.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [behavior-foundation-model, scene-interaction, adapter, whole-body-control]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Adds a lightweight adapter to a behavior foundation model for shared terrain and object-interaction domains.
+  why_it_matters: Preserves broad pretrained whole-body capability while specializing scene-dependent contacts in simulation and hardware.
+
+- title: CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors
+  authors: Lijun Han; Muyuan Ma; Zichen Wang; Siyuan Liu; Yuxi Liu; Yutong Wang; Bohao Zhang; Heng Zhou; Wei Sui
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.30449
+  paper_url: https://arxiv.org/abs/2611.30449
+  project_url: https://han-li-jun.github.io/CHAMP/index.html
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [whole-body-motion-prior, VLA, dexterous-manipulation, Unitree-G1]
+  robot_platform: Unitree G1 with Dex3 hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Grounds a multi-source body-and-hand motion predictor with a coordination-oriented action expert for unified humanoid loco-manipulation.
+  why_it_matters: Reports strong seven-task G1 hardware results, including a long-horizon popcorn-serving task.
+
+- title: PushMimic: Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation
+  authors: Yulun Zhuang; Hanyu Zhang; Jingyu Liu; Yanran Ding
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.30077
+  paper_url: https://arxiv.org/abs/2611.30077
+  project_url: https://silvery107.github.io/pushmimic/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [box-pushing, dynamic-motion-augmentation, reference-distillation, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Augments one human reference with feasible mass-and-slope variants, then distills them into an adaptive G1 box-pushing controller.
+  why_it_matters: Demonstrates continuous hardware pushing under substantial unobserved mass and incline shifts.
+
+- title: CarlHOI: Counterfactual Predictive Imagination for Generalizable Multi-Humanoid Object Interaction under Constrained Environments
+  authors: Wenjie Lin; Jin Wei-Kocsis
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.29749
+  paper_url: https://arxiv.org/abs/2611.29749
+  project_url: https://carlhoi.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [multi-humanoid, object-transport, world-model, counterfactual-planning]
+  robot_platform: simulated humanoid teams
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: 🌐 Project Page
+  one_line: Uses a relational world model to choose shared waypoint commands for obstacle-constrained cooperative humanoid transport.
+  why_it_matters: Generalizes a four-humanoid controller to team sizes from two to ten without retraining.
+
+- title: Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers
+  authors: S K Swaminathan; Shivam Sood; Shreyansh Kansal; Chengyang He; Guillaume Adrien Sartoretti
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.27338
+  paper_url: https://arxiv.org/abs/2611.27338
+  project_url: https://latent-jacobian-steer.github.io/
+  code_url: ""
+  dataset_url: null
+  category: Loco-Manipulation
+  task_tags: [latent-steering, contact-rich-behavior, out-of-distribution, behavior-foundation-model]
+  robot_platform: Unitree G1 simulator
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Maps action-space perturbation search through a local policy-Jacobian inverse to steer a frozen humanoid controller in latent space.
+  why_it_matters: Produces contact-rich tasks such as doors, hurdles, and articulated-object interaction without retraining the base controller.
+
+- title: BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight
+  authors: Zhaoshan Yang; Chenglei Li; Haoyu Lei; Yutao Zhang; Yuyu Yang; Zhuo Chen; Ling Ding; Zhongxing Ren; Yi Gu; Heyang Zhang; Peng Su; Jin Pan
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.27047
+  paper_url: https://arxiv.org/abs/2611.27047
+  project_url: ""
+  code_url: ""
+  dataset_url: HELM benchmark
+  category: Loco-Manipulation
+  task_tags: [ego-exo, foresight, VLA, humanoid-benchmark, whole-body]
+  robot_platform: simulated humanoid
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Adds privileged dual-view future-feature supervision to an egocentric humanoid VLA and discards the foresight expert at deployment.
+  why_it_matters: Introduces the HELM closed-loop benchmark and substantially improves robustness to held-out scene shifts.
+
 - title: HumanPlus: Humanoid Shadowing and Imitation from Humans
   authors: Zipeng Fu, Qingqing Zhao, Qi Wu, Gordon Wetzstein, Chelsea Finn
   year: 2024

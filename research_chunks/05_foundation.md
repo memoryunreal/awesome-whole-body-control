@@ -13,6 +13,65 @@ Code-status legend:
 
 ---
 
+## Weekly additions — 2026-11-27
+
+- title: DiffGR00T: Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models
+  authors: Sichen Wu; Qian Sun; Mengfan Liu; Weikai Qin; Bike Zhu; Hesheng Wang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.32665
+  paper_url: https://arxiv.org/abs/2611.32665
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Humanoid-Foundation
+  task_tags: [VLA, differentiable-world-model, execution-aware-training, GR00T, SONIC]
+  robot_platform: HumanoidArena
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Backpropagates execution losses through an action-conditioned world model, frozen SONIC controller, and GR00T action sampler.
+  why_it_matters: Makes physical execution directly optimize a whole-body VLA generator rather than training generation and tracking independently.
+
+- title: ζ₀: A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control
+  authors: Yizhi Chen; Zhanxiang Cao; Yitong Wang; Junyu Liu; Hongchu Zeng; Xinyi Peng; Chuxuan Huang; Yicheng Su; Zihao Zhou; Shengcheng Fu; Haoyang Li; Liyun Yan; Tianyue Zhan; Jianming Ma; Yang Zhang; Keqi Zhu; Xiaxi Si; Jinming Yao; Qiao Sun; Shizeng Zhang; Jiangwei Zhong; Yue Gao
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.29277
+  paper_url: https://arxiv.org/abs/2611.29277
+  project_url: https://chenyizhi123.github.io/zeta0-project/
+  code_url: https://github.com/chenyizhi123/Zeta0
+  dataset_url: https://huggingface.co/datasets/SII-yizhi/zeta0-real-dataset
+  category: Humanoid-Foundation
+  task_tags: [world-action-model, body-foresight, VLA, Unitree-G1, Revo2]
+  robot_platform: Unitree G1 with BrainCo Revo2 hands
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Trains a world-action model to jointly forecast scene features and measured whole-body joint trajectories for humanoid VLAs.
+  why_it_matters: The official Apache-2.0 release includes training, deployment, SDK, real-G1 data, and printable wrist-mount assets.
+
+- title: Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control
+  authors: Yue Huang; Tianshan Zhang; Zeyu Zhang; Jayeon Kang; Akide Liu; Sungjoon Choi; Dacheng Tao; Hao Tang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.29897
+  paper_url: https://arxiv.org/abs/2611.29897
+  project_url: https://aigeeksgroup.github.io/MotionMamba2.0/
+  code_url: https://github.com/AIGeeksGroup/MotionMamba2.0
+  dataset_url: https://huggingface.co/datasets/AIGeeksGroup/MotionMamba2.0
+  category: Humanoid-Foundation
+  task_tags: [diffusion, Mamba, long-horizon, text-conditioned-motion, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Combines root/body diffusion, recurrent Mamba state, and persistent content memory for streaming long-horizon humanoid motion control.
+  why_it_matters: Official release provides model/data links and an optimized real-G1 interactive-control implementation.
+
 - title: GR00T N1 / N1.5 — An Open Foundation Model for Generalist Humanoid Robots
   authors: Johan Bjorck, Fernando Castaneda, Nikita Cherniadev, ... NVIDIA GEAR Team
   year: 2025

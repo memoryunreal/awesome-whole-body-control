@@ -1990,6 +1990,26 @@ Curated paper list (2022-2026, priority on 2024-2026). Code status verified via 
   one_line: Uses an agent to iteratively plan and revise whole-body human-scene interactions with spatial controls and execution feedback.
   why_it_matters: Adds a household long-horizon interaction benchmark with explicit quantitative feedback for chained object goals.
 
+## Weekly additions — 2026-11-27
+
+- title: FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation
+  authors: Yujia Zeng; Yuxin Chen; Yuzhen Song; Runhan Huang; Chensheng Peng; Yiyang Shao; Koushil Sreenath; Masayoshi Tomizuka; Yilun Du
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.34884
+  paper_url: https://arxiv.org/abs/2611.34884
+  project_url: https://finedex.github.io/
+  code_url: https://github.com/zyjOrz/FineDex
+  dataset_url: null
+  category: HOI-Motion-Gen
+  task_tags: [human-object-interaction, fine-grained-contact, dexterous-humanoid, simulation-to-real]
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Generates full-body, finger-specific HOI motions and uses them as priors for contact-strategy discovery in a physics digital twin.
+  why_it_matters: Connects fine-grained human HOI synthesis to deployed dexterous humanoid manipulation; the official repository currently contains only a coming-soon release notice.
+
 ## Summary
 
 Total papers: 61. Verified (⭐ Code) repos: ~37. Project pages with no released code (🌐): ~10. Dataset-only releases (📦): 2. Coming soon (⏳): 1. No code found (❌): ~11.

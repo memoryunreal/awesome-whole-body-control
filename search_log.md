@@ -5,38 +5,38 @@
 | Chunk | Records | Description |
 |---|---|---|
 | `01_seed.md` | 201 | Seed list from YanjieZe/awesome-humanoid-robot-learning |
-| `02_hoi_motion.md` | 109 | HOI motion generation + object-aware human motion synthesis |
-| `03_wbc_tracking.md` | 203 | Whole-body motion tracking and imitation |
-| `04_loco_manip.md` | 175 | Whole-body control and loco-manipulation |
-| `05_foundation.md` | 83 | Humanoid foundation models and generalist VLAs |
+| `02_hoi_motion.md` | 110 | HOI motion generation + object-aware human motion synthesis |
+| `03_wbc_tracking.md` | 208 | Whole-body motion tracking and imitation |
+| `04_loco_manip.md` | 183 | Whole-body control and loco-manipulation |
+| `05_foundation.md` | 86 | Humanoid foundation models and generalist VLAs |
 | `06_retarget_teleop.md` | 95 | Human-to-humanoid retargeting + teleop |
-| `07_data_bench_s2r.md` | 107 | Datasets, benchmarks, sim-to-real, contact metrics |
+| `07_data_bench_s2r.md` | 108 | Datasets, benchmarks, sim-to-real, contact metrics |
 | `08_loco_anim.md` | 60 | Locomotion + physics-based character animation |
 
-**Total unique papers after deduplication: 834**
+**Total unique papers after deduplication: 852**
 
 ## Per-Category Counts
 
-- Human-Object Interaction Motion Generation: 69
+- Human-Object Interaction Motion Generation: 70
 - Object-Aware Human Motion Synthesis: 27
-- Whole-Body Motion Tracking and Imitation: 248
-- Whole-Body Control and Loco-Manipulation: 169
-- Humanoid Foundation Models and Generalist Policies: 97
+- Whole-Body Motion Tracking and Imitation: 253
+- Whole-Body Control and Loco-Manipulation: 177
+- Humanoid Foundation Models and Generalist Policies: 100
 - Human-to-Humanoid Retargeting: 35
 - Teleoperation and Demonstration Collection: 45
 - Datasets and Benchmarks: 76
 - Evaluation Metrics and Contact Modeling: 14
-- Sim-to-Real and Deployment Systems: 25
+- Sim-to-Real and Deployment Systems: 26
 - Related Character Animation and Physics-Based Motion Generation: 29
 
 ## Code-Status Histogram
 
 | Status | Count |
 |---|---|
-| ❌ No Code | 286 |
-| ⭐ Code | 258 |
-| 🌐 Project Page | 212 |
-| ⏳ Code Coming Soon | 44 |
+| ❌ No Code | 293 |
+| ⭐ Code | 261 |
+| 🌐 Project Page | 216 |
+| ⏳ Code Coming Soon | 48 |
 | 📦 Dataset | 20 |
 | 🧩 Partial Code | 13 |
 | 🔁 Unofficial Code | 1 |
@@ -101,6 +101,19 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
 
 
 ## Weekly Digest Runs
+
+### 2026-11-27 — 18 new, 0 updated
+- Window: 2026-11-20T00:00Z → 2026-11-27T23:59Z.
+- Counts: 2,718 category records returned (481 cs.RO, 1,168 cs.CV, 1,033 cs.LG, 36 cs.GR), yielding 2,366 cross-list-unique records; 18 new in-scope records added; 0 existing records received a verified revision or code-status change.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation (2611.34884).
+  - `03_wbc_tracking.md` — 5 entries: Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain (2611.34569), DynaMimic: A Physics-Informed World Model for Humanoid Motion Tracking (2611.32944), BARE: Body-Aware Reflexive Evasion for Humanoid Robots (2611.32642), Trust What Repeats: Capped World-Model Policy Gradients for Humanoid Motion Tracking (2611.27648), S-BFM: A Behavioral Foundation Model for Humanoid Control from Sparse Spatiotemporal Goals (2611.27552).
+  - `04_loco_manip.md` — 8 entries: Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid (2611.33828), EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances (2611.32260), Ada-BFM: Adapting Behavior Foundation Models for Humanoid Scene Interaction (2611.31863), CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors (2611.30449), PushMimic: Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation (2611.30077), CarlHOI: Counterfactual Predictive Imagination for Generalizable Multi-Humanoid Object Interaction under Constrained Environments (2611.29749), Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers (2611.27338), BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight (2611.27047).
+  - `05_foundation.md` — 3 entries: DiffGR00T: Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models (2611.32665), ζ₀: A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control (2611.29277), Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control (2611.29897).
+  - `07_data_bench_s2r.md` — 1 entry: Arcadian: Open-Source Humanoid Ecosystem for Accessible and Customizable Research and Education (2611.29868).
+- Verified code repos: https://github.com/chenyizhi123/Zeta0; https://github.com/AIGeeksGroup/MotionMamba2.0; https://github.com/kscalelabs/kbot.
+- Unresolved code-status URLs: official coming-soon placeholders https://github.com/zyjOrz/FineDex and https://github.com/EgoLoAF/EgoLoAF-Official; project-only pages https://fly-pigTH.github.io/wave_rider/, https://ada-bfm.github.io/, https://han-li-jun.github.io/CHAMP/index.html, https://silvery107.github.io/pushmimic/, https://carlhoi.github.io/, and https://latent-jacobian-steer.github.io/.
+- Inspected but excluded: human-motion-only generation/editing, hand-only reconstruction/manipulation, generic arm/mobile-manipulation VLAs, quadruped systems, and generic world-model papers without a direct HOI or humanoid whole-body contribution.
 
 ### 2026-11-20 — 26 new, 0 updated
 - Window: 2026-11-13T00:00Z → 2026-11-20T23:59Z.
@@ -780,3 +793,17 @@ See `no_code_or_uncertain.md` for the explicit list. Categories with most uncert
   - https://arxiv.org/abs/2605.03452 — BifrostUMI has no project page or repo yet.
 - Notion escalations (tier-1 affiliation): MolmoAct 2, SigLoMa.
 - Inspected but excluded: 2605.03363 (Reactive Dexterous Grasping, MIT — tabletop arm+hand, out of humanoid-WBC scope), 2605.02742 (Adaptive Interpolation-Synthesis, SIGGRAPH 2026 — production keyframe tooling, affiliations unverified, weak fit), 2605.02600 (CoRAL — generic tabletop manipulation), 2605.02347 (ShapeGrasp — visuo-haptic grasping). InterPhys (2605.01036) already in CSV.
+
+### 2026-11-27 — 18 new, 0 updated
+- Window: 2026-11-20T00:00Z → 2026-11-27T23:59Z.
+- Sources searched: pulled `origin/main`; queried arXiv's submitted-date API across cs.RO, cs.CV, cs.LG, and cs.GR; screened titles and abstracts for HOI generation, humanoid tracking/control, loco-manipulation, and foundation-policy work; deduplicated against `papers.csv` and all `research_chunks/*.md`; inspected arXiv-linked pages and official GitHub remotes/readmes.
+- Counts: 2,718 category records returned (481 cs.RO, 1,168 cs.CV, 1,033 cs.LG, 36 cs.GR), yielding 2,366 cross-list-unique records; 18 new in-scope records added; 0 existing records received a verified revision or code-status change.
+- New entries by source chunk:
+  - `02_hoi_motion.md` — 1 entry: FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation (2611.34884).
+  - `03_wbc_tracking.md` — 5 entries: Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain (2611.34569), DynaMimic: A Physics-Informed World Model for Humanoid Motion Tracking (2611.32944), BARE: Body-Aware Reflexive Evasion for Humanoid Robots (2611.32642), Trust What Repeats: Capped World-Model Policy Gradients for Humanoid Motion Tracking (2611.27648), S-BFM: A Behavioral Foundation Model for Humanoid Control from Sparse Spatiotemporal Goals (2611.27552).
+  - `04_loco_manip.md` — 8 entries: Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid (2611.33828), EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances (2611.32260), Ada-BFM: Adapting Behavior Foundation Models for Humanoid Scene Interaction (2611.31863), CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors (2611.30449), PushMimic: Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation (2611.30077), CarlHOI: Counterfactual Predictive Imagination for Generalizable Multi-Humanoid Object Interaction under Constrained Environments (2611.29749), Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers (2611.27338), BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight (2611.27047).
+  - `05_foundation.md` — 3 entries: DiffGR00T: Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models (2611.32665), ζ₀: A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control (2611.29277), Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control (2611.29897).
+  - `07_data_bench_s2r.md` — 1 entry: Arcadian: Open-Source Humanoid Ecosystem for Accessible and Customizable Research and Education (2611.29868).
+- Verified code repos: https://github.com/chenyizhi123/Zeta0 (official Apache-2.0 release with training, deployment, SDK, real-G1 data and hardware assets); https://github.com/AIGeeksGroup/MotionMamba2.0 (official release with source, models, and data); https://github.com/kscalelabs/kbot (official Arcadian software repository supporting the documented open hardware ecosystem).
+- Unresolved code-status URLs: https://github.com/zyjOrz/FineDex and https://github.com/EgoLoAF/EgoLoAF-Official are official placeholders marked coming soon; https://fly-pigTH.github.io/wave_rider/, https://ada-bfm.github.io/, https://han-li-jun.github.io/CHAMP/index.html, https://silvery107.github.io/pushmimic/, https://carlhoi.github.io/, and https://latent-jacobian-steer.github.io/ expose project material but no verified method implementation. The retained paper-only entries expose no verified official code URL.
+- Inspected but excluded: human-motion-only generation/editing, hand-only reconstruction/manipulation, generic arm/mobile-manipulation VLAs, quadruped systems, and generic world-model papers without a direct HOI or humanoid whole-body contribution.

@@ -1,6 +1,6 @@
 # Verified Open-Source Papers
 
-This is the canonical list of papers with **verified official open-source code** (258 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
+This is the canonical list of papers with **verified official open-source code** (261 entries). Each repo was sanity-checked for actual implementation files (not placeholder READMEs).
 
 ## Human-Object Interaction Motion Generation (19)
 
@@ -682,7 +682,7 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Project](https://humanoid-bench.github.io/) · [Code](https://github.com/carlosferrazza/humanoid-bench) · [Paper](https://arxiv.org/abs/2403.10506)
 
 
-## Humanoid Foundation Models and Generalist Policies (40)
+## Humanoid Foundation Models and Generalist Policies (42)
 
 - ⭐ 🤖 🧍 **[AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization](https://arxiv.org/abs/2608.29242)** `arXiv 2026.08` `RoboCasa GR1 / IRON humanoid robot` `Foundation`
   Cheng Chen et al..
@@ -694,6 +694,11 @@ This is the canonical list of papers with **verified official open-source code**
   GPT-style causal Transformer trained on a two-billion-frame retargeted motion corpus for zero-shot whole-body tracking.
   Links: [Project](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT) · [Paper](https://arxiv.org/abs/2606.03985)
 
+- ⭐ 🤖 🧍 **[Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control](https://arxiv.org/abs/2611.29897)** `arXiv 2026.11` `Unitree G1` `Humanoid-Foundation`
+  Yue Huang et al..
+  Combines root/body diffusion, recurrent Mamba state, and persistent content memory for streaming long-horizon humanoid motion control.
+  Links: [Project](https://aigeeksgroup.github.io/MotionMamba2.0/) · [Code](https://github.com/AIGeeksGroup/MotionMamba2.0) · [Paper](https://arxiv.org/abs/2611.29897) · [Dataset](https://huggingface.co/datasets/AIGeeksGroup/MotionMamba2.0)
+
 - ⭐ 🤖 🧍 **[OMG: Omni-Modal Motion Generation for Generalist Humanoid Control](https://arxiv.org/abs/2606.10340)** `arXiv 2026.06` `Unitree G1` `Foundation`
   Siqiao Huang et al..
   Generalist humanoid control stack that places an omni-modal motion-generation brain above a reactive tracking controller.
@@ -703,6 +708,11 @@ This is the canonical list of papers with **verified official open-source code**
   Siyuan Hu et al..
   Scales vision-language-motion supervision through a thousand procedural homes and orchestrates resulting physical skills.
   Links: [Project](https://apple-aiml-research.github.io/ml-halo/) · [Code](https://github.com/apple-aiml-research/ml-halo) · [Paper](https://arxiv.org/abs/2611.06908)
+
+- ⭐ 🤖 🧍 **[ζ₀: A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control](https://arxiv.org/abs/2611.29277)** `arXiv 2026.11` `Unitree G1 with BrainCo Revo2 hands` `Humanoid-Foundation`
+  Yizhi Chen et al..
+  Trains a world-action model to jointly forecast scene features and measured whole-body joint trajectories for humanoid VLAs.
+  Links: [Project](https://chenyizhi123.github.io/zeta0-project/) · [Code](https://github.com/chenyizhi123/Zeta0) · [Paper](https://arxiv.org/abs/2611.29277) · [Dataset](https://huggingface.co/datasets/SII-yizhi/zeta0-real-dataset)
 
 - ⭐ 🧱 **[Cosmos Policy — Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2601.16163)** `arXiv (Jan 2026)` `LIBERO, RoboCasa simulators` `Generalist-Policy`
   NVIDIA Research.
@@ -1233,7 +1243,12 @@ This is the canonical list of papers with **verified official open-source code**
   Links: [Code](https://github.com/facebookresearch/ContactOpt) · [Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Grady_ContactOpt_Optimizing_Contact_To_Improve_Grasps_CVPR_2021_paper.pdf)
 
 
-## Sim-to-Real and Deployment Systems (1)
+## Sim-to-Real and Deployment Systems (2)
+
+- ⭐ 🤖 🧍 **[Arcadian: Open-Source Humanoid Ecosystem for Accessible and Customizable Research and Education](https://arxiv.org/abs/2611.29868)** `arXiv 2026.11` `Arcadian meter-scale humanoid` `Sim-to-Real-Deployment`
+  Zelin Shen et al..
+  Releases a low-cost meter-scale humanoid ecosystem with CAD, BOM, assembly materials, locomotion training, and VR teleoperation.
+  Links: [Project](https://anonymous-humanoid.gitbook.io/docs) · [Code](https://github.com/kscalelabs/kbot) · [Paper](https://arxiv.org/abs/2611.29868)
 
 - ⭐ 🧍 🧱 **[Crocoddyl - Multi-Contact Optimal Control Framework](https://arxiv.org/abs/1909.04947)** `ICRA 2020` `Sim2Real`
   Carlos Mastalli, Rohan Budhiraja, et al..

@@ -1636,6 +1636,27 @@ Coverage: 2022-2026 (priority on 2024-2026). Combines (1) datasets & benchmarks 
 
 ---
 
+## Weekly additions — 2026-11-27
+
+- title: Arcadian: Open-Source Humanoid Ecosystem for Accessible and Customizable Research and Education
+  authors: Zelin Shen; Gabriel Ramos Salinas; Qiyu Zhang; Yue Qin; Chen Qian; Yanran Ding
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.29868
+  paper_url: https://arxiv.org/abs/2611.29868
+  project_url: https://anonymous-humanoid.gitbook.io/docs
+  code_url: https://github.com/kscalelabs/kbot
+  dataset_url: null
+  category: Sim-to-Real-Deployment
+  task_tags: [open-source-humanoid, hardware, locomotion, VR-teleoperation, CAD]
+  robot_platform: Arcadian meter-scale humanoid
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⭐ Code
+  one_line: Releases a low-cost meter-scale humanoid ecosystem with CAD, BOM, assembly materials, locomotion training, and VR teleoperation.
+  why_it_matters: Supplies a practical reproducible hardware-and-software stack for whole-body humanoid research beyond closed platforms.
+
 ## Notes
 ## Weekly additions — 2026-11-20
 

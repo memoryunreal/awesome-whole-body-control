@@ -3752,6 +3752,103 @@ ExBody2, ResMimic, OmniRetarget, HugWBC, MaskedMimic (NVIDIA), and several 2026 
   one_line: Standardizes policy actions and observations in a body-aligned virtual-joint space before mapping to robot-native joints.
   why_it_matters: Enables one locomotion recipe across distinct humanoid joint layouts and reduces real-G1 heading drift.
 
+## Weekly additions — 2026-11-27
+
+- title: Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain
+  authors: Yinglei Zhu; Qin Li; Honghao Pan; Bozhao Wang; Binghui Xu; Jie Lu; Wentao Song; Xiyu Wang; Xinyu Zhu; Wei Liu; Xinjun Liu; Kai Lu; Huichan Zhao
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.34569
+  paper_url: https://arxiv.org/abs/2611.34569
+  project_url: https://fly-pigTH.github.io/wave_rider/
+  code_url: ""
+  dataset_url: null
+  category: Perceptive-Locomotion
+  task_tags: [sim-to-real, elastic-terrain, balance, jumping, deformable-contact]
+  robot_platform: MagicBot Z1
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ⏳ Code Coming Soon
+  one_line: Trains proprioceptive humanoid policies with an elastic-membrane terrain model for zero-shot balance and jumping on deformable surfaces.
+  why_it_matters: Isolates spatially coupled compliant terrain dynamics, a difficult sim-to-real setting, with real trampoline deployment.
+
+- title: DynaMimic: A Physics-Informed World Model for Humanoid Motion Tracking
+  authors: Chaoyue Xing; Linyi Huang; Yiting He; Yixuan Yin; Siqi Hou; Yi Zhang; Liyuan Pan; Miaomiao Liu; Daqi Liu
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.32944
+  paper_url: https://arxiv.org/abs/2611.32944
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [world-model, differentiable-dynamics, motion-tracking, contact-wrench, humanoid]
+  robot_platform: AgiBot A3
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Predicts contact wrenches and residual forces inside closed-form forward dynamics for differentiable humanoid motion tracking.
+  why_it_matters: Improves terrain and motion-tracking accuracy over SuperMimic while demonstrating recovery, cartwheel, and vault skills on A3.
+
+- title: BARE: Body-Aware Reflexive Evasion for Humanoid Robots
+  authors: Zihao Li; Tong Chen; Hua Song; Zitong Ding; Zihao Xu; Ce Hao; Weibang Bai
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.32642
+  paper_url: https://arxiv.org/abs/2611.32642
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [reflexive-evasion, collision-avoidance, human-motion-prior, whole-body-stability]
+  robot_platform: humanoid robot
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Selects and time-warps retargeted evasive motions using link-level risk, then stabilizes localized whole-body avoidance responses.
+  why_it_matters: Treats evasive behavior as a fast local whole-body-control problem rather than requiring a full base reposition.
+
+- title: Trust What Repeats: Capped World-Model Policy Gradients for Humanoid Motion Tracking
+  authors: Xuzhe Dang; Stefan Edelkamp
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.27648
+  paper_url: https://arxiv.org/abs/2611.27648
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [world-model, policy-gradients, motion-tracking, Unitree-G1]
+  robot_platform: Unitree G1
+  uses_real_robot: false
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Caps unreliable high-norm imagined gradients and prioritizes verified world-model rollout starts for fast motion-tracker training.
+  why_it_matters: Quantifies where differentiable-world-model gradients stop agreeing with the simulator and turns that diagnosis into a robust training rule.
+
+- title: S-BFM: A Behavioral Foundation Model for Humanoid Control from Sparse Spatiotemporal Goals
+  authors: Kun Yang; Xuanyu Chen; Jing Tan; Yanjing Liu; Yubo Zhao; Renjing Xu; Addison Lin Wang
+  year: 2026
+  venue: arXiv 2026.11
+  arxiv_id: 2611.27552
+  paper_url: https://arxiv.org/abs/2611.27552
+  project_url: ""
+  code_url: ""
+  dataset_url: null
+  category: Motion-Imitation
+  task_tags: [behavior-foundation-model, sparse-goals, spatiotemporal-control, humanoid]
+  robot_platform: Unitree G1 and AgiBot A3
+  uses_real_robot: true
+  uses_humanoid: true
+  uses_simulation: true
+  code_status: ❌ No Code Found
+  one_line: Generates natural whole-body transitions from target posture, world pose, and arrival time without a dense reference trajectory.
+  why_it_matters: Gives a foundation controller a more autonomous sparse-goal interface and reports A3 hardware deployment.
+
 - title: RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control
   authors: Zepeng Wang; Xiaochuan Shi
   year: 2026
